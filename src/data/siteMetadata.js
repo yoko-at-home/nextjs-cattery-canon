@@ -1,0 +1,20 @@
+export const siteMetadata = {
+  author: "CANON",
+  title: "Cattery CANNON",
+  headerTitle: "Cattery CANNON",
+  description:
+    "Cattery CANONは、神奈川県座間市にある、メインクーン専門の小さなキャテリーです。",
+  language: "jp-ja",
+  siteUrl: "https://cattery-canon.netlify.app/",
+  siteRepo: "https://cattery-canon.netlify.app/",
+  siteLogo: "/static/images/logo.png",
+  image: "/static/images/laurel.png",
+  socialBanner: "/static/images/twitter-card.png",
+  email: "yoko_iwasakijp@yahoo.co.jp",
+  github: "https://github.com/yoko-at-home",
+  twitter: "https://twitter.com/Twitter/yokoiwasaki6",
+  facebook: "https://facebook.com",
+  youtube: "https://www.youtube.com/channel/UC_9IZegV5JXw66b0S7fd6-Q",
+  linkedin: "https://www.linkedin.com",
+  locale: "ja-JP",
+};
