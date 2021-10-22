@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Lobster", "sans-serif"],
+        sans: ["Lobster", "Kaisei opti", "sans-serif"],
       },
     },
   },
