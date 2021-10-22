@@ -79,10 +79,12 @@ export const Carousel = () => {
             url("/static/images/0_top/baby-mainecoon.jpg");
         }
         .number-slide5 {
-          background: top/cover no-repeat url("images/0_top/IMG_1795.jpg");
+          background: top/cover no-repeat
+            url("/static/images/0_top/IMG_1795.jpg");
         }
         .number-slide6 {
-          background: center/cover no-repeat url("/static/images/0_top/mainecoon.jpg");
+          background: center/cover no-repeat
+            url("/static/images/0_top/mainecoon.jpg");
         }
         .number-slide7 {
           background: center/cover no-repeat
