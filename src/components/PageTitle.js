@@ -1,6 +1,13 @@
 export const PageTitle = (props) => {
   return (
-    <h1 className="mt-10 mb-5 lg:mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900  sm:text-4xl sm:leading-10 md:text-5xl md:leading-10 md:mb-16">
+    <h1 className="mt-10 mb-15 lg:mb-20 text-2xl font-extrabold leading-loosee tracking-loose bg-clip-text text-transparent bg-gradient-to-r from-green-900 to-blue-500  sm:text-3xl  md:text-4xl md:mb-16">
+      {props.children}
+    </h1>
+  );
+};
+export const PageTitleLarge = (props) => {
+  return (
+    <h1 className="mt-10 mb-14 text-4xl font-extrabold leading-loosee tracking-loose bg-clip-text text-transparent bg-gradient-to-r from-green-900 to-blue-500  sm:text-3xl  md:text-4xl md:mb-16">
       {props.children}
     </h1>
   );

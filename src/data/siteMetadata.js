@@ -5,8 +5,8 @@ export const siteMetadata = {
   description:
     "Cattery CANONは、神奈川県座間市にある、メインクーン専門の小さなキャテリーです。",
   language: "jp-ja",
-  siteUrl: "https://cattery-canon.netlify.app/",
-  siteRepo: "https://cattery-canon.netlify.app/",
+  siteUrl: "https://cattery-canon.vercel.app/",
+  siteRepo: "https://cattery-canon.vercel.app/",
   siteLogo: "/static/favicons/apple-touch-icon.png",
   image: "/static/favicons/apple-touch-icon.png",
   socialBanner: "/static/images/twitter-card.png",
