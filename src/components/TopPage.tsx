@@ -11,7 +11,7 @@ export const TopPage = () => {
         title={`Top- ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
-      <CustomLink href='/about' aria-label='Gen-Scent Research Laboratory'>
+      <CustomLink href='/about' aria-label='Cattery Canon'>
         <div className='absolute -top-5 md:-top-20 right-5 bg-gradient-to-t from-gray-700 to-green-50 rounded-full p-3'>
           <img
             alt='cats'
@@ -41,7 +41,7 @@ export const TopPage = () => {
           Prefecure. I am a member of Cat Fanciers Association (CFA) and The
           International Cat Association (TICA). The headquarters are in USA.
         </div>
-        <Link href='/about'>
+        <Link href='/home'>
           <a className='leading-looses rounded p-4 text-2xl md:text-4xl bg-gradient-to-tl from-pink-800 bg-yellow-400 hover:text-yellow-600 hover:bg-green-400 inline-block bg-opacity-80'>
             Enter
           </a>
