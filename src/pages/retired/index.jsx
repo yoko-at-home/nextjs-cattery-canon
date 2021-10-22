@@ -6,6 +6,7 @@
 // import type { NextPage } from "next";
 // import type { VFC } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
@@ -15,23 +16,13 @@ import { client } from "src/lib/client";
 // const AppCard: VFC<ItemType> = (props) => {
 const AppCard = (props) => {
   return (
-    <div key={props.id}>
-      <div
-        className='relative h-64 w-full flex items-end justify-start text-left bg-cover bg-center'
-        // style={{ backgroundImage: "url(https://source.unsplash.com/1600x500/?plant,flower)" }}
-        style={{
-          backgroundImage:
-            "url(static/images/header/maincoon-on-white-background.jpg)",
-        }}
-      >
-        <div className='absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900'></div>
-        <div className='absolute top-3 right-5 left-0 mx-5 mt-2 flex justify-between items-center'>
-          <div
-            // href="#"
-            className='cursor-pointer text-md rounded bg-gray-600 text-gray-100 px-5 py-2 hover:bg-white bg-opacity-80 hover:text-indigo-600 transition ease-in-out duration-500'
-          >
+    // <div key={props.id}>
+    <div class='relative px-4 -mt-16' key={props.id}>
+      <div class='bg-white p-6 rounded-lg shadow-lg'>
+        <div class='flex items-baseline'>
+          <h4 class='text-green-900 mt-1 text-xl font-semibold uppercase leading-tight truncate'>
             {props.title}
-          </div>
+          </h4>
         </div>
         <main className='p-5 z-10'>
           <div className='cursor-pointer p-1 h-28 text-md tracking-tight text-white hover:bg-gray-50 hover:bg-opacity-20 rounded word-break overflow-y-scroll transition ease-in-out duration-500'>
@@ -56,18 +47,29 @@ const Retired = (props) => {
         <div className='pt-6 pb-8 space-y-2 md:space-y-5'>
           <p className='text-lg leading-7 text-gray-500 '>引退した子達です。</p>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-10'>
           {props.retired.map((retired) => {
             return (
-              <Link href={`retired/${retired.id}`} passHref>
-                <a>
-                  <AppCard
-                    key={retired.title}
-                    title={retired.title}
-                    description={retired.description}
-                  />
-                </a>
-              </Link>
+              <div className='wrapper antialiased text-gray-900'>
+                <Link href={`retired/${retired.id}`} passHref>
+                  <a className=''>
+                    {!retired.imgSrc ? null : (
+                      <picture>
+                        <img
+                          src={retired.imgSrc?.url}
+                          alt={retired.title}
+                          className='w-full object-cover object-center rounded-lg shadow-md'
+                        />
+                      </picture>
+                    )}
+                    <AppCard
+                      key={retired.title}
+                      title={retired.title}
+                      description={retired.description}
+                    />
+                  </a>
+                </Link>
+              </div>
             );
           })}
         </div>
