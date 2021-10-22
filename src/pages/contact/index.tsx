@@ -7,12 +7,15 @@ import { Layout } from "src/layout";
 
 const Contact: NextPage = () => {
   return (
-    <Layout theme="main">
-      <PageSEO title={`Contact- ${siteMetadata.author}`} description={siteMetadata.description} />
+    <Layout theme='main'>
+      <PageSEO
+        title={`お問い合わせ - ${siteMetadata.author}`}
+        description={siteMetadata.description}
+      />
 
       <PageTitle>Contact -お気軽にお問い合わせください</PageTitle>
-      <div className="divide-y divide-gray-200 ">
-        <div className="container py-12">
+      <div className='divide-y divide-gray-200 '>
+        <div className='container py-12'>
           <FormContact />
         </div>
       </div>

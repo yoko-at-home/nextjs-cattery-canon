@@ -7,8 +7,11 @@ import { Layout } from "src/layout";
 
 const Gallery: NextPage = () => {
   return (
-    <Layout theme="matured">
-      <PageSEO title={`Gallery- ${siteMetadata.author}`} description={siteMetadata.description} />
+    <Layout theme='matured'>
+      <PageSEO
+        title={`ギャラリー - ${siteMetadata.author}`}
+        description={siteMetadata.description}
+      />
       <PageTitle>Gallery - Cattery Canonの世界を彩る美しい子たち</PageTitle>
       <Carousel />
     </Layout>

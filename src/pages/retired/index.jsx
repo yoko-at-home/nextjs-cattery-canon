@@ -47,7 +47,7 @@ const Retired = (props) => {
   return (
     <Layout theme='newsArticles'>
       <PageSEO
-        title={`Retired- ${siteMetadata.author}`}
+        title={`Retired - ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
 
