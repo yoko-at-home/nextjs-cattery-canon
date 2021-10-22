@@ -11,7 +11,7 @@ export const TopPage = () => {
         title={`Top- ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
-      <CustomLink href='/about' aria-label='Cattery Canon'>
+      {/* <CustomLink href='/about' aria-label='Cattery Canon'>
         <div className='absolute -top-5 md:-top-20 right-5 bg-gradient-to-t from-gray-700 to-green-50 rounded-full p-3'>
           <img
             alt='cats'
@@ -19,7 +19,7 @@ export const TopPage = () => {
             className='rounded-full w-16 md:w-24'
           />
         </div>
-      </CustomLink>
+      </CustomLink> */}
 
       <div className='py-12 text-center bg-black bg-opacity-30 rounded-full text-white text-xs sm:text-xl leading-7 uppercase'>
         <div className='p-6'>
