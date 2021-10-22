@@ -59,7 +59,7 @@ const Retired = (props) => {
         <div className='grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10'>
           {props.retired.map((retired) => {
             return (
-              <Link href={`Retired/${retired.id}`} passHref>
+              <Link href={`retired/${retired.id}`} passHref>
                 <a>
                   <AppCard
                     key={retired.title}

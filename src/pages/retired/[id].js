@@ -10,23 +10,28 @@ export default function retiredId(props) {
   const publishedAt = props.retired.publishedAt;
   const revisedAt = props.retired.revisedAt;
   return (
-    <Layout theme="newsArticles">
+    <Layout theme='newsArticles'>
       <main>
-        <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl mt-6 lg:text-center py-12">
+        <h1 className='font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl mt-6 lg:text-center py-12'>
           {props.retired.title}
         </h1>
-        <div className="flex flex-col text-right mt-3 mb-10">
+        <div className='flex flex-col text-right mt-3 mb-10'>
           {publishedAt === revisedAt ? (
             <div>
-              Published: <Date className="text-sm text-blueGray-500 mb-3" dateString={props.retired.publishedAt} />
+              Published:{" "}
+              <Date
+                className='text-sm text-blueGray-500 mb-3'
+                dateString={props.retired.publishedAt}
+              />
             </div>
           ) : (
             <>
               <div>
-                Revised at: <Date className="text-sm text-blueGray-500" dateString={props.retired.revisedAt} />
-              </div>
-              <div>
-                Published at: <Date className="text-sm text-blueGray-500 mb-3" dateString={props.retired.publishedAt} />
+                Published at:{" "}
+                <Date
+                  className='text-sm text-blueGray-500 mb-3'
+                  dateString={props.retired.publishedAt}
+                />
               </div>
             </>
           )}
@@ -37,9 +42,9 @@ export default function retiredId(props) {
             __html: `${props.retired.body}`,
           }}
         />
-        <div className="absolute mt-5 text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-80 p-3 rounded inline-block right-10 md:right-20 lg:right-40">
+        <div className='mt-5 text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-80 p-3 rounded inline-block right-10 md:right-20 lg:right-40'>
           <Link href={`/retired`}>
-            <a className="">Retired Top</a>
+            <a className=''>Retired Top</a>
           </Link>
         </div>
       </main>
