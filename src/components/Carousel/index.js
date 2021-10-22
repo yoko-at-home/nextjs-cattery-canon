@@ -64,25 +64,25 @@ export const Carousel = () => {
         }
         .number-slide1 {
           background: center/cover no-repeat
-            url("/images/0_top/mainecoon-girls.jpg");
+            url("/static/images/0_top/mainecoon-girls.jpg");
         }
         .number-slide2 {
           background: center/cover no-repeat
-            url("/images/0_top/painting-green.jpg");
+            url("/static/images/0_top/painting-green.jpg");
         }
         .number-slide3 {
           background: center/cover no-repeat
-            url("/images/0_top/mainecoon-sleeping-baby.jpg");
+            url("/static/images/0_top/mainecoon-sleeping-baby.jpg");
         }
         .number-slide4 {
           background: center/cover no-repeat
-            url("/images/0_top/baby-mainecoon.jpg");
+            url("/static/images/0_top/baby-mainecoon.jpg");
         }
         .number-slide5 {
           background: top/cover no-repeat url("images/0_top/IMG_1795.jpg");
         }
         .number-slide6 {
-          background: center/cover no-repeat url("/images/0_top/mainecoon.jpg");
+          background: center/cover no-repeat url("/static/images/0_top/mainecoon.jpg");
         }
         .number-slide7 {
           background: center/cover no-repeat
