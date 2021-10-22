@@ -1,4 +1,4 @@
-import { PageTitle } from "../../components/PageTitle";
+import { PageTitleLarge } from "../../components/PageTitle";
 import { PageSEO } from "../../components/SEO";
 import { siteMetadata } from "../../data/siteMetadata";
 import { Layout } from "../../layout";
@@ -15,7 +15,7 @@ const Home = (props) => {
 
       <div className='divide-y divide-gray-200'>
         <div className='pt-6 md:mt-8 pb-8 space-y-2 md:space-y-5  text-pink-500'>
-          <PageTitle>{props.data.title}</PageTitle>
+          <PageTitleLarge>{props.data.title}</PageTitleLarge>
           {/* <p className="text-lg leading-7 text-gray-500 mt-52">{siteMetadata.description}</p> */}
           <div
             className='text-lg text-green-900 pt-25'
