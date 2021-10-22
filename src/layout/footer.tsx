@@ -13,7 +13,14 @@ export const Footer: VFC = () => {
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <CustomLink href='/home'>{siteMetadata.title}</CustomLink>
+          <a
+            target='_blank'
+            rel=' noopener'
+            href='http://catterycanoncat.blog.fc2.com'
+            className='hover:text-green-600 hover:transform skew-y-12'
+          >
+            {siteMetadata.title} ブログ
+          </a>
         </div>
         <div className='my-8 text-sm text-gray-500'>
           <CustomLink href='https://yoko-2021.vercel.app/'>
