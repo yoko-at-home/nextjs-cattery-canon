@@ -3,7 +3,7 @@
 /* eslint-disable import/no-default-export */
 import Image from "next/image";
 import Link from "next/link";
-import { Pagination } from "src/components/Pagination";
+// import { Pagination } from "src/components/Pagination";
 import { Layout } from "src/layout";
 
 const PER_PAGE = 3;
@@ -37,7 +37,7 @@ export default function NewsPageId({ news, totalCount }) {
           );
         })}
       </ul>
-      <Pagination totalCount={totalCount} />
+      {/* <Pagination totalCount={totalCount} /> */}
     </Layout>
   );
 }
