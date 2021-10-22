@@ -1,65 +1,87 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PageTitle } from "src/components/PageTitle";
-import { Pagination } from "src/components/Pagination";
+// import { Pagination } from "src/components/Pagination";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
+import { client } from "src/lib/client";
 
 // eslint-disable-next-line react/destructuring-assignment
-const Available = ({ news, totalCount }) => {
+const Available = (props) => {
   return (
-    <Layout theme="main">
-      <PageSEO title={`譲渡可能な子達- ${siteMetadata.author}`} description={siteMetadata.description} />
+    <Layout theme='main'>
+      <PageSEO
+        title={`譲渡可能な子達- ${siteMetadata.author}`}
+        description={siteMetadata.description}
+      />
       <PageTitle>譲渡可能な子達</PageTitle>
-      <div className="mt-10">
+      <div className='mt-10'>
         <ul>
-          {news.map((news) => {
+          {props.available.map((available) => {
             return (
-              <li key={news.id} className="mb-8">
-                <div className="flex flex-row-reverse justify-between">
-                  <Link href={`news/${news.id}`}>
-                    <a className="ml-1 lg:ml-10 lg:w-3/12">
-                      {!news.imgSrc ? null : (
+              <li key={available.id} className='mb-8'>
+                <div className='flex flex-row-reverse justify-between'>
+                  <Link href={`available/${available.id}`}>
+                    <a className='ml-1 lg:ml-10 lg:w-3/12'>
+                      {!available.imgSrc ? null : (
                         <picture>
-                          <Image src={news.imgSrc.url} alt={news.title} width="150%" height="100%" />
+                          <Image
+                            src={available.imgSrc?.url}
+                            alt={available.title}
+                            width='150%'
+                            height='100%'
+                          />
                         </picture>
                       )}
                     </a>
                   </Link>
-                  <div className="flex flex-col w-full">
-                    <Link href={`news/${news.id}`}>
-                      <a className="font-bold">{news.title}</a>
+                  <div className='flex flex-col w-full'>
+                    <Link href={`available/${available.id}`}>
+                      <a className='font-bold'>{available.title}</a>
                     </Link>
-                    <div className="pt-3">{news.description}</div>
+                    <div className='pt-3'>{available.description}</div>
                   </div>
                 </div>
               </li>
             );
           })}
         </ul>
-        <Pagination totalCount={totalCount} />
+        {/* <Pagination totalCount={props.totalCount} /> */}
       </div>
     </Layout>
   );
 };
+// export const getStaticProps = async () => {
+//   const key = {
+//     // eslint-disable-next-line @typescript-eslint/naming-convention
+//     headers: { "X-API-KEY": process.env.NEXT_PUBLIC_API_KEY },
+//   };
+//   const data = await fetch(
+//     `${process.env.NEXT_PUBLIC_API_URL}/available?offset=0&limit=5`,
+//     key
+//   )
+//     .then((res) => {
+//       return res.json();
+//     })
+//     .catch(() => {
+//       return null;
+//     });
+
+//   return {
+//     props: {
+//       available: data?.contents,
+//       totalCount: data?.totalCount,
+//     },
+//   };
+// };
+
 export const getStaticProps = async () => {
-  const key = {
-    // eslint-disable-next-line @typescript-eslint/naming-convention
-    headers: { "X-API-KEY": process.env.NEXT_PUBLIC_API_KEY },
-  };
-  const data = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/news?offset=0&limit=5`, key)
-    .then((res) => {
-      return res.json();
-    })
-    .catch(() => {
-      return null;
-    });
+  const data = await client.get({ endpoint: "available" });
 
   return {
     props: {
-      news: data?.contents,
-      totalCount: data?.totalCount,
+      available: data.contents,
     },
   };
 };

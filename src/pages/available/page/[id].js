@@ -9,28 +9,33 @@ import { Layout } from "src/layout";
 const PER_PAGE = 3;
 
 // pages/news/[id].js
-export default function NewsPageId({ news, totalCount }) {
+export default function NewsPageId(props) {
   return (
-    <Layout theme="newsArticles">
-      <ul className="mt-10">
-        {news.map((news) => {
+    <Layout theme='newsArticles'>
+      <ul className='mt-10'>
+        {props.available.map((available) => {
           return (
-            <li key={news.id} className="mb-8">
-              <div className="flex flex-row-reverse justify-between">
-                <Link href={`/news/${news.id}`}>
-                  <a className="ml-1 lg:ml-10 lg:w-3/12">
-                    {!news.imgSrc ? null : (
+            <li key={available.id} className='mb-8'>
+              <div className='flex flex-row-reverse justify-between'>
+                <Link href={`/available/${available.id}`}>
+                  <a className='ml-1 lg:ml-10 lg:w-3/12'>
+                    {!available.imgSrc ? null : (
                       <picture>
-                        <Image src={news.imgSrc.url} alt={news.title} width="150%" height="100%" />
+                        <Image
+                          src={available.imgSrc.url}
+                          alt={available.title}
+                          width='150%'
+                          height='100%'
+                        />
                       </picture>
                     )}
                   </a>
                 </Link>
-                <div className="flex flex-col w-full">
-                  <Link href={`/news/${news.id}`}>
-                    <a className="font-bold">{news.title}</a>
+                <div className='flex flex-col w-full'>
+                  <Link href={`/available/${available.id}`}>
+                    <a className='font-bold'>{available.title}</a>
                   </Link>
-                  <div className="pt-3">{news.description}</div>
+                  <div className='pt-3'>{available.description}</div>
                 </div>
               </div>
             </li>
@@ -48,7 +53,7 @@ export const getStaticPaths = async () => {
     headers: { "X-API-KEY": process.env.NEXT_PUBLIC_API_KEY },
   };
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/news`, key);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/available`, key);
 
   const repos = await res.json();
 
@@ -59,7 +64,7 @@ export const getStaticPaths = async () => {
   };
 
   const paths = range(1, Math.ceil(repos.totalCount / PER_PAGE)).map((repo) => {
-    return `/news/page/${repo}`;
+    return `/available/page/${repo}`;
   });
 
   return { paths, fallback: false };
@@ -73,7 +78,12 @@ export const getStaticProps = async (context) => {
     headers: { "X-API-KEY": process.env.NEXT_PUBLIC_API_KEY },
   };
 
-  const data = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/news?offset=${(id - 1) * 5}&limit=5`, key)
+  const data = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/available?offset=${
+      (id - 1) * 5
+    }&limit=5`,
+    key
+  )
     .then((res) => {
       return res.json();
     })
@@ -83,7 +93,7 @@ export const getStaticProps = async (context) => {
 
   return {
     props: {
-      news: data.contents,
+      available: data.contents,
       totalCount: data.totalCount,
     },
   };
