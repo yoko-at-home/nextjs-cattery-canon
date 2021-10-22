@@ -3,22 +3,29 @@ import { Carousel } from "../components/Carousel";
 import { NavBarMobile } from "../components/navbar";
 import { Footer } from "./footer";
 import { Header } from "./header";
+import { NavBarDesktop } from "../components/navbar";
 
 type Props = {
   className?: string;
-  theme?: "main" | "sub" | "news" | "flower" | "newsArticles";
+  theme?: "main" | "baby" | "matured" | "flower" | "newsArticles";
   children: ReactNode;
 };
 
 export const Layout: VFC<Props> = (props) => {
   return (
-    <>
-      <Header theme={props.theme || "main"} />
-      <main className='mx-3 sm:mx-10 md:mx-auto md:w-11/12 lg:w-9/12'>
-        {props.children}
-      </main>
-      <Footer />
-    </>
+    <div className='flex'>
+      <div className="hidden sm:block w-2/6 lg:w-1/6">
+        <NavBarDesktop />
+      </div>
+      <div className='w-screen md:w-5/6 lg:w-4/6'>
+        <Header theme={props.theme || "main"} />
+        <main className='mx-3 sm:mx-10 md:mx-auto md:w-11/12 lg:w-9/12'>
+          {props.children}
+        </main>
+        <Footer />
+      </div>
+      <div className='hidden lg:block lg:w-1/6'>vertical Carousel</div>
+    </div>
   );
 };
 
