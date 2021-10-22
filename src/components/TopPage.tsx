@@ -51,7 +51,7 @@ export const TopPage = () => {
           style={{ textShadow: "0px 5px 5px rgba(0, 0, 0, 0.9)" }}
         >
           Cattery
-          CANONは、神奈川県座間市にある、メインクーン専門の小さなきゃテリーです。アメリカに本部を置く愛猫団体
+          CANONは、神奈川県座間市にある、メインクーン専門の小さなキャテリーです。アメリカに本部を置く愛猫団体
           CFA TICAに所属しています。
         </div>
       </div>
