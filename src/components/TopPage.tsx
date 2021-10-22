@@ -8,7 +8,7 @@ export const TopPage = () => {
   return (
     <LayoutCarousel>
       <PageSEO
-        title={`Top- ${siteMetadata.author}`}
+        title={`ようこそ！- ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
       {/* <CustomLink href='/about' aria-label='Cattery Canon'>

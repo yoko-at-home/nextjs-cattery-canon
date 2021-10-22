@@ -29,13 +29,6 @@ export default function BlogId(props) {
           ) : (
             <>
               <div>
-                Revised at:{" "}
-                <Date
-                  className='text-sm text-blueGray-500'
-                  dateString={props.available.revisedAt}
-                />
-              </div>
-              <div>
                 Published at:{" "}
                 <Date
                   className='text-sm text-blueGray-500 mb-3'
