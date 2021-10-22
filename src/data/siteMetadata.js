@@ -1,9 +1,8 @@
 export const siteMetadata = {
-  author: "CANON",
+  author: "Cattery CANNON",
   title: "Cattery CANNON",
   headerTitle: "Cattery CANNON",
-  description:
-    "Cattery CANONは、神奈川県座間市にある、メインクーン専門の小さなキャテリーです。",
+  description: "Cattery CANONは、神奈川県座間市にある、メインクーン専門の小さなキャテリーです。",
   language: "jp-ja",
   siteUrl: "https://cattery-canon.vercel.app/",
   siteRepo: "https://cattery-canon.vercel.app/",

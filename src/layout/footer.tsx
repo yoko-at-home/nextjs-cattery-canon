@@ -9,7 +9,7 @@ export const Footer: VFC = () => {
     <footer>
       <div className='flex flex-col items-center mt-16'>
         <div className='flex mb-2 space-x-2 text-sm text-gray-500 '>
-          <div>Owned by: {siteMetadata.author}</div>
+          <div>All rights reserved by: {siteMetadata.author}</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
