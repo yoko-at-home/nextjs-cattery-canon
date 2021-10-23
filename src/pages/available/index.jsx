@@ -15,7 +15,7 @@ const Available = (props) => {
         title={`譲渡可能な子達- ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
-      <PageTitle>譲渡可能な子達</PageTitle>
+      <PageTitle type="large">譲渡可能な子達</PageTitle>
       <div className='mt-10'>
         <ul>
           {props.available.map((available) => {

@@ -42,7 +42,7 @@ const Retired = (props) => {
         description={siteMetadata.description}
       />
 
-      <PageTitle>引退した子達</PageTitle>
+      <PageTitle type='large'>引退した子達</PageTitle>
       <div className='divide-y divide-gray-200 '>
         <div className='pt-6 pb-8 space-y-2 md:space-y-5'>
           <p className='text-lg leading-7 text-gray-500 '>引退した子達です。</p>

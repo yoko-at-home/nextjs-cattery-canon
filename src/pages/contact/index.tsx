@@ -13,7 +13,7 @@ const Contact: NextPage = () => {
         description={siteMetadata.description}
       />
 
-      <PageTitle>Contact -お気軽にお問い合わせください</PageTitle>
+      <PageTitle type='large'>Contact -お気軽にお問い合わせください</PageTitle>
       <div className='divide-y divide-gray-200 '>
         <div className='container py-12'>
           <FormContact />

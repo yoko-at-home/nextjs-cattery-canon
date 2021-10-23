@@ -21,7 +21,6 @@ const MyBoys = () => {
       const result = mainecoonDataGirl.find(({ title }) => {
         return title === d.title;
       });
-      // console.log(result);
       setSelectedItem(result);
       open();
     },
@@ -34,12 +33,11 @@ const MyBoys = () => {
         title={`Girls - ${siteMetadata.author}`}
         description={siteMetadata.description1}
       />
-      <PageTitle>Girls - Cattery Canonの女の子たち</PageTitle>
+      <PageTitle type='medium'>Girls - Cattery Canonの女の子たち</PageTitle>
       <div className='divide-y divide-gray-200 '>
         <div className='container py-12'>
           <div className='flex flex-wrap m-4'>
             {mainecoonDataGirl.map((d) => {
-              // console.log(d);
               return (
                 <button
                   onClick={() => {

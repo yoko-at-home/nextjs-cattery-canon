@@ -12,7 +12,7 @@ const Gallery: NextPage = () => {
         title={`ギャラリー - ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
-      <PageTitle>Gallery - Cattery Canonの世界を彩る美しい子たち</PageTitle>
+      <PageTitle type="medium">Gallery - Cattery Canonの世界を彩る美しい子たち</PageTitle>
       <Carousel />
     </Layout>
   );
