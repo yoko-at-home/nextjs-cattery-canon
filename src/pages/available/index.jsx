@@ -10,7 +10,7 @@ import { client } from "src/lib/client";
 // eslint-disable-next-line react/destructuring-assignment
 const Available = (props) => {
   return (
-    <Layout theme='main'>
+    <Layout theme='flower'>
       <PageSEO
         title={`譲渡可能な子達- ${siteMetadata.author}`}
         description={siteMetadata.description}

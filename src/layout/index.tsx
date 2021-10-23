@@ -18,8 +18,7 @@ export const Layout: VFC<Props> = (props) => {
       <div className='hidden md:block w-1/6 xl:w-1/6 bg-gradient-to-br from-yellow-900 text-yellow-700 min-h-full rounded-full m-5'>
         <NavBarDesktop />
       </div>
-      <div className='w-screen lg:w-5/6 sm:mr-5'>
-        <Header theme={props.theme || "main"} />
+      <div className='w-screen lg:w-5/6 md:mr-5'>
         <main className='mx-auto px-5 md:w-full'>{props.children}</main>
         <Footer />
       </div>
