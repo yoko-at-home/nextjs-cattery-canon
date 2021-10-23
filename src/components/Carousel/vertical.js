@@ -10,7 +10,7 @@ export const CarouselVertical = () => {
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     vertical: true,
-    duration: 1000,
+    duration: 3000,
     dragStart: () => {
       setPause(true);
     },
@@ -42,13 +42,13 @@ export const CarouselVertical = () => {
   return (
     <>
       <div ref={sliderRef} className='keen-slider'>
-        <div className='keen-slider__slide number-slide1'></div>
-        <div className='keen-slider__slide number-slide2'></div>
-        <div className='keen-slider__slide number-slide3'></div>
-        <div className='keen-slider__slide number-slide4'></div>
-        <div className='keen-slider__slide number-slide5'></div>
-        <div className='keen-slider__slide number-slide6'></div>
-        <div className='keen-slider__slide number-slide7'></div>
+        <div className='keen-slider__slide number-slide1'>AA</div>
+        <div className='keen-slider__slide number-slide2'>BB</div>
+        <div className='keen-slider__slide number-slide3'>CC</div>
+        <div className='keen-slider__slide number-slide4'>DD</div>
+        <div className='keen-slider__slide number-slide5'>EE</div>
+        <div className='keen-slider__slide number-slide6'>FF</div>
+        <div className='keen-slider__slide number-slide7'>GG</div>
       </div>
       <style jsx>{`
         [class^="number-slide"],

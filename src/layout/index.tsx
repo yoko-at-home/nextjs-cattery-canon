@@ -23,7 +23,7 @@ export const Layout: VFC<Props> = (props) => {
         <main className='mx-auto px-5 md:w-full'>{props.children}</main>
         <Footer />
       </div>
-      <div className='hidden xl:mr-3 xl:block xl:w-2/6 min-h-screen'>
+      <div className='hidden xl:mr-3 xl:block xl:w-2/6'>
         <CarouselVertical />
       </div>
     </div>
