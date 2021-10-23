@@ -13,6 +13,7 @@ const items = [
   { href: "/contact", label: "Contact" },
   { href: "/faq", label: "よくあるご質問" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/links", label: "Links" },
 ];
 
 export const NavBarDesktop: VFC = () => {
