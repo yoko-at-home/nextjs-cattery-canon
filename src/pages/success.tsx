@@ -8,7 +8,6 @@ import { Layout } from "src/layout";
 
 const Success: NextPage = () => {
   const router = useRouter();
-  // console.log(router.query);
   return (
     <Layout theme="matured">
       <PageSEO

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const Card = (props) => {
-  // console.log(props);
   return (
     <div className="p-4" style={{ maxWidth: "544px" }}>
       <div className="h-full overflow-hidden border-2 border-gray-200 rounded-t-2xl">

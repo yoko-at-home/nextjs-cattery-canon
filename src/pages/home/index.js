@@ -1,11 +1,10 @@
-import { PageTitleLarge } from "../../components/PageTitle";
+import { PageTitle } from "../../components/PageTitle";
 import { PageSEO } from "../../components/SEO";
 import { siteMetadata } from "../../data/siteMetadata";
 import { Layout } from "../../layout";
 import { client } from "../../lib/client";
 
 const Home = (props) => {
-  // console.log(props);
   return (
     <Layout theme='baby'>
       <PageSEO
