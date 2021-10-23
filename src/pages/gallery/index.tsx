@@ -7,7 +7,7 @@ import { Layout } from "src/layout";
 
 const Gallery: NextPage = () => {
   return (
-    <Layout theme='matured'>
+    <Layout theme='retired'>
       <PageSEO
         title={`ギャラリー - ${siteMetadata.author}`}
         description={siteMetadata.description}

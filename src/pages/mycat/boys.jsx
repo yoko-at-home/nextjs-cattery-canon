@@ -28,7 +28,7 @@ const MyBoys = () => {
   );
 
   return (
-    <Layout theme='main'>
+    <Layout theme='boys'>
       <PageSEO
         title={`Boys - ${siteMetadata.author}`}
         description={siteMetadata.description1}
