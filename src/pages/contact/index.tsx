@@ -7,7 +7,7 @@ import { Layout } from "src/layout";
 
 const Contact: NextPage = () => {
   return (
-    <Layout theme='main'>
+    <Layout theme="home">
       <PageSEO
         title={`お問い合わせ - ${siteMetadata.author}`}
         description={siteMetadata.description}

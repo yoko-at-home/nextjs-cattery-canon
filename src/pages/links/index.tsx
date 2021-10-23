@@ -38,7 +38,7 @@ const links = [
 
 const Contact: NextPage = () => {
   return (
-    <Layout theme='main'>
+    <Layout theme='home'>
       <PageSEO
         title={`リンク集 - ${siteMetadata.author}`}
         description={siteMetadata.description}

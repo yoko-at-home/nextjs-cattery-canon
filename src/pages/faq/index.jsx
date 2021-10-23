@@ -21,7 +21,7 @@ const config = {
 
 const Contact = () => {
   return (
-    <Layout theme='main'>
+    <Layout theme='home'>
       <PageSEO
         title={`よくある質問 - ${siteMetadata.author}`}
         description={siteMetadata.description}
