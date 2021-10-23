@@ -48,7 +48,7 @@ export const NavBarMobile: VFC = () => {
   };
   return (
     <>
-      <div className='bg-gray-400 bg-opacity-80 rounded pt-1 px-2 fixed right-5 bottom-28 xl:right-96'>
+      <div className='z-50 bg-gray-400 bg-opacity-80 rounded pt-1 px-2 fixed right-5 bottom-28 xl:right-96'>
         <button
           type='button'
           className='w-16 h-16 ml-1 mr-1 rounded'
@@ -58,7 +58,7 @@ export const NavBarMobile: VFC = () => {
           <img
             alt='mainecoon'
             src={"/static/gif/animation_500_cat.gif"}
-            className='rounded-full w-16 md:w-24'
+            className='rounded-full w-16 md:w-24 z-50'
           />
         </button>
         <div
@@ -72,14 +72,14 @@ export const NavBarMobile: VFC = () => {
             className='fixed w-full h-4/5 -top-7 cursor-auto focus:outline-none'
             onClick={handleOnToggleNav}
           ></button>
-          <nav className='text-center mt-40'>
+          <nav className='text-center mt-10 md:mt-40'>
             {items.map(({ href, label }) => {
               return (
                 <CustomLink
                   key={href}
                   href={href}
                   onClick={handleOnToggleNav}
-                  className='flex flex-col text-2xl tracking-widest p-1 font-medium mx-auto text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 focus:from-green-700 focus:to-yellow-500 opacity-90 hover:text-gray-100 text-right pr-3 py-3'
+                  className='flex flex-col text-2xl sm:tracking-widest p-1 font-medium mx-auto text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500  opacity-90 hover:text-gray-100 text-right pr-3 sm:py-3'
                 >
                   {label}
                 </CustomLink>
