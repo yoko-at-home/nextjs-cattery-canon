@@ -9,7 +9,7 @@ import { Layout } from "src/layout";
 const Success: NextPage = () => {
   const router = useRouter();
   return (
-    <Layout theme="matured">
+    <Layout theme='retired'>
       <PageSEO
         title={`Success- ${siteMetadata.author}`}
         description={siteMetadata.description}
