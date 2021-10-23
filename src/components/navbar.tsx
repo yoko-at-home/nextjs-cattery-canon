@@ -11,7 +11,7 @@ const items = [
   { href: "/available", label: "Available" },
   { href: "/retired", label: "Retired" },
   { href: "/contact", label: "Contact" },
-  { href: "/faq", label: "よくあるご質問" },
+  { href: "/faq", label: "よくある質問" },
   { href: "/gallery", label: "Gallery" },
   { href: "/links", label: "Links" },
 ];
@@ -48,7 +48,7 @@ export const NavBarMobile: VFC = () => {
   };
   return (
     <>
-      <div className='bg-gray-400 bg-opacity-80 rounded pt-1 px-2 fixed right-5 bottom-28'>
+      <div className='bg-gray-400 bg-opacity-80 rounded pt-1 px-2 fixed right-5 bottom-28 xl:right-96'>
         <button
           type='button'
           className='w-16 h-16 ml-1 mr-1 rounded'
