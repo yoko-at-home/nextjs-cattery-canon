@@ -6,7 +6,7 @@ import { client } from "../../lib/client";
 
 const Home = (props) => {
   return (
-    <Layout theme='baby'>
+    <Layout theme='home'>
       <PageSEO
         title={siteMetadata.title}
         description={siteMetadata.description}
