@@ -15,7 +15,7 @@ type Props = {
 export const Layout: VFC<Props> = (props) => {
   return (
     <div className='flex justify-start w-screen'>
-      <div className='hidden sm:block w-1/6 xl:w-1/6 bg-gradient-to-br from-yellow-900 text-yellow-700 min-h-full rounded-full m-5'>
+      <div className='hidden md:block w-1/6 xl:w-1/6 bg-gradient-to-br from-yellow-900 text-yellow-700 min-h-full rounded-full m-5'>
         <NavBarDesktop />
       </div>
       <div className='w-screen lg:w-5/6 sm:mr-5'>
