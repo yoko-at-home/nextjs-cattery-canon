@@ -7,17 +7,17 @@ import { siteMetadata } from "../data/siteMetadata";
 
 type Props = {
   className?: string;
-  type?: "main" | "baby" | "babyGirl" | "matured" | "flower" | "articles";
-  theme?: "main" | "baby" | "babyGirl" | "matured" | "flower" | "articles";
+  type?: "home" | "boys" | "girls" | "retired" | "available" | "articles";
+  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles";
 };
 
 export const Header: VFC<Props> = (props) => {
   const themeImage = {
-    main: "/static/images/header/five-kids.jpg",
-    baby: "/static/images/header/brown-baby-02.jpg",
-    babyGirl: "/static/images/header/four-kittens.jpg",
-    matured: "/static/images/header/maincoon-on-white-background.jpg",
-    flower: "/static/images/header/red-ketten.jpg",
+    home: "/static/images/header/brown-baby-02.jpg",
+    boys: "/static/images/header/five-kids.jpg",
+    girls: "/static/images/header/four-kittens.jpg",
+    retired: "/static/images/header/maincoon-on-white-background.jpg",
+    available: "/static/images/header/red-kitten.jpg",
     articles: "/static/images/header/three-kids.jpg",
   };
 
@@ -27,17 +27,17 @@ export const Header: VFC<Props> = (props) => {
         className={cc([
           "relative",
           {
-            "h-80 bg-gray-500": props.type === "main",
-            "h-screen": props.type === "matured",
-            "h-96 opacity-100": props.type !== "main",
+            "h-4/6": props.type === "home",
+            "h-5/6": props.type === "retired",
+            "h-96": props.type !== "home",
           },
         ])}
       >
         <Image
           layout='fill'
           className='object-center object-cover pointer-events-none'
-          src={themeImage[props.theme || "main"]}
-          alt={"text"}
+          src={themeImage[props.theme || "home"]}
+          alt={"Canon's mainecoons"}
         />
         <h1 className='absolute top-10 p-5 sm:left-10 md:top-14 lg:top-10'>
           <CustomLink href='/home' aria-label='Gen-Scent Research Laboratory'>

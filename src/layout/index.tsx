@@ -8,7 +8,7 @@ import { NavBarDesktop } from "../components/navbar";
 
 type Props = {
   className?: string;
-  theme?: "main" | "baby" | "babyGirl" | "matured" | "flower" | "articles";
+  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles";
   children: ReactNode;
 };
 
@@ -19,6 +19,7 @@ export const Layout: VFC<Props> = (props) => {
         <NavBarDesktop />
       </div>
       <div className='w-screen lg:w-5/6 md:mr-5'>
+        <Header theme={props.theme || "home"} />
         <main className='mx-auto px-5 md:w-full'>{props.children}</main>
         <Footer />
       </div>
