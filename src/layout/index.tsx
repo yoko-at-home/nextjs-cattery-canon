@@ -1,4 +1,5 @@
 import type { ReactNode, VFC } from "react";
+import { Carousel } from "../components/Carousel";
 import { CarouselVertical } from "../components/Carousel/vertical";
 import { NavBarMobile } from "../components/navbar";
 import { Footer } from "./footer";
