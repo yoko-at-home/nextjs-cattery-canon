@@ -44,9 +44,9 @@ export const Header: VFC<Props> = (props) => {
             <div className='flex items-center justify-between mb-8'>
               {typeof siteMetadata.headerTitle === "string" ? (
                 <div
-                  className='h-40 w-screen bg-clip-text text-transparent bg-gradient-to-r from-green-900 to-yellow-900 text-4xl lg:text-5xl xl:text-6xl md:text-4xl font-semibold my-6 md:mb-20 md:mt-12 whitespace-nowrap'
+                  className='min-h-full min-w-full py-5 pr-20 bg-clip-text text-transparent bg-gradient-to-r from-green-900 to-yellow-900 text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold my-6 md:mb-20 md:mt-12 whitespace-nowrap'
                   style={{
-                    textShadow: "2px 10px 6px rgba(99, 51, 7, 0.8)",
+                    textShadow: "2px 10px 6px rgb(99, 51, 7)",
                   }}
                 >
                   {siteMetadata.headerTitle}
