@@ -36,7 +36,7 @@ const AppCard = (props) => {
 
 const Retired = (props) => {
   return (
-    <Layout theme='newsArticles'>
+    <Layout theme='articles'>
       <PageSEO
         title={`Retired - ${siteMetadata.author}`}
         description={siteMetadata.description}

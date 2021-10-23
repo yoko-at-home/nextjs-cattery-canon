@@ -7,7 +7,7 @@ import { NavBarDesktop } from "../components/navbar";
 
 type Props = {
   className?: string;
-  theme?: "main" | "baby" | "matured" | "flower" | "newsArticles";
+  theme?: "main" | "baby" | "babyGirl" | "matured" | "flower" | "articles";
   children: ReactNode;
 };
 

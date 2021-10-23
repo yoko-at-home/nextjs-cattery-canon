@@ -12,7 +12,7 @@ export default function BlogId(props) {
   const publishedAt = props.available.publishedAt;
   const revisedAt = props.available.revisedAt;
   return (
-    <Layout theme='newsArticles'>
+    <Layout theme='articles'>
       <main>
         <h1 className='font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl mt-6 lg:text-center py-12'>
           {props.available.title}
