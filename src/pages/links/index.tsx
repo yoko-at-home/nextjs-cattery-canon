@@ -25,14 +25,16 @@ const links = [
     description:
       "アメリカオハイオ州に本部を置く、The Cat Fanciers’ AssociationのWebサイトです。Mainecoonのホットな情報が掲載されます。",
     url: "https://cfa.org/maine-coon-cat/",
-    backgroundImg: 'url("https://source.unsplash.com/random/242x320?tiger")',
+    backgroundImg:
+      'url("https://source.unsplash.com/random/242x320?ginger?tabby?")',
   },
   {
     title: "The International Cat Association (TICA)",
     description:
       "血統書付き猫と家庭猫の世界最大の登録機関。Canonは正規会員です。",
     url: "https://tica.org/ja/",
-    backgroundImg: 'url("https://source.unsplash.com/random/243x320?nature")',
+    backgroundImg:
+      'url("https://source.unsplash.com/random/243x320?kitten?nature?")',
   },
 ];
 
