@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Lobster", "Kaisei opti", "sans-serif"],
+        sans: ["Kaushan Script", "Kaisei opti", "serif"],
       },
     },
   },
