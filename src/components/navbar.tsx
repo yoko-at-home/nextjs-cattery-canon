@@ -62,7 +62,7 @@ export const NavBarMobile: VFC = () => {
           />
         </button>
         <div
-          className={`fixed w-full h-full top-0 right-0 bg-purple-50 z-10 transform ease-in-out duration-300 ${
+          className={`overflow-auto fixed w-full h-full top-0 right-0 bg-purple-50 z-10 transform ease-in-out duration-300 ${
             isNavShow ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -79,7 +79,7 @@ export const NavBarMobile: VFC = () => {
                   key={href}
                   href={href}
                   onClick={handleOnToggleNav}
-                  className='flex flex-col text-2xl sm:tracking-widest p-1 font-medium mx-auto text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500  opacity-90 hover:text-gray-100 text-right pr-3 sm:py-3'
+                  className='flex flex-col text-2xl sm:tracking-widest p-1 font-medium mx-auto text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-90 hover:text-gray-100 text-right pr-3 sm:py-3'
                 >
                   {label}
                 </CustomLink>
