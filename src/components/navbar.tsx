@@ -16,11 +16,11 @@ const items = [
 
 export const NavBarDesktop: VFC = () => {
   return (
-    <nav className="text-center px-3 pt-5 mt-32 lg:mt-28 max-h-12 hidden sm:block">
+    <nav className='sm:flex flex-col justify-start mt-20 text-center px-2 hidden'>
       {items.map(({ href, label }) => {
         return (
           <Link key={href} href={href}>
-            <a className="flex flex-col mb-3 p-1 text-center font-medium text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 focus:from-green-600 focus:to-yellow-600 opacity-80 mr-1 lg:mr-3 lg:text-xl lg:py-2 hover:text-gray-100 whitespace-nowrap">
+            <a className='mb-3 font-medium text-gray-300 sm:px-4 lg:text-xl py-2 hover:text-green-900 whitespace-nowrap'>
               {label}
             </a>
           </Link>
