@@ -17,7 +17,7 @@ export const PageTitle: VFC<Props> = (props) => {
   return (
     <h1
       className={cc([
-        "bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-green-900 font-extrabold leading-loosee tracking-loose",
+        "bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-green-900 font-extrabold leading-loosee tracking-loose pb-5",
         {
           "my-16 text-4xl": props.type === "large",
           "my-16 text-3xl": props.type === "medium",
