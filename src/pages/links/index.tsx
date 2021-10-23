@@ -36,7 +36,7 @@ const links = [
   },
 ];
 
-const Contact: NextPage = () => {
+const Links: NextPage = () => {
   return (
     <Layout theme='home'>
       <PageSEO
@@ -84,4 +84,4 @@ const Contact: NextPage = () => {
   );
 };
 
-export default Contact;
+export default Links;

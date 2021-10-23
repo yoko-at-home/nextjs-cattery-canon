@@ -19,7 +19,7 @@ const config = {
   // tabFocus: true
 };
 
-const Contact = () => {
+const FAQ = () => {
   return (
     <Layout theme='home'>
       <PageSEO
@@ -40,4 +40,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default FAQ;
