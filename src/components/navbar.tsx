@@ -11,6 +11,7 @@ const items = [
   { href: "/available", label: "Available" },
   { href: "/retired", label: "Retired" },
   { href: "/contact", label: "Contact" },
+  { href: "/faq", label: "よくあるご質問" },
   { href: "/gallery", label: "Gallery" },
 ];
 
