@@ -53,7 +53,6 @@ const Retired = (props) => {
               <div className='wrapper antialiased text-gray-900'>
                 <Link href={`retired/${retired.id}`} passHref>
                   <a className=''>
-                    {!retired.imgSrc ? null : (
                       <picture>
                         <img
                           src={retired.imgSrc?.url}
@@ -61,7 +60,6 @@ const Retired = (props) => {
                           className='w-full object-cover object-center rounded-lg shadow-md'
                         />
                       </picture>
-                    )}
                     <AppCard
                       key={retired.title}
                       title={retired.title}

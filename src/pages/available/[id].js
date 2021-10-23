@@ -4,6 +4,7 @@
 /* eslint-disable @next/next/no-img-element */
 // pages/news/[id].js
 import Link from "next/link";
+import Image from "next/image";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
@@ -11,8 +12,19 @@ import { Date } from "src/lib/date";
 export default function BlogId(props) {
   const publishedAt = props.available.publishedAt;
   const revisedAt = props.available.revisedAt;
+  const imgUrl = props.available.imgSrc.url;
+
   return (
-    <Layout theme='articles'>
+    <Layout>
+      <div className='mx-auto'>
+        <Image
+          className='h-96 w-screen'
+          alt={"Canon's mainecoons"}
+          src={imgUrl}
+          width='600'
+          height='450'
+        />
+      </div>
       <main>
         <h1 className='font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl mt-6 lg:text-center py-12'>
           {props.available.title}

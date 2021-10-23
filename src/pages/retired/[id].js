@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 // pages/retired/[id].js
 import Link from "next/link";
+import Image from "next/image";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
@@ -9,8 +10,18 @@ import { Date } from "src/lib/date";
 export default function retiredId(props) {
   const publishedAt = props.retired.publishedAt;
   const revisedAt = props.retired.revisedAt;
+  const imgUrl = props.retired.imgSrc.url;
+
   return (
-    <Layout theme='articles'>
+    <Layout>
+      <div className='mx-auto md:ml-10'>
+        <Image
+          alt={"Canon's mainecoons"}
+          src={imgUrl}
+          width='600'
+          height='800'
+        />
+      </div>
       <main>
         <h1 className='font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl mt-6 lg:text-center py-12'>
           {props.retired.title}

@@ -24,16 +24,14 @@ const Available = (props) => {
                 <div className='flex flex-row-reverse justify-between'>
                   <Link href={`available/${available.id}`}>
                     <a className='ml-1 lg:ml-10 lg:w-3/12'>
-                      {!available.imgSrc ? null : (
-                        <picture>
-                          <Image
-                            src={available.imgSrc?.url}
-                            alt={available.title}
-                            width='150%'
-                            height='100%'
-                          />
-                        </picture>
-                      )}
+                      <picture>
+                        <Image
+                          src={available.imgSrc?.url}
+                          alt={available.title}
+                          width='150%'
+                          height='100%'
+                        />
+                      </picture>
                     </a>
                   </Link>
                   <div className='flex flex-col w-full'>
