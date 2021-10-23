@@ -17,7 +17,7 @@ export const Footer: VFC = () => {
           <a
             href='mailto:`${siteMetadata.email}`'
             title='Email'
-            className='flex items-center justify-center w-8 h-8 rounded-full bg-yellow-700 text-gray-200'
+            className='flex items-center justify-center w-8 h-8 rounded-full bg-green-700 text-gray-200'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
