@@ -23,7 +23,7 @@ const links = [
   {
     title: "The Cat Fanciers’ Association",
     description:
-      "アメリカオハイオ州に本部を置く、The Cat Fanciers’ AssociationのWebサイトです。Maincoonのホットな情報が掲載されます。",
+      "アメリカオハイオ州に本部を置く、The Cat Fanciers’ AssociationのWebサイトです。Mainecoonのホットな情報が掲載されます。",
     url: "https://cfa.org/maine-coon-cat/",
     backgroundImg: 'url("https://source.unsplash.com/random/242x320?tiger")',
   },
