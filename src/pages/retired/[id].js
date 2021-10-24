@@ -13,6 +13,8 @@ export default function retiredId(props) {
   const publishedAt = props.retired.publishedAt;
   const revisedAt = props.retired.revisedAt;
   const imgUrl = props.retired.imgSrc.url;
+  const imgUrlwidth = props.retired.imgSrc.width;
+  const imgUrlheight = props.retired.imgSrc.height;
 
   return (
     <Layout>
@@ -20,11 +22,12 @@ export default function retiredId(props) {
         title={`引退した子達- ${siteMetadata.author} | ${props.retired.title}`}
         description={siteMetadata.description}
       />
+      <div className='mx-auto'>
         <Image
           alt={"Canon's mainecoons"}
           src={imgUrl}
-          width='600'
-          height='800'
+          width={imgUrlwidth}
+          height={imgUrlheight}
         />
       </div>
       <main>

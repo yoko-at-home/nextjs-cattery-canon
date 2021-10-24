@@ -15,6 +15,8 @@ export default function BlogId(props) {
   const publishedAt = props.available.publishedAt;
   const revisedAt = props.available.revisedAt;
   const imgUrl = props.available.imgSrc.url;
+  const imgUrlwidth = props.available.imgSrc.width * 2;
+  const imgUrlheight = props.available.imgSrc.height * 2;
 
   return (
     <Layout>
@@ -27,8 +29,8 @@ export default function BlogId(props) {
           className='h-96 w-screen'
           alt={"Canon's mainecoons"}
           src={imgUrl}
-          width='600'
-          height='450'
+          width={imgUrlwidth}
+          height={imgUrlheight}
         />
       </div>
       <main>
