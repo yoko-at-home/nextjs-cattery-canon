@@ -16,11 +16,11 @@ const Gallery: NextPage = () => {
       <PageTitle type='medium'>
         Gallery - Cattery Canonの世界を彩る美しい子たち
       </PageTitle>
-      <div className='mt-20 w-full hidden md:block mb-20 ml-24'>
+      <div className='hidden  md:flex justify-center my-20'>
         <GalleryHexagon />
       </div>
       <Carousel />
-      <div className='mt-20 w-full hidden md:block mb-20 ml-24'>
+      <div className='hidden  md:flex justify-center mt-20'>
         <GalleryHexagon />
       </div>
     </Layout>
