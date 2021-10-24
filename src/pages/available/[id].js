@@ -8,6 +8,8 @@ import Image from "next/image";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
+import { PageSEO } from "src/components/SEO";
+import { siteMetadata } from "src/data/siteMetadata";
 
 export default function BlogId(props) {
   const publishedAt = props.available.publishedAt;
@@ -16,6 +18,10 @@ export default function BlogId(props) {
 
   return (
     <Layout>
+      <PageSEO
+        title={`譲渡可能な子達- ${siteMetadata.author} | ${props.available.title}`}
+        description={siteMetadata.description}
+      />
       <div className='mx-auto'>
         <Image
           className='h-96 w-screen'

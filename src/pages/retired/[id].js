@@ -6,6 +6,8 @@ import Image from "next/image";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
+import { PageSEO } from "src/components/SEO";
+import { siteMetadata } from "src/data/siteMetadata";
 
 export default function retiredId(props) {
   const publishedAt = props.retired.publishedAt;
@@ -14,7 +16,10 @@ export default function retiredId(props) {
 
   return (
     <Layout>
-      <div className='mx-auto md:ml-10'>
+      <PageSEO
+        title={`引退した子達- ${siteMetadata.author} | ${props.retired.title}`}
+        description={siteMetadata.description}
+      />
         <Image
           alt={"Canon's mainecoons"}
           src={imgUrl}
