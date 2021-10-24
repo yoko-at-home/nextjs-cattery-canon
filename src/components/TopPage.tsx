@@ -11,10 +11,10 @@ export const TopPage = () => {
         title={`ようこそ！- ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
-      {/* <CustomLink href='/about' aria-label='Cattery Canon'>
-        <div className='absolute -top-5 md:-top-20 right-5 bg-gradient-to-t from-gray-700 to-green-50 rounded-full p-3'>
+      {/* <CustomLink href='/home' aria-label='Cattery Canon'>
+        <div className='z-50 bg-gray-400 bg-opacity-80 rounded pt-1 px-2 fixed right-5 bottom-28 xl:right-96'>
           <img
-            alt='cats'
+            alt="Canons's mainecoon"
             src={"/static/gif/animation_500_cat.gif"}
             className='rounded-full w-16 md:w-24'
           />
