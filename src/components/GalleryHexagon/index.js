@@ -1,43 +1,41 @@
+const data = [
+  {
+    title: "A",
+    url: "http://placekitten.com/200/305",
+  },
+  {
+    title: "B",
+    url: "http://placekitten.com/200/320",
+  },
+  {
+    title: "C",
+    url: "http://placekitten.com/200/310",
+  },
+];
+
 export const GalleryHexagon = () => {
   return (
     <>
-      <article id='lab'>
-        <div className='lab_item'>
-          <div className='hexagon hexagon2'>
-            <div className='hexagon-in1'>
-              <div
-                className='hexagon-in2'
-                style={{
-                  backgroundImage: `url("http://placekitten.com/200/305")`,
-                }}
-              ></div>
-            </div>
-          </div>
-        </div>
-        <div className='lab_item'>
-          <div className='hexagon hexagon2'>
-            <div className='hexagon-in1'>
-              <div
-                className='hexagon-in2'
-                style={{
-                  backgroundImage: `url("http://placekitten.com/200/320")`,
-                }}
-              ></div>
-            </div>
-          </div>
-        </div>
-        <div className='lab_item'>
-          <div className='hexagon hexagon2'>
-            <div className='hexagon-in1'>
-              <div
-                className='hexagon-in2'
-                style={{
-                  backgroundImage: `url("http://placekitten.com/200/310")`,
-                }}
-              ></div>
-            </div>
-          </div>
-        </div>
+      <article title='lab'>
+        <ul className="">
+          {data.map((item) => {
+            return (
+              <div className='lab_item'>
+                <div className='hexagon hexagon2'>
+                  <div className='hexagon-in1'>
+                    <div
+                      key={item.title}
+                      className='hexagon-in2'
+                      style={{
+                        backgroundImage: `url(${item.url})`,
+                      }}
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </ul>
       </article>
 
       <style jsx>
@@ -47,7 +45,6 @@ export const GalleryHexagon = () => {
             overflow: hidden;
             position: relative;
             margin: 0 auto;
-
             -webkit-transition: all ease 500ms;
             -moz-transition: all ease 500ms;
             -o-transition: all ease 500ms;
