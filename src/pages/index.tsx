@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <PageSEO
-        title={`ようこそ！ - ${siteMetadata.author}`}
+        title={`ようこそ、メインクーンの世界へ！ - ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
       <TopPage />
