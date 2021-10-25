@@ -28,7 +28,7 @@ export default function retiredId(props) {
           src={imgUrl}
           width={imgUrlwidth}
           height={imgUrlheight}
-          className='rounded-full nm-flat-gray-300-xs mx-5'
+          className='rounded-full nm-flat-gray-50-xs mx-5'
         />
       </div>
       <main>
