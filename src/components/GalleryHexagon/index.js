@@ -1,11 +1,11 @@
 const data = [
   {
     title: "A",
-    url: "/static/images/retired/pretty-maincoon.jpg",
+    url: "/static/images/retired/retired-1.jpg",
   },
   {
     title: "B",
-    url: "/static/images/retired/retired-1.jpg",
+    url: "/static/images/retired/pretty-maincoon.jpg",
   },
   {
     title: "C",
@@ -17,7 +17,7 @@ export const GalleryHexagon = () => {
   return (
     <>
       <article title='lab'>
-        <ul className="">
+        <ul className=''>
           {data.map((item) => {
             return (
               <div className='lab_item' key={item.title}>
@@ -91,8 +91,8 @@ export const GalleryHexagon = () => {
           }
 
           .hexagon-in2 {
-            -webkit-box-shadow: inset 0 0 0 200px rgba(127, 96, 0, 0.38);
-            box-shadow: inset 0 0 0 200px rgba(127, 96, 0, 0.38);
+            -webkit-box-shadow: inset 0 0 0 200px rgba(127, 96, 0, 0.58);
+            box-shadow: inset 0 0 0 200px rgba(127, 96, 0, 0.58);
             overflow: hidden;
             width: 100%;
             height: 100%;
@@ -118,8 +118,8 @@ export const GalleryHexagon = () => {
           }
 
           .hexagon-in2:hover {
-            -webkit-box-shadow: inset 0 0 0 0px #38761d;
-            box-shadow: inset 0 0 0 0px #38761d;
+            -webkit-box-shadow: inset 0 0 0 0px rgba(22, 56, 09, 0.6);
+            box-shadow: inset 0 0 0 0px rgba(22, 56, 09, 0.6);
           }
 
           .lab_item:nth-child(7n-2) {
