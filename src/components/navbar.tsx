@@ -16,6 +16,11 @@ const items = [
   { href: "/links", label: "Links" },
 ];
 
+type Props = {
+  className?: string;
+  type?: "entrance" | "main";
+};
+
 export const NavBarDesktop: VFC = () => {
   return (
     <nav className='sm:flex flex-col justify-start mt-20 text-center px-2 hidden'>
@@ -32,7 +37,11 @@ export const NavBarDesktop: VFC = () => {
   );
 };
 
-export const NavBarMobile: VFC = () => {
+export const NavBarMobile: VFC<Props> = (props) => {
+  const buttonImage = {
+    entrance: "/static/gif/animation_500_cat.gif",
+    main: "/static/favicons/android-chrome-192x192.png",
+  };
   const [isNavShow, setIsNavShow] = useState(false);
 
   const handleOnToggleNav = () => {
@@ -57,7 +66,7 @@ export const NavBarMobile: VFC = () => {
         >
           <img
             alt='mainecoon'
-            src={"/static/gif/animation_500_cat.gif"}
+            src={buttonImage[props.type || "entrance"]}
             className='rounded-full w-16 md:w-24 z-50'
             width="20px"
             height="20px"
