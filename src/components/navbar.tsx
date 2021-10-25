@@ -28,7 +28,7 @@ export const NavBarDesktop: VFC = () => {
       {items.map(({ href, label }) => {
         return (
           <Link key={href} href={href}>
-            <a className='mb-3 font-medium text-gray-300 sm:px-4 lg:text-xl py-2 hover:text-green-900 whitespace-nowrap'>
+            <a className='mb-3 font-medium text-gray-300 sm:px-4 lg:text-xl py-2 hover:text-green-600 whitespace-nowrap'>
               {label}
             </a>
           </Link>
@@ -58,7 +58,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
   };
   return (
     <>
-      <div className='z-50 bg-gray-400 bg-opacity-80 rounded pt-1 px-2 fixed right-5 bottom-28 xl:right-96'>
+      <div className='z-50 bg-gray-400 bg-opacity-80 rounded pt-1 px-2 fixed right-5 bottom-28 xl:right-96 nm-flat-gray-500'>
         <button
           type='button'
           className='w-16 h-16 ml-1 mr-1 rounded'

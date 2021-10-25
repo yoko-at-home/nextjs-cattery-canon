@@ -13,8 +13,8 @@ export default function retiredId(props) {
   const publishedAt = props.retired.publishedAt;
   const revisedAt = props.retired.revisedAt;
   const imgUrl = props.retired.imgSrc.url;
-  const imgUrlwidth = props.retired.imgSrc.width;
-  const imgUrlheight = props.retired.imgSrc.height;
+  const imgUrlwidth = props.retired.imgSrc.width * 0.8;
+  const imgUrlheight = props.retired.imgSrc.height * 0.8;
 
   return (
     <Layout>
@@ -28,6 +28,7 @@ export default function retiredId(props) {
           src={imgUrl}
           width={imgUrlwidth}
           height={imgUrlheight}
+          className='rounded-full nm-flat-gray-300-xs mx-5'
         />
       </div>
       <main>
@@ -39,7 +40,7 @@ export default function retiredId(props) {
             <div>
               Published:{" "}
               <Date
-                className='text-sm text-blueGray-500 mb-3'
+                className='text-sm text-gray-500 mb-3'
                 dateString={props.retired.publishedAt}
               />
             </div>

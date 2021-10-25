@@ -28,8 +28,9 @@ const Available = (props) => {
                         <Image
                           src={available.imgSrc?.url}
                           alt={available.title}
-                          width='150%'
-                          height='100%'
+                          width={available.imgSrc?.width}
+                          height={available.imgSrc?.height}
+                          className='nm-flat-red-500-lg'
                         />
                       </picture>
                     </a>

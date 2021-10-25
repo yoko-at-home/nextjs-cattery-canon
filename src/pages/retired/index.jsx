@@ -43,23 +43,25 @@ const Retired = (props) => {
       />
 
       <PageTitle type='large'>引退した子達</PageTitle>
-      <div className='divide-y divide-gray-200 '>
+      <div className=''>
         <div className='pt-6 pb-8 space-y-2 md:space-y-5'>
           <p className='text-lg leading-7 text-gray-500 '>引退した子達です。</p>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-10'>
           {props.retired.map((retired) => {
             return (
-              <div className='wrapper antialiased text-gray-900'>
+              <div className='antialiased text-gray-900 nm-flat-gray-200-lg rounded'>
                 <Link href={`retired/${retired.id}`} passHref>
                   <a className=''>
-                      <picture>
-                        <img
-                          src={retired.imgSrc?.url}
-                          alt={retired.title}
-                          className='w-full object-cover object-center rounded-lg shadow-md'
-                        />
-                      </picture>
+                    <picture>
+                      <img
+                        src={retired.imgSrc?.url}
+                        alt={retired.title}
+                        className='w-full object-cover object-center rounded-lg shadow-md'
+                        width={retired.imgSrc?.width}
+                        height={retired.imgSrc?.height}
+                      />
+                    </picture>
                     <AppCard
                       key={retired.title}
                       title={retired.title}

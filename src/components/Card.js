@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export const Card = (props) => {
   return (
+    <div className='p-4' style={{ maxWidth: "544px" }}>
       <div className='h-full overflow-hidden border-2 border-gray-200 rounded-t-2xl nm-concave-gray-100-xl'>
         {props.href ? (
           <Link href={props.href} aria-label={`Link to ${props.title}`} passHref>
@@ -42,9 +43,16 @@ export const Card = (props) => {
 };
 export const CardModal = (props) => {
   return (
+    <div className='p-4' style={{ maxWidth: "800px" }}>
       <div className='flex flex-col md:flex-row h-full overflow-hidden border-2 border-gray-200 rounded-md border-opacity-60 p-3 nm-inset-gray-100-sm'>
         {props.href ? (
-          <a target="_blank" href={props.href} aria-label={`Link to ${props.title}`} passHref rel="noreferrer">
+          <a
+            target='_blank'
+            href={props.href}
+            aria-label={`Link to ${props.title}`}
+            passHref
+            rel='noreferrer'
+          >
             <Image
               alt={props.title}
               src={props.imgSrc}
@@ -62,8 +70,8 @@ export const CardModal = (props) => {
             height={153}
           />
         )}
-        <div className="px-6  md:w-2/3">
-          <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight z-50">
+        <div className='px-6  md:w-2/3'>
+          <h2 className='mb-3 text-2xl font-bold leading-8 tracking-tight z-50'>
             {props.href ? (
               <Link href={props.href} aria-label={`Link to ${props.title}`}>
                 {props.title}
@@ -72,15 +80,19 @@ export const CardModal = (props) => {
               props.title
             )}
           </h2>
-          <p className="mb-3 prose text-gray-500 max-w-none md:max-h-24">{props.description1}</p>
-          <p className="mb-3 prose text-gray-500 max-w-none md:max-h-24">{props.description2}</p>
+          <p className='mb-3 prose text-gray-500 max-w-none md:max-h-24'>
+            {props.description1}
+          </p>
+          <p className='mb-3 prose text-gray-500 max-w-none md:max-h-24'>
+            {props.description2}
+          </p>
           {props.href && (
             <a
-              target="_blank"
+              target='_blank'
               href={props.href}
-              className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 "
+              className='text-base font-medium leading-6 text-primary-500 hover:text-primary-600 '
               aria-label={`Link to ${props.title}`}
-              rel="noreferrer"
+              rel='noreferrer'
             >
               {props.title} 詳細 &rarr;&rarr;&rarr;
             </a>

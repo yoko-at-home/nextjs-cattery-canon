@@ -54,15 +54,15 @@ const Links: NextPage = () => {
                     href={link.url}
                     target='_blank'
                     rel=' noopener'
-                    className='px-3 py-2 font-semibold tracking-wider uppercase bgundefined hover:cursor-pointer'
+                    className='px-3 py-2 font-semibold tracking-wider uppercase hover:cursor-pointer'
                   >
                     <div
-                      className='rounded relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-coolGray-500'
+                      className='rounded relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 dark:bg-gray-500'
                       style={{
                         backgroundImage: link.backgroundImg,
                       }}
                     >
-                      <div className='rounded bg-black bg-opacity-60 absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-coolGray-900'></div>
+                      <div className='rounded bg-black bg-opacity-40 absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-coolGray-900'></div>
                       <div className='absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3'>
                         {link.title}
                         <div className='flex flex-col justify-start text-center'>
