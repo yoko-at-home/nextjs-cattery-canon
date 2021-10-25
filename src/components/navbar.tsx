@@ -6,8 +6,9 @@ import { CustomLink } from "../components/CustomLink";
 const items = [
   { href: "/", label: "Entrance" },
   { href: "/home", label: "Home" },
-  { href: "/mycat/boys", label: "Boys" },
-  { href: "/mycat/girls", label: "Girls" },
+  { href: "/about", label: "About" },
+  { href: "/mycat/boys", label: "My Boys" },
+  { href: "/mycat/girls", label: "My Girls" },
   { href: "/available", label: "Available" },
   { href: "/retired", label: "Retired" },
   { href: "/contact", label: "Contact" },
