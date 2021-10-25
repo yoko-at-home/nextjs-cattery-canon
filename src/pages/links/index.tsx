@@ -10,8 +10,7 @@ const links = [
     description:
       "Canonのブログです。Canonの子供たちの様子や最新情報をお知らせしています。",
     url: "http://catterycanoncat.blog.fc2.com",
-    backgroundImg:
-      'url("https://source.unsplash.com/random/240x320?mainecoon")',
+    backgroundImg: 'url("/static/images/boys/boy.jpg")',
   },
   {
     title: "湘南キャットクラブ",
