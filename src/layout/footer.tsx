@@ -15,7 +15,7 @@ export const Footer: VFC = () => {
         </div>
         <div className='flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13'>
           <a
-            href='mailto:`${siteMetadata.email}`'
+            href={`mailto:${siteMetadata.email}`}
             title='Email'
             className='flex items-center justify-center w-8 h-8 rounded-full bg-green-700 text-gray-200'
           >
