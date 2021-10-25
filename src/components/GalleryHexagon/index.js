@@ -20,11 +20,10 @@ export const GalleryHexagon = () => {
         <ul className="">
           {data.map((item) => {
             return (
-              <div className='lab_item'>
+              <div className='lab_item' key={item.title}>
                 <div className='hexagon hexagon2'>
                   <div className='hexagon-in1'>
                     <div
-                      key={item.title}
                       className='hexagon-in2'
                       style={{
                         backgroundImage: `url(${item.url})`,
