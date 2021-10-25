@@ -66,7 +66,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
           onClick={handleOnToggleNav}
         >
           <img
-            alt='mainecoon'
+            alt='navigation icon'
             src={buttonImage[props.type || "main"]}
             className='rounded-full w-16 md:w-24 z-50'
             width="20px"

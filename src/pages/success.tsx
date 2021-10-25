@@ -22,7 +22,7 @@ const Success: NextPage = () => {
       </div>
       <div className='flex justify-center'>
         <img
-          alt='cats'
+          alt='ご連絡ありがとうございます'
           src={"/static/gif/74797-thank-you-with-confetti.gif"}
           className='rounded-full w-20 md:w-56'
         />
