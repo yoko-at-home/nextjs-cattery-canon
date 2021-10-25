@@ -25,7 +25,7 @@ export const Header: VFC<Props> = (props) => {
     <>
       <header
         className={cc([
-          "relative",
+          "relative rounded nm-flat-gray-400-xl",
           {
             "h-4/6": props.type === "home",
             "h-5/6": props.type === "articles",
@@ -35,7 +35,7 @@ export const Header: VFC<Props> = (props) => {
       >
         <Image
           layout='fill'
-          className='object-center object-cover pointer-events-none'
+          className='rounded object-center object-cover pointer-events-none nm-flat-gray-400-xs'
           src={themeImage[props.theme || "home"]}
           alt={"Canon's mainecoons"}
         />
@@ -57,7 +57,7 @@ export const Header: VFC<Props> = (props) => {
             </div>
           </CustomLink>
         </h1>
-        {props.theme !== "articles" && <NavBarMobile type="main"/>}
+        {props.theme !== "articles" && <NavBarMobile type='main' />}
       </header>
     </>
   );

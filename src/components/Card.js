@@ -3,8 +3,7 @@ import Link from "next/link";
 
 export const Card = (props) => {
   return (
-    <div className="p-4" style={{ maxWidth: "544px" }}>
-      <div className="h-full overflow-hidden border-2 border-gray-200 rounded-t-2xl">
+      <div className='h-full overflow-hidden border-2 border-gray-200 rounded-t-2xl nm-concave-gray-100-xl'>
         {props.href ? (
           <Link href={props.href} aria-label={`Link to ${props.title}`} passHref>
             <Image
@@ -43,14 +42,13 @@ export const Card = (props) => {
 };
 export const CardModal = (props) => {
   return (
-    <div className="p-4" style={{ maxWidth: "800px" }}>
-      <div className="flex flex-col md:flex-row h-full overflow-hidden border-2 border-gray-200 rounded-md border-opacity-60 p-3">
+      <div className='flex flex-col md:flex-row h-full overflow-hidden border-2 border-gray-200 rounded-md border-opacity-60 p-3 nm-inset-gray-100-sm'>
         {props.href ? (
           <a target="_blank" href={props.href} aria-label={`Link to ${props.title}`} passHref rel="noreferrer">
             <Image
               alt={props.title}
               src={props.imgSrc}
-              className="object-cover object-center lg:h-48 md:h-36"
+              className='object-cover object-center lg:h-48 md:h-36 nm-concave-gray-100-xl'
               width={272}
               height={153}
             />
@@ -59,7 +57,7 @@ export const CardModal = (props) => {
           <Image
             alt={props.title}
             src={props.imgSrc}
-            className="object-cover object-center lg:h-48 md:h-36"
+            className='object-cover object-center lg:h-48 md:h-36 nm-concave-gray-100-xl'
             width={272}
             height={153}
           />

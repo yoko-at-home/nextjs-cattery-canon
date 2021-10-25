@@ -48,7 +48,7 @@ export const FormContact = () => {
                 id='fullname'
                 name='fullname'
                 type='text'
-                className='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+                className='nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
                 placeholder='お名前'
                 autoComplete='name'
                 required
@@ -61,7 +61,7 @@ export const FormContact = () => {
                 id='labo'
                 name='labo'
                 type='tel'
-                className='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+                className='nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
                 placeholder=''
                 required
               />
@@ -72,7 +72,7 @@ export const FormContact = () => {
                 id='email'
                 name='email'
                 type='email'
-                className='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+                className='nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
                 placeholder='送信可能な形式：name@example.com'
                 autoComplete='email'
                 required
@@ -83,7 +83,7 @@ export const FormContact = () => {
               <textarea
                 id='message'
                 name='message'
-                className='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+                className='nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
                 rows={3}
                 required
                 minLength={20}
@@ -102,10 +102,10 @@ export const FormContact = () => {
                   <span className="ml-2 text-blueGray-500">メールの購読を希望 </span>
                 </label>
               </div> */}
-            <div className='px-4 py-3 bg-gray-50 text-right sm:px-6'>
+            <div className='px-4 py-3 text-right sm:px-6'>
               <button
                 type='submit'
-                className='font-medium shadow-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-offset-2 border border-gray-50  bg-gradient-to-r from-gray-400 to-gray-500 focus:from-purple-700 focus:to-yellow-400 rounded-md text-gray-200'
+                className='nm-concave-gray-400 font-medium shadow-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-offset-2 bg-gradient-to-r from-gray-400 to-gray-500 focus:from-purple-700 focus:to-yellow-400 rounded-md text-gray-200'
               >
                 送信
               </button>

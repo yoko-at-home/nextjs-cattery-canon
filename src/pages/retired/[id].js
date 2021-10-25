@@ -22,7 +22,7 @@ export default function retiredId(props) {
         title={`引退した子達- ${siteMetadata.author} | ${props.retired.title}`}
         description={siteMetadata.description}
       />
-      <div className='mx-auto'>
+      <div className='mx-auto flex justify-center rounded-lg nm-inset-gray-200-sm'>
         <Image
           alt={"Canon's mainecoons"}
           src={imgUrl}

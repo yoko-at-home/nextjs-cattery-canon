@@ -21,7 +21,7 @@ const Available = (props) => {
           {props.available.map((available) => {
             return (
               <li key={available.id} className='mb-8'>
-                <div className='flex flex-row-reverse justify-between'>
+                <div className='flex flex-row-reverse justify-between  p-6 nm-inset-gray-50-lg'>
                   <Link href={`available/${available.id}`}>
                     <a className='ml-1 lg:ml-10 lg:w-3/12'>
                       <picture>

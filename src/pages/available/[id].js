@@ -24,13 +24,13 @@ export default function BlogId(props) {
         title={`譲渡可能な子達- ${siteMetadata.author} | ${props.available.title}`}
         description={siteMetadata.description}
       />
-      <div className='mx-auto'>
+      <div className='mx-auto flex justify-center rounded-lg nm-flat-gray-300-xl'>
         <Image
-          className='h-96 w-screen'
           alt={"Canon's mainecoons"}
           src={imgUrl}
           width={imgUrlwidth}
           height={imgUrlheight}
+          className='rounded nm-flat-gray-500-xl'
         />
       </div>
       <main>

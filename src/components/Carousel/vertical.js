@@ -42,13 +42,27 @@ export const CarouselVertical = () => {
   return (
     <>
       <div ref={sliderRef} className='keen-slider'>
-        <div className='keen-slider__slide number-slide1'>AA</div>
-        <div className='keen-slider__slide number-slide2'>BB</div>
-        <div className='keen-slider__slide number-slide3'>CC</div>
-        <div className='keen-slider__slide number-slide4'>DD</div>
-        <div className='keen-slider__slide number-slide5'>EE</div>
-        <div className='keen-slider__slide number-slide6'>FF</div>
-        <div className='keen-slider__slide number-slide7'>GG</div>
+        <div className='keen-slider__slide number-slide1 nm-inset-black-sm'>
+          AA
+        </div>
+        <div className='keen-slider__slide number-slide2 nm-inset-black-sm'>
+          BB
+        </div>
+        <div className='keen-slider__slide number-slide3 nm-inset-black-sm'>
+          CC
+        </div>
+        <div className='keen-slider__slide number-slide4 nm-inset-black-sm'>
+          DD
+        </div>
+        <div className='keen-slider__slide number-slide5 nm-inset-black-sm'>
+          EE
+        </div>
+        <div className='keen-slider__slide number-slide6 nm-inset-black-sm'>
+          FF
+        </div>
+        <div className='keen-slider__slide number-slide7 nm-inset-black-sm'>
+          GG
+        </div>
       </div>
       <style jsx>{`
         [class^="number-slide"],
@@ -62,6 +76,8 @@ export const CarouselVertical = () => {
           height: 120vh;
           min-height: 120vh;
           border-radius: 5px;
+          margin: 5px;
+          padding: 3px;
         }
         .number-slide1 {
           background: center/cover no-repeat
