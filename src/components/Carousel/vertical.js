@@ -2,7 +2,6 @@
 import "keen-slider/keen-slider.min.css";
 
 import { useKeenSlider } from "keen-slider/react";
-import { title } from "process";
 import { useEffect, useRef, useState } from "react";
 
 const data = [
@@ -91,7 +90,7 @@ export const CarouselVertical = () => {
         {data.map((item) => {
           return (
             <div
-              className='keen-slider__slide number-slide nm-inset-black-sm'
+              className='keen-slider__slide number-slide nm-inset-gray-800-sm'
               style={item.url}
               id={item.title}
             >

@@ -4,6 +4,51 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useEffect, useRef, useState } from "react";
 
+const data = [
+  {
+    title: "",
+    url: {
+      background:
+        'center/cover no-repeat url("/static/images/0_top/mainecoon-girls.jpg")',
+    },
+  },
+  {
+    title: "",
+    url: {
+      background:
+        'center/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
+    },
+  },
+  {
+    title: "",
+    url: {
+      background:
+        'center/cover no-repeat url("/static/images/0_top/baby-mainecoon.jpg")',
+    },
+  },
+  {
+    title: "",
+    url: {
+      background:
+        'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
+    },
+  },
+  {
+    title: "",
+    url: {
+      background:
+        'center/cover no-repeat url("/static/images/0_top/mainecoon.jpg")',
+    },
+  },
+  {
+    title: "",
+    url: {
+      background:
+        'center/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
+    },
+  },
+];
+
 export const Carousel = () => {
   const [pause, setPause] = useState(false);
   const timer = useRef();
@@ -41,13 +86,17 @@ export const Carousel = () => {
   return (
     <>
       <div ref={sliderRef} className='keen-slider'>
-        <div className='keen-slider__slide number-slide1'></div>
-        <div className='keen-slider__slide number-slide2'></div>
-        <div className='keen-slider__slide number-slide3'></div>
-        <div className='keen-slider__slide number-slide4'></div>
-        <div className='keen-slider__slide number-slide5'></div>
-        <div className='keen-slider__slide number-slide6'></div>
-        <div className='keen-slider__slide number-slide7'></div>
+        {data.map((item) => {
+          return (
+            <div
+              className='keen-slider__slide number-slide nm-inset-gray-100-sm'
+              style={item.url}
+              id={item.title}
+            >
+              {item.title}
+            </div>
+          );
+        })}
       </div>
       <style jsx>{`
         [class^="number-slide"],
@@ -61,34 +110,6 @@ export const Carousel = () => {
           height: 120vh;
           min-height: 120vh;
           border-radius: 5px;
-        }
-        .number-slide1 {
-          background: center/cover no-repeat
-            url("/static/images/0_top/mainecoon-girls.jpg");
-        }
-        .number-slide2 {
-          background: center/cover no-repeat
-            url("/static/images/0_top/painting-green.jpg");
-        }
-        .number-slide3 {
-          background: center/cover no-repeat
-            url("/static/images/0_top/mainecoon-sleeping-baby.jpg");
-        }
-        .number-slide4 {
-          background: center/cover no-repeat
-            url("/static/images/0_top/baby-mainecoon.jpg");
-        }
-        .number-slide5 {
-          background: top/cover no-repeat
-            url("/static/images/0_top/IMG_1795.jpg");
-        }
-        .number-slide6 {
-          background: center/cover no-repeat
-            url("/static/images/0_top/mainecoon.jpg");
-        }
-        .number-slide7 {
-          background: center/cover no-repeat
-            url("https://source.unsplash.com/500x800/?autumn");
         }
       `}</style>
     </>
