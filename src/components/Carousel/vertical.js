@@ -2,7 +2,15 @@
 import "keen-slider/keen-slider.min.css";
 
 import { useKeenSlider } from "keen-slider/react";
+import { title } from "process";
 import { useEffect, useRef, useState } from "react";
+
+const data = [
+  {
+  title: "AA",
+  url:`background: center/cover no-repeat url("/static/images/0_top/mainecoon-girls.jpg")`,
+  },
+]
 
 export const CarouselVertical = () => {
   const [pause, setPause] = useState(false);
@@ -42,8 +50,8 @@ export const CarouselVertical = () => {
   return (
     <>
       <div ref={sliderRef} className='keen-slider'>
-        <div className='keen-slider__slide number-slide1 nm-inset-black-sm'>
-          AA
+        <div className='keen-slider__slide nm-inset-black-sm' style={data.url}>
+          {data.title}
         </div>
         <div className='keen-slider__slide number-slide2 nm-inset-black-sm'>
           BB
@@ -105,7 +113,7 @@ export const CarouselVertical = () => {
         }
         .number-slide7 {
           background: center/cover no-repeat
-            url("https://source.unsplash.com/500x800/?autumn");
+            url("/static/images/0_top/mainecoon-baby.jpg");
         }
       `}</style>
     </>
