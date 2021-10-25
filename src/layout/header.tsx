@@ -28,8 +28,8 @@ export const Header: VFC<Props> = (props) => {
           "relative",
           {
             "h-4/6": props.type === "home",
-            "h-5/6": props.type === "retired",
-            "h-96": props.type !== "home",
+            "h-5/6": props.type === "articles",
+            "h-96": props.type !== "retired",
           },
         ])}
       >
@@ -57,7 +57,7 @@ export const Header: VFC<Props> = (props) => {
             </div>
           </CustomLink>
         </h1>
-        {props.theme !== "articles" && <NavBarMobile />}
+        {props.theme !== "articles" && <NavBarMobile type="main"/>}
       </header>
     </>
   );

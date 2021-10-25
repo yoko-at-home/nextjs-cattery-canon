@@ -67,7 +67,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
         >
           <img
             alt='mainecoon'
-            src={buttonImage[props.type || "entrance"]}
+            src={buttonImage[props.type || "main"]}
             className='rounded-full w-16 md:w-24 z-50'
             width="20px"
             height="20px"

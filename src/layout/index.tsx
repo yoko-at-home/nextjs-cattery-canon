@@ -35,7 +35,7 @@ export const LayoutCarousel: VFC<Props> = (props) => {
     <div className='relative'>
       <Carousel />
       <main className='absolute top-20 md:top-40'>{props.children}</main>
-      <NavBarMobile />
+      <NavBarMobile type="entrance"/>
     </div>
   );
 };
