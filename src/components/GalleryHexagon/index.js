@@ -1,15 +1,15 @@
 const data = [
   {
     title: "A",
-    url: "http://placekitten.com/200/305",
+    url: "/static/images/retired/pretty-maincoon.jpg",
   },
   {
     title: "B",
-    url: "http://placekitten.com/200/320",
+    url: "/static/images/retired/retired-1.jpg",
   },
   {
     title: "C",
-    url: "http://placekitten.com/200/310",
+    url: "/static/images/retired/retired-2.jpg",
   },
 ];
 
