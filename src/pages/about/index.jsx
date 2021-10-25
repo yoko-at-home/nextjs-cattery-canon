@@ -8,7 +8,7 @@ const About = (props) => {
   return (
     <Layout theme='retired'>
       <PageSEO
-        title={siteMetadata.title}
+        title={`メインクーンについて- ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
 
