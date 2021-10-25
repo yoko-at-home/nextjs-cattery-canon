@@ -58,7 +58,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
   };
   return (
     <>
-      <div className='z-50 bg-gray-400 bg-opacity-80 rounded pt-1 px-2 fixed right-5 bottom-28 xl:right-96 nm-flat-gray-500'>
+      <div className='z-50 bg-gray-400 bg-opacity-80 rounded pt-1 px-2 fixed right-5 bottom-28 xl:right-96 nm-inset-gray-500'>
         <button
           type='button'
           className='w-16 h-16 ml-1 mr-1 rounded'
