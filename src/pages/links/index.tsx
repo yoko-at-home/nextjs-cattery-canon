@@ -43,7 +43,7 @@ const Links: NextPage = () => {
         description={siteMetadata.description}
       />
 
-      <PageTitle type='large'>リンク集 - Canonのおすすめサイト</PageTitle>
+      <PageTitle type='large'>リンク集 - Canon のおすすめサイト</PageTitle>
       <div className='divide-y divide-gray-200 '>
         <div className='container pb-12'>
           <div className='text-white max-w-screen-xl p-5 mx-auto dark:bg-coolGray-800'>

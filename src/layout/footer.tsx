@@ -3,11 +3,15 @@ import { NavBarMobile } from "../components/navbar";
 import { siteMetadata } from "../data/siteMetadata";
 
 import { CustomLink } from "../components/CustomLink";
+import { Logo } from "src/components/Logo";
 
 export const Footer: VFC = () => {
   return (
     <footer>
       <div className='flex flex-col items-center mt-16 justify-center'>
+        <div className='hidden md:flex justify-center mb-16'>
+          <Logo />
+        </div>
         <div className='flex mb-2 space-x-2 text-sm text-gray-500 '>
           <div>{siteMetadata.author}</div>
           <div>{` • `}</div>

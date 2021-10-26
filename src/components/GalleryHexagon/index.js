@@ -1,3 +1,5 @@
+import { Logo } from "../Logo";
+
 const data = [
   {
     title: "A",
@@ -17,6 +19,9 @@ export const GalleryHexagon = () => {
   return (
     <>
       <article title='lab'>
+        <div className='hidden md:flex justify-center mb-16'>
+          <Logo />
+        </div>
         <ul className=''>
           {data.map((item) => {
             return (
@@ -54,7 +59,7 @@ export const GalleryHexagon = () => {
           .lab_item {
             width: 200px;
             height: 230px;
-            margin-right: 7px;
+            // margin-right: 7px;
             position: relative;
             display: inline-block;
           }
