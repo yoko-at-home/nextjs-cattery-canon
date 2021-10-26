@@ -31,7 +31,8 @@ export const Logo = () => {
           top: -25%;
           font-size: 70%; /* 文字サイズ */
           color: rgb(2, 9, 66);
-          box-shadow: 5px 5px 11px rgb(2, 9, 66), -5px -5px 11px rgb(2, 9, 66);
+          box-shadow: 5px 5px 11px rgb(109, 112, 122),
+            -5px -5px 11px rgb(109, 112, 122);
         }
       `}</style>
     </div>
