@@ -19,6 +19,12 @@ const Contact: NextPage = () => {
           <FormContact />
         </div>
       </div>
+      <div className='flex justify-center'>
+        <iframe
+          className='w-full'
+          src='https://embed.lottiefiles.com/animation/16583'
+        />
+      </div>
     </Layout>
   );
 };
