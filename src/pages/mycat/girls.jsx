@@ -33,7 +33,7 @@ const MyBoys = () => {
         title={`Girls - ${siteMetadata.author}`}
         description={siteMetadata.description1}
       />
-      <PageTitle type='medium'>Girls - Cattery Canonの女の子たち</PageTitle>
+      <PageTitle type='large'>Girls - Cattery Canonの女の子たち</PageTitle>
       <div className='divide-y divide-gray-200 '>
         <div className='container py-12'>
           <div className='flex flex-wrap m-4'>
@@ -61,7 +61,7 @@ const MyBoys = () => {
           </div>
 
           <Modal>
-            <div className='bg-white px-2 sm:px-4 md:px-10 py-10 rounded text-gray-500'>
+            <div className='bg-white px-2 sm:px-4 md:px-10 py-10 rounded text-gray-500 nm-concave-gray-100-sm'>
               <h1 className='mt-5'>Girls - Cattery Canonの女の子たち</h1>
               <p>
                 <CardModal

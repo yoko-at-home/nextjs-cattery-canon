@@ -101,7 +101,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
                   key={href}
                   href={href}
                   onClick={handleOnToggleNav}
-                  className='flex flex-col text-2xl sm:tracking-widest p-1 font-medium mx-auto text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-90 hover:text-gray-100 text-right pr-3 sm:py-3'
+                  className='flex flex-col text-2xl sm:tracking-widest p-3 font-medium mx-auto text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-90 hover:text-gray-100 text-right tracking-widest'
                 >
                   {label}
                 </CustomLink>

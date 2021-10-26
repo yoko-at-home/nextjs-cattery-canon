@@ -14,7 +14,7 @@ const About = (props) => {
 
       <div className='divide-y divide-gray-200'>
         <div className='pt-6 md:mt-8 pb-8 space-y-2 md:space-y-5'>
-          <PageTitle type='large'>{props.data.title}</PageTitle>
+          <PageTitle type='x-large'>{props.data.title}</PageTitle>
           {/* <p className="text-lg leading-7 text-gray-500 mt-52">{siteMetadata.description}</p> */}
           <div
             className='text-lg text-green-900 pt-25'
