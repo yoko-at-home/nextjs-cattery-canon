@@ -9,7 +9,7 @@ export const Footer: VFC = () => {
   return (
     <footer>
       <div className='flex flex-col items-center mt-16 justify-center'>
-        <div className='hidden md:flex justify-center mb-16'>
+        <div className='flex justify-center mb-16'>
           <Logo />
         </div>
         <div className='flex mb-2 space-x-2 text-sm text-gray-500 '>
