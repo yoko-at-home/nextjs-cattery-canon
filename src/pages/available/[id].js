@@ -31,7 +31,7 @@ export default function BlogId(props) {
           src={imgUrl}
           width={imgUrlwidth}
           height={imgUrlheight}
-          className="rounded nm-flat-gray-50-xs"
+          className="nm-flat-gray-50-xs"
         />
       </div>
       <main>

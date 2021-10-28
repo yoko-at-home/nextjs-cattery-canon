@@ -24,11 +24,11 @@ export const Header: VFC<Props> = (props) => {
   return (
     <>
       <header>
-        <div className="relative rounded nm-flat-gray-100-xl h-full">
+        <div className="relative nm-flat-gray-100-xl h-full">
           <img
             width="100%"
             height="90%"
-            className="relative rounded object-cover object-center pointer-events-none"
+            className="relative object-cover object-center pointer-events-none"
             src={themeImage[props.theme || "home"]}
             alt={"Canon's mainecoons"}
           />

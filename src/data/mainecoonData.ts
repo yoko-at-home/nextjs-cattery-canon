@@ -28,7 +28,7 @@ export const mainecoonDataBoy = [
 export const mainecoonDataGirl = [
   {
     title: "Girl1",
-    description1: `EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE`,
+    description1: `EEEEEEEEEEEEE`,
     description2: `Rem provident praesentium id labore reprehenderit repellendus fugiat laboriosam itaque ratione a assumenda dolores molestias distinctioRem provident praesentium id labore reprehenderit repellendus fugiat laboriosam itaque ratione a assumenda dolores molestias distinctio111Rem provident praesentium id labore reprehenderit repellendus fugiat laboriosam itaque ratione a assumenda dolores molestias distinctioRem provident praesentium id labore reprehenderit repellendus fugiat laboriosam itaque ratione a assumenda dolores molestias distinctio111`,
     imgSrc: "/static/images/header/baby-on-piano.jpg",
   },

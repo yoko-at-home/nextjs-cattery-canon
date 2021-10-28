@@ -35,7 +35,7 @@ export const Card = (props) => {
             )}
           </h2>
           <p className="prose max-w-none md:overflow-x-auto">{props.description}</p>
-          <p className="mb-3 prose max-w-none md:overflow-x-auto">{props.description2}</p>
+          <p className="mb-3 prose max-w-none overflow-hidden">{props.description2}</p>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@ export const Card = (props) => {
 export const CardModal = (props) => {
   return (
     <div className="p-4" style={{ maxWidth: "800px" }}>
-      <div className="flex flex-col md:flex-row h-full border-2 border-gray-200 rounded-md border-opacity-60 p-3 nm-inset-gray-100-sm">
+      <div className="flex flex-col md:flex-row h-full overflow-hidden border-2 border-gray-200 rounded-md border-opacity-60 p-3 nm-inset-gray-100-sm">
         {props.href ? (
           <a target="_blank" href={props.href} aria-label={`Link to ${props.title}`} passHref rel="noreferrer">
             <Image
@@ -74,7 +74,7 @@ export const CardModal = (props) => {
               props.title
             )}
           </h2>
-          <p className="mb-3 prose text-gray-500 max-w-none overflow-y-auto">{props.description1}</p>
+          <p className="mb-3 prose text-gray-500 max-w-screen overflow-hidden">{props.description1}</p>
           <p className="mb-3 prose text-gray-500 max-w-none overflow-y-scroll">{props.description2}</p>
           {props.href && (
             <a
