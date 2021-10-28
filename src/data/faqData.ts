@@ -1,5 +1,5 @@
 export const faqData = {
-  title: "FAQ - メインクーンとは",
+  title: "飼育について",
   rows: [
     {
       title: "Lorem ipsum dolor sit amet,",
@@ -27,7 +27,7 @@ export const faqData = {
   ],
 };
 export const faqData2 = {
-  title: "FAQ - どのようにしたらメインクーンを譲り受けることができますか？",
+  title: "メインクーンを譲り受けるには？",
   rows: [
     {
       title: "Lorem ipsum dolor sit amet,",
