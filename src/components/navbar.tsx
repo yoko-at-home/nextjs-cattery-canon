@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import type { VFC } from "react";
 import { useState } from "react";
+
 import { CustomLink } from "../components/CustomLink";
 
 const items = [
@@ -24,11 +26,11 @@ type Props = {
 
 export const NavBarDesktop: VFC = () => {
   return (
-    <nav className='sm:flex flex-col justify-start mt-20 text-center px-2 hidden'>
+    <nav className="sm:flex flex-col justify-start mt-20 text-center px-2 hidden">
       {items.map(({ href, label }) => {
         return (
           <Link key={href} href={href}>
-            <a className='mb-3 font-medium text-gray-300 sm:px-4 lg:text-xl py-2 hover:text-green-600 whitespace-nowrap'>
+            <a className="mb-3 font-medium text-gray-300 sm:px-4 lg:text-xl py-2 hover:text-green-600 whitespace-nowrap">
               {label}
             </a>
           </Link>
@@ -58,17 +60,17 @@ export const NavBarMobile: VFC<Props> = (props) => {
   };
   return (
     <>
-      <div className='z-50 bg-gray-400 bg-opacity-80 rounded pt-1 px-2 fixed right-5 bottom-28 xl:right-96 nm-inset-gray-500'>
+      <div className="z-50 bg-gray-400 bg-opacity-80 rounded pt-1 px-2 fixed right-5 bottom-28 xl:right-96 nm-inset-gray-500">
         <button
-          type='button'
-          className='w-16 h-16 ml-1 mr-1 rounded'
-          aria-label='Toggle Menu'
+          type="button"
+          className="w-16 h-16 ml-1 mr-1 rounded"
+          aria-label="Toggle Menu"
           onClick={handleOnToggleNav}
         >
           <img
-            alt='navigation icon'
+            alt="navigation icon"
             src={buttonImage[props.type || "main"]}
-            className='rounded-full w-16 md:w-24 z-50'
+            className="rounded-full w-16 md:w-24 z-50"
             width="20px"
             height="20px"
           />
@@ -89,19 +91,19 @@ export const NavBarMobile: VFC<Props> = (props) => {
           }`}
         >
           <button
-            type='button'
-            aria-label='toggle modal'
-            className='fixed w-full h-4/5 -top-7 cursor-auto focus:outline-none'
+            type="button"
+            aria-label="toggle modal"
+            className="fixed w-full h-4/5 -top-7 cursor-auto focus:outline-none"
             onClick={handleOnToggleNav}
           ></button>
-          <nav className='text-center mt-10 md:mt-40'>
+          <nav className="text-center mt-10 md:mt-40">
             {items.map(({ href, label }) => {
               return (
                 <CustomLink
                   key={href}
                   href={href}
                   onClick={handleOnToggleNav}
-                  className='flex flex-col text-2xl sm:tracking-widest p-3 font-medium mx-auto text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-90 hover:text-gray-100 text-right tracking-widest'
+                  className="flex flex-col text-2xl sm:tracking-widest p-3 font-medium mx-auto text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-90 hover:text-gray-100 text-right tracking-widest"
                 >
                   {label}
                 </CustomLink>

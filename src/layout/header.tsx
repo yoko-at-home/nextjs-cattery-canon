@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import type { VFC } from "react";
+
 import { CustomLink } from "../components/CustomLink";
 import { NavBarMobile } from "../components/navbar";
 import { siteMetadata } from "../data/siteMetadata";

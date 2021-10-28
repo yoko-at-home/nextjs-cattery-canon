@@ -1,16 +1,18 @@
 module.exports = {
-  root: true,
   parser: "@typescript-eslint/parser",
   parserOptions: { project: "./tsconfig.json" },
-  env: { es2021: true, browser: true, jest: true, node: true },
-  plugins: ["simple-import-sort"],
+  settings: { tailwindcss: { groupByResponsive: true } },
+  env: { es2021: true, browser: true, node: true },
+  plugins: ["simple-import-sort", "tailwindcss",],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended",
     "plugin:jsx-a11y/recommended",
     "next",
     "next/core-web-vitals",
     "prettier",
+    "plugin:react-hooks/recommended",
   ],
   rules: {
     "no-console": ["error", { allow: ["warn", "info", "error"] }],
