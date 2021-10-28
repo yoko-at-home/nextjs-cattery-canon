@@ -89,12 +89,17 @@ export const CarouselVertical = () => {
       <div ref={sliderRef} className='keen-slider'>
         {data.map((item) => {
           return (
-            <div
-              className='keen-slider__slide number-slide nm-inset-gray-800-sm'
-              style={item.url}
-              id={item.title}
-            >
-              {item.title}
+            <div className="keen-slider__slide number-slide nm-inset-gray-800-sm" style={item.url} id={item.title}>
+              <div
+                style={{
+                  border: "solid 1px #636363",
+                  textShadow: "3px 3px 5px #ffffff",
+                  color: "#71745b",
+                }}
+                className="backdrop-filter backdrop-blur-lg py-3 pr-5 font-semibold mb-20 mt-12"
+              >
+                {item.title}
+              </div>
             </div>
           );
         })}
