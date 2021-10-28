@@ -9,30 +9,27 @@ const styles = {
   // bgColor: 'white',
   titleTextColor: "green",
   rowTitleColor: "gray",
-  // rowContentColor: 'grey',
-  // arrowColor: "red",
+  rowContentColor: 'grey',
+  arrowColor: "brown",
 };
 
 const config = {
   animate: true,
-  // arrowIcon: "V",
-  // tabFocus: true
+  arrowIcon: "V",
+  tabFocus: true
 };
 
 const FAQ = () => {
   return (
-    <Layout theme='home'>
-      <PageSEO
-        title={`よくある質問 - ${siteMetadata.author}`}
-        description={siteMetadata.description}
-      />
+    <Layout theme="home">
+      <PageSEO title={`FAQ - ${siteMetadata.author}`} description={siteMetadata.description} />
 
-      <PageTitle type='large'>よくある質問にお答えします。</PageTitle>
-      <div className='container '>
-        <div className=' py-12'>
+      <PageTitle type="large">よくある質問にお答えします。</PageTitle>
+      <div className="container">
+        <div className="py-12">
           <Faq data={faqData} styles={styles} config={config} />
         </div>
-        <div className='py-12'>
+        <div className="mt-5 py-12">
           <Faq data={faqData2} styles={styles} config={config} />
         </div>
       </div>

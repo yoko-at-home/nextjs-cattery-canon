@@ -8,22 +8,16 @@ import { Layout } from "src/layout";
 const Contact: NextPage = () => {
   return (
     <Layout theme="home">
-      <PageSEO
-        title={`お問い合わせ - ${siteMetadata.author}`}
-        description={siteMetadata.description}
-      />
+      <PageSEO title={`お問い合わせ - ${siteMetadata.author}`} description={siteMetadata.description} />
 
-      <PageTitle type='large'>Contact -お気軽にお問い合わせください</PageTitle>
-      <div className='divide-y divide-gray-200 '>
-        <div className='container py-12'>
+      <PageTitle type="large">Contact -お気軽にお問い合わせください</PageTitle>
+      <div className="divide-y divide-gray-200 ">
+        <div className="container py-8">
           <FormContact />
         </div>
       </div>
-      <div className='flex justify-center'>
-        <iframe
-          className='w-full'
-          src='https://embed.lottiefiles.com/animation/16583'
-        />
+      <div className="flex justify-center">
+        <iframe className="w-full" src="https://embed.lottiefiles.com/animation/16583" />
       </div>
     </Layout>
   );

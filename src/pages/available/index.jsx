@@ -20,10 +20,10 @@ const Available = (props) => {
         <ul>
           {props.available.map((available) => {
             return (
-              <li key={available.id} className='mb-8'>
-                <div className='flex flex-row-reverse justify-between  p-6 nm-inset-gray-50-lg'>
+              <li key={available.id} className="mb-8">
+                <div className="flex flex-row-reverse justify-between  p-6 nm-inset-gray-50-lg">
                   <Link href={`available/${available.id}`}>
-                    <a className='ml-1 lg:ml-10 lg:w-3/12'>
+                    <a className="ml-1 lg:ml-10 lg:w-3/12">
                       <picture>
                         <Image
                           src={available.imgSrc?.url}
@@ -34,11 +34,11 @@ const Available = (props) => {
                       </picture>
                     </a>
                   </Link>
-                  <div className='flex flex-col w-full'>
+                  <div className="flex flex-col w-full">
                     <Link href={`available/${available.id}`}>
-                      <a className='font-bold'>{available.title}</a>
+                      <a className="font-bold">{available.title}</a>
                     </Link>
-                    <div className='pt-3'>{available.description}</div>
+                    <div className="pt-3">{available.description}</div>
                   </div>
                 </div>
               </li>

@@ -9,6 +9,10 @@ import { Layout } from "src/layout";
 const Success: NextPage = () => {
   const router = useRouter();
   return (
+    <Layout theme="retired">
+      <PageSEO title={`Success- ${siteMetadata.author}`} description={siteMetadata.description} />
+      <PageTitle type="large">{router.query.subject}</PageTitle>
+      <div className="flex justify-center">
     <Layout theme='retired'>
       <PageSEO
         title={`Success- ${siteMetadata.author}`}
@@ -22,10 +26,11 @@ const Success: NextPage = () => {
           className='w-20 md:w-56'
         />
       </div>
-      <div className='container p-3 text-lg'>
-        <div className='mt-10 whitespace-pre-line break-words'>
-          {router.query.text}
-        </div>
+      <div className="container p-3 text-lg">
+        <div className="mt-10 whitespace-pre-line break-words">{router.query.text}</div>
+        {/* <div className="flex justify-center">
+          <img alt="Thanks!" src={"/static/gif/74797-thank-you-with-confetti.gif"} className="w-20 md:w-56" />
+        </div> */}
       </div>
     </Layout>
   );
