@@ -3,33 +3,13 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/jsx-handler-names */
 /* eslint-disable import/no-default-export */
-// import type { NextPage } from "next";
-// import type { VFC } from "react";
 import Link from "next/link";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
-
-// const AppCard: VFC<ItemType> = (props) => {
-const AppCard = (props) => {
-  return (
-    // <div key={props.id}>
-    <div class="relative px-4 -mt-16" key={props.id}>
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex items-baseline">
-          <h4 class="text-green-900 mt-1 text-xl font-semibold uppercase leading-tight truncate">{props.title}</h4>
-        </div>
-        <main className="p-5 z-10">
-          <div className="cursor-pointer p-1 h-28 text-md tracking-tight text-white hover:bg-gray-50 hover:bg-opacity-20 rounded word-break overflow-y-scroll transition ease-in-out duration-500">
-            {props.description}
-          </div>
-        </main>
-      </div>
-    </div>
-  );
-};
+import Image from "next/image";
 
 const Retired = (props) => {
   return (
@@ -45,21 +25,25 @@ const Retired = (props) => {
           {props.retired.map((retired) => {
             return (
               <li key={retired.id} className="mb-8">
-                <div className="flex-none justify-between  p-6">
-                  <Link href={`retired/${retired.id}`} passHref>
+                <div className="flex flex-row justify-between  p-6 nm-inset-gray-50-lg">
+                  <Link href={`retired/${retired.id}`}>
                     <a className="ml-1 lg:ml-10 lg:w-3/12">
                       <picture>
-                        <img
+                        <Image
                           src={retired.imgSrc?.url}
                           alt={retired.title}
-                          className="w-full object-cover object-center rounded-lg shadow-md"
                           width={retired.imgSrc?.width}
                           height={retired.imgSrc?.height}
                         />
                       </picture>
-                      {/* <AppCard key={retired.title} title={retired.title} description={retired.description} /> */}
                     </a>
                   </Link>
+                  <div className="flex flex-col w-full text-gray-600">
+                    <Link href={`retired/${retired.id}`}>
+                      <a className="font-bold pl-3">{retired.title}</a>
+                    </Link>
+                    <div className="pt-3 pl-3">{retired.description}</div>
+                  </div>
                 </div>
               </li>
             );
