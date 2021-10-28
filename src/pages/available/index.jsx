@@ -30,7 +30,6 @@ const Available = (props) => {
                           alt={available.title}
                           width={available.imgSrc?.width}
                           height={available.imgSrc?.height}
-                          className='nm-flat-red-500-lg'
                         />
                       </picture>
                     </a>
