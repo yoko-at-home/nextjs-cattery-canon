@@ -25,7 +25,7 @@ export const Header: VFC<Props> = (props) => {
     <>
       <header
         className={cc([
-          "relative rounded nm-flat-gray-400-xl",
+          "relative rounded nm-flat-gray-100-xl",
           {
             "h-4/6": props.type === "home",
             "h-5/6": props.type === "articles",
@@ -35,7 +35,7 @@ export const Header: VFC<Props> = (props) => {
       >
         <Image
           layout='fill'
-          className='rounded object-center object-cover pointer-events-none nm-flat-gray-400-xs'
+          className='rounded object-center object-cover pointer-events-none'
           src={themeImage[props.theme || "home"]}
           alt={"Canon's mainecoons"}
         />
