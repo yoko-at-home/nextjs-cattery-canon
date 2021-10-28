@@ -17,11 +17,11 @@ export const PageTitle: VFC<Props> = (props) => {
   return (
     <h1
       className={cc([
-        "bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-green-900 font-extrabold leading-loosee tracking-loose pb-5",
+        "bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-green-900 font-extrabold leading-loosee tracking-loose py-10",
         {
-          "mt-16 mb-6 text-4xl md:text-5xl tracking-widest": props.type === "x-large",
-          "mt-16 mb-6 text-4xl": props.type === "large",
-          "mt-16 mb-6 text-3xl": props.type === "medium",
+          "text-4xl md:text-5xl tracking-widest": props.type === "x-large",
+          "text-4xl": props.type === "large",
+          "text-3xl": props.type === "medium",
           "text-lg": props.type === "small",
         },
       ])}
@@ -30,4 +30,3 @@ export const PageTitle: VFC<Props> = (props) => {
     </h1>
   );
 };
-
