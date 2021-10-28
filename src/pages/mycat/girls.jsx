@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable react/jsx-handler-names */
 /* eslint-disable import/no-default-export */
 import { useCallback, useState } from "react";
@@ -45,7 +46,7 @@ const MyBoys = () => {
                     description2={d.description2}
                     key={d.title}
                     // href={d.href}
-                    className="md:w-1/2 md"
+                    className="md:w-1/2"
                   >
                     <Card key={d.href} title={d.title} description={d.description1} imgSrc={d.imgSrc} />
                   </button>
@@ -54,7 +55,7 @@ const MyBoys = () => {
             </div>
 
             <Modal>
-              <div className="bg-white px-2 sm:px-4 md:px-10 py-10 rounded text-gray-500 nm-concave-gray-100-sm">
+              <div className="py-10 px-2 text-gray-500 bg-white rounded sm:px-4 md:px-10 nm-concave-gray-100-sm">
                 <h1 className="mt-5">Girls - {siteMetadata.title} の女の子たち</h1>
                 <p>
                   <CardModal
@@ -68,7 +69,7 @@ const MyBoys = () => {
                 <div className="flex justify-end mt-8">
                   <button
                     onClick={close}
-                    className="rounded p-1 text-center font-medium text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 focus:from-purple-600 focus:to-yellow-600 opacity-80 mb-3 lg:mr-3 lg:py-2 hover:text-gray-100"
+                    className="p-1 mb-3 font-medium text-center text-gray-300 hover:text-gray-100 bg-gradient-to-r from-gray-400 focus:from-purple-600 to-gray-500 focus:to-yellow-600 rounded opacity-80 sm:px-4 lg:py-2 lg:mr-3"
                   >
                     閉じる
                   </button>

@@ -1,15 +1,16 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable react/jsx-key */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/jsx-handler-names */
 /* eslint-disable import/no-default-export */
+import Image from "next/image";
 import Link from "next/link";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
-import Image from "next/image";
 
 const Retired = (props) => {
   return (
@@ -40,7 +41,7 @@ const Retired = (props) => {
                   </Link>
                   <div className="flex flex-col w-full text-gray-600">
                     <Link href={`retired/${retired.id}`}>
-                      <a className="font-bold pl-3">{retired.title}</a>
+                      <a className="pl-3 font-bold">{retired.title}</a>
                     </Link>
                     <div className="pt-3 pl-3">{retired.description}</div>
                   </div>
@@ -53,7 +54,6 @@ const Retired = (props) => {
     </Layout>
   );
 };
-
 
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "retired" });

@@ -1,10 +1,11 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import type { ReactNode, VFC } from "react";
-import { Carousel } from "../components/Carousel";
-import { CarouselVertical } from "../components/Carousel/vertical";
-import { NavBarMobile } from "../components/navbar";
-import { Footer } from "./footer";
-import { Header } from "./header";
-import { NavBarDesktop } from "../components/navbar";
+import { Carousel } from "src/components/Carousel";
+import { CarouselVertical } from "src/components/Carousel/vertical";
+import { NavBarMobile } from "src/components/navbar";
+import { NavBarDesktop } from "src/components/navbar";
+import { Footer } from "src/layout/footer";
+import { Header } from "src/layout/header";
 
 type Props = {
   className?: string;
@@ -14,18 +15,16 @@ type Props = {
 
 export const Layout: VFC<Props> = (props) => {
   return (
-    <div className='flex justify-start w-screen'>
-      <div className='hidden md:block w-1/6 xl:w-1/6 min-h-full rounded-full m-5 nm-inset-yellow-800-lg'>
+    <div className="flex justify-start w-screen">
+      <div className="hidden m-5 w-1/6 min-h-full rounded-full md:block xl:w-1/6 nm-inset-yellow-800">
         <NavBarDesktop />
       </div>
-      <div className='w-full lg:w-5/6 md:mr-5'>
-        <div>
-          {!props.theme ? null : <Header theme={props.theme || "home"} />}
-        </div>
-        <main className='mx-auto px-5 md:w-full'>{props.children}</main>
+      <div className="w-full md:mr-5 lg:w-5/6">
+        <div>{!props.theme ? null : <Header theme={props.theme || "home"} />}</div>
+        <main className="px-5 mx-auto md:w-full">{props.children}</main>
         <Footer />
       </div>
-      <div className='hidden xl:mr-3 xl:block xl:w-2/6'>
+      <div className="hidden xl:block xl:mr-3 xl:w-2/6">
         <CarouselVertical />
       </div>
     </div>
@@ -34,9 +33,9 @@ export const Layout: VFC<Props> = (props) => {
 
 export const LayoutCarousel: VFC<Props> = (props) => {
   return (
-    <div className='relative'>
+    <div className="relative">
       <Carousel />
-      <main className='absolute top-20 md:top-40'>{props.children}</main>
+      <main className="absolute top-20 md:top-40">{props.children}</main>
       <NavBarMobile type="entrance"/>
     </div>
   );

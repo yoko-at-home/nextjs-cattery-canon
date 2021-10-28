@@ -40,50 +40,50 @@ export const FormContact = () => {
   return (
     <div>
       <div>
-        <div className='container sm:p-6 lg:px-20 sm:mt-0'>
+        <div className="container sm:p-6 lg:px-20 sm:mt-0">
           <form onSubmit={handleRegisterUser}>
-            <div className='mb-3'>
-              <label htmlFor='fullname'>お名前</label>
+            <div className="mb-3">
+              <label htmlFor="fullname">お名前</label>
               <input
-                id='fullname'
-                name='fullname'
-                type='text'
-                className='nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
-                placeholder='お名前'
-                autoComplete='name'
+                id="fullname"
+                name="fullname"
+                type="text"
+                className="nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                placeholder="お名前"
+                autoComplete="name"
                 required
                 minLength={3}
               />
             </div>
-            <div className='mb-3'>
-              <label htmlFor='labo'>電話番号</label>
+            <div className="mb-3">
+              <label htmlFor="labo">電話番号</label>
               <input
-                id='labo'
-                name='labo'
-                type='tel'
-                className='nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
-                placeholder=''
+                id="labo"
+                name="labo"
+                type="tel"
+                className="nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                placeholder=""
                 required
               />
             </div>
-            <div className='mb-3'>
-              <label htmlFor='email'>メールアドレス</label>
+            <div className="mb-3">
+              <label htmlFor="email">メールアドレス</label>
               <input
-                id='email'
-                name='email'
-                type='email'
-                className='nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
-                placeholder='送信可能な形式：name@example.com'
-                autoComplete='email'
+                id="email"
+                name="email"
+                type="email"
+                className="nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                placeholder="送信可能な形式：name@example.com"
+                autoComplete="email"
                 required
               />
             </div>
-            <div className='mb-3'>
-              <label htmlFor='message'>問合せ内容</label>
+            <div className="mb-3">
+              <label htmlFor="message">問合せ内容</label>
               <textarea
-                id='message'
-                name='message'
-                className='nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+                id="message"
+                name="message"
+                className="nm-inset-gray-50-lg mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                 rows={3}
                 required
                 minLength={20}
@@ -99,13 +99,13 @@ export const FormContact = () => {
                     onChange={handleOnChange}
                     checked={isCheckboxState}
                   />
-                  <span className="ml-2 text-blueGray-500">メールの購読を希望 </span>
+                  <span className="ml-2 text-gray-500">メールの購読を希望 </span>
                 </label>
               </div> */}
-            <div className='px-4 py-3 text-right sm:px-6'>
+            <div className="px-4 py-3 text-right sm:px-6">
               <button
-                type='submit'
-                className='nm-concave-gray-400 font-medium shadow-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-offset-2 bg-gradient-to-r from-gray-400 to-gray-500 focus:from-purple-700 focus:to-yellow-400 rounded-md text-gray-200'
+                type="submit"
+                className="nm-concave-gray-400 font-medium shadow-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-offset-2 bg-gradient-to-r from-gray-400 to-gray-500 focus:from-purple-700 focus:to-yellow-400 rounded-md text-gray-200"
               >
                 送信
               </button>

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-default-export */
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import { useRouter } from "next/router";

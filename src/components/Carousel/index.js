@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable @typescript-eslint/naming-convention */
 import "keen-slider/keen-slider.min.css";
 
@@ -8,43 +9,37 @@ const data = [
   {
     title: "",
     url: {
-      background:
-        'center/cover no-repeat url("/static/images/0_top/mainecoon-girls.jpg")',
+      background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-girls.jpg")',
     },
   },
   {
     title: "",
     url: {
-      background:
-        'center/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
+      background: 'center/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
     },
   },
   {
     title: "",
     url: {
-      background:
-        'center/cover no-repeat url("/static/images/0_top/baby-mainecoon.jpg")',
+      background: 'center/cover no-repeat url("/static/images/0_top/baby-mainecoon.jpg")',
     },
   },
   {
     title: "",
     url: {
-      background:
-        'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
+      background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
     },
   },
   {
     title: "",
     url: {
-      background:
-        'center/cover no-repeat url("/static/images/0_top/mainecoon.jpg")',
+      background: 'center/cover no-repeat url("/static/images/0_top/mainecoon.jpg")',
     },
   },
   {
     title: "",
     url: {
-      background:
-        'center/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
+      background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
     },
   },
 ];
@@ -85,14 +80,10 @@ export const Carousel = () => {
 
   return (
     <>
-      <div ref={sliderRef} className='keen-slider'>
+      <div ref={sliderRef} className="keen-slider">
         {data.map((item) => {
           return (
-            <div
-              className='keen-slider__slide number-slide nm-inset-gray-100-sm'
-              style={item.url}
-              id={item.title}
-            >
+            <div className="keen-slider__slide number-slide nm-inset-gray-100-sm" style={item.url} key={item.title}>
               {item.title}
             </div>
           );

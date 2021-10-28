@@ -8,11 +8,11 @@ type Props = {
 };
 
 export const PageTitle: VFC<Props> = (props) => {
-  const textSize = {
-    large: "",
-    medium: "",
-    small: "",
-  };
+  // const textSize = {
+  //   large: "",
+  //   medium: "",
+  //   small: "",
+  // };
 
   return (
     <h1

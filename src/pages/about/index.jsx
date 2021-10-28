@@ -1,23 +1,20 @@
-import { PageTitle } from "../../components/PageTitle";
-import { PageSEO } from "../../components/SEO";
-import { siteMetadata } from "../../data/siteMetadata";
-import { Layout } from "../../layout";
-import { client } from "../../lib/client";
+import { PageTitle } from "src/components/PageTitle";
+import { PageSEO } from "src/components/SEO";
+import { siteMetadata } from "src/data/siteMetadata";
+import { Layout } from "src/layout";
+import { client } from "src/lib/client";
 
 const About = (props) => {
   return (
-    <Layout theme='retired'>
-      <PageSEO
-        title={`メインクーンについて- ${siteMetadata.author}`}
-        description={siteMetadata.description}
-      />
+    <Layout theme="retired">
+      <PageSEO title={`メインクーンについて- ${siteMetadata.author}`} description={siteMetadata.description} />
 
-      <div className='divide-y divide-gray-200'>
-        <div className='pt-6 md:mt-8 pb-8 space-y-2 md:space-y-5'>
-          <PageTitle type='x-large'>{props.data.title}</PageTitle>
+      <div className="divide-y divide-gray-200">
+        <div className="pt-6 pb-8 space-y-2 md:mt-8 md:space-y-5">
+          <PageTitle type="x-large">{props.data.title}</PageTitle>
           {/* <p className="text-lg leading-7 text-gray-500 mt-52">{siteMetadata.description}</p> */}
           <div
-            className='text-lg text-green-900 pt-25'
+            className="pt-20 text-lg text-green-900"
             dangerouslySetInnerHTML={{
               // eslint-disable-next-line @typescript-eslint/naming-convention
               __html: `${props.data.body}`,

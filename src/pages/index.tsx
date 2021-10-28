@@ -1,5 +1,7 @@
+/* eslint-disable import/no-default-export */
 import { PageSEO } from "src/components/SEO";
-import { TopPage } from "../components/TopPage";
+import { TopPage } from "src/components/TopPage";
+
 import { siteMetadata } from "../data/siteMetadata";
 
 const Home = () => {

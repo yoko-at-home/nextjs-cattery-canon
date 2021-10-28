@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import { Logo } from "../Logo";
 
 const data = [
@@ -19,7 +20,7 @@ export const GalleryHexagon = () => {
   return (
     <>
       <article title='lab'>
-        <div className='hidden md:flex justify-center mb-16'>
+        <div className='hidden justify-center mb-16 md:flex'>
           <Logo />
         </div>
         <ul className=''>

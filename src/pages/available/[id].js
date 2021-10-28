@@ -3,14 +3,14 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 // pages/news/[id].js
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { PageTitle } from "src/components/PageTitle";
+import { PageSEO } from "src/components/SEO";
+import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
-import { PageSEO } from "src/components/SEO";
-import { siteMetadata } from "src/data/siteMetadata";
-import { PageTitle } from "src/components/PageTitle";
 
 export default function BlogId(props) {
   const publishedAt = props.available.publishedAt;
@@ -25,7 +25,7 @@ export default function BlogId(props) {
         title={`譲渡可能な子達- ${siteMetadata.author} | ${props.available.title}`}
         description={siteMetadata.description}
       />
-      <div className="mx-auto flex justify-center rounded-lg nm-flat-gray-300-xl">
+      <div className="flex justify-center mx-auto rounded-lg nm-flat-gray-300-xl">
         <Image
           alt={"Canon's mainecoons"}
           src={imgUrl}
@@ -37,19 +37,19 @@ export default function BlogId(props) {
       <main>
         <PageTitle
           type="large"
-          className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl mt-6 lg:text-center py-12"
+          className="py-12 mt-6 text-lg font-bold sm:text-xl md:text-3xl lg:text-4xl lg:text-center"
         >
           {props.available.title}
         </PageTitle>
-        <div className="flex flex-col text-right mt-3 mb-10 text-gray-600">
+        <div className="flex flex-col mt-3 mb-10 text-right text-gray-600">
           {publishedAt === revisedAt ? (
             <div>
-              Published: <Date className="text-sm text-blueGray-500 mb-3" dateString={props.available.publishedAt} />
+              Published: <Date className="mb-3 text-sm text-gray-500" dateString={props.available.publishedAt} />
             </div>
           ) : (
             <>
               <div>
-                Published at: <Date className="text-sm text-gray-600 mb-3" dateString={props.available.publishedAt} />
+                Published at: <Date className="mb-3 text-sm text-gray-600" dateString={props.available.publishedAt} />
               </div>
             </>
           )}
@@ -61,7 +61,7 @@ export default function BlogId(props) {
             __html: `${props.available.body}`,
           }}
         />
-        <div className="mt-5 text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-80 p-3 rounded inline-block right-10 md:right-20 lg:right-40">
+        <div className="inline-block right-10 p-3 mt-5 text-gray-300 bg-gradient-to-r from-gray-400 to-gray-500 rounded opacity-80 sm:px-4 md:right-20 lg:right-40">
           <Link href={`/available`}>
             <a className="">Available Top</a>
           </Link>

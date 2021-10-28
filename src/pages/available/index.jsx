@@ -1,22 +1,18 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import Image from "next/image";
 import Link from "next/link";
 import { PageTitle } from "src/components/PageTitle";
-// import { Pagination } from "src/components/Pagination";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
 
-// eslint-disable-next-line react/destructuring-assignment
 const Available = (props) => {
   return (
-    <Layout theme='available'>
-      <PageSEO
-        title={`譲渡可能な子達- ${siteMetadata.author}`}
-        description={siteMetadata.description}
-      />
+    <Layout theme="available">
+      <PageSEO title={`譲渡可能な子達- ${siteMetadata.author}`} description={siteMetadata.description} />
       <PageTitle type="large">譲渡可能な子達</PageTitle>
-      <div className='mt-10'>
+      <div className="mt-10">
         <ul>
           {props.available.map((available) => {
             return (
