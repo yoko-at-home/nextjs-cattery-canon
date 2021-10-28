@@ -10,6 +10,7 @@ type Props = {
   className?: string;
   type?: "home" | "boys" | "girls" | "retired" | "available" | "articles";
   theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles";
+  photographer?: "tetsu" | "yamashita";
 };
 
 export const Header: VFC<Props> = (props) => {

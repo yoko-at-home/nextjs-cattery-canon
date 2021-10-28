@@ -30,7 +30,7 @@ const MyBoys = () => {
 
   return (
     <div className="bg-purple-100">
-      <Layout theme="girls">
+      <Layout theme="girls" photographer="tetsu">
         <PageSEO title={`Girls - ${siteMetadata.author}`} description={siteMetadata.description1} />
         <PageTitle type="large">Girls - {siteMetadata.title} の女の子たち</PageTitle>
         <div className="divide-y divide-gray-200 ">

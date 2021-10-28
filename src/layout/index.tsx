@@ -11,6 +11,7 @@ type Props = {
   className?: string;
   theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles";
   children: ReactNode;
+  photographer?: "tetsu" | "yamashita";
 };
 
 export const Layout: VFC<Props> = (props) => {
@@ -21,6 +22,9 @@ export const Layout: VFC<Props> = (props) => {
       </div>
       <div className="w-full md:mr-5 lg:w-5/6">
         <div>{!props.theme ? null : <Header theme={props.theme || "home"} />}</div>
+        <p className="text-right text-gray-600 ">
+          {props.photographer !== "tetsu" ? "Photo: Yoshihiko Yamashita" : "Photo: Tstsu"}
+        </p>
         <main className="px-5 mx-auto md:w-full">{props.children}</main>
         <Footer />
       </div>
