@@ -1,5 +1,3 @@
-import cc from "classcat";
-import Image from "next/image";
 import type { VFC } from "react";
 import { CustomLink } from "../components/CustomLink";
 import { NavBarMobile } from "../components/navbar";
@@ -23,40 +21,34 @@ export const Header: VFC<Props> = (props) => {
 
   return (
     <>
-      <header
-        className={cc([
-          "relative rounded nm-flat-gray-100-xl",
-          {
-            "h-4/6": props.type === "home",
-            "h-5/6": props.type === "articles",
-            "h-96": props.type !== "retired",
-          },
-        ])}
-      >
-        <Image
-          layout='fill'
-          className='rounded object-center object-cover pointer-events-none'
-          src={themeImage[props.theme || "home"]}
-          alt={"Canon's mainecoons"}
-        />
-        <h1 className='absolute top-10 p-5 sm:left-10 md:top-14 lg:top-10'>
-          <CustomLink href='/home' aria-label='Gen-Scent Research Laboratory'>
-            <div className='flex items-center justify-between mb-8'>
-              {typeof siteMetadata.headerTitle === "string" ? (
-                <div
-                  className='min-h-full min-w-full py-5 pr-20 text-green-900 text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold my-6 md:mb-20 md:mt-12 whitespace-nowrap'
-                  style={{
-                    textShadow: "5px 5px 6px rgb(99, 51, 7, .6)",
-                  }}
-                >
-                  {siteMetadata.headerTitle}
-                </div>
-              ) : (
-                siteMetadata.headerTitle
-              )}
-            </div>
-          </CustomLink>
-        </h1>
+      <header>
+        <div className='relative rounded nm-flat-gray-100-xl h-full'>
+          <img
+            width='100%'
+            height='90%'
+            className='relative rounded object-cover object-center pointer-events-none'
+            src={themeImage[props.theme || "home"]}
+            alt={"Canon's mainecoons"}
+          />
+          <h1 className='absolute top-10 p-5 sm:left-10 md:top-14 lg:top-10'>
+            <CustomLink href='/home' aria-label='Gen-Scent Research Laboratory'>
+              <div className='flex items-center justify-between mb-8'>
+                {typeof siteMetadata.headerTitle === "string" ? (
+                  <div
+                    className='min-h-full min-w-full py-5 pr-20 text-green-900 text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold my-6 md:mb-20 md:mt-12 whitespace-nowrap'
+                    style={{
+                      textShadow: "5px 5px 6px rgb(99, 51, 7, .6)",
+                    }}
+                  >
+                    {siteMetadata.headerTitle}
+                  </div>
+                ) : (
+                  siteMetadata.headerTitle
+                )}
+              </div>
+            </CustomLink>
+          </h1>
+        </div>
         {props.theme !== "articles" && <NavBarMobile type='main' />}
       </header>
     </>
