@@ -10,6 +10,7 @@ import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
+import { PageTitle } from "src/components/PageTitle";
 
 export default function BlogId(props) {
   const publishedAt = props.available.publishedAt;
@@ -24,49 +25,45 @@ export default function BlogId(props) {
         title={`譲渡可能な子達- ${siteMetadata.author} | ${props.available.title}`}
         description={siteMetadata.description}
       />
-      <div className='mx-auto flex justify-center rounded-lg nm-flat-gray-300-xl'>
+      <div className="mx-auto flex justify-center rounded-lg nm-flat-gray-300-xl">
         <Image
           alt={"Canon's mainecoons"}
           src={imgUrl}
           width={imgUrlwidth}
           height={imgUrlheight}
-          className='rounded nm-flat-gray-50-xs'
+          className="rounded nm-flat-gray-50-xs"
         />
       </div>
       <main>
-        <h1 className='font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl mt-6 lg:text-center py-12'>
+        <PageTitle
+          type="large"
+          className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl mt-6 lg:text-center py-12"
+        >
           {props.available.title}
-        </h1>
-        <div className='flex flex-col text-right mt-3 mb-10'>
+        </PageTitle>
+        <div className="flex flex-col text-right mt-3 mb-10 text-gray-600">
           {publishedAt === revisedAt ? (
             <div>
-              Published:{" "}
-              <Date
-                className='text-sm text-blueGray-500 mb-3'
-                dateString={props.available.publishedAt}
-              />
+              Published: <Date className="text-sm text-blueGray-500 mb-3" dateString={props.available.publishedAt} />
             </div>
           ) : (
             <>
               <div>
-                Published at:{" "}
-                <Date
-                  className='text-sm text-blueGray-500 mb-3'
-                  dateString={props.available.publishedAt}
-                />
+                Published at: <Date className="text-sm text-gray-600 mb-3" dateString={props.available.publishedAt} />
               </div>
             </>
           )}
         </div>
         <div
+          className="text-gray-600"
           dangerouslySetInnerHTML={{
             // eslint-disable-next-line @typescript-eslint/naming-convention
             __html: `${props.available.body}`,
           }}
         />
-        <div className='mt-5 text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-80 p-3 rounded inline-block right-10 md:right-20 lg:right-40'>
+        <div className="mt-5 text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-80 p-3 rounded inline-block right-10 md:right-20 lg:right-40">
           <Link href={`/available`}>
-            <a className=''>Available Top</a>
+            <a className="">Available Top</a>
           </Link>
         </div>
       </main>

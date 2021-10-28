@@ -8,6 +8,7 @@ import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
+import { PageTitle } from "src/components/PageTitle";
 
 export default function retiredId(props) {
   const publishedAt = props.retired.publishedAt;
@@ -22,36 +23,31 @@ export default function retiredId(props) {
         title={`引退した子達- ${siteMetadata.author} | ${props.retired.title}`}
         description={siteMetadata.description}
       />
-      <div className='mx-auto flex justify-center rounded-lg nm-inset-gray-200-sm'>
+      <div className="mx-auto flex justify-center rounded-lg nm-inset-gray-200-sm">
         <Image
           alt={"Canon's mainecoons"}
           src={imgUrl}
           width={imgUrlwidth}
           height={imgUrlheight}
-          className='rounded-full nm-flat-gray-50-xs mx-5'
+          className="rounded-full nm-flat-gray-50-xs mx-5"
         />
       </div>
       <main>
-        <h1 className='font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl mt-6 lg:text-center py-12'>
+        <PageTitle
+          type="large"
+          className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl mt-6 lg:text-center py-12"
+        >
           {props.retired.title}
-        </h1>
-        <div className='flex flex-col text-right mt-3 mb-10'>
+        </PageTitle>
+        <div className="flex flex-col text-right mt-3 mb-10">
           {publishedAt === revisedAt ? (
             <div>
-              Published:{" "}
-              <Date
-                className='text-sm text-gray-500 mb-3'
-                dateString={props.retired.publishedAt}
-              />
+              Published: <Date className="text-sm text-gray-600 mb-3" dateString={props.retired.publishedAt} />
             </div>
           ) : (
             <>
               <div>
-                Published at:{" "}
-                <Date
-                  className='text-sm text-blueGray-500 mb-3'
-                  dateString={props.retired.publishedAt}
-                />
+                Published at: <Date className="text-sm text-gray-600 mb-3" dateString={props.retired.publishedAt} />
               </div>
             </>
           )}
@@ -62,9 +58,9 @@ export default function retiredId(props) {
             __html: `${props.retired.body}`,
           }}
         />
-        <div className='mt-5 text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-80 p-3 rounded inline-block right-10 md:right-20 lg:right-40'>
+        <div className="mt-5 text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 opacity-80 p-3 rounded inline-block right-10 md:right-20 lg:right-40">
           <Link href={`/retired`}>
-            <a className=''>Retired Top</a>
+            <a className="">Retired Top</a>
           </Link>
         </div>
       </main>
