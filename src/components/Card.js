@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export const Card = (props) => {
   return (
-    <div className='p-4' style={{ maxWidth: "544px" }}>
-      <div className='h-full overflow-hidden border-2 border-gray-200 rounded-t-2xl nm-concave-gray-100-xl'>
+    <div className="p-4" style={{ maxWidth: "544px" }}>
+      <div className="flex flex-col nm-flat-gray-200-sm flex-start h-full overflow-scroll border-2 border-gray-200">
         {props.href ? (
           <Link href={props.href} aria-label={`Link to ${props.title}`} passHref>
             <Image
               alt={props.title}
               src={props.imgSrc}
-              className="object-cover object-center lg:h-52 md:h-40"
+              className="object-cover object-center lg:h-52 md:h-40 nm-inset-gray-50-xs"
               width={544}
               height={306}
             />
@@ -24,7 +24,7 @@ export const Card = (props) => {
             height={544}
           />
         )}
-        <div className="p-6">
+        <div className="p-6 text-gray-500 bg-white">
           <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight z-50">
             {props.href ? (
               <Link href={props.href} aria-label={`Link to ${props.title}`}>
@@ -34,8 +34,8 @@ export const Card = (props) => {
               props.title
             )}
           </h2>
-          <p className="prose text-gray-500 max-w-none md:overflow-x-auto">{props.description}</p>
-          <p className="mb-3 prose text-gray-500 max-w-none md:overflow-x-auto">{props.description2}</p>
+          <p className="prose max-w-none md:overflow-x-auto">{props.description}</p>
+          <p className="mb-3 prose max-w-none md:overflow-x-auto">{props.description2}</p>
         </div>
       </div>
     </div>
@@ -43,20 +43,14 @@ export const Card = (props) => {
 };
 export const CardModal = (props) => {
   return (
-    <div className='p-4' style={{ maxWidth: "800px" }}>
-      <div className='flex flex-col md:flex-row h-full overflow-hidden border-2 border-gray-200 rounded-md border-opacity-60 p-3 nm-inset-gray-100-sm'>
+    <div className="p-4" style={{ maxWidth: "800px" }}>
+      <div className="flex flex-col md:flex-row h-full border-2 border-gray-200 rounded-md border-opacity-60 p-3 nm-inset-gray-100-sm">
         {props.href ? (
-          <a
-            target='_blank'
-            href={props.href}
-            aria-label={`Link to ${props.title}`}
-            passHref
-            rel='noreferrer'
-          >
+          <a target="_blank" href={props.href} aria-label={`Link to ${props.title}`} passHref rel="noreferrer">
             <Image
               alt={props.title}
               src={props.imgSrc}
-              className='object-cover object-center lg:h-48 md:h-36 nm-concave-gray-100-xl'
+              className="object-cover object-center lg:h-48 md:h-36 nm-concave-gray-100-xl"
               width={272}
               height={153}
             />
@@ -65,13 +59,13 @@ export const CardModal = (props) => {
           <Image
             alt={props.title}
             src={props.imgSrc}
-            className='object-cover object-center lg:h-48 md:h-36 nm-concave-gray-100-xl'
+            className="object-cover object-center lg:h-48 md:h-36 nm-concave-gray-100-xl"
             width={272}
             height={153}
           />
         )}
-        <div className='px-6  md:w-2/3'>
-          <h2 className='mb-3 text-2xl font-bold leading-8 tracking-tight z-50'>
+        <div className="px-6 md:w-2/3">
+          <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight z-50">
             {props.href ? (
               <Link href={props.href} aria-label={`Link to ${props.title}`}>
                 {props.title}
@@ -80,19 +74,15 @@ export const CardModal = (props) => {
               props.title
             )}
           </h2>
-          <p className='mb-3 prose text-gray-500 max-w-none md:max-h-24'>
-            {props.description1}
-          </p>
-          <p className='mb-3 prose text-gray-500 max-w-none md:max-h-24'>
-            {props.description2}
-          </p>
+          <p className="mb-3 prose text-gray-500 max-w-none overflow-y-auto">{props.description1}</p>
+          <p className="mb-3 prose text-gray-500 max-w-none overflow-y-scroll">{props.description2}</p>
           {props.href && (
             <a
-              target='_blank'
+              target="_blank"
               href={props.href}
-              className='text-base font-medium leading-6 text-primary-500 hover:text-primary-600 '
+              className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 "
               aria-label={`Link to ${props.title}`}
-              rel='noreferrer'
+              rel="noreferrer"
             >
               {props.title} 詳細 &rarr;&rarr;&rarr;
             </a>

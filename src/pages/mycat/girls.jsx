@@ -28,55 +28,57 @@ const MyBoys = () => {
   );
 
   return (
-    <Layout theme="girls">
-      <PageSEO title={`Girls - ${siteMetadata.author}`} description={siteMetadata.description1} />
-      <PageTitle type="large">Girls - {siteMetadata.title} の女の子たち</PageTitle>
-      <div className="divide-y divide-gray-200 ">
-        <div className="container py-12">
-          <div className="flex flex-wrap m-4">
-            {mainecoonDataGirl.map((d) => {
-              return (
-                <button
-                  onClick={() => {
-                    return handleOnClick(d);
-                  }}
-                  description={d.description1}
-                  description2={d.description2}
-                  key={d.title}
-                  // href={d.href}
-                  className="md:w-1/2 md"
-                >
-                  <Card key={d.href} title={d.title} description={d.description1} imgSrc={d.imgSrc} />
-                </button>
-              );
-            })}
-          </div>
-
-          <Modal>
-            <div className="bg-white px-2 sm:px-4 md:px-10 py-10 rounded text-gray-500 nm-concave-gray-100-sm">
-              <h1 className="mt-5">Girls - {siteMetadata.title} の女の子たち</h1>
-              <p>
-                <CardModal
-                  title={selectedItem?.title}
-                  description1={selectedItem?.description1}
-                  description2={selectedItem?.description2}
-                  imgSrc={selectedItem?.imgSrc}
-                  // href={selectedItem?.href}
-                />
-              </p>
-              <div className="flex justify-end mt-8">
-                <button
-                  onClick={close}
-                  className="rounded p-1 text-center font-medium text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 focus:from-purple-600 focus:to-yellow-600 opacity-80 mb-3 lg:mr-3 lg:py-2 hover:text-gray-100"
-                >
-                  閉じる
-                </button>
-              </div>
+    <div className="bg-purple-100">
+      <Layout theme="girls">
+        <PageSEO title={`Girls - ${siteMetadata.author}`} description={siteMetadata.description1} />
+        <PageTitle type="large">Girls - {siteMetadata.title} の女の子たち</PageTitle>
+        <div className="divide-y divide-gray-200 ">
+          <div className="container py-12">
+            <div className="flex flex-wrap m-4">
+              {mainecoonDataGirl.map((d) => {
+                return (
+                  <button
+                    onClick={() => {
+                      return handleOnClick(d);
+                    }}
+                    description={d.description1}
+                    description2={d.description2}
+                    key={d.title}
+                    // href={d.href}
+                    className="md:w-1/2 md"
+                  >
+                    <Card key={d.href} title={d.title} description={d.description1} imgSrc={d.imgSrc} />
+                  </button>
+                );
+              })}
             </div>
-          </Modal>
+
+            <Modal>
+              <div className="bg-white px-2 sm:px-4 md:px-10 py-10 rounded text-gray-500 nm-concave-gray-100-sm">
+                <h1 className="mt-5">Girls - {siteMetadata.title} の女の子たち</h1>
+                <p>
+                  <CardModal
+                    title={selectedItem?.title}
+                    description1={selectedItem?.description1}
+                    description2={selectedItem?.description2}
+                    imgSrc={selectedItem?.imgSrc}
+                    // href={selectedItem?.href}
+                  />
+                </p>
+                <div className="flex justify-end mt-8">
+                  <button
+                    onClick={close}
+                    className="rounded p-1 text-center font-medium text-gray-300 sm:px-4 bg-gradient-to-r from-gray-400 to-gray-500 focus:from-purple-600 focus:to-yellow-600 opacity-80 mb-3 lg:mr-3 lg:py-2 hover:text-gray-100"
+                  >
+                    閉じる
+                  </button>
+                </div>
+              </div>
+            </Modal>
+          </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </div>
   );
 };
 
