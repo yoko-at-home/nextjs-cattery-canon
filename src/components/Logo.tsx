@@ -1,19 +1,18 @@
+import { siteMetadata } from "../data/siteMetadata";
+
 export const Logo = () => {
   return (
-    <div className='m-15'>
-      <div className='border balloonoya'>
-        Cattery Canon<span className='balloon'>🐈 Meow 🐈</span>
+    <div className="m-15">
+      <div className="border balloonoya">
+        {siteMetadata.title}
+        <span className="balloon">🐈 Meow 🐈</span>
       </div>
       <style jsx>{`
         .border {
           padding: 5px 8px;
           box-shadow: 10px 10px 11px #aaaaaa, -10px -10px 11px #ffffff;
           color: #aaaaaa;
-          background: linear-gradient(
-            75deg,
-            rgba(2, 9, 66, 1) 4%,
-            rgba(6, 85, 92, 1) 76%
-          );
+          background: linear-gradient(75deg, rgba(2, 9, 66, 1) 4%, rgba(6, 85, 92, 1) 76%);
         }
         .balloonoya {
           position: relative; /* 指定した分だけ相対的に移動 */
@@ -31,8 +30,7 @@ export const Logo = () => {
           top: -25%;
           font-size: 70%; /* 文字サイズ */
           color: rgb(2, 9, 66);
-          box-shadow: 5px 5px 11px rgb(109, 112, 122),
-            -5px -5px 11px rgb(109, 112, 122);
+          box-shadow: 5px 5px 11px rgb(109, 112, 122), -5px -5px 11px rgb(109, 112, 122);
         }
       `}</style>
     </div>
