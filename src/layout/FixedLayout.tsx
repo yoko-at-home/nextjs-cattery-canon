@@ -1,8 +1,6 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import type { ReactNode, VFC } from "react";
-import { Carousel } from "src/components/Carousel";
-import { CarouselVertical } from "src/components/Carousel/vertical";
-import { NavBarMobile } from "src/components/navbar";
+import { CarouselVertical } from "src/components/Carousel";
 import { NavBarDesktop } from "src/components/navbar";
 import { Footer } from "src/layout/footer";
 import { Header } from "src/layout/header";
@@ -31,16 +29,6 @@ export const Layout: VFC<Props> = (props) => {
       <div className="hidden xl:block xl:mr-3 xl:w-2/6">
         <CarouselVertical />
       </div>
-    </div>
-  );
-};
-
-export const LayoutCarousel: VFC<Props> = (props) => {
-  return (
-    <div className="relative">
-      <Carousel />
-      <main className="absolute top-20 md:top-40">{props.children}</main>
-      <NavBarMobile type="entrance"/>
     </div>
   );
 };

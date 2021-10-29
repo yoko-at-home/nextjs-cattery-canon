@@ -1,7 +1,7 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import Link from "next/link";
 import { siteMetadata } from "src/data/siteMetadata";
-import { LayoutCarousel } from "src/layout";
+import { LayoutCarousel } from "src/layout/";
 
 import { PageSEO } from "./SEO";
 
