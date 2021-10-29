@@ -2,7 +2,7 @@ import { siteMetadata } from "../data/siteMetadata";
 
 export const Logo = () => {
   return (
-    <div className="m-15">
+    <div className="m-16">
       <div className="border balloonoya">
         {siteMetadata.title}
         <span className="balloon">🐈 Meow 🐈</span>
