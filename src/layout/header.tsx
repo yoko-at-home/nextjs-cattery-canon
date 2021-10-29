@@ -10,14 +10,13 @@ type Props = {
   className?: string;
   type?: "home" | "boys" | "girls" | "retired" | "available" | "articles";
   theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles";
-  photographer?: "tetsu" | "yamashita";
 };
 
 export const Header: VFC<Props> = (props) => {
   const themeImage = {
     home: "/static/images/header/four-kittens.jpg",
     boys: "/static/images/header/five-kids.jpg",
-    girls: "/static/images/header/maincoon-on-white-background.jpg",
+    girls: "/static/images/header/tetsu_maincoon-on-white-background.jpg",
     retired: "/static/images/header/brown-baby-02.jpg",
     available: "/static/images/header/red-kitten.jpg",
     articles: "/static/images/header/three-kids.jpg",
