@@ -18,7 +18,7 @@ export const Layout: VFC<Props> = (props) => {
       <div className="hidden m-5 w-1/6 min-h-full rounded-full md:block xl:w-1/6 nm-inset-yellow-800">
         <NavBarDesktop />
       </div>
-      <div className="w-full md:mr-5 lg:w-5/6">
+      <div className="w-full md:mr-5 lg:w-5/6 xl:w-3/6">
         <div>{!props.theme ? null : <Header theme={props.theme || "home"} />}</div>
         <p className="pr-5 text-right text-gray-600">
           {props.photographer !== "tetsu" ? "Photo: Yoshihiko Yamashita" : "Photo: Yamazaki Tstsu"}

@@ -7,39 +7,122 @@ import { useEffect, useRef, useState } from "react";
 
 const data = [
   {
+    id: "1",
     title: "",
     url: {
       background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-girls.jpg")',
     },
   },
   {
+    id: "2",
     title: "",
     url: {
       background: 'center/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
     },
   },
   {
+    id: "3",
     title: "",
     url: {
       background: 'center/cover no-repeat url("/static/images/0_top/baby-mainecoon.jpg")',
     },
   },
   {
-    title: "",
-    url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
-    },
-  },
-  {
+    id: "4",
     title: "",
     url: {
       background: 'center/cover no-repeat url("/static/images/0_top/mainecoon.jpg")',
     },
   },
   {
+    id: "5",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
+    },
+  },
+  {
+    id: "6",
     title: "",
     url: {
       background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
+    },
+  },
+  {
+    id: "7",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/fushigi.jpg")',
+    },
+  },
+  {
+    id: "8",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/gura.jpg")',
+    },
+  },
+  {
+    id: "9",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/hanako.jpg")',
+    },
+  },
+  {
+    id: "10",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/hime.jpg")',
+    },
+  },
+  {
+    id: "11",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/kenta.jpg")',
+    },
+  },
+  {
+    id: "12",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/lala.jpg")',
+    },
+  },
+  {
+    id: "13",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/miyabi.jpg")',
+    },
+  },
+  {
+    id: "14",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/myu.jpg")',
+    },
+  },
+  {
+    id: "15",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/naushika.jpg")',
+    },
+  },
+  {
+    id: "16",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/rizumu.jpg")',
+    },
+  },
+  {
+    id: "17",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/yume.jpg")',
     },
   },
 ];
@@ -72,7 +155,7 @@ export const Carousel = () => {
       if (!pause && slider) {
         slider.next();
       }
-    }, 2000);
+    }, 1500);
     return () => {
       clearInterval(timer.current);
     };
@@ -83,7 +166,7 @@ export const Carousel = () => {
       <div ref={sliderRef} className="keen-slider">
         {data.map((item) => {
           return (
-            <div className="keen-slider__slide number-slide nm-inset-gray-100-sm" style={item.url} key={item.title}>
+            <div className="keen-slider__slide number-slide" style={item.url} key={item.id}>
               {item.title}
             </div>
           );
@@ -98,8 +181,8 @@ export const Carousel = () => {
           font-size: 50px;
           color: #fff;
           font-weight: 500;
-          height: 120vh;
-          min-height: 120vh;
+          height: 105vh;
+          min-height: 105vh;
           border-radius: 5px;
         }
       `}</style>
