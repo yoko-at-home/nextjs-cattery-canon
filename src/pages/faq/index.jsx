@@ -11,7 +11,7 @@ const styles = {
   titleTextColor: "green",
   rowTitleColor: "gray",
   rowContentColor: "grey",
-  arrowColor: "brown",
+  arrowColor: "green",
 };
 
 const config = {
