@@ -6,7 +6,7 @@ import Link from "next/link";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
-import { Layout } from "src/layout";
+import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
 
@@ -18,7 +18,7 @@ export default function retiredId(props) {
   const imgUrlheight = props.retired.imgSrc.height * 0.8;
 
   return (
-    <Layout>
+    <LayoutBlog>
       <PageSEO
         title={`引退した子達- ${siteMetadata.author} | ${props.retired.title}`}
         description={siteMetadata.description}
@@ -64,7 +64,7 @@ export default function retiredId(props) {
           </Link>
         </div>
       </main>
-    </Layout>
+    </LayoutBlog>
   );
 }
 

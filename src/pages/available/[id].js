@@ -8,7 +8,7 @@ import Link from "next/link";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
-import { Layout } from "src/layout";
+import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
 
@@ -20,7 +20,7 @@ export default function BlogId(props) {
   const imgUrlheight = props.available.imgSrc.height * 2;
 
   return (
-    <Layout>
+    <LayoutBlog>
       <PageSEO
         title={`譲渡可能な子達- ${siteMetadata.author} | ${props.available.title}`}
         description={siteMetadata.description}
@@ -67,7 +67,7 @@ export default function BlogId(props) {
           </Link>
         </div>
       </main>
-    </Layout>
+    </LayoutBlog>
   );
 }
 
