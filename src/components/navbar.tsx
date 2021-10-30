@@ -15,7 +15,7 @@ const items = [
   { href: "/available", label: "Available" },
   { href: "/retired", label: "Retired" },
   { href: "/contact", label: "Contact" },
-  { href: "/faq", label: "よくある質問" },
+  { href: "/faq", label: "FAQ" },
   { href: "/gallery", label: "Gallery" },
   { href: "/links", label: "Links" },
 ];

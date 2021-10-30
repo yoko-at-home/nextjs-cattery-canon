@@ -2,27 +2,21 @@ export const faqData = {
   title: "飼育について",
   rows: [
     {
-      title: "Lorem ipsum dolor sit amet,",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
-              ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
-              In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
-              Fusce sed commodo purus, at tempus turpis.`,
+      title: "メインクーンはどのような猫ですか？",
+      content: `メインクーンは、温和で気立ての良い性格です。人とじゃれ合うのが大好きですが、ベタベタすることはあまりなく、抱かれるのが好きじゃない子もいます。知らない人や、犬などのほかのペット、子供とも仲良くできて愛想がいいです。また、メインクーンは猫の中でも知性が高い猫です。しつけはしやすい猫種です。`,
     },
     {
-      title: "Nunc maximus, magna at ultricies elementum",
+      title: "日常のお世話で気をつけなければいけないことは？",
       content:
-        "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+        "メインクーンは長毛種の猫種です。できるだけ毎日、少なくても週に2～3回以上はブラッシングが必要です。寒い地域で生活してきた猫なので、防水や防寒のために、皮脂が被毛に回ってきますので、美しさを保つには定期的なシャンプーが必要です。",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
-      content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+      title: "どのような設備が必要ですか？",
+      content: `猫種の中でも、メインクーンは体が大きめです。成長するまでは4年ほどかかります。活発で運動量が多く、体を動かすことが好きなので、キャットタワーやキャットウォークを設置して、広々とした自由に動き回れる環境を作ってください。体重もあありますので、キャットタワーなどを設置するときは、しっかりと安定したものを選ぶようにしてください。 `,
     },
     {
-      title: "What is the package version",
-      content: "<p>current version is 1.2.1</p>",
+      title: "気をつけたい病気にはどのようなものがありますか？",
+      content: "肥大型心筋症、多発性のう胞腎、脊髄性筋萎縮症、関節異型症、毛球症、尿路疾患などには注意が必要です。",
     },
   ],
 };
@@ -30,27 +24,27 @@ export const faqData2 = {
   title: "メインクーンを譲り受けるには？",
   rows: [
     {
-      title: "Lorem ipsum dolor sit amet,",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
-              ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
-              In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
-              Fusce sed commodo purus, at tempus turpis.`,
-    },
-    {
-      title: "Nunc maximus, magna at ultricies elementum",
+      title: "どのようにしたらメインクーンを譲り受けられますか？",
       content:
-        "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+        "「Contact」ページよりお問い合わせください。見学も大歓迎です。まずは、メインクーンについて知っていただきたい思います。",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
-      content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+      title: "メインクーンはいつ頃親元を離れて養育できますか？",
+      content: "生後90日以降、ワクチン2回接収後、お渡し可能です。",
     },
     {
-      title: "What is the package version",
-      content: "<p>current version is 1.2.1</p>",
+      title: "子猫を迎えるにあたって、条件などはありますか？",
+      content: `Cattery Canon は、この猫舎を巣立つ全ての子達が幸せな生涯を送れることを願っております。特に審査などは設けておりませんが、面談の際に養育環境についてのヒアリングを実施しております。ペットの飼育が可能な住宅にお住まいであることが原則となっております。また、ご家族全員が新しい家族を迎えることに賛成していることも大切です。`,
+    },
+    {
+      title: "猫の引き渡しはどのようにしますか？",
+      content:
+        "動物愛護法従い、必ず一度は見学に来ていただく必要があります。その後、生後90日以降にお迎えに来ていただくか、お届けにあがります。",
+    },
+    {
+      title: "お支払いの流れは？",
+      content:
+        "見学に来ていただいた際に、欲しい子がいた場合は、予約金（3万円）をいただければ、他の方からのお問い合わせは受け付けません。残金は、引渡しの2日前までに振り込んでいただくか、当日お迎えの際にお支払いください。お客様のご都合でキャンセルされる場合は、予約金の返金はできかねますので、ご了承ください。",
     },
   ],
 };

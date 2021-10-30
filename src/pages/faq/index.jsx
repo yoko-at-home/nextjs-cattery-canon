@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Faq from "react-faq-component";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
@@ -26,6 +27,12 @@ const FAQ = () => {
 
       <PageTitle type="large">よくある質問にお答えします。</PageTitle>
       <div className="container">
+        <div className="text-gray-500">
+          お問い合わせはいつでも受け付けております。
+          <Link href="/contact">
+            <a className=" hover:text-green-600">お問い合わせフォームをご利用ください。</a>
+          </Link>
+        </div>
         <div className="py-12">
           <Faq data={faqData} styles={styles} config={config} />
         </div>
