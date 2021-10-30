@@ -34,7 +34,7 @@ export const Card = (props) => {
               props.title
             )}
           </h2>
-          <p className="max-w-none prose md:overflow-x-auto">{props.description}</p>
+          <p className="max-w-none prose md:overflow-x-auto">Date of Birth: {props.description}</p>
           <p className="overflow-hidden mb-3 max-w-none prose">{props.description2}</p>
         </div>
       </div>
@@ -74,7 +74,7 @@ export const CardModal = (props) => {
               props.title
             )}
           </h2>
-          <p className="overflow-hidden mb-3 text-gray-500 prose">{props.description1}</p>
+          <p className="overflow-hidden mb-3 text-gray-500 prose">Date of Birth: {props.description1}</p>
           <p className="overflow-y-scroll mb-3 max-w-none text-gray-500 prose">{props.description2}</p>
         </div>
       </div>

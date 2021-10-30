@@ -11,7 +11,7 @@ import { mainecoonDataGirl } from "src/data/mainecoonData";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 
-const MyBoys = () => {
+const MyGirls = () => {
   const [Modal, open, close] = useModal("root", {
     preventScroll: true,
   });
@@ -83,4 +83,4 @@ const MyBoys = () => {
   );
 };
 
-export default MyBoys;
+export default MyGirls;
