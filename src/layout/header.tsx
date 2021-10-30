@@ -8,13 +8,14 @@ import { siteMetadata } from "../data/siteMetadata";
 
 type Props = {
   className?: string;
-  type?: "home" | "boys" | "girls" | "retired" | "available" | "articles";
-  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles";
+  type?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about";
+  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about";
 };
 
 export const Header: VFC<Props> = (props) => {
   const themeImage = {
     home: "/static/images/header/four-kittens.jpg",
+    about: "/static/images/header/era.jpg",
     boys: "/static/images/header/five-kids.jpg",
     girls: "/static/images/header/tetsu_maincoon-on-white-background.jpg",
     retired: "/static/images/header/brown-baby-02.jpg",

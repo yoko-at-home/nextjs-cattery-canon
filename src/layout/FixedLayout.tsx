@@ -7,7 +7,7 @@ import { Header } from "src/layout/header";
 
 type Props = {
   className?: string;
-  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles";
+  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles"|"about";
   children: ReactNode;
   photographer?: "tetsu" | "yamashita";
 };
@@ -21,7 +21,7 @@ export const Layout: VFC<Props> = (props) => {
       <div className="w-full md:mr-5 lg:w-5/6">
         <div>{!props.theme ? null : <Header theme={props.theme || "home"} />}</div>
         <p className="pr-5 text-right text-gray-600">
-          {props.photographer !== "tetsu" ? "Photo: Yoshihiko Yamashita" : "Photo: Tstsu"}
+          {props.photographer !== "tetsu" ? "Photo: Yoshihiko Yamashita" : "Photo: Yamazaki Tstsu"}
         </p>
         <main className="px-5 mx-auto md:w-full">{props.children}</main>
         <Footer />

@@ -6,7 +6,7 @@ import { client } from "src/lib/client";
 
 const About = (props) => {
   return (
-    <Layout theme="retired">
+    <Layout theme="about">
       <PageSEO title={`メインクーンについて- ${siteMetadata.author}`} description={siteMetadata.description} />
 
       <div className="divide-y divide-gray-200">
