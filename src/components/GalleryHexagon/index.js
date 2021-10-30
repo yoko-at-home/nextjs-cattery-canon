@@ -4,15 +4,15 @@ import { Logo } from "../Logo";
 const data = [
   {
     title: "A",
-    url: "/static/images/retired/retired-1.jpg",
+    url: "/static/images/hexa/soa-chan.jpg",
   },
   {
     title: "B",
-    url: "/static/images/retired/pretty-maincoon.jpg",
+    url: "/static/images/hexa/ada.jpg",
   },
   {
     title: "C",
-    url: "/static/images/retired/retired-2.jpg",
+    url: "/static/images/hexa/red.jpg",
   },
 ];
 
