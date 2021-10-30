@@ -5,7 +5,7 @@ export const Logo = () => {
     <div className="m-16">
       <div className="border balloonoya">
         {siteMetadata.title}
-        <span className="balloon">🐈 Meow 🐈</span>
+        <span className="balloon">🐈にゃお🐈</span>
       </div>
       <style jsx>{`
         .border {
@@ -23,7 +23,7 @@ export const Logo = () => {
         .balloon {
           position: absolute; /* 親要素を基準 */
           display: none; /* 要素を非表示 */
-          padding: 8px 10px; /* テキストの前後の余白 */
+          padding: 5px 6px; /* テキストの前後の余白 */
           background-color: #ffffff; /* 背景色（透明度） */
           width: 90px; /* 吹き出し全体の幅 */
           right: -25%; /* 表示位置 */
@@ -31,6 +31,7 @@ export const Logo = () => {
           font-size: 70%; /* 文字サイズ */
           color: rgb(2, 9, 66);
           box-shadow: 5px 5px 11px rgb(109, 112, 122), -5px -5px 11px rgb(109, 112, 122);
+          border-radius: 9999px;
         }
       `}</style>
     </div>
