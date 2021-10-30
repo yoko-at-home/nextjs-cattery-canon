@@ -44,16 +44,10 @@ export const Card = (props) => {
 export const CardModal = (props) => {
   return (
     <div className="p-4" style={{ maxWidth: "800px" }}>
-      <div className="flex overflow-hidden flex-col p-3 h-full rounded-md border-2 border-gray-200 border-opacity-60 md:flex-row nm-inset-gray-100-sm">
+      <div className="flex overflow-hidden flex-col p-3 h-96 rounded-md border-2 border-gray-200 border-opacity-60 md:flex-row nm-inset-gray-100-sm">
         {props.href ? (
           <a target="_blank" href={props.href} aria-label={`Link to ${props.title}`} passHref rel="noreferrer">
-            <Image
-              alt={props.title}
-              src={props.imgSrc}
-              className="object-cover object-center md:h-36 lg:h-48 nm-concave-gray-100-xl"
-              width={272}
-              height={153}
-            />
+            <Image alt={props.title} src={props.imgSrc} className="object-cover object-top" width={272} height={153} />
           </a>
         ) : (
           <Image
