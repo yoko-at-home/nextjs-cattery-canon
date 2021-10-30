@@ -9,7 +9,7 @@ const links = [
     title: "Canonのブログ",
     description: "Canonのブログです。Canonの子供たちの様子や最新情報をお知らせしています。",
     url: "http://catterycanoncat.blog.fc2.com",
-    backgroundImg: 'url("/static/images/boys/boy.jpg")',
+    backgroundImg: 'url("/static/images/boys/lento.jpg")',
   },
   {
     title: "湘南キャットクラブ",
@@ -27,7 +27,7 @@ const links = [
   },
   {
     title: "The International Cat Association (TICA)",
-    description: "血統書付き猫と家庭猫の世界最大の登録機関。Canonは正規会員です。",
+    description: "純血種の猫とHHP（家庭猫）の世界最大の登録機関です。",
     url: "https://tica.org/ja/",
     backgroundImg: 'url("/static/images/links/TICA.jpg")',
   },
@@ -74,6 +74,12 @@ const Links: NextPage = () => {
             </div>
           </div>
         </div>
+      </div>
+      <PageTitle type="large">Photographers</PageTitle>
+      <div className="ml-5 text-gray-500">
+        <p className="mb-3">Yoshihiko Yamashita:</p>
+        <p className="mb-3">Yamazaki Tstsu:</p>
+        <p className="">Fukuda UFP:</p>
       </div>
     </Layout>
   );
