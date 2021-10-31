@@ -30,8 +30,9 @@ const FAQ = () => {
         <div className="text-gray-500">
           お問い合わせはいつでも受け付けております。
           <Link href="/contact">
-            <a className=" hover:text-green-600">お問い合わせフォームをご利用ください。</a>
+            <a className="text-blue-400 hover:text-green-600">お問い合わせフォーム</a>
           </Link>
+          をご利用ください。
         </div>
         <div className="py-12">
           <Faq data={faqData} styles={styles} config={config} />
