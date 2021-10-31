@@ -5,12 +5,8 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useEffect, useRef, useState } from "react";
 import { dataVertical } from "src/data/carouselVerticalData";
-import { useModal } from "react-hooks-use-modal";
 
 export const CarouselVertical = () => {
-  const [Modal, open, close, isOpen] = useModal("root", {
-    preventScroll: true,
-  });
   const [pause, setPause] = useState(false);
   const timer = useRef();
   const [sliderRef, slider] = useKeenSlider({
@@ -65,9 +61,7 @@ export const CarouselVertical = () => {
           );
         })}
       </div>
-      <Modal>
-        <div style={modalStyle}></div>
-      </Modal>
+
       <style jsx>{`
         [class^="number-slide"],
         [class*="number-slide"] {
