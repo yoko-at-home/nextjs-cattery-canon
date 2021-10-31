@@ -67,7 +67,7 @@ export const dataVertical = [
     id: "9",
     title: "Hanako",
     url: {
-      background: 'center/cover no-repeat url("/static/images/memory/hanako.jpg")',
+      background: 'left/cover no-repeat url("/static/images/memory/hanako.jpg")',
     },
     src: "/static/images/memory/hanako.jpg",
   },
@@ -83,7 +83,7 @@ export const dataVertical = [
     id: "11",
     title: "Kenta",
     url: {
-      background: 'center/cover no-repeat url("/static/images/memory/kenta.jpg")',
+      background: 'left/cover no-repeat url("/static/images/memory/kenta.jpg")',
     },
     src: "/static/images/memory/kenta.jpg",
   },

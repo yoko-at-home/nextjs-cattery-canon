@@ -35,13 +35,6 @@ const data = [
     },
   },
   {
-    id: "5",
-    title: "",
-    url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
-    },
-  },
-  {
     id: "6",
     title: "",
     url: {
@@ -66,7 +59,7 @@ const data = [
     id: "9",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/memory/hanako.jpg")',
+      background: 'left/cover no-repeat url("/static/images/memory/hanako.jpg")',
     },
   },
   {
@@ -88,6 +81,13 @@ const data = [
     title: "",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/lala.jpg")',
+    },
+  },
+  {
+    id: "5",
+    title: "",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
     },
   },
   {

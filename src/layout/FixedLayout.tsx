@@ -14,7 +14,7 @@ type Props = {
 
 export const Layout: VFC<Props> = (props) => {
   return (
-    <div className="flex justify-start w-screen">
+    <div className="flex justify-start w-screen overflow-scroll" style={{ maxHeight: "150vh" }}>
       <div className="hidden m-5 w-1/6 min-h-full rounded-full md:block xl:w-1/6 nm-inset-yellow-800">
         <NavBarDesktop />
       </div>
