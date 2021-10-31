@@ -32,6 +32,7 @@ export const Logo = () => {
           color: rgb(2, 9, 66);
           box-shadow: 5px 5px 11px rgb(109, 112, 122), -5px -5px 11px rgb(109, 112, 122);
           border-radius: 9999px;
+          text-align: center;
         }
       `}</style>
     </div>
