@@ -170,11 +170,11 @@ export const CarouselVertical = () => {
             <div className="keen-slider__slide number-slide" style={item.url} key={item.id}>
               <div
                 style={{
-                  border: "solid 1px #636363",
+                  border: "solid 1px rgba(98,98,98,.6)",
                   textShadow: "3px 3px 5px #ffffff",
                   color: "#71745b",
                 }}
-                className="py-3 px-5 mt-32 font-semibold backdrop-filter backdrop-blur-lg transform -rotate-45"
+                className="py-3 px-5 font-semibold backdrop-filter backdrop-blur-lg transform -rotate-45"
               >
                 <div className="transform rotate-45">{item.title}</div>
               </div>
@@ -184,9 +184,9 @@ export const CarouselVertical = () => {
       </div>
       <style jsx>{`
         [class^="number-slide"],
-        [class*=" number-slide"] {
+        [class*="number-slide"] {
           display: flex;
-          align-items: center;
+          align-items: end;
           justify-content: center;
           font-size: 40px;
           color: #fff;
@@ -195,7 +195,7 @@ export const CarouselVertical = () => {
           min-height: 105vh;
           border-radius: 5px;
           margin: 5px;
-          padding: 3px;
+          padding: 100px;
         }
       `}</style>
     </>
