@@ -33,6 +33,27 @@ const links = [
   },
 ];
 
+const phtographers = [
+  {
+    name: "Yoshihiko Yamashita",
+    description: "Coming soon ...",
+    url: "",
+    backgroundImg: 'url("")',
+  },
+  {
+    name: "Yamazaki Testsu",
+    description: "Coming soon ...",
+    url: "",
+    backgroundImg: 'url("")',
+  },
+  {
+    name: "Fukuda UFP",
+    description: "動物写真専門",
+    url: "http://www.u-f-p.jp",
+    backgroundImg: 'url("/static/images/links/fukuda-ufp.jpg")',
+  },
+];
+
 const Links: NextPage = () => {
   return (
     <Layout theme="home">
@@ -76,10 +97,39 @@ const Links: NextPage = () => {
         </div>
       </div>
       <PageTitle type="large">Photographers</PageTitle>
-      <div className="ml-5 text-gray-500">
-        <p className="mb-3">Yoshihiko Yamashita:</p>
-        <p className="mb-3">Yamazaki Tstsu:</p>
-        <p className="">Fukuda UFP:</p>
+      <div className="container pb-12" id="photographers">
+        <div className="p-5 mx-auto max-w-screen-xl text-white dark:bg-gray-800">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {phtographers.map((phtographer) => {
+              return (
+                <a
+                  href={phtographer.url}
+                  target="_blank"
+                  rel=" noopener noreferrer"
+                  className="py-2 px-3 font-semibold tracking-wider uppercase hover:cursor-pointer"
+                  key={phtographer.url}
+                >
+                  <div
+                    className="flex relative justify-start items-end w-full h-52 text-left dark:bg-gray-500 bg-center bg-cover rounded"
+                    style={{
+                      backgroundImage: phtographer.backgroundImg,
+                    }}
+                  >
+                    <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 bg-gradient-to-b dark:via-transparent rounded"></div>
+                    <div className="flex absolute top-0 right-0 left-0 justify-between items-center mx-5 mt-3">
+                      {phtographer.name}
+                      <div className="flex flex-col justify-start text-center">
+                        <span className="text-3xl font-semibold tracking-wide leading-none"></span>
+                        <span className="leading-none uppercase"></span>
+                      </div>
+                    </div>
+                    <h2 className="z-10 p-5">{phtographer.description}</h2>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </Layout>
   );
