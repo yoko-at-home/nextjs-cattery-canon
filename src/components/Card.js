@@ -47,7 +47,7 @@ export const CardModal = (props) => {
       <div className="flex overflow-hidden flex-col p-3 h-96 rounded-md border-2 border-gray-200 border-opacity-60 md:flex-row nm-inset-gray-100-sm">
         {props.href ? (
           <a target="_blank" href={props.href} aria-label={`Link to ${props.title}`} passHref rel="noreferrer">
-            <Image alt={props.title} src={props.imgSrc} className="object-cover object-top" width={272} height={153} />
+            <Image alt={props.title} src={props.imgSrc} className="object-cover object-top" width={272} height={450} />
           </a>
         ) : (
           <Image
@@ -55,7 +55,7 @@ export const CardModal = (props) => {
             src={props.imgSrc}
             className="object-cover object-center md:h-36 lg:h-48 nm-concave-gray-100-xl"
             width={272}
-            height={153}
+            height={450}
           />
         )}
         <div className="px-6 md:w-2/3">
