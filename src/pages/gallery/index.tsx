@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Carousel } from "src/components/Carousel";
+import { CarouselHorizontal } from "src/components/Carousel";
 import { GalleryHexagon } from "src/components/GalleryHexagon";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
@@ -14,7 +14,7 @@ const Gallery: NextPage = () => {
       <div className="hidden justify-center my-20 md:flex">
         <GalleryHexagon />
       </div>
-      <Carousel />
+      <CarouselHorizontal />
       <div className="hidden justify-center mt-20 md:flex">
         <GalleryHexagon />
       </div>

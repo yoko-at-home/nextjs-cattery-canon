@@ -24,21 +24,21 @@ const data = [
     id: "3",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/baby-mainecoon.jpg")',
+      background: 'top/cover no-repeat url("/static/images/0_top/baby-mainecoon.jpg")',
     },
   },
   {
     id: "4",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/mainecoon.jpg")',
+      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon.jpg")',
     },
   },
   {
     id: "6",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
+      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
     },
   },
   // {
@@ -73,7 +73,7 @@ const data = [
     id: "11",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/memory/kenta.jpg")',
+      background: 'top/cover no-repeat url("/static/images/memory/kenta.jpg")',
     },
   },
   {
@@ -122,7 +122,7 @@ const data = [
     id: "17",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/memory/yume.jpg")',
+      background: 'top/cover no-repeat url("/static/images/memory/yume.jpg")',
     },
   },
 ];
