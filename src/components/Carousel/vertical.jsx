@@ -67,15 +67,15 @@ export const CarouselVertical = () => {
         [class*="number-slide"] {
           display: flex;
           align-items: end;
-          justify-content: center;
+          justify-content: flex-start;
           font-size: 40px;
           color: #fff;
           font-weight: 500;
-          height: 105vh;
-          min-height: 105vh;
+          height: 500px;
+          // min-height: 105vh;
           border-radius: 5px;
           margin: 5px;
-          padding: 100px;
+          padding: 50px;
         }
       `}</style>
     </>
