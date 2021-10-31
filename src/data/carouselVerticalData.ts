@@ -17,7 +17,7 @@ export const dataVertical = [
   },
   {
     id: "3",
-    title: "❤️",
+    title: "🤍",
     url: {
       background: 'top/cover no-repeat url("/static/images/0_top/baby-mainecoon.jpg")',
     },
@@ -33,7 +33,7 @@ export const dataVertical = [
   },
   {
     id: "5",
-    title: "🍀",
+    title: "♧",
     url: {
       background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
     },
@@ -41,7 +41,7 @@ export const dataVertical = [
   },
   {
     id: "6",
-    title: "💚",
+    title: "♢",
     url: {
       background: 'top/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
     },
