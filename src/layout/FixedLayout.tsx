@@ -23,7 +23,7 @@ export const Layout: VFC<Props> = (props) => {
         <p className="pr-5 text-right text-gray-600">
           {props.photographer !== "tetsu" ? "Photo: Yoshihiko Yamashita" : "Photo: Yamazaki Tstsu"}
         </p>
-        <main className="px-5 mx-auto md:w-full">{props.children}</main>
+        <main className="px-1 sm:px-3 md:px-5 mx-auto md:w-full">{props.children}</main>
         <Footer />
       </div>
       <div className="hidden xl:block xl:mr-3 xl:w-2/6">
