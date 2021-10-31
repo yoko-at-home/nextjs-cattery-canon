@@ -48,13 +48,13 @@ const data = [
       background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
     },
   },
-  {
-    id: "7",
-    title: "",
-    url: {
-      background: 'center/cover no-repeat url("/static/images/memory/fushigi.jpg")',
-    },
-  },
+  // {
+  //   id: "7",
+  //   title: "",
+  //   url: {
+  //     background: 'center/cover no-repeat url("/static/images/memory/fushigi.jpg")',
+  //   },
+  // },
   {
     id: "8",
     title: "",

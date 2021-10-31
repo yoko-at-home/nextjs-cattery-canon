@@ -8,7 +8,7 @@ import { Layout } from "src/layout";
 
 const Gallery: NextPage = () => {
   return (
-    <Layout theme="retired">
+    <Layout theme="fushigi">
       <PageSEO title={`ギャラリー - ${siteMetadata.author}`} description={siteMetadata.description} />
       <PageTitle type="medium">Gallery - {siteMetadata.title} の世界を彩る美しい子たち</PageTitle>
       <div className="hidden justify-center my-20 md:flex">

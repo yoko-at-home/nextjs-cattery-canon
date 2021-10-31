@@ -47,17 +47,17 @@ export const dataVertical = [
     },
     src: "/static/images/0_top/mainecoon-baby.jpg",
   },
-  {
-    id: "7",
-    title: "Cattery",
-    url: {
-      background: 'center/cover no-repeat url("/static/images/memory/fushigi.jpg")',
-    },
-    src: "/static/images/memory/fushigi.jpg",
-  },
+  // {
+  //   id: "7",
+  //   title: "Cattery",
+  //   url: {
+  //     background: 'center/cover no-repeat url("/static/images/memory/fushigi.jpg")',
+  //   },
+  //   src: "/static/images/memory/fushigi.jpg",
+  // },
   {
     id: "8",
-    title: "💙",
+    title: "Gura",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/gura.jpg")',
     },
@@ -65,7 +65,7 @@ export const dataVertical = [
   },
   {
     id: "9",
-    title: "Canon",
+    title: "Hanako",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/hanako.jpg")',
     },
@@ -73,7 +73,7 @@ export const dataVertical = [
   },
   {
     id: "10",
-    title: "✨",
+    title: "Hime",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/hime.jpg")',
     },
@@ -81,7 +81,7 @@ export const dataVertical = [
   },
   {
     id: "11",
-    title: "💚",
+    title: "Kenta",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/kenta.jpg")',
     },
@@ -89,7 +89,7 @@ export const dataVertical = [
   },
   {
     id: "12",
-    title: "Cattery",
+    title: "Lata",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/lala.jpg")',
     },
@@ -97,7 +97,7 @@ export const dataVertical = [
   },
   {
     id: "13",
-    title: "Canon",
+    title: "Miyabi",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/miyabi.jpg")',
     },
@@ -105,7 +105,7 @@ export const dataVertical = [
   },
   {
     id: "14",
-    title: "💚",
+    title: "Myu",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/myu.jpg")',
     },
@@ -113,7 +113,7 @@ export const dataVertical = [
   },
   {
     id: "15",
-    title: "❤️",
+    title: "Naushika",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/naushika.jpg")',
     },
@@ -121,7 +121,7 @@ export const dataVertical = [
   },
   {
     id: "16",
-    title: "Canon",
+    title: "Rizumu",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/rizumu.jpg")',
     },
@@ -129,7 +129,7 @@ export const dataVertical = [
   },
   {
     id: "17",
-    title: "",
+    title: "Yume",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/yume.jpg")',
     },

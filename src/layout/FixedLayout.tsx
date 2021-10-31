@@ -7,7 +7,7 @@ import { Header } from "src/layout/header";
 
 type Props = {
   className?: string;
-  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles"|"about";
+  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles"|"about"|"fushigi";
   children: ReactNode;
   photographer?: "tetsu" | "yamashita";
 };

@@ -8,8 +8,8 @@ import { siteMetadata } from "../data/siteMetadata";
 
 type Props = {
   className?: string;
-  type?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about";
-  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about";
+  type?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "fushigi";
+  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "fushigi";
 };
 
 export const Header: VFC<Props> = (props) => {
@@ -21,6 +21,7 @@ export const Header: VFC<Props> = (props) => {
     retired: "/static/images/header/brown-baby-02.jpg",
     available: "/static/images/header/red-kitten.jpg",
     articles: "/static/images/header/three-kids.jpg",
+    fushigi: "/static/images/memory/fushigi.jpg",
   };
 
   return (
