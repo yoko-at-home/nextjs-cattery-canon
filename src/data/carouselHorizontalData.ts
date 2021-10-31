@@ -83,7 +83,7 @@ export const dataHorizontal = [
     id: "11",
     title: "Kenta",
     url: {
-      background: 'top/cover no-repeat url("/static/images/memory/kenta.jpg")',
+      background: 'left/cover no-repeat url("/static/images/memory/kenta.jpg")',
     },
     src: "/static/images/memory/kenta.jpg",
   },
@@ -123,7 +123,7 @@ export const dataHorizontal = [
     id: "16",
     title: "Rizumu",
     url: {
-      background: 'left/cover no-repeat url("/static/images/memory/rizumu.jpg")',
+      background: 'center/cover no-repeat url("/static/images/memory/rizumu.jpg")',
     },
     src: "/static/images/memory/rizumu.jpg",
   },
