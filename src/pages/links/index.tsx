@@ -37,14 +37,14 @@ const phtographers = [
   {
     name: "Yoshihiko Yamashita",
     description: "Coming soon ...",
-    url: "",
+    url: "https://www.canon-cat.com/links#photographers",
     backgroundImg: 'url("")',
   },
   {
     name: "Yamazaki Testsu",
     description: "Coming soon ...",
     url: "",
-    backgroundImg: 'url("")',
+    backgroundImg: 'url("https://www.canon-cat.com/links#photographers")',
   },
   {
     name: "Fukuda UFP",
