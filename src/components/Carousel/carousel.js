@@ -183,7 +183,6 @@ export const Carousel = () => {
           font-weight: 500;
           height: 105vh;
           min-height: 105vh;
-          border-radius: 5px;
         }
       `}</style>
     </>
