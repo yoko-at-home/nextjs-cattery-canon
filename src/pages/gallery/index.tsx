@@ -11,7 +11,7 @@ const Gallery: NextPage = () => {
     <Layout theme="fushigi">
       <PageSEO title={`ギャラリー - ${siteMetadata.author}`} description={siteMetadata.description} />
       <PageTitle type="medium">Gallery - {siteMetadata.title} の世界を彩る美しい子たち</PageTitle>
-      <div className="hidden justify-center mb-10 md:flex">
+      <div className="hidden justify-center mb-16 md:flex">
         <GalleryHexagon />
       </div>
       <CarouselHorizontal />
