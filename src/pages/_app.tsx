@@ -5,7 +5,7 @@ import type { AppProps } from "next/app";
 const App = (props: AppProps) => {
   return (
     <>
-      <GoogleAnalytics />;
+      <GoogleAnalytics />
       <props.Component {...props.pageProps} />
     </>
   );
