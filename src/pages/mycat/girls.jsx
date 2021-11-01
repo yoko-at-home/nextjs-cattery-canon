@@ -44,6 +44,8 @@ const MyGirls = () => {
                     }}
                     description={d.description1}
                     description2={d.description2}
+                    father={d.father}
+                    mother={d.mother}
                     key={d.title}
                     // href={d.href}
                     className="md:w-1/2"
@@ -62,6 +64,8 @@ const MyGirls = () => {
                     title={selectedItem?.title}
                     description1={selectedItem?.description1}
                     description2={selectedItem?.description2}
+                    father={selectedItem?.father}
+                    mother={selectedItem?.mother}
                     imgSrc={selectedItem?.imgSrc}
                     // href={selectedItem?.href}
                   />

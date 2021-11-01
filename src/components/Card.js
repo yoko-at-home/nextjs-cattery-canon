@@ -69,7 +69,9 @@ export const CardModal = (props) => {
             )}
           </h2>
           <p className="overflow-hidden mb-3 text-gray-500 prose">Date of Birth: {props.description1}</p>
-          <p className="overflow-y-scroll mb-3 max-w-none text-gray-500 prose">{props.description2}</p>
+          <p className="mb-3 text-green-900 font-bold prose leading-loose">{props.description2}</p>
+          <p className="mb-3 text-gray-500 leading-loose">💙 SIRE: {props.father}</p>
+          <p className="mb-3 text-gray-500 leading-loose">❤️ DAM: {props.mother}</p>
         </div>
       </div>
     </div>
