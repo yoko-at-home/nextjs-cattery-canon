@@ -58,8 +58,8 @@ export const CardModal = (props) => {
             height={450}
           />
         )}
-        <div className="px-6 md:w-2/3">
-          <h2 className="z-50 mb-3 text-2xl font-bold tracking-tight leading-8">
+        <div className="px-2 sm:px-6 md:w-2/3">
+          <h2 className="z-50 sm:mb-3 text-2xl font-bold tracking-tight leading-8">
             {props.href ? (
               <Link href={props.href} aria-label={`Link to ${props.title}`}>
                 {props.title}
@@ -68,10 +68,10 @@ export const CardModal = (props) => {
               props.title
             )}
           </h2>
-          <p className="overflow-hidden mb-3 text-gray-500 prose">Date of Birth: {props.description1}</p>
-          <p className="mb-3 text-green-900 font-bold prose leading-loose">{props.description2}</p>
-          <p className="mb-3 text-gray-500 leading-loose">💙 SIRE: {props.father}</p>
-          <p className="mb-3 text-gray-500 leading-loose">❤️ DAM: {props.mother}</p>
+          <p className="overflow-hidden sm:mb-3 text-gray-500 prose">Date of Birth: {props.description1}</p>
+          <p className="sm:mb-3 text-green-900 font-bold prose leading-loose">{props.description2}</p>
+          <p className="sm:mb-3 text-gray-500 leading-loose">💙 SIRE: {props.father}</p>
+          <p className="sm:mb-3 text-gray-500 leading-loose">❤️ DAM: {props.mother}</p>
         </div>
       </div>
     </div>
