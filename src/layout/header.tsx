@@ -35,8 +35,7 @@ export const Header: VFC<Props> = (props) => {
             src={themeImage[props.theme || "home"]}
             alt={"Canon's mainecoons"}
           />
-          <h1 className="absolute -bottom-5 p-5 sm:left-10 md:-bottom-10">
-            <CustomLink href="/home" aria-label="Gen-Scent Research Laboratory">
+            <CustomLink href="/home" aria-label="Cattery Canon">
               <div className="flex justify-between items-center mb-8">
                 {typeof siteMetadata.headerTitle === "string" ? (
                   <div
