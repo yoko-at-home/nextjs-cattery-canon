@@ -7,14 +7,14 @@ export const dataVertical = [
     },
     src: "/static/images/0_top/mainecoon-girls.jpg",
   },
-  {
-    id: "2",
-    title: "Canon",
-    url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
-    },
-    src: "/static/images/0_top/painting-green.jpg",
-  },
+  // {
+  //   id: "2",
+  //   title: "Canon",
+  //   url: {
+  //     background: 'center/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
+  //   },
+  //   src: "/static/images/0_top/painting-green.jpg",
+  // },
   {
     id: "3",
     title: "🤍",
@@ -31,30 +31,30 @@ export const dataVertical = [
     },
     src: "/static/images/0_top/mainecoon.jpg",
   },
-  {
-    id: "5",
-    title: "♧",
-    url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
-    },
-    src: "/static/images/0_top/IMG_1795.jpg",
-  },
-  {
-    id: "6",
-    title: "♢",
-    url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
-    },
-    src: "/static/images/0_top/mainecoon-baby.jpg",
-  },
   // {
-  //   id: "7",
-  //   title: "Cattery",
+  //   id: "5",
+  //   title: "♧",
   //   url: {
-  //     background: 'center/cover no-repeat url("/static/images/memory/fushigi.jpg")',
+  //     background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
   //   },
-  //   src: "/static/images/memory/fushigi.jpg",
+  //   src: "/static/images/0_top/IMG_1795.jpg",
   // },
+  // {
+  //   id: "6",
+  //   title: "♢",
+  //   url: {
+  //     background: 'top/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
+  //   },
+  //   src: "/static/images/0_top/mainecoon-baby.jpg",
+  // },
+  {
+    id: "7",
+    title: "Freyja",
+    url: {
+      background: 'center/cover no-repeat url("/static/images/memory/Freyja.jpg")',
+    },
+    src: "/static/images/memory/Freyja.jpg",
+  },
   {
     id: "8",
     title: "Gura",
