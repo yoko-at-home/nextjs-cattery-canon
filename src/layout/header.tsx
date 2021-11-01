@@ -35,6 +35,7 @@ export const Header: VFC<Props> = (props) => {
             src={themeImage[props.theme || "home"]}
             alt={"Canon's mainecoons"}
           />
+          <h1 className="absolute -bottom-12 -left-3 sm:-bottom-5 p-5 sm:left-2 md:-bottom-20">
             <CustomLink href="/home" aria-label="Cattery Canon">
               <div className="flex justify-between items-center mb-8">
                 {typeof siteMetadata.headerTitle === "string" ? (
@@ -45,7 +46,7 @@ export const Header: VFC<Props> = (props) => {
                       color: "#71745b",
                       // background: "linearGradient(75deg;rgba(2, 9, 66, 1) 4 % rgba(6, 85, 92, 1) 76%)",
                     }}
-                    className="py-1 pr-3 my-6 text-2xl font-semibold whitespace-nowrap bg-clip-text bg-opacity-40 backdrop-filter backdrop-blur-lg sm:py-3 sm:pr-4 sm:text-5xl md:mt-12 md:mb-20 xl:text-6xl"
+                    className="py-1 pr-3 my-6 text-2xl font-semibold whitespace-nowrap bg-clip-text bg-opacity-40 backdrop-filter backdrop-blur-lg sm:py-2 sm:pr-4 sm:text-5xl md:mt-12 md:mb-20"
                   >
                     {siteMetadata.headerTitle}
                   </div>
