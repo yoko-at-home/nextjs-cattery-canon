@@ -35,7 +35,7 @@ const links = [
 
 const phtographers = [
   {
-    name: "Yoshihiko Yamashita",
+    name: "Yoshiko Yamashita",
     description: "Coming soon ...",
     url: "https://www.canon-cat.com/links#photographers",
     backgroundImg: 'url("")',

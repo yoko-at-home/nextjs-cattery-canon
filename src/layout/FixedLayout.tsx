@@ -21,7 +21,7 @@ export const Layout: VFC<Props> = (props) => {
       <div className="w-full md:mr-5 lg:w-5/6 xl:w-3/6">
         <div>{!props.theme ? null : <Header theme={props.theme || "home"} />}</div>
         <p className="pr-5 text-right text-gray-600">
-          {props.photographer !== "tetsu" ? "Photo: Yoshihiko Yamashita" : "Photo: Yamazaki Tstsu"}
+          {props.photographer !== "tetsu" ? "Photo: Yoshiko Yamashita" : "Photo: Yamazaki Tstsu"}
         </p>
         <main className="px-1 sm:px-3 md:px-5 mx-auto md:w-full">{props.children}</main>
         <Footer />
@@ -41,7 +41,7 @@ export const LayoutBlog: VFC<Props> = (props) => {
       <div className="w-full md:mr-5 lg:w-5/6">
         <div>{!props.theme ? null : <Header theme={props.theme || "home"} />}</div>
         {/* <p className="pr-5 text-right text-gray-600">
-          {props.photographer !== "tetsu" ? "Photo: Yoshihiko Yamashita" : "Photo: Tstsu"}
+          {props.photographer !== "tetsu" ? "Photo: Yoshiko Yamashita" : "Photo: Tstsu"}
         </p> */}
         <main className="px-5 mx-auto md:w-full">{props.children}</main>
         <Footer />
