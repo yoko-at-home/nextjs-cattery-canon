@@ -9,7 +9,7 @@ export const mainecoonDataBoy = [
     title: "CANON VALSE",
     description1: `12/18/2020`,
     description2: `💙 RED SILVER CLASSIC TABBY`,
-    imgSrc: "/static/images/boys/boy-up.jpg",
+    imgSrc: "/static/images/boys/valse.jpg",
   },
 ];
 
