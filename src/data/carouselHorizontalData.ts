@@ -31,14 +31,14 @@ export const dataHorizontal = [
     },
     src: "/static/images/0_top/mainecoon.jpg",
   },
-  // {
-  //   id: "5",
-  //   title: "Cattery Canon",
-  //   url: {
-  //     background: 'center/contain no-repeat url("/static/images/0_top/IMG_1795.jpg")',
-  //   },
-  //   src: "/static/images/0_top/IMG_1795.jpg",
-  // },
+  {
+    id: "5",
+    title: "Cattery Canon",
+    url: {
+      background: 'center/contain no-repeat url("/static/images/tallpaint/painting.jpg")',
+    },
+    src: "/static/images/tallpaint/painting.jpg",
+  },
   {
     id: "6",
     title: "♠︎",
