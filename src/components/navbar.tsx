@@ -3,7 +3,6 @@
 import Link from "next/link";
 import type { VFC } from "react";
 import { useState } from "react";
-
 import { CustomLink } from "src/components/CustomLink";
 
 const items = [

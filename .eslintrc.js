@@ -3,16 +3,13 @@ module.exports = {
   parserOptions: { project: "./tsconfig.json" },
   settings: { tailwindcss: { groupByResponsive: true } },
   env: { es2021: true, browser: true, node: true },
-  plugins: ["simple-import-sort", "tailwindcss"],
+  plugins: ["simple-import-sort", "tailwindcss", "import-access", "cypress"],
   extends: [
-    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:tailwindcss/recommended",
-    "plugin:jsx-a11y/recommended",
-    "next",
+    "plugin:cypress/recommended",
     "next/core-web-vitals",
     "prettier",
-    "plugin:react-hooks/recommended",
   ],
   rules: {
     "no-console": ["error", { allow: ["warn", "info", "error"] }],
@@ -39,6 +36,7 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn",
     "import/newline-after-import": "error",
     "import/no-default-export": "error",
+    "import-access/jsdoc": "error",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "@typescript-eslint/no-explicit-any": "off",
@@ -67,7 +65,26 @@ module.exports = {
   overrides: [
     {
       files: ["src/pages/**/*.tsx", "src/pages/api/**/*.ts"],
-      rules: { "import/no-default-export": "off" },
+      rules: {
+        "import/no-default-export": "off",
+        "@typescript-eslint/naming-convention": [
+          "error",
+          { selector: ["typeAlias", "typeParameter"], format: ["PascalCase"] },
+          { selector: ["classProperty", "typeProperty", "method"], format: ["camelCase"] },
+          { selector: "variable", types: ["boolean"], format: ["PascalCase"], prefix: ["is", "has", "should"] },
+        ],
+      },
+    },
+    {
+      files: ["src/type/**/*.d.ts"],
+      rules: {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          { selector: ["typeAlias", "typeParameter"], format: ["PascalCase"] },
+          { selector: ["classProperty", "method"], format: ["camelCase"] },
+          { selector: "variable", types: ["boolean"], format: ["PascalCase"], prefix: ["is", "has", "should"] },
+        ],
+      },
     },
   ],
 };

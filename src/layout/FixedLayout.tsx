@@ -7,14 +7,14 @@ import { Header } from "src/layout/header";
 
 type Props = {
   className?: string;
-  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles"|"about"|"fushigi";
+  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "fushigi";
   children: ReactNode;
   photographer?: "tetsu" | "yamashita";
 };
 
 export const Layout: VFC<Props> = (props) => {
   return (
-    <div className="flex justify-start w-screen overflow-scroll" style={{ maxHeight: "150vh" }}>
+    <div className="flex overflow-scroll justify-start w-screen" style={{ maxHeight: "150vh" }}>
       <div className="hidden m-5 w-1/6 min-h-full rounded-full md:block xl:w-1/6 nm-inset-yellow-800">
         <NavBarDesktop />
       </div>
@@ -23,7 +23,7 @@ export const Layout: VFC<Props> = (props) => {
         <p className="pr-5 text-right text-gray-600">
           {props.photographer !== "tetsu" ? "Photo: Yoshiko Yamashita" : "Photo: Yamazaki Tstsu"}
         </p>
-        <main className="px-1 sm:px-3 md:px-5 mx-auto md:w-full">{props.children}</main>
+        <main className="px-1 mx-auto sm:px-3 md:px-5 md:w-full">{props.children}</main>
         <Footer />
       </div>
       <div className="hidden xl:block xl:mr-3 xl:w-2/6">

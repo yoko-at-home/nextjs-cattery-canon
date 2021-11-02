@@ -1,9 +1,9 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable @next/next/no-img-element */
 import type { VFC } from "react";
-
 import { CustomLink } from "src/components/CustomLink";
 import { NavBarMobile } from "src/components/navbar";
+
 import { siteMetadata } from "../data/siteMetadata";
 
 type Props = {
@@ -35,7 +35,7 @@ export const Header: VFC<Props> = (props) => {
             src={themeImage[props.theme || "home"]}
             alt={"Canon's mainecoons"}
           />
-          <h1 className="absolute -bottom-12 -left-3 sm:-bottom-5 p-5 sm:left-2 md:-bottom-20">
+          <h1 className="absolute -bottom-12 -left-3 p-5 sm:-bottom-5 sm:left-2 md:-bottom-20">
             <CustomLink href="/home" aria-label="Cattery Canon">
               <div className="flex justify-between items-center mb-8">
                 {typeof siteMetadata.headerTitle === "string" ? (

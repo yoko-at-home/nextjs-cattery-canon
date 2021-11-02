@@ -1,6 +1,5 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import type { VFC } from "react";
-
 import { CustomLink } from "src/components/CustomLink";
 import { Logo } from "src/components/Logo";
 import { NavBarMobile } from "src/components/navbar";

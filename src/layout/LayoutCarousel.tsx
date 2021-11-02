@@ -1,5 +1,4 @@
 import type { ReactNode, VFC } from "react";
-
 import { Carousel } from "src/components/Carousel";
 import { NavBarMobile } from "src/components/navbar";
 
