@@ -1,7 +1,7 @@
 export const dataHorizontal = [
   {
     id: "1",
-    title: "Cattery",
+    title: "Cattery Canon",
     url: {
       background: 'center/contain no-repeat url("/static/images/0_top/mainecoon-girls.jpg")',
     },
@@ -9,7 +9,7 @@ export const dataHorizontal = [
   },
   {
     id: "2",
-    title: "Canon",
+    title: "Canon's collection",
     url: {
       background: 'center/contain no-repeat url("/static/images/0_top/painting-green.jpg")',
     },
@@ -33,7 +33,7 @@ export const dataHorizontal = [
   },
   {
     id: "5",
-    title: "♠︎",
+    title: "Cattery Canon",
     url: {
       background: 'center/contain no-repeat url("/static/images/0_top/IMG_1795.jpg")',
     },
@@ -47,16 +47,8 @@ export const dataHorizontal = [
     },
     src: "/static/images/0_top/mainecoon-baby.jpg",
   },
-  // {
-  //   id: "7",
-  //   title: "Cattery",
-  //   url: {
-  //     background: 'center/contain no-repeat url("/static/images/memory/fushigi.jpg")',
-  //   },
-  //   src: "/static/images/memory/fushigi.jpg",
-  // },
   {
-    id: "8",
+    id: "7",
     title: "Gura",
     url: {
       background: 'bottom/contain no-repeat url("/static/images/memory/gura.jpg")',
@@ -64,12 +56,20 @@ export const dataHorizontal = [
     src: "/static/images/memory/gura.jpg",
   },
   {
-    id: "9",
+    id: "8",
     title: "Hanako",
     url: {
       background: 'center/contain no-repeat url("/static/images/memory/hanako.jpg")',
     },
     src: "/static/images/memory/hanako.jpg",
+  },
+  {
+    id: "9",
+    title: "Canon's collection",
+    url: {
+      background: 'top/contain no-repeat url("/static/images/tallpaint/black-plate.jpg")',
+    },
+    src: "/static/images/tallpaint/black-plate.jpg",
   },
   {
     id: "10",
@@ -97,6 +97,14 @@ export const dataHorizontal = [
   },
   {
     id: "13",
+    title: "Canon's collection",
+    url: {
+      background: 'top/contain no-repeat url("/static/images/tallpaint/mother&daughter.jpg")',
+    },
+    src: "/static/images/tallpaint/mother&daughter.jpg",
+  },
+  {
+    id: "14",
     title: "Miyabi",
     url: {
       background: 'bottom/contain no-repeat url("/static/images/memory/miyabi.jpg")',
@@ -104,7 +112,7 @@ export const dataHorizontal = [
     src: "/static/images/memory/miyabi.jpg",
   },
   {
-    id: "14",
+    id: "15",
     title: "Myu",
     url: {
       background: 'center/contain no-repeat url("/static/images/memory/myu.jpg")',
@@ -112,28 +120,20 @@ export const dataHorizontal = [
     src: "/static/images/memory/myu.jpg",
   },
   {
-    id: "15",
+    id: "16",
     title: "Naushika",
     url: {
-      background: 'center/contain no-repeat url("/static/images/memory/naushika.jpg")',
+      background: 'bottom/contain no-repeat url("/static/images/memory/naushika.jpg")',
     },
     src: "/static/images/memory/naushika.jpg",
   },
   {
-    id: "16",
+    id: "17",
     title: "Rizumu",
     url: {
       background: 'center/contain no-repeat url("/static/images/memory/rizumu.jpg")',
     },
     src: "/static/images/memory/rizumu.jpg",
-  },
-  {
-    id: "17",
-    title: "🐝♠︎🐝♠︎🐝",
-    url: {
-      background: 'top/contain no-repeat url("/static/images/0_top/bee.jpg")',
-    },
-    src: "/static/images/0_top/bee.jpg",
   },
   {
     id: "18",
@@ -142,5 +142,13 @@ export const dataHorizontal = [
       background: 'top/contain no-repeat url("/static/images/memory/yume.jpg")',
     },
     src: "/static/images/memory/yume.jpg",
+  },
+  {
+    id: "19",
+    title: "Canon's collection",
+    url: {
+      background: 'top/contain no-repeat url("/static/images/tallpaint/cutting-board.jpg")',
+    },
+    src: "/static/images/tallpaint/cutting-board.jpg",
   },
 ];

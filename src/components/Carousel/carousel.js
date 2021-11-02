@@ -41,34 +41,6 @@ const data = [
       background: 'top/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
     },
   },
-  // {
-  //   id: "6",
-  //   title: "",
-  //   url: {
-  //     background: 'center/cover no-repeat url("/static/images/0_top/fushigi.jpg")',
-  //   },
-  // },
-  // {
-  //   id: "7",
-  //   title: "",
-  //   url: {
-  //     background: 'center/cover no-repeat url("/static/images/0_top/gura.jpg")',
-  //   },
-  // },
-  // {
-  //   id: "8",
-  //   title: "",
-  //   url: {
-  //     background: 'left/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
-  //   },
-  // },
-  // {
-  //   id: "9",
-  //   title: "",
-  //   url: {
-  //     background: 'center/cover no-repeat url("/static/images/0_top/hime.jpg")',
-  //   },
-  // },
   {
     id: "10",
     title: "",
@@ -87,44 +59,9 @@ const data = [
     id: "12",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
+      background: 'center/cover no-repeat url("/static/images/tallpaint/in-a-field.jpg")',
     },
   },
-  // {
-  //   id: "13",
-  //   title: "",
-  //   url: {
-  //     background: 'center/cover no-repeat url("/static/images/0_top/miyabi.jpg")',
-  //   },
-  // },
-  // {
-  //   id: "14",
-  //   title: "",
-  //   url: {
-  //     background: 'center/cover no-repeat url("/static/images/0_top/myu.jpg")',
-  //   },
-  // },
-  // {
-  //   id: "15",
-  //   title: "",
-  //   url: {
-  //     background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-sleeping-baby.jpg")',
-  //   },
-  // },
-  // {
-  //   id: "16",
-  //   title: "",
-  //   url: {
-  //     background: 'center/cover no-repeat url("/static/images/0_top/rizumu.jpg")',
-  //   },
-  // },
-  // {
-  //   id: "17",
-  //   title: "",
-  //   url: {
-  //     background: 'top/cover no-repeat url("/static/images/0_top/yume.jpg")',
-  //   },
-  // },
 ];
 
 export const Carousel = () => {
