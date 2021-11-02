@@ -7,14 +7,14 @@ export const dataHorizontal = [
     },
     src: "/static/images/0_top/mainecoon-girls.jpg",
   },
-  // {
-  //   id: "2",
-  //   title: "Canon",
-  //   url: {
-  //     background: 'center/contain no-repeat url("/static/images/0_top/painting-green.jpg")',
-  //   },
-  //   src: "/static/images/0_top/painting-green.jpg",
-  // },
+  {
+    id: "2",
+    title: "Canon",
+    url: {
+      background: 'center/contain no-repeat url("/static/images/0_top/painting-green.jpg")',
+    },
+    src: "/static/images/0_top/painting-green.jpg",
+  },
   {
     id: "3",
     title: "❤️",
@@ -31,14 +31,14 @@ export const dataHorizontal = [
     },
     src: "/static/images/0_top/mainecoon.jpg",
   },
-  // {
-  //   id: "5",
-  //   title: "♠︎",
-  //   url: {
-  //     background: 'center/contain no-repeat url("/static/images/0_top/IMG_1795.jpg")',
-  //   },
-  //   src: "/static/images/0_top/IMG_1795.jpg",
-  // },
+  {
+    id: "5",
+    title: "♠︎",
+    url: {
+      background: 'center/contain no-repeat url("/static/images/0_top/IMG_1795.jpg")',
+    },
+    src: "/static/images/0_top/IMG_1795.jpg",
+  },
   {
     id: "6",
     title: "♠︎",
