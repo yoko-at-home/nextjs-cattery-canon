@@ -10,119 +10,119 @@ const data = [
     id: "1",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-girls.avif")',
+      background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-girls.jpg")',
     },
   },
   {
     id: "2",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/painting-green.avif")',
+      background: 'center/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
     },
   },
   {
     id: "3",
     title: "",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/baby-mainecoon.avif")',
+      background: 'top/cover no-repeat url("/static/images/0_top/baby-mainecoon.jpg")',
     },
   },
   {
     id: "4",
     title: "",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon.avif")',
+      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon.jpg")',
     },
   },
   {
     id: "6",
     title: "",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon-baby.avif")',
+      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
     },
   },
   // {
   //   id: "7",
   //   title: "",
   //   url: {
-  //     background: 'center/cover no-repeat url("/static/images/0_top/fushigi.avif")',
+  //     background: 'center/cover no-repeat url("/static/images/0_top/fushigi.jpg")',
   //   },
   // },
   {
     id: "8",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/gura.avif")',
+      background: 'center/cover no-repeat url("/static/images/0_top/gura.jpg")',
     },
   },
   {
     id: "9",
     title: "",
     url: {
-      background: 'left/cover no-repeat url("/static/images/0_top/hanako.avif")',
+      background: 'left/cover no-repeat url("/static/images/0_top/hanako.jpg")',
     },
   },
   {
     id: "10",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/hime.avif")',
+      background: 'center/cover no-repeat url("/static/images/0_top/hime.jpg")',
     },
   },
   {
     id: "11",
     title: "",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/kenta.avif")',
+      background: 'top/cover no-repeat url("/static/images/0_top/kenta.jpg")',
     },
   },
   {
     id: "12",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/lala.avif")',
+      background: 'center/cover no-repeat url("/static/images/0_top/lala.jpg")',
     },
   },
   {
     id: "5",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.avif")',
+      background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
     },
   },
   {
     id: "13",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/miyabi.avif")',
+      background: 'center/cover no-repeat url("/static/images/0_top/miyabi.jpg")',
     },
   },
   {
     id: "14",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/myu.avif")',
+      background: 'center/cover no-repeat url("/static/images/0_top/myu.jpg")',
     },
   },
   {
     id: "15",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/naushika.avif")',
+      background: 'center/cover no-repeat url("/static/images/0_top/naushika.jpg")',
     },
   },
   {
     id: "16",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/rizumu.avif")',
+      background: 'center/cover no-repeat url("/static/images/0_top/rizumu.jpg")',
     },
   },
   {
     id: "17",
     title: "",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/yume.avif")',
+      background: 'top/cover no-repeat url("/static/images/0_top/yume.jpg")',
     },
   },
 ];
