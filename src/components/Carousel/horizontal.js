@@ -69,7 +69,7 @@ export const CarouselHorizontal = () => {
           font-size: 30px;
           color: #fff;
           font-weight: 500;
-          height: 70vh;
+          height: 40vh;
           // min-height: 105vh;
           border-radius: 5px;
           padding: 50px;

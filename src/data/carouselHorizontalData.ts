@@ -3,23 +3,23 @@ export const dataHorizontal = [
     id: "1",
     title: "Cattery",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-girls.jpg")',
+      background: 'center/contain no-repeat url("/static/images/0_top/mainecoon-girls.jpg")',
     },
     src: "/static/images/0_top/mainecoon-girls.jpg",
   },
-  {
-    id: "2",
-    title: "Canon",
-    url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
-    },
-    src: "/static/images/0_top/painting-green.jpg",
-  },
+  // {
+  //   id: "2",
+  //   title: "Canon",
+  //   url: {
+  //     background: 'center/contain no-repeat url("/static/images/0_top/painting-green.jpg")',
+  //   },
+  //   src: "/static/images/0_top/painting-green.jpg",
+  // },
   {
     id: "3",
     title: "❤️",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/baby-mainecoon.jpg")',
+      background: 'top/contain no-repeat url("/static/images/0_top/baby-mainecoon.jpg")',
     },
     src: "/static/images/0_top/baby-mainecoon.jpg",
   },
@@ -27,39 +27,39 @@ export const dataHorizontal = [
     id: "4",
     title: "♠︎",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon.jpg")',
+      background: 'top/contain no-repeat url("/static/images/0_top/mainecoon.jpg")',
     },
     src: "/static/images/0_top/mainecoon.jpg",
   },
-  {
-    id: "5",
-    title: "♠︎",
-    url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
-    },
-    src: "/static/images/0_top/IMG_1795.jpg",
-  },
+  // {
+  //   id: "5",
+  //   title: "♠︎",
+  //   url: {
+  //     background: 'center/contain no-repeat url("/static/images/0_top/IMG_1795.jpg")',
+  //   },
+  //   src: "/static/images/0_top/IMG_1795.jpg",
+  // },
   {
     id: "6",
     title: "♠︎",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
+      background: 'top/contain no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
     },
     src: "/static/images/0_top/mainecoon-baby.jpg",
   },
-  // {
-  //   id: "7",
-  //   title: "Cattery",
-  //   url: {
-  //     background: 'center/cover no-repeat url("/static/images/memory/fushigi.jpg")',
-  //   },
-  //   src: "/static/images/memory/fushigi.jpg",
-  // },
+  {
+    id: "7",
+    title: "Cattery",
+    url: {
+      background: 'center/contain no-repeat url("/static/images/memory/fushigi.jpg")',
+    },
+    src: "/static/images/memory/fushigi.jpg",
+  },
   {
     id: "8",
     title: "Gura",
     url: {
-      background: 'bottom/cover no-repeat url("/static/images/memory/gura.jpg")',
+      background: 'bottom/contain no-repeat url("/static/images/memory/gura.jpg")',
     },
     src: "/static/images/memory/gura.jpg",
   },
@@ -67,7 +67,7 @@ export const dataHorizontal = [
     id: "9",
     title: "Hanako",
     url: {
-      background: 'left/cover no-repeat url("/static/images/memory/hanako.jpg")',
+      background: 'center/contain no-repeat url("/static/images/memory/hanako.jpg")',
     },
     src: "/static/images/memory/hanako.jpg",
   },
@@ -75,7 +75,7 @@ export const dataHorizontal = [
     id: "10",
     title: "Hime",
     url: {
-      background: 'center/cover no-repeat url("/static/images/memory/hime.jpg")',
+      background: 'center/contain no-repeat url("/static/images/memory/hime.jpg")',
     },
     src: "/static/images/memory/hime.jpg",
   },
@@ -83,7 +83,7 @@ export const dataHorizontal = [
     id: "11",
     title: "Kenta",
     url: {
-      background: 'left/cover no-repeat url("/static/images/memory/kenta.jpg")',
+      background: 'center/contain no-repeat url("/static/images/memory/kenta.jpg")',
     },
     src: "/static/images/memory/kenta.jpg",
   },
@@ -91,7 +91,7 @@ export const dataHorizontal = [
     id: "12",
     title: "Lata",
     url: {
-      background: 'bottom/cover no-repeat url("/static/images/memory/lala.jpg")',
+      background: 'bottom/contain no-repeat url("/static/images/memory/lala.jpg")',
     },
     src: "/static/images/memory/lala.jpg",
   },
@@ -99,7 +99,7 @@ export const dataHorizontal = [
     id: "13",
     title: "Miyabi",
     url: {
-      background: 'bottom/cover no-repeat url("/static/images/memory/miyabi.jpg")',
+      background: 'bottom/contain no-repeat url("/static/images/memory/miyabi.jpg")',
     },
     src: "/static/images/memory/miyabi.jpg",
   },
@@ -107,7 +107,7 @@ export const dataHorizontal = [
     id: "14",
     title: "Myu",
     url: {
-      background: 'center/cover no-repeat url("/static/images/memory/myu.jpg")',
+      background: 'center/contain no-repeat url("/static/images/memory/myu.jpg")',
     },
     src: "/static/images/memory/myu.jpg",
   },
@@ -115,7 +115,7 @@ export const dataHorizontal = [
     id: "15",
     title: "Naushika",
     url: {
-      background: 'center/cover no-repeat url("/static/images/memory/naushika.jpg")',
+      background: 'center/contain no-repeat url("/static/images/memory/naushika.jpg")',
     },
     src: "/static/images/memory/naushika.jpg",
   },
@@ -123,7 +123,7 @@ export const dataHorizontal = [
     id: "16",
     title: "Rizumu",
     url: {
-      background: 'center/cover no-repeat url("/static/images/memory/rizumu.jpg")',
+      background: 'center/contain no-repeat url("/static/images/memory/rizumu.jpg")',
     },
     src: "/static/images/memory/rizumu.jpg",
   },
@@ -131,7 +131,7 @@ export const dataHorizontal = [
     id: "17",
     title: "Yume",
     url: {
-      background: 'top/cover no-repeat url("/static/images/memory/yume.jpg")',
+      background: 'top/contain no-repeat url("/static/images/memory/yume.jpg")',
     },
     src: "/static/images/memory/yume.jpg",
   },
