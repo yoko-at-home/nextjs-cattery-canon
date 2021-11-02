@@ -3,7 +3,7 @@ import { CarouselHorizontal } from "src/components/Carousel";
 import { GalleryHexagon } from "src/components/GalleryHexagon";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
-// import { Tile } from "src/components/Tile";
+import { Tile } from "src/components/Tile";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 
@@ -16,8 +16,8 @@ const Gallery: NextPage = () => {
         <GalleryHexagon />
       </div>
       <CarouselHorizontal />
-      {/* <PageTitle type="medium">メモリー - {siteMetadata.title} </PageTitle>
-      <Tile /> */}
+      <PageTitle type="medium">メモリー - {siteMetadata.title} </PageTitle>
+      <Tile />
     </Layout>
   );
 };

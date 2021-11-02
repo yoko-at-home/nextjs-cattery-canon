@@ -1,17 +1,17 @@
 import Image from "next/image";
-import { dataVertical } from "src/data/carouselVerticalData";
+import { tileDataMemory } from "src/data/tileDataMemory";
 
 export const Tile = () => {
   return (
-    <div className="grid grid-cols-1 gap-0 justify-items-stretch sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-      {dataVertical.map((data) => {
+    <div className="grid grid-cols-1 justify-items-stretch sm:grid-cols-2 md:grid-cols-3 md:gap-0 xl:grid-cols-4">
+      {tileDataMemory.map((data) => {
         return (
           <Image
             src={data.src}
             alt={data.title}
-            width={400}
-            height={350}
-            className="object-cover opacity-80 hover:opacity-100"
+            width={500}
+            height={450}
+            className="object-cover opacity-80 hover:opacity-100 transform-gpu hover:scale-110"
             key={data.id}
           />
         );
