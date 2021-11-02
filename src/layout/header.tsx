@@ -30,7 +30,7 @@ export const Header: VFC<Props> = (props) => {
         <div className="relative h-full nm-flat-gray-100-xl">
           <img
             width="100%"
-            height="90%"
+            height="100%"
             className="object-cover object-center relative pointer-events-none"
             src={themeImage[props.theme || "home"]}
             alt={"Canon's mainecoons"}

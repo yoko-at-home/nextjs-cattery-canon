@@ -49,7 +49,7 @@ export const GalleryHexagon = () => {
             width: 100%;
             overflow: hidden;
             position: relative;
-            margin: 0 auto;
+            // margin: 0 auto;
             -webkit-transition: all ease 500ms;
             -moz-transition: all ease 500ms;
             -o-transition: all ease 500ms;
