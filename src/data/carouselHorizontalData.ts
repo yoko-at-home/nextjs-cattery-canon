@@ -47,14 +47,14 @@ export const dataHorizontal = [
     },
     src: "/static/images/0_top/mainecoon-baby.jpg",
   },
-  {
-    id: "7",
-    title: "Cattery",
-    url: {
-      background: 'center/contain no-repeat url("/static/images/memory/fushigi.jpg")',
-    },
-    src: "/static/images/memory/fushigi.jpg",
-  },
+  // {
+  //   id: "7",
+  //   title: "Cattery",
+  //   url: {
+  //     background: 'center/contain no-repeat url("/static/images/memory/fushigi.jpg")',
+  //   },
+  //   src: "/static/images/memory/fushigi.jpg",
+  // },
   {
     id: "8",
     title: "Gura",
@@ -129,6 +129,14 @@ export const dataHorizontal = [
   },
   {
     id: "17",
+    title: "🐝♠︎🐝♠︎🐝",
+    url: {
+      background: 'top/contain no-repeat url("/static/images/0_top/bee.jpg")',
+    },
+    src: "/static/images/0_top/bee.jpg",
+  },
+  {
+    id: "18",
     title: "Yume",
     url: {
       background: 'top/contain no-repeat url("/static/images/memory/yume.jpg")',
