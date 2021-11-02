@@ -69,18 +69,18 @@ const data = [
   //     background: 'center/cover no-repeat url("/static/images/0_top/hime.jpg")',
   //   },
   // },
-  {
-    id: "10",
-    title: "",
-    url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/kenta.jpg")',
-    },
-  },
+  // {
+  //   id: "10",
+  //   title: "",
+  //   url: {
+  //     background: 'top/cover no-repeat url("/static/images/0_top/kenta.jpg")',
+  //   },
+  // },
   {
     id: "11",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/lala.jpg")',
+      background: 'center/left no-repeat url("/static/images/0_top/mainecoon-sleeping-baby.jpg")',
     },
   },
   {
@@ -90,13 +90,13 @@ const data = [
       background: 'center/cover no-repeat url("/static/images/0_top/IMG_1795.jpg")',
     },
   },
-  {
-    id: "13",
-    title: "",
-    url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/miyabi.jpg")',
-    },
-  },
+  // {
+  //   id: "13",
+  //   title: "",
+  //   url: {
+  //     background: 'center/cover no-repeat url("/static/images/0_top/miyabi.jpg")',
+  //   },
+  // },
   // {
   //   id: "14",
   //   title: "",
@@ -104,13 +104,13 @@ const data = [
   //     background: 'center/cover no-repeat url("/static/images/0_top/myu.jpg")',
   //   },
   // },
-  {
-    id: "15",
-    title: "",
-    url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/naushika.jpg")',
-    },
-  },
+  // {
+  //   id: "15",
+  //   title: "",
+  //   url: {
+  //     background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-sleeping-baby.jpg")',
+  //   },
+  // },
   // {
   //   id: "16",
   //   title: "",
@@ -118,13 +118,13 @@ const data = [
   //     background: 'center/cover no-repeat url("/static/images/0_top/rizumu.jpg")',
   //   },
   // },
-  {
-    id: "17",
-    title: "",
-    url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/yume.jpg")',
-    },
-  },
+  // {
+  //   id: "17",
+  //   title: "",
+  //   url: {
+  //     background: 'top/cover no-repeat url("/static/images/0_top/yume.jpg")',
+  //   },
+  // },
 ];
 
 export const Carousel = () => {
