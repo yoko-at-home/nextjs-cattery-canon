@@ -60,7 +60,7 @@
     "autoprefixer": "^10.4.0",
     "babel-jest": "27.3.1",
     "classcat": "^5.0.3",
-    "eslint": "^8.1.0",
+    "eslint": "<8.0.0",
     "eslint-config-next": "11.1.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-cypress": "2.12.1",

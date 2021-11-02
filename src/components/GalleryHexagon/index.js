@@ -19,18 +19,18 @@ const data = [
 export const GalleryHexagon = () => {
   return (
     <>
-      <article title='lab'>
-        <div className='hidden justify-center mb-8 md:flex'>
+      <article title="lab">
+        <div className="hidden justify-center mb-8 md:flex">
           <Logo />
         </div>
-        <ul className=''>
+        <ul className="">
           {data.map((item) => {
             return (
-              <div className='lab_item' key={item.title}>
-                <div className='hexagon hexagon2'>
-                  <div className='hexagon-in1'>
+              <div className="lab_item" key={item.title}>
+                <div className="hexagon hexagon2">
+                  <div className="hexagon-in1">
                     <div
-                      className='hexagon-in2'
+                      className="hexagon-in2"
                       style={{
                         backgroundImage: `url(${item.url})`,
                       }}
