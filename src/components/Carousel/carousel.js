@@ -48,20 +48,20 @@ const data = [
   //     background: 'center/cover no-repeat url("/static/images/0_top/fushigi.jpg")',
   //   },
   // },
-  {
-    id: "7",
-    title: "",
-    url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/gura.jpg")',
-    },
-  },
-  {
-    id: "8",
-    title: "",
-    url: {
-      background: 'left/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
-    },
-  },
+  // {
+  //   id: "7",
+  //   title: "",
+  //   url: {
+  //     background: 'center/cover no-repeat url("/static/images/0_top/gura.jpg")',
+  //   },
+  // },
+  // {
+  //   id: "8",
+  //   title: "",
+  //   url: {
+  //     background: 'left/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
+  //   },
+  // },
   // {
   //   id: "9",
   //   title: "",
@@ -69,18 +69,18 @@ const data = [
   //     background: 'center/cover no-repeat url("/static/images/0_top/hime.jpg")',
   //   },
   // },
-  // {
-  //   id: "10",
-  //   title: "",
-  //   url: {
-  //     background: 'top/cover no-repeat url("/static/images/0_top/kenta.jpg")',
-  //   },
-  // },
+  {
+    id: "10",
+    title: "",
+    url: {
+      background: 'top/cover no-repeat url("/static/images/0_top/kenta.jpg")',
+    },
+  },
   {
     id: "11",
     title: "",
     url: {
-      background: 'center/left no-repeat url("/static/images/0_top/mainecoon-sleeping-baby.jpg")',
+      background: 'top/cover no-repeat url("/static/images/0_top/sleeping-baby.jpg")',
     },
   },
   {
