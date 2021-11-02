@@ -16,7 +16,7 @@ const Gallery: NextPage = () => {
         <GalleryHexagon />
       </div>
       <CarouselHorizontal />
-      <PageTitle type="medium">メモリー - {siteMetadata.title} </PageTitle>
+      <PageTitle type="large">Memory </PageTitle>
       <Tile />
     </Layout>
   );
