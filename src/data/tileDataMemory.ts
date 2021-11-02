@@ -1,7 +1,7 @@
 export const tileDataMemory = [
   {
     id: "7",
-    title: "Cattery",
+    title: "Fushigi",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/fushigi.jpg")',
     },
