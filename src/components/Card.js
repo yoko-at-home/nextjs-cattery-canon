@@ -22,7 +22,7 @@ export const Card = (props) => {
 };
 export const CardModal = (props) => {
   return (
-    <div className="p-4 h-4/5 overflow-x-scroll" style={{ maxWidth: "800px" }}>
+    <div className="overflow-x-scroll p-4 h-4/5" style={{ maxWidth: "800px" }}>
       <div className="flex overflow-scroll flex-col p-3 rounded-md border-2 border-gray-200 border-opacity-60 md:flex-row nm-inset-gray-100-sm">
         <Image
           alt={props.title}
@@ -32,14 +32,14 @@ export const CardModal = (props) => {
           height={300}
         />
         <div className="px-2 sm:px-6 md:w-2/3">
-          <h2 className="z-50 text-yellow-900 text-lg sm:text-2xl font-bold tracking-tight leading-8 sm:mt-3 text-center">
+          <h2 className="z-50 text-lg font-bold tracking-tight leading-8 text-center text-yellow-900 sm:mt-3 sm:text-2xl">
             {props.title}
           </h2>
-          <p className="font-bold leading-loose text-green-900 prose sm:mb-3 text-sm sm:text-lg sm:mt-10">
+          <p className="text-sm font-bold leading-loose text-green-900 prose sm:mt-10 sm:mb-3 sm:text-lg">
             {props.description2}
           </p>
-          <p className="text-gray-500 prose sm:mb-3 text-sm">Date of Birth: {props.description1}</p>
-          <p className="leading-loose text-gray-500 sm:mt-10 text-xs sm:text-sm md:text-lg">
+          <p className="text-sm text-gray-500 prose sm:mb-3">Date of Birth: {props.description1}</p>
+          <p className="text-xs leading-loose text-gray-500 sm:mt-10 sm:text-sm md:text-lg">
             💙 SIRE: {props.father}
             <br />
             ❤️ DAM: {props.mother}

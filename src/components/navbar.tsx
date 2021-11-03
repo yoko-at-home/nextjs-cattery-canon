@@ -60,7 +60,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
   };
   return (
     <>
-      <div className="fixed right-5 bottom-28 z-50 px-2 pt-1 nm-inset-gray-500 rounded xl:right-96">
+      <div className="fixed right-5 bottom-28 z-50 px-2 pt-1 rounded xl:right-96 nm-inset-gray-500">
         <button
           type="button"
           className="mr-1 ml-1 w-16 h-16 rounded"
@@ -103,7 +103,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
                   key={href}
                   href={href}
                   onClick={handleOnToggleNav}
-                  className="flex flex-col p-2 sm:p-3 mx-auto text-2xl font-medium tracking-widest text-right text-gray-300 hover:text-gray-100 bg-gradient-to-r from-gray-400 to-gray-500 opacity-90 sm:tracking-widest"
+                  className="flex flex-col p-2 mx-auto text-2xl font-medium tracking-widest text-right text-gray-300 hover:text-gray-100 bg-gradient-to-r from-gray-400 to-gray-500 opacity-90 sm:p-3 sm:tracking-widest"
                 >
                   {label}
                 </CustomLink>

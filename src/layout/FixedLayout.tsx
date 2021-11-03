@@ -27,9 +27,9 @@ export const Layout: VFC<Props> = (props) => {
         <main className="px-2 mx-auto sm:px-3 md:px-5 md:w-full">{props.children}</main>
         <Footer />
       </div>
-      <div className="hidden xl:block xl:mr-3 xl:w-2/6 max-h-[300vh] overflow-scroll">
+      <div className="hidden overflow-scroll max-h-[300vh] xl:block xl:mr-3 xl:w-2/6">
         {/* <CarouselVertical /> */}
-        <Test/>
+        <Test />
       </div>
     </div>
   );
@@ -50,7 +50,7 @@ export const LayoutBlog: VFC<Props> = (props) => {
       </div>
       <div className="hidden xl:block xl:mr-3 xl:w-2/6">
         {/* <CarouselVertical /> */}
-        <Test/>
+        <Test />
       </div>
     </div>
   );
