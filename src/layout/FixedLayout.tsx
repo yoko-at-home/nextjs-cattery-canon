@@ -1,7 +1,7 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import type { ReactNode, VFC } from "react";
-import { CarouselVertical } from "src/components/Carousel";
-// import { Test } from "src/components/Carousel/test";
+// import { CarouselVertical } from "src/components/Carousel";
+import { Test } from "src/components/Carousel/test";
 import { NavBarDesktop } from "src/components/navbar";
 import { Footer } from "src/layout/footer";
 import { Header } from "src/layout/header";
@@ -28,8 +28,8 @@ export const Layout: VFC<Props> = (props) => {
         <Footer />
       </div>
       <div className="hidden xl:block xl:mr-3 xl:w-2/6 max-h-[300vh] overflow-scroll">
-        <CarouselVertical />
-        {/* <Test/> */}
+        {/* <CarouselVertical /> */}
+        <Test/>
       </div>
     </div>
   );
@@ -49,7 +49,8 @@ export const LayoutBlog: VFC<Props> = (props) => {
         <Footer />
       </div>
       <div className="hidden xl:block xl:mr-3 xl:w-2/6">
-        <CarouselVertical />
+        {/* <CarouselVertical /> */}
+        <Test/>
       </div>
     </div>
   );
