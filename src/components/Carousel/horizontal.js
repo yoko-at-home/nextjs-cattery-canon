@@ -52,7 +52,7 @@ export const CarouselHorizontal = () => {
                   textShadow: "3px 3px 5px #ffffff",
                   color: "#71745b",
                 }}
-                className="py-1 px-2 font-semibold backdrop-filter backdrop-blur-lg transform -rotate-45 sm:py-3 sm:px-5"
+                className="py-2 px-2 font-semibold backdrop-filter backdrop-blur-lg transform -rotate-45 sm:py-3 sm:px-5"
               >
                 <div className="text-xs transform rotate-45 sm:text-lg md:text-2xl lg:text-3xl">{item.title}</div>
               </div>

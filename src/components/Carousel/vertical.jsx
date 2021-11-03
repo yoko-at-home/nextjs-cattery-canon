@@ -46,18 +46,18 @@ export const CarouselVertical = () => {
       <div ref={sliderRef} className="keen-slider">
         {dataVertical.map((item) => {
           return (
-            <div className="keen-slider__slide number-slide" style={item.url} key={item.id}>
-              <div
-                style={{
-                  border: "solid 1px rgba(98,98,98,.6)",
-                  textShadow: "3px 3px 5px #ffffff",
-                  color: "#71745b",
-                }}
-                className="py-3 px-5 font-semibold backdrop-filter backdrop-blur-lg transform -rotate-45"
-              >
-                <div className="transform rotate-45">{item.title}</div>
+              <div className="keen-slider__slide number-slide" style={item.url} key={item.id}>
+                <div
+                  style={{
+                    border: "solid 1px rgba(98,98,98,.6)",
+                    textShadow: "3px 3px 5px #ffffff",
+                    color: "#71745b",
+                  }}
+                  className="py-3 px-5 font-semibold backdrop-filter backdrop-blur-lg transform -rotate-45"
+                >
+                  <div className="transform rotate-45">{item.title}</div>
+                </div>
               </div>
-            </div>
           );
         })}
       </div>

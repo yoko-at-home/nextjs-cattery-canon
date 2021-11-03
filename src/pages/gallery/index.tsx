@@ -12,11 +12,11 @@ const Gallery: NextPage = () => {
     <Layout theme="fushigi">
       <PageSEO title={`ギャラリー - ${siteMetadata.author}`} description={siteMetadata.description} />
       <PageTitle type="large">Gallery</PageTitle>
+      <PageTitle type="medium">{siteMetadata.title} の世界</PageTitle>
+      <CarouselHorizontal />
       <div className="hidden justify-center mx-0 mb-16 sm:flex">
         <GalleryHexagon />
       </div>
-      <PageTitle type="medium">{siteMetadata.title} の世界</PageTitle>
-      <CarouselHorizontal />
       {/* <PageTitle type="large">Memory </PageTitle>
       <Tile /> */}
     </Layout>
