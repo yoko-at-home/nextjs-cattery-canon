@@ -13,7 +13,7 @@ export const Footer: VFC = () => {
         <div className="flex justify-center mb-16">
           <Logo />
         </div>
-        <div className="flex mb-2 space-x-2 text-sm text-gray-500">
+        <div className="flex mb-2 space-x-2 text-sm text-gray-700">
           <div>{siteMetadata.author}</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
@@ -34,7 +34,7 @@ export const Footer: VFC = () => {
             target="_blank"
             rel=" noopener noreferrer"
             href="http://catterycanoncat.blog.fc2.com"
-            className="text-gray-700 hover:text-green-600 animate-pulse"
+            className="text-gray-700 hover:text-green-600"
           >
             {siteMetadata.title} ブログ
           </a>
