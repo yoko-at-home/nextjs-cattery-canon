@@ -47,7 +47,6 @@ const MyBoys = () => {
                     father={d.father}
                     mother={d.mother}
                     key={d.title}
-                    // href={d.href}
                     className="md:w-1/2"
                   >
                     <Card key={d.href} title={d.title} description={d.description1} imgSrc={d.imgSrc} />
@@ -67,7 +66,6 @@ const MyBoys = () => {
                     father={selectedItem?.father}
                     mother={selectedItem?.mother}
                     imgSrc={selectedItem?.imgSrc}
-                    // href={selectedItem?.href}
                   />
                 </p>
                 <div className="flex justify-end mt-8">
