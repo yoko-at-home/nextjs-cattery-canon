@@ -10,93 +10,93 @@ const data = [
     id: "1",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-girls.jpg")',
+      background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-girls.webp")',
     },
   },
   {
     id: "2",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/0_top/painting-green.jpg")',
+      background: 'center/cover no-repeat url("/static/images/0_top/painting-green.webp")',
     },
   },
   {
     id: "3",
     title: "",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/baby-mainecoon.jpg")',
+      background: 'top/cover no-repeat url("/static/images/0_top/baby-mainecoon.webp")',
     },
   },
   {
     id: "4",
     title: "",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon.jpg")',
+      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon.webp")',
     },
   },
   {
     id: "5",
     title: "",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon-baby.jpg")',
+      background: 'top/cover no-repeat url("/static/images/0_top/mainecoon-baby.webp")',
     },
   },
   {
     id: "10",
     title: "",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/kenta.jpg")',
+      background: 'top/cover no-repeat url("/static/images/0_top/kenta.webp")',
     },
   },
   {
     id: "11",
     title: "",
     url: {
-      background: 'top/cover no-repeat url("/static/images/0_top/sleeping-baby.jpg")',
+      background: 'top/cover no-repeat url("/static/images/0_top/sleeping-baby.webp")',
     },
   },
   {
     id: "12",
     title: "",
     url: {
-      background: 'center/cover no-repeat url("/static/images/tallpaint/in-a-field.jpg")',
+      background: 'center/cover no-repeat url("/static/images/tallpaint/in-a-field.webp")',
     },
   },
 ];
 
 export const Carousel = () => {
-  const [pause, setPause] = useState(false);
-  const timer = useRef();
-  const [sliderRef, slider] = useKeenSlider({
-    loop: true,
-    duration: 1000,
-    dragStart: () => {
-      setPause(true);
-    },
-    dragEnd: () => {
-      setPause(false);
-    },
-  });
+  // const [pause, setPause] = useState(false);
+  // const timer = useRef();
+  // const [sliderRef, slider] = useKeenSlider({
+  //   loop: true,
+  //   duration: 1000,
+  //   dragStart: () => {
+  //     setPause(true);
+  //   },
+  //   dragEnd: () => {
+  //     setPause(false);
+  //   },
+  // });
 
-  useEffect(() => {
-    sliderRef.current.addEventListener("mouseover", () => {
-      setPause(true);
-    });
-    sliderRef.current.addEventListener("mouseout", () => {
-      setPause(false);
-    });
-  }, [sliderRef]);
+  // useEffect(() => {
+  //   sliderRef.current.addEventListener("mouseover", () => {
+  //     setPause(true);
+  //   });
+  //   sliderRef.current.addEventListener("mouseout", () => {
+  //     setPause(false);
+  //   });
+  // }, [sliderRef]);
 
-  useEffect(() => {
-    timer.current = setInterval(() => {
-      if (!pause && slider) {
-        slider.next();
-      }
-    }, 1500);
-    return () => {
-      clearInterval(timer.current);
-    };
-  }, [pause, slider]);
+  // useEffect(() => {
+  //   timer.current = setInterval(() => {
+  //     if (!pause && slider) {
+  //       slider.next();
+  //     }
+  //   }, 1500);
+  //   return () => {
+  //     clearInterval(timer.current);
+  //   };
+  // }, [pause, slider]);
 
   return (
     <>
