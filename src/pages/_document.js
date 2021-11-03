@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable import/no-default-export */
+/* eslint-disable @typescript-eslint/naming-convention */
 import { Head, Html, Main, NextScript } from "next/document";
 
 const MyDocument = () => {

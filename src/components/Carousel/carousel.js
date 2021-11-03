@@ -65,38 +65,38 @@ const data = [
 ];
 
 export const Carousel = () => {
-  // const [pause, setPause] = useState(false);
-  // const timer = useRef();
-  // const [sliderRef, slider] = useKeenSlider({
-  //   loop: true,
-  //   duration: 1000,
-  //   dragStart: () => {
-  //     setPause(true);
-  //   },
-  //   dragEnd: () => {
-  //     setPause(false);
-  //   },
-  // });
+  const [pause, setPause] = useState(false);
+  const timer = useRef();
+  const [sliderRef, slider] = useKeenSlider({
+    loop: true,
+    duration: 1000,
+    dragStart: () => {
+      setPause(true);
+    },
+    dragEnd: () => {
+      setPause(false);
+    },
+  });
 
-  // useEffect(() => {
-  //   sliderRef.current.addEventListener("mouseover", () => {
-  //     setPause(true);
-  //   });
-  //   sliderRef.current.addEventListener("mouseout", () => {
-  //     setPause(false);
-  //   });
-  // }, [sliderRef]);
+  useEffect(() => {
+    sliderRef.current.addEventListener("mouseover", () => {
+      setPause(true);
+    });
+    sliderRef.current.addEventListener("mouseout", () => {
+      setPause(false);
+    });
+  }, [sliderRef]);
 
-  // useEffect(() => {
-  //   timer.current = setInterval(() => {
-  //     if (!pause && slider) {
-  //       slider.next();
-  //     }
-  //   }, 1500);
-  //   return () => {
-  //     clearInterval(timer.current);
-  //   };
-  // }, [pause, slider]);
+  useEffect(() => {
+    timer.current = setInterval(() => {
+      if (!pause && slider) {
+        slider.next();
+      }
+    }, 1500);
+    return () => {
+      clearInterval(timer.current);
+    };
+  }, [pause, slider]);
 
   return (
     <>
