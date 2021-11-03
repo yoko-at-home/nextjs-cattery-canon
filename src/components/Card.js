@@ -22,14 +22,14 @@ export const Card = (props) => {
 };
 export const CardModal = (props) => {
   return (
-    <div className="p-4" style={{ maxWidth: "800px" }}>
+    <div className="p-4 h-4/5 overflow-x-scroll" style={{ maxWidth: "800px" }}>
       <div className="flex overflow-scroll flex-col p-3 rounded-md border-2 border-gray-200 border-opacity-60 md:flex-row nm-inset-gray-100-sm">
         <Image
           alt={props.title}
           src={props.imgSrc}
           className="object-cover object-center md:h-36 lg:h-48 nm-concave-gray-100-xl"
           width={272}
-          height={450}
+          height={300}
         />
         <div className="px-2 sm:px-6 md:w-2/3">
           <h2 className="z-50 text-yellow-900 text-lg sm:text-2xl font-bold tracking-tight leading-8 sm:mt-3 text-center">
@@ -39,7 +39,7 @@ export const CardModal = (props) => {
             {props.description2}
           </p>
           <p className="text-gray-500 prose sm:mb-3 text-sm">Date of Birth: {props.description1}</p>
-          <p className="leading-loose text-gray-500 sm:mt-10">
+          <p className="leading-loose text-gray-500 sm:mt-10 text-xs sm:text-sm md:text-lg">
             💙 SIRE: {props.father}
             <br />
             ❤️ DAM: {props.mother}
