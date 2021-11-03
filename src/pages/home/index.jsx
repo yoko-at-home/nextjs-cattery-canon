@@ -7,7 +7,7 @@ import { client } from "src/lib/client";
 const Home = (props) => {
   return (
     <Layout theme="home">
-      <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+      <PageSEO title={`ご挨拶 - ${siteMetadata.author}`} description={siteMetadata.description} />
 
       <div className="divide-y divide-gray-200">
         <div className="pt-6 pb-8 space-y-2 md:mt-8 md:space-y-5">
