@@ -8,7 +8,7 @@ const MyDocument = () => {
     <Html lang="ja">
       <Head>
         {/* Google Tag Manager*/}
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -18,7 +18,7 @@ const MyDocument = () => {
             })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
           `,
           }}
-        />
+        /> */}
         <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" />
@@ -40,7 +40,7 @@ const MyDocument = () => {
         <Main />
         <div id="root"></div>
         <NextScript />
-        <noscript
+        {/* <noscript
           dangerouslySetInnerHTML={{
             __html: `
             <iframe
@@ -50,7 +50,7 @@ const MyDocument = () => {
               style="display:none;visibility:hidden"
             />`,
           }}
-        />
+        /> */}
       </body>
     </Html>
   );
