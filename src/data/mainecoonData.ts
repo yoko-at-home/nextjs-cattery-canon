@@ -5,7 +5,7 @@ export const mainecoonDataBoy = [
     description2: `BROWN CLASSIC TABBY `,
     father: `CHATILE MARCO`,
     mother: `CHATILE RURURU`,
-    imgSrc: "/static/images/boys/lento.jpg",
+    imgSrc: "/static/images/boys/lento.webp",
   },
   {
     title: "CANON VALSE",
@@ -13,7 +13,7 @@ export const mainecoonDataBoy = [
     description2: `RED SILVER CLASSIC TABBY`,
     father: `CFA CH SILVER AQUA LION GENERAL`,
     mother: `TICA TGC POPOKILANI MIEL OF CANON`,
-    imgSrc: "/static/images/boys/valse.jpg",
+    imgSrc: "/static/images/boys/valse.webp",
   },
 ];
 
@@ -24,7 +24,7 @@ export const mainecoonDataGirl = [
     description2: `BROWN CLASSIC TABBY`,
     father: `TICA CH POPOKILANI ALFRED`,
     mother: `OD GRC POPOKILANI SATSUMA`,
-    imgSrc: "/static/images/girls/angie.jpg",
+    imgSrc: "/static/images/girls/angie.webp",
   },
   {
     title: "TICA TGC POPOKILANI MIEL OF CANON",
@@ -32,7 +32,7 @@ export const mainecoonDataGirl = [
     description2: `BROWN CLASSIC TORBIE`,
     father: `TICA CH POPOKILANI ALFRED`,
     mother: `OD GRC POPOKILANI SATSUMA`,
-    imgSrc: "/static/images/girls/miel.jpg",
+    imgSrc: "/static/images/girls/miel.webp",
   },
   {
     title: "CANON LILIYA",
@@ -40,7 +40,7 @@ export const mainecoonDataGirl = [
     description2: `BROWN CLASSIC TABBY`,
     father: `TICA CH CFA CHCANON FUSHIGI`,
     mother: `TICA SGCA POPOKILANI MOIRA OF CANON`,
-    imgSrc: "/static/images/girls/liliya.jpg",
+    imgSrc: "/static/images/girls/liliya.webp",
   },
   {
     title: "CANON DORIS",
@@ -48,7 +48,7 @@ export const mainecoonDataGirl = [
     description2: `BROWN CLASSIC TABBY`,
     father: `TICA CH CFA CH CANON FUSHIGI`,
     mother: `TICA RW QGC POPOKILANI ANGIE OF CANON`,
-    imgSrc: "/static/images/girls/doris.jpg",
+    imgSrc: "/static/images/girls/doris.webp",
   },
   {
     title: "TICA QGC POPOKILANI ISHTAR OF CANON",
@@ -56,7 +56,7 @@ export const mainecoonDataGirl = [
     description2: `BLUE CLASSIC TABBY`,
     father: ``,
     mother: ``,
-    imgSrc: "/static/images/girls/ISHTAR.jpg",
+    imgSrc: "/static/images/girls/ISHTAR.webp",
   },
   {
     title: "MARVELCATS LALA OF CANON",
@@ -64,6 +64,6 @@ export const mainecoonDataGirl = [
     description2: `BROWN CLASSIC TABBY/W`,
     father: ``,
     mother: ``,
-    imgSrc: "/static/images/girls/lala.jpg",
+    imgSrc: "/static/images/girls/lala.webp",
   },
 ];

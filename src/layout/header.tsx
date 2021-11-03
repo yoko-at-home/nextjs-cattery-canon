@@ -14,14 +14,14 @@ type Props = {
 
 export const Header: VFC<Props> = (props) => {
   const themeImage = {
-    home: "/static/images/header/four-kittens.jpg",
-    about: "/static/images/header/era.jpg",
-    boys: "/static/images/header/five-kids.jpg",
-    girls: "/static/images/header/tetsu_maincoon-on-white-background.jpg",
-    retired: "/static/images/header/brown-baby-02.jpg",
-    available: "/static/images/header/red-kitten.jpg",
-    articles: "/static/images/header/three-kids.jpg",
-    fushigi: "/static/images/memory/fushigi.jpg",
+    home: "/static/images/header/four-kittens.webp",
+    about: "/static/images/header/era.webp",
+    boys: "/static/images/header/five-kids.webp",
+    girls: "/static/images/header/tetsu_maincoon-on-white-background.webp",
+    retired: "/static/images/header/brown-baby-02.webp",
+    available: "/static/images/header/red-kitten.webp",
+    articles: "/static/images/header/three-kids.webp",
+    fushigi: "/static/images/memory/fushigi.webp",
   };
 
   return (

@@ -9,27 +9,27 @@ const links = [
     title: "Canonのブログ",
     description: "Canonのブログです。Canonの子供たちの様子や最新情報をお知らせしています。",
     url: "http://catterycanoncat.blog.fc2.com",
-    backgroundImg: 'url("/static/images/boys/lento.jpg")',
+    backgroundImg: 'url("/static/images/boys/lento.webp")',
   },
   {
     title: "湘南キャットクラブ",
     description:
       "Canonが所属しております。ショーナンキャットクラブは、アメリカテキサス州に本部を置くTICA(The International Cat Association)公認ブランチです。",
     url: "http://www.shonan-catclub.com",
-    backgroundImg: 'url("/static/images/links/SCC.jpg")',
+    backgroundImg: 'url("/static/images/links/SCC.webp")',
   },
   {
     title: "The Cat Fanciers’ Association",
     description:
       "アメリカオハイオ州に本部を置く、The Cat Fanciers’ AssociationのWebサイトです。Mainecoonのホットな情報が掲載されます。",
     url: "https://cfa.org/maine-coon-cat/",
-    backgroundImg: 'url("/static/images/links/TCFA.jpg")',
+    backgroundImg: 'url("/static/images/links/TCFA.webp")',
   },
   {
     title: "The International Cat Association (TICA)",
     description: "純血種の猫とHHP（家庭猫）の世界最大の登録機関です。",
     url: "https://tica.org/ja/",
-    backgroundImg: 'url("/static/images/links/TICA.jpg")',
+    backgroundImg: 'url("/static/images/links/TICA.webp")',
   },
 ];
 
@@ -50,7 +50,7 @@ const phtographers = [
     name: "Fukuda UFP",
     description: "動物写真専門",
     url: "http://www.u-f-p.jp",
-    backgroundImg: 'url("/static/images/links/fukuda-ufp.jpg")',
+    backgroundImg: 'url("/static/images/links/fukuda-ufp.webp")',
   },
 ];
 
