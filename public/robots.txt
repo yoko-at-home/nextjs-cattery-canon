@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.canon-cat.com/sitemap.xml
+Sitemap: https://canon-cat.com/sitemap.xml
