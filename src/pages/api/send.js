@@ -25,7 +25,7 @@ const handler = (req, res) => {
   })();
 
   res.status(200);
-};;;
+};
 
 // eslint-disable-next-line import/no-default-export
 export default handler;
