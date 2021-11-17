@@ -26,7 +26,7 @@ const Retired = (props) => {
           {props.retired.map((retired) => {
             return (
               <li key={retired.id} className="mb-8">
-                <div className="flex flex-row justify-between  p-6 nm-inset-gray-50-lg">
+                <div className="flex flex-row justify-between p-6 nm-inset-gray-50-lg">
                   <Link href={`retired/${retired.id}`}>
                     <a className="ml-1 lg:ml-10 lg:w-3/12">
                       <picture>
