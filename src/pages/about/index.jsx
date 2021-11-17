@@ -14,7 +14,7 @@ const About = (props) => {
           <PageTitle type="x-large">{props.data.title}</PageTitle>
           {/* <p className="text-lg leading-7 text-gray-500 mt-52">{siteMetadata.description}</p> */}
           <div
-            className="pt-10 md:pt-20 text-lg text-green-900"
+            className="pt-10 text-lg text-green-900 md:pt-20"
             dangerouslySetInnerHTML={{
               // eslint-disable-next-line @typescript-eslint/naming-convention
               __html: `${props.data.body}`,
