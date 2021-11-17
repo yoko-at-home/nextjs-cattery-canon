@@ -9,7 +9,7 @@ import { Layout } from "src/layout";
 
 const Gallery: NextPage = () => {
   return (
-    <Layout theme="fushigi">
+    <Layout theme="gallery">
       <PageSEO title={`ギャラリー - ${siteMetadata.author}`} description={siteMetadata.description} />
       <PageTitle type="large">Gallery</PageTitle>
       <PageTitle type="medium">{siteMetadata.title} の世界</PageTitle>

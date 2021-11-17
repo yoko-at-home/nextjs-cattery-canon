@@ -14,7 +14,7 @@ import { client } from "src/lib/client";
 
 const Retired = (props) => {
   return (
-    <Layout theme="articles">
+    <Layout theme="retired">
       <PageSEO title={`引退した子達 - ${siteMetadata.author}`} description={siteMetadata.description} />
 
       <PageTitle type="large">引退した子達</PageTitle>

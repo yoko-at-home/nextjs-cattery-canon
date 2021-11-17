@@ -8,7 +8,7 @@ import { NavBarMobile } from "src/components/navbar";
 type Props = {
   className?: string;
   type?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "fushigi";
-  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "fushigi";
+  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "gallery";
 };
 
 export const Header: VFC<Props> = (props) => {
@@ -20,17 +20,17 @@ export const Header: VFC<Props> = (props) => {
     retired: "/static/images/header/brown-baby-02.webp",
     available: "/static/images/header/red-kitten.webp",
     articles: "/static/images/header/three-kids.webp",
-    fushigi: "/static/images/memory/fushigi.webp",
+    gallery: "/static/images/memory/fushigi.webp",
   };
   const themeImageMobile = {
     home: "/static/images/header/mobile/yamashita-brown.webp",
-    about: "/static/images/header/mobile/era.webp",
+    about: "/static/images/header/mobile/yamashita-era.webp",
     boys: "/static/images/header/mobile/yamashita-two-black.webp",
     girls: "/static/images/header/mobile/tetsu-TICA_QGC_POPOKILANI_ISHTAR_OF_CANON.webp",
     retired: "/static/images/header/mobile/brown-baby-02.webp",
     available: "/static/images/header/mobile/yamashita-red.webp",
     articles: "/static/images/header/mobile/three-kids.webp",
-    fushigi: "/static/images/header/mobile/fushigi.webp",
+    gallery: "/static/images/header/mobile/fushigi.webp",
   };
 
   return (
