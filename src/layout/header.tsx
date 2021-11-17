@@ -1,10 +1,9 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import type { VFC } from "react";
-import { CustomLink } from "src/components/CustomLink";
+import { HeaderTitle } from "src/components/HeaderTitle";
 import { NavBarMobile } from "src/components/navbar";
-
-import { siteMetadata } from "../data/siteMetadata";
 
 type Props = {
   className?: string;
@@ -23,11 +22,22 @@ export const Header: VFC<Props> = (props) => {
     articles: "/static/images/header/three-kids.webp",
     fushigi: "/static/images/memory/fushigi.webp",
   };
+  const themeImageMobile = {
+    home: "/static/images/header/mobile/yamashita-brown.webp",
+    about: "/static/images/header/mobile/era.webp",
+    boys: "/static/images/header/mobile/yamashita-two-black.webp",
+    girls: "/static/images/header/mobile/tetsu-TICA_QGC_POPOKILANI_ISHTAR_OF_CANON.webp",
+    retired: "/static/images/header/mobile/brown-baby-02.webp",
+    available: "/static/images/header/mobile/yamashita-red.webp",
+    articles: "/static/images/header/mobile/three-kids.webp",
+    fushigi: "/static/images/header/mobile/fushigi.webp",
+  };
 
   return (
     <>
       <header>
-        <div className="relative h-full nm-flat-gray-100-xl">
+        {/* PC */}
+        <div className="hidden relative h-full sm:block nm-flat-gray-100-xl">
           <img
             width="100%"
             height="100%"
@@ -35,28 +45,19 @@ export const Header: VFC<Props> = (props) => {
             src={themeImage[props.theme || "home"]}
             alt={"Canon's mainecoons"}
           />
-          <h1 className="absolute -bottom-12 -left-3 p-5 sm:-bottom-5 sm:left-2 md:-bottom-20">
-            <CustomLink href="/home" aria-label="Cattery Canon">
-              <div className="flex justify-between items-center mb-8">
-                {typeof siteMetadata.headerTitle === "string" ? (
-                  <div
-                    style={{
-                      border: "double 5px #636363",
-                      textShadow: "3px 3px 5px#ffffff",
-                      color: "#71745b",
-                      // background: "linearGradient(75deg;rgba(2, 9, 66, 1) 4 % rgba(6, 85, 92, 1) 76%)",
-                    }}
-                    className="py-1 pr-3 my-6 text-2xl font-semibold whitespace-nowrap bg-clip-text bg-opacity-40 backdrop-filter backdrop-blur-lg sm:py-2 sm:pr-4 sm:text-5xl md:mt-12 md:mb-20"
-                  >
-                    {siteMetadata.headerTitle}
-                  </div>
-                ) : (
-                  siteMetadata.headerTitle
-                )}
-              </div>
-            </CustomLink>
-          </h1>
+          <HeaderTitle />
         </div>
+        {/* mobile */}
+        <div className="relative h-screen sm:hidden nm-flat-gray-100-xl">
+          <Image
+            layout="fill"
+            className="object-cover object-center relative pointer-events-none"
+            src={themeImageMobile[props.theme || "home"]}
+            alt={"Canon's mainecoons"}
+          />
+          <HeaderTitle />
+        </div>
+        {/* mobile */}
         {props.theme !== "articles" && <NavBarMobile type="main" />}
       </header>
     </>
