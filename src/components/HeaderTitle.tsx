@@ -3,7 +3,7 @@ import { siteMetadata } from "src/data/siteMetadata";
 
 export const HeaderTitle = () => {
   return (
-    <h1 className="absolute -bottom-12 -left-3 p-5 sm:-bottom-5 sm:left-2 md:-bottom-20">
+    <h1 className="absolute -bottom-12 -left-3 p-5 sm:-bottom-5 sm:left-2 md:-bottom-20 animation">
       <CustomLink href="/home" aria-label="Cattery Canon">
         <div className="flex justify-between items-center mb-8">
           {typeof siteMetadata.headerTitle === "string" ? (
