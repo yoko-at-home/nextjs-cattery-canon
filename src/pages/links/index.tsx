@@ -19,17 +19,17 @@ const links = [
     backgroundImg: 'url("/static/images/links/SCC.webp")',
   },
   {
+    title: "The International Cat Association (TICA)",
+    description: "純血種の猫とHHP（家庭猫）の世界最大の登録機関です。",
+    url: "https://tica.org/ja/",
+    backgroundImg: 'url("/static/images/links/TICA.webp")',
+  },
+  {
     title: "The Cat Fanciers’ Association",
     description:
       "アメリカオハイオ州に本部を置く、The Cat Fanciers’ AssociationのWebサイトです。Mainecoonのホットな情報が掲載されます。",
     url: "https://cfa.org/maine-coon-cat/",
     backgroundImg: 'url("/static/images/links/TCFA.webp")',
-  },
-  {
-    title: "The International Cat Association (TICA)",
-    description: "純血種の猫とHHP（家庭猫）の世界最大の登録機関です。",
-    url: "https://tica.org/ja/",
-    backgroundImg: 'url("/static/images/links/TICA.webp")',
   },
 ];
 
