@@ -62,8 +62,8 @@ export const mainecoonDataGirl = [
     title: "MARVELCATS LALA OF CANON",
     description1: `11/07/2019`,
     description2: `BROWN CLASSIC TABBY/W`,
-    father: ``,
-    mother: ``,
+    father: `CFA GC MARVEL CATS BOGY`,
+    mother: `CFA CH CA PO AROMA OF MARVEL CATS`,
     imgSrc: "/static/images/girls/lala.webp",
   },
 ];
