@@ -54,8 +54,8 @@ export const mainecoonDataGirl = [
     title: "TICA QGC POPOKILANI ISHTAR OF CANON",
     description1: `11/07/2019`,
     description2: `BLUE CLASSIC TABBY`,
-    father: ``,
-    mother: ``,
+    father: `TICA SGC SHONANCATS JACOB OF POPOKILANI`,
+    mother: `TICA SGC POPOKILANI LUCY`,
     imgSrc: "/static/images/girls/ISHTAR.webp",
   },
   {
