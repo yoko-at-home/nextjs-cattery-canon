@@ -66,4 +66,12 @@ export const mainecoonDataGirl = [
     mother: `CFA CH CA PO AROMA OF MARVEL CATS`,
     imgSrc: "/static/images/girls/lala.webp",
   },
+  {
+    title: "CHATILE SOAVE OF CANON",
+    description1: `07/19/2020`,
+    description2: `BROWN TICKED TABBY`,
+    father: `CHATILE BLUE`,
+    mother: `SGC CHATILE SARAH CREW`,
+    imgSrc: "/static/images/girls/soa.webp",
+  },
 ];
