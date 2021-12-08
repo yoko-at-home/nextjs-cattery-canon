@@ -31,7 +31,7 @@ export const NavBarDesktop: VFC = () => {
         return (
           <>
             <Link key={href} href={href}>
-              <a className="py-3 mb-5 text-2xl text-gray-300 hover:text-green-600 whitespace-nowrap sm:px-4 lg:text-3xl">
+              <a className="py-2 mb-3 font-medium text-gray-300 hover:text-green-600 whitespace-nowrap sm:px-4 lg:text-3xl">
                 {label}
               </a>
             </Link>
@@ -42,7 +42,7 @@ export const NavBarDesktop: VFC = () => {
         href="http://catterycanoncat.blog.fc2.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="py-3 mb-5 text-2xl text-gray-300 hover:text-green-600 whitespace-nowrap sm:px-4 lg:text-3xl"
+        className="py-3 mb-5 text-2xl font-medium text-gray-300 hover:text-green-600 whitespace-nowrap sm:px-4 lg:text-3xl"
       >
         Blog
       </a>
