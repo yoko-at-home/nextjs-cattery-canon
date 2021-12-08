@@ -35,12 +35,6 @@ const links = [
 
 const phtographers = [
   {
-    name: "Yoshiko Yamashita",
-    description: "Coming soon ...",
-    url: "https://www.canon-cat.com/links#photographers",
-    backgroundImg: 'url("")',
-  },
-  {
     name: "Yamazaki Testsu",
     description: "Coming soon ...",
     url: "",
@@ -51,6 +45,12 @@ const phtographers = [
     description: "動物写真専門",
     url: "http://www.u-f-p.jp",
     backgroundImg: 'url("/static/images/links/fukuda-ufp.webp")',
+  },
+  {
+    name: "Yoshiko Yamashita",
+    description: "Coming soon ...",
+    url: "https://www.canon-cat.com/links#photographers",
+    backgroundImg: 'url("")',
   },
 ];
 
