@@ -52,7 +52,7 @@ export const mainecoonDataGirl = [
   },
   {
     title: "TICA QGC POPOKILANI ISHTAR OF CANON",
-    description1: `11/07/2019`,
+    description1: `01/24/2019`,
     description2: `BLUE CLASSIC TABBY`,
     father: `TICA SGC SHONANCATS JACOB OF POPOKILANI`,
     mother: `TICA SGC POPOKILANI LUCY`,
@@ -73,5 +73,13 @@ export const mainecoonDataGirl = [
     father: `CHATILE BLUE`,
     mother: `SGC CHATILE SARAH CREW`,
     imgSrc: "/static/images/girls/soa.webp",
+  },
+  {
+    title: "MARVEL CATS SARAH OF CANON",
+    description1: `04/19/2019`,
+    description2: `BROWN CLASSIC TABBY`,
+    father: `CFA GC MARVEL CATS BOGY`,
+    mother: `MARVEL CATS RENA`,
+    imgSrc: "/static/images/girls/sarah.webp",
   },
 ];
