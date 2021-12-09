@@ -70,7 +70,10 @@ export const CarouselHorizontal = () => {
           <Image layout="fill" src="/static/images/02_horizontal/yamashita-baby-on-piano.png" />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/02_horizontal/yamashita-four-brothers.png" />
+          <Image layout="fill" src="/static/images/02_horizontal/mainecoon-girls.webp" />
+        </div>
+        <div className="keen-slider__slide number-slide">
+          <Image layout="fill" src="/static/images/02_horizontal/hanako.webp" />
         </div>
         <div className="keen-slider__slide number-slide">
           <Image
