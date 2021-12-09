@@ -47,10 +47,10 @@ export const CarouselTop = () => {
         <div className="keen-slider__slide number-slide1">
           <Image layout="fill" src="/static/images/0_top/01_mainecoon-girls.webp" />
         </div>
-        <div className="keen-slider__slide number-slide2">
+        <div className="keen-slider__slide number-slide">
           <Image layout="fill" src="/static/images/0_top/02_baby-mainecoon.webp" />
         </div>
-        <div className="keen-slider__slide number-slide3">
+        <div className="keen-slider__slide number-slide">
           <Image layout="fill" src="/static/images/0_top/03_in-a-field.webp" />
         </div>
         <div className="keen-slider__slide number-slide">
