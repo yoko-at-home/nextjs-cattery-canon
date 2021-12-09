@@ -14,16 +14,16 @@ export const CarouselHorizontal = () => {
       (slider) => {
         let timeout: ReturnType<typeof setTimeout>;
         let mouseOver = false;
-        function clearNextTimeout() {
+        const clearNextTimeout = () => {
           clearTimeout(timeout);
-        }
-        function nextTimeout() {
+        };
+        const nextTimeout = () => {
           clearTimeout(timeout);
           if (mouseOver) return;
           timeout = setTimeout(() => {
             slider.next();
           }, 2000);
-        }
+        };
         slider.on("created", () => {
           slider.container.addEventListener("mouseover", () => {
             mouseOver = true;
