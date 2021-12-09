@@ -47,8 +47,7 @@ export const LayoutBlog: VFC<Props> = (props) => {
         <Footer />
       </div>
       <div className="hidden xl:block xl:mr-3 xl:w-2/6">
-        <CarouselVertical />
-        {/* <Test /> */}
+        <Test />
       </div>
     </div>
   );
