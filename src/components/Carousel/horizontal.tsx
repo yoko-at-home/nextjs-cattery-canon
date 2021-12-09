@@ -3,62 +3,83 @@
 import "keen-slider/keen-slider.min.css";
 
 import { useKeenSlider } from "keen-slider/react";
-import { useEffect, useRef, useState } from "react";
-import { dataHorizontal } from "src/data/carouselHorizontalData";
+import Image from "next/image";
 
 export const CarouselHorizontal = () => {
-  const [pause, setPause] = useState(false);
-  const timer = useRef();
-  const [sliderRef, slider] = useKeenSlider({
-    loop: true,
-    duration: 1000,
-    dragStart: () => {
-      setPause(true);
+  const [sliderRef] = useKeenSlider<HTMLDivElement>(
+    {
+      loop: true,
     },
-    dragEnd: () => {
-      setPause(false);
-    },
-  });
-
-  useEffect(() => {
-    sliderRef.current.addEventListener("mouseover", () => {
-      setPause(true);
-    });
-    sliderRef.current.addEventListener("mouseout", () => {
-      setPause(false);
-    });
-  }, [sliderRef]);
-
-  useEffect(() => {
-    timer.current = setInterval(() => {
-      if (!pause && slider) {
-        slider.next();
-      }
-    }, 1500);
-    return () => {
-      clearInterval(timer.current);
-    };
-  }, [pause, slider]);
+    [
+      (slider) => {
+        let timeout: ReturnType<typeof setTimeout>;
+        let mouseOver = false;
+        function clearNextTimeout() {
+          clearTimeout(timeout);
+        }
+        function nextTimeout() {
+          clearTimeout(timeout);
+          if (mouseOver) return;
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 2000);
+        }
+        slider.on("created", () => {
+          slider.container.addEventListener("mouseover", () => {
+            mouseOver = true;
+            clearNextTimeout();
+          });
+          slider.container.addEventListener("mouseout", () => {
+            mouseOver = false;
+            nextTimeout();
+          });
+          nextTimeout();
+        });
+        slider.on("dragStarted", clearNextTimeout);
+        slider.on("animationEnded", nextTimeout);
+        slider.on("updated", nextTimeout);
+      },
+    ]
+  );
 
   return (
     <>
       <div ref={sliderRef} className="keen-slider">
-        {dataHorizontal.map((item) => {
-          return (
-            <div className="keen-slider__slide number-slide" style={item.url} key={item.id}>
-              <div
-                style={{
-                  border: "solid 1px rgba(98,98,98,.6)",
-                  textShadow: "3px 3px 5px #ffffff",
-                  color: "#71745b",
-                }}
-                className="py-2 px-2 font-semibold backdrop-filter backdrop-blur-lg transform -rotate-45 sm:py-3 sm:px-5"
-              >
-                <div className="text-xs transform rotate-45 sm:text-lg md:text-2xl lg:text-3xl">{item.title}</div>
-              </div>
-            </div>
-          );
-        })}
+        <div className="keen-slider__slide number-slide1">
+          <Image layout="fill" src="/static/images/02_horizontal/fushigi.webp" />
+        </div>
+        <div className="keen-slider__slide number-slide">
+          <Image layout="fill" src="/static/images/02_horizontal/lento.jpg" />
+        </div>
+        <div className="keen-slider__slide number-slide">
+          <Image layout="fill" src="/static/images/02_horizontal/mother&daughter.webp" />
+        </div>
+        <div className="keen-slider__slide number-slide">
+          <Image layout="fill" src="/static/images/02_horizontal/red-plate.webp" />
+        </div>
+        <div className="keen-slider__slide number-slide">
+          <Image layout="fill" src="/static/images/02_horizontal/rizumu.webp" />
+        </div>
+        <div className="keen-slider__slide number-slide">
+          <Image layout="fill" src="/static/images/0_top/06_mainecoon.webp" />
+        </div>
+        <div className="keen-slider__slide number-slide">
+          <Image layout="fill" src="/static/images/0_top/07_painting-green.webp" />
+        </div>
+        <div className="keen-slider__slide number-slide">
+          <Image layout="fill" src="/static/images/02_horizontal/yamashita-baby-on-piano.png" />
+        </div>
+        <div className="keen-slider__slide number-slide">
+          <Image layout="fill" src="/static/images/02_horizontal/yamashita-four-brothers.png" />
+        </div>
+        <div className="keen-slider__slide number-slide">
+          <Image
+            layout="responsive"
+            width="300px"
+            height="250px"
+            src="/static/images/02_horizontal/yamashita-three-brothers.png"
+          />
+        </div>
       </div>
       <style jsx>{`
         [class^="number-slide"],
@@ -69,7 +90,7 @@ export const CarouselHorizontal = () => {
           font-size: 30px;
           color: #fff;
           font-weight: 500;
-          height: 40vh;
+          height: 50vh;
           // min-height: 105vh;
           border-radius: 5px;
           padding: 50px;

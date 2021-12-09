@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-// import { CarouselHorizontal } from "src/components/Carousel";
+import { CarouselHorizontal } from "src/components/Carousel";
 import { GalleryHexagon } from "src/components/GalleryHexagon";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
@@ -13,7 +13,7 @@ const Gallery: NextPage = () => {
       <PageSEO title={`ギャラリー - ${siteMetadata.author}`} description={siteMetadata.description} />
       <PageTitle type="large">Gallery</PageTitle>
       <PageTitle type="medium">{siteMetadata.title} の世界</PageTitle>
-      {/* <CarouselHorizontal /> */}
+      <CarouselHorizontal />
       <div className="hidden justify-center mx-0 mb-16 sm:flex">
         <GalleryHexagon />
       </div>
