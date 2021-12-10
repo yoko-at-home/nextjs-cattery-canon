@@ -44,6 +44,7 @@ export const Header: VFC<Props> = (props) => {
             className="object-cover object-center relative pointer-events-none"
             src={themeImage[props.theme || "home"]}
             alt={"Canon's mainecoons"}
+            loading="eager"
           />
           <HeaderTitle />
         </div>
@@ -54,6 +55,7 @@ export const Header: VFC<Props> = (props) => {
             className="object-cover object-center relative pointer-events-none"
             src={themeImageMobile[props.theme || "home"]}
             alt={"Canon's mainecoons"}
+            loading="eager"
           />
           <HeaderTitle />
         </div>
