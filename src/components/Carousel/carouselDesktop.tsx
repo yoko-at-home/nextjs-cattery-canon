@@ -5,7 +5,7 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 
-export const CarouselMobile = () => {
+export const CarouselDesktop = () => {
   const [sliderRef] = useKeenSlider<HTMLDivElement>(
     {
       loop: true,
@@ -43,37 +43,37 @@ export const CarouselMobile = () => {
   );
 
   return (
-    <div className="md:hidden">
+    <div className="hidden md:block">
       <div ref={sliderRef} className="keen-slider">
         <div className="keen-slider__slide number-slide1">
-          <Image layout="fill" src="/static/images/0_top/01_mainecoon-girls.webp" />
+          <Image layout="fill" src="/static/images/header/four-kittens.webp" />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/0_top/02_baby-mainecoon.webp" />
+          <Image layout="fill" src="/static/images/header/era.webp" />
         </div>
         <div className="keen-slider__slide number-slide">
           <Image layout="fill" src="/static/images/0_top/03_in-a-field.webp" />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/0_top/04_kenta.webp" />
+          <Image layout="fill" src="/static/images/header/five-kids.webp" />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/0_top/05_mainecoon-baby.webp" />
+          <Image layout="fill" src="/static/images/header/tetsu_maincoon-on-white-background.webp" />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/0_top/06_mainecoon.webp" />
+          <Image layout="fill" src="/static/images/header/brown-baby-02.webp" />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/0_top/07_painting-green.webp" />
+          <Image layout="fill" src="/static/images/header/red-kitten.webp" />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/0_top/08_painting.webp" />
+          <Image layout="fill" src="/static/images/header/brown-baby-02.webp" />
         </div>
         <div className="keen-slider__slide number-slide">
           <Image layout="fill" src="/static/images/0_top/09_red-plate.webp" />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/0_top/10_sleeping-baby.webp" />
+          <Image layout="fill" src="/static/images/memory/fushigi.webp" />
         </div>
       </div>
       <style jsx>{`
