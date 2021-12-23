@@ -50,7 +50,13 @@ const MyGirls = () => {
                     photographer={d.photographer}
                     className="md:w-1/2"
                   >
-                    <Card key={d.href} title={d.title} description={d.description1} imgSrc={d.imgSrc} photographer={d.photographer}/>
+                    <Card
+                      key={d.href}
+                      title={d.title}
+                      description={d.description1}
+                      imgSrc={d.imgSrc}
+                      photographer={d.photographer}
+                    />
                   </button>
                 );
               })}

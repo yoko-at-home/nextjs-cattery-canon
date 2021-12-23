@@ -44,7 +44,7 @@ export const CardModal = (props) => {
             <br />
             ❤️ DAM: {props.mother}
           </p>
-          {!props.photographer ? null : <p className="text-sm mt-2 text-gray-400">{ props.photographer}</p>}
+          {!props.photographer ? null : <p className="mt-2 text-sm text-gray-400">{props.photographer}</p>}
         </div>
       </div>
     </div>
