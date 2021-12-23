@@ -5,7 +5,7 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 
-export const CarouselTop = () => {
+export const CarouselMobile = () => {
   const [sliderRef] = useKeenSlider<HTMLDivElement>(
     {
       loop: true,
