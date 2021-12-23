@@ -6,6 +6,7 @@ export const mainecoonDataBoy = [
     father: `CHATILE MARCO`,
     mother: `CHATILE RURURU`,
     imgSrc: "/static/images/boys/lento.webp",
+    photographer: "",
   },
   {
     title: "CANON VALSE",
@@ -14,6 +15,7 @@ export const mainecoonDataBoy = [
     father: `CFA CH SILVER AQUA LION GENERAL`,
     mother: `TICA TGC POPOKILANI MIEL OF CANON`,
     imgSrc: "/static/images/boys/valse.webp",
+    photographer: "",
   },
 ];
 
@@ -25,6 +27,7 @@ export const mainecoonDataGirl = [
     father: `TICA CH POPOKILANI ALFRED`,
     mother: `OD GRC POPOKILANI SATSUMA`,
     imgSrc: "/static/images/girls/angie.webp",
+    photographer: "写真提供 T. Fukuda / UFP",
   },
   {
     title: "TICA TGC POPOKILANI MIEL OF CANON",
@@ -33,6 +36,7 @@ export const mainecoonDataGirl = [
     father: `TICA CH POPOKILANI ALFRED`,
     mother: `OD GRC POPOKILANI SATSUMA`,
     imgSrc: "/static/images/girls/miel.webp",
+    photographer: "写真提供 T. Fukuda / UFP",
   },
   {
     title: "CANON LILIYA",
@@ -41,6 +45,7 @@ export const mainecoonDataGirl = [
     father: `TICA CH CFA CHCANON FUSHIGI`,
     mother: `TICA SGCA POPOKILANI MOIRA OF CANON`,
     imgSrc: "/static/images/girls/liliya.webp",
+    photographer: "",
   },
   {
     title: "CANON DORIS",
@@ -49,6 +54,7 @@ export const mainecoonDataGirl = [
     father: `TICA CH CFA CH CANON FUSHIGI`,
     mother: `TICA RW QGC POPOKILANI ANGIE OF CANON`,
     imgSrc: "/static/images/girls/doris.webp",
+    photographer: "",
   },
   {
     title: "TICA QGC POPOKILANI ISHTAR OF CANON",
@@ -57,6 +63,7 @@ export const mainecoonDataGirl = [
     father: `TICA SGC SHONANCATS JACOB OF POPOKILANI`,
     mother: `TICA SGC POPOKILANI LUCY`,
     imgSrc: "/static/images/girls/ISHTAR.webp",
+    photographer: "",
   },
   {
     title: "MARVELCATS LALA OF CANON",
@@ -65,6 +72,7 @@ export const mainecoonDataGirl = [
     father: `CFA GC MARVEL CATS BOGY`,
     mother: `CFA CH DA CA PO AROMA OF MARVEL CATS`,
     imgSrc: "/static/images/girls/lala.webp",
+    photographer: "",
   },
   {
     title: "CHATILE SOAVE OF CANON",
@@ -73,6 +81,7 @@ export const mainecoonDataGirl = [
     father: `CHATILE BLUE`,
     mother: `SGC CHATILE SARAH CREW`,
     imgSrc: "/static/images/girls/soa.webp",
+    photographer: "",
   },
   {
     title: "MARVEL CATS SARAH OF CANON",
@@ -81,5 +90,6 @@ export const mainecoonDataGirl = [
     father: `CFA GC MARVEL CATS BOGY`,
     mother: `MARVEL CATS RENA`,
     imgSrc: "/static/images/girls/sarah.webp",
+    photographer: "",
   },
 ];

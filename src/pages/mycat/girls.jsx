@@ -47,10 +47,10 @@ const MyGirls = () => {
                     father={d.father}
                     mother={d.mother}
                     key={d.title}
-                    // href={d.href}
+                    photographer={d.photographer}
                     className="md:w-1/2"
                   >
-                    <Card key={d.href} title={d.title} description={d.description1} imgSrc={d.imgSrc} />
+                    <Card key={d.href} title={d.title} description={d.description1} imgSrc={d.imgSrc} photographer={d.photographer}/>
                   </button>
                 );
               })}
@@ -67,7 +67,7 @@ const MyGirls = () => {
                     father={selectedItem?.father}
                     mother={selectedItem?.mother}
                     imgSrc={selectedItem?.imgSrc}
-                    // href={selectedItem?.href}
+                    photographer={selectedItem?.photographer}
                   />
                 </p>
                 <div className="flex justify-end mt-8">
