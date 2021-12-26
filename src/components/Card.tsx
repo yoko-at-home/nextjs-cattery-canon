@@ -1,5 +1,6 @@
-import { NextPage } from "next";
+import type { NextPage } from "next";
 import Image from "next/image";
+
 import { CustomLink } from "./CustomLink";
 
 type Props = {
@@ -33,7 +34,7 @@ export const Card: NextPage<Props> = (props) => {
     </div>
   );
 };
-export const CardModal:NextPage<Props> = (props) => {
+export const CardModal: NextPage<Props> = (props) => {
   return (
     <div className="overflow-x-scroll p-4 h-4/5" style={{ maxWidth: "800px" }}>
       <div className="flex overflow-scroll flex-col p-3 rounded-md border-2 border-gray-200 border-opacity-60 md:flex-row nm-inset-gray-100-sm">
@@ -61,7 +62,7 @@ export const CardModal:NextPage<Props> = (props) => {
           {!props.blogUrl ? null : (
             <CustomLink href={props.blogUrl} alt="ブログへ">
               <div className="text-center sm:mt-3 ">
-                <span className="text-lg text-yellow-800 hover:text-green-900 animate-pulse bg-gray-300 rounded">
+                <span className="text-lg text-yellow-800 hover:text-green-900 bg-gray-300 rounded animate-pulse">
                   ✨この子の写真をもっと見る✨
                 </span>
               </div>
