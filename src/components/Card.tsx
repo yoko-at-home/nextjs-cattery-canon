@@ -1,7 +1,19 @@
+import { NextPage } from "next";
 import Image from "next/image";
 import { CustomLink } from "./CustomLink";
 
-export const Card = (props) => {
+type Props = {
+  title: string;
+  description1: string;
+  description2: string;
+  father: string;
+  mother: string;
+  imgSrc: string;
+  photographer: string;
+  blogUrl: string;
+};
+
+export const Card: NextPage<Props> = (props) => {
   return (
     <div className="p-4" style={{ maxWidth: "544px" }}>
       <div className="flex overflow-scroll flex-col h-full border-2 border-gray-200 nm-flat-gray-200-sm">
@@ -14,14 +26,14 @@ export const Card = (props) => {
         />
         <div className="p-6 text-gray-500 bg-white">
           <h2 className="z-50 mb-3 text-2xl font-bold tracking-tight leading-8">{props.title}</h2>
-          <p className="max-w-none prose md:overflow-x-auto">Date of Birth: {props.description}</p>
+          <p className="max-w-none prose md:overflow-x-auto">Date of Birth: {props.description1}</p>
           <p className="overflow-hidden mb-3 max-w-none prose">{props.description2}</p>
         </div>
       </div>
     </div>
   );
 };
-export const CardModal = (props) => {
+export const CardModal:NextPage<Props> = (props) => {
   return (
     <div className="overflow-x-scroll p-4 h-4/5" style={{ maxWidth: "800px" }}>
       <div className="flex overflow-scroll flex-col p-3 rounded-md border-2 border-gray-200 border-opacity-60 md:flex-row nm-inset-gray-100-sm">
