@@ -48,14 +48,16 @@ const MyGirls = () => {
                     mother={d.mother}
                     key={d.title}
                     photographer={d.photographer}
+                    blogUrl={d.blogUrl}
                     className="md:w-1/2"
                   >
                     <Card
-                      key={d.href}
+                      key={d.title}
                       title={d.title}
                       description={d.description1}
                       imgSrc={d.imgSrc}
                       photographer={d.photographer}
+                      blogUrl={d.blogUrl}
                     />
                   </button>
                 );
@@ -74,6 +76,7 @@ const MyGirls = () => {
                     mother={selectedItem?.mother}
                     imgSrc={selectedItem?.imgSrc}
                     photographer={selectedItem?.photographer}
+                    blogUrl={selectedItem?.blogUrl}
                   />
                 </p>
                 <div className="flex justify-end mt-8">

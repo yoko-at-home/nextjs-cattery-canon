@@ -7,6 +7,7 @@ export const mainecoonDataBoy = [
     mother: `CHATILE RURURU`,
     imgSrc: "/static/images/boys/lento.webp",
     photographer: "",
+    blogUrl: "http://catterycanoncat.blog.fc2.com/blog-entry-1867.html",
   },
   {
     title: "CANON VALSE",
@@ -16,6 +17,7 @@ export const mainecoonDataBoy = [
     mother: `TICA TGC POPOKILANI MIEL OF CANON`,
     imgSrc: "/static/images/boys/valse.webp",
     photographer: "",
+    blogUrl: "",
   },
 ];
 
@@ -28,6 +30,7 @@ export const mainecoonDataGirl = [
     mother: `OD GRC POPOKILANI SATSUMA`,
     imgSrc: "/static/images/girls/angie.webp",
     photographer: "写真提供 T. Fukuda / UFP",
+    blogUrl: "",
   },
   {
     title: "TICA TGC POPOKILANI MIEL OF CANON",
@@ -37,6 +40,7 @@ export const mainecoonDataGirl = [
     mother: `OD GRC POPOKILANI SATSUMA`,
     imgSrc: "/static/images/girls/miel.webp",
     photographer: "写真提供 T. Fukuda / UFP",
+    blogUrl: "",
   },
   {
     title: "CANON LILIYA",
@@ -46,6 +50,7 @@ export const mainecoonDataGirl = [
     mother: `TICA SGCA POPOKILANI MOIRA OF CANON`,
     imgSrc: "/static/images/girls/liliya.webp",
     photographer: "",
+    blogUrl: "",
   },
   {
     title: "CANON DORIS",
@@ -55,6 +60,7 @@ export const mainecoonDataGirl = [
     mother: `TICA RW QGC POPOKILANI ANGIE OF CANON`,
     imgSrc: "/static/images/girls/doris.webp",
     photographer: "",
+    blogUrl: "",
   },
   {
     title: "TICA QGC POPOKILANI ISHTAR OF CANON",
@@ -64,6 +70,7 @@ export const mainecoonDataGirl = [
     mother: `TICA SGC POPOKILANI LUCY`,
     imgSrc: "/static/images/girls/ISHTAR.webp",
     photographer: "",
+    blogUrl: "",
   },
   {
     title: "MARVELCATS LALA OF CANON",
@@ -73,6 +80,7 @@ export const mainecoonDataGirl = [
     mother: `CFA CH DA CA PO AROMA OF MARVEL CATS`,
     imgSrc: "/static/images/girls/lala.webp",
     photographer: "",
+    blogUrl: "",
   },
   {
     title: "CHATILE SOAVE OF CANON",
@@ -82,6 +90,7 @@ export const mainecoonDataGirl = [
     mother: `SGC CHATILE SARAH CREW`,
     imgSrc: "/static/images/girls/soa.webp",
     photographer: "",
+    blogUrl: "",
   },
   {
     title: "MARVEL CATS SARAH OF CANON",
@@ -91,5 +100,6 @@ export const mainecoonDataGirl = [
     mother: `MARVEL CATS RENA`,
     imgSrc: "/static/images/girls/sarah.webp",
     photographer: "",
+    blogUrl: "",
   },
 ];
