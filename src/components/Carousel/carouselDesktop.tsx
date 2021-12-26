@@ -4,6 +4,7 @@ import "keen-slider/keen-slider.min.css";
 
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
+import { siteMetadata } from "src/data/siteMetadata";
 
 export const CarouselDesktop = () => {
   const [sliderRef] = useKeenSlider<HTMLDivElement>(
@@ -46,34 +47,38 @@ export const CarouselDesktop = () => {
     <div className="hidden md:block">
       <div ref={sliderRef} className="keen-slider">
         <div className="keen-slider__slide number-slide1">
-          <Image layout="fill" src="/static/images/header/four-kittens.webp" />
+          <Image layout="fill" src="/static/images/header/four-kittens.webp" alt={siteMetadata.title} />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/header/era.webp" />
+          <Image layout="fill" src="/static/images/header/era.webp" alt={siteMetadata.title} />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/0_top/03_in-a-field.webp" />
+          <Image layout="fill" src="/static/images/0_top/03_in-a-field.webp" alt={siteMetadata.title} />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/header/five-kids.webp" />
+          <Image layout="fill" src="/static/images/header/five-kids.webp" alt={siteMetadata.title} />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/header/tetsu_maincoon-on-white-background.webp" />
+          <Image
+            layout="fill"
+            src="/static/images/header/tetsu_maincoon-on-white-background.webp"
+            alt={siteMetadata.title}
+          />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/header/brown-baby-02.webp" />
+          <Image layout="fill" src="/static/images/header/brown-baby-02.webp" alt={siteMetadata.title} />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/header/red-kitten.webp" />
+          <Image layout="fill" src="/static/images/header/red-kitten.webp" alt={siteMetadata.title} />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/header/brown-baby-02.webp" />
+          <Image layout="fill" src="/static/images/header/brown-baby-02.webp" alt={siteMetadata.title} />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/0_top/09_red-plate.webp" />
+          <Image layout="fill" src="/static/images/0_top/09_red-plate.webp" alt={siteMetadata.title} />
         </div>
         <div className="keen-slider__slide number-slide">
-          <Image layout="fill" src="/static/images/memory/fushigi.webp" />
+          <Image layout="fill" src="/static/images/memory/fushigi.webp" alt={siteMetadata.title} />
         </div>
       </div>
       <style jsx>{`
