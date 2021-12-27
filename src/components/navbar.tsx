@@ -84,16 +84,6 @@ export const NavBarMobile: VFC<Props> = (props) => {
             width="20px"
             height="20px"
           />
-          {/* <video
-            loop
-            muted
-            autoPlay
-            playsinline
-            className='rounded-full w-16 md:w-24 z-50'
-          >
-            <source src='/static/video/my-animation.webm' type='video/webm' />
-            <source src='static/video/my-animation.mp4' type='video/mp4' />
-          </video> */}
         </button>
         <div
           className={`overflow-auto fixed w-full h-full top-0 right-0 bg-purple-50 z-10 transform ease-in-out duration-300 ${
