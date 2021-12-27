@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-
-import { CustomLink } from "./CustomLink";
+import Link from "next/link";
 
 type Props = {
   title: string;
@@ -60,13 +59,15 @@ export const CardModal: NextPage<Props> = (props) => {
           </p>
           {!props.photographer ? null : <p className="mt-2 text-sm text-gray-400">{props.photographer}</p>}
           {!props.blogUrl ? null : (
-            <CustomLink href={props.blogUrl} alt="ブログへ">
-              <div className="text-center sm:mt-3 ">
-                <span className="text-lg text-yellow-800 hover:text-green-900 bg-gray-300 rounded animate-pulse">
-                  ✨この子の写真をもっと見る✨
-                </span>
-              </div>
-            </CustomLink>
+            <Link href={props.blogUrl}>
+              <a target="_blank" rel="noopener noreferrer">
+                <div className="text-center sm:mt-3">
+                  <span className="text-lg text-yellow-800 hover:text-green-900 bg-gray-300 rounded animate-pulse">
+                    ✨この子の写真をもっと見る✨
+                  </span>
+                </div>
+              </a>
+            </Link>
           )}
         </div>
       </div>
