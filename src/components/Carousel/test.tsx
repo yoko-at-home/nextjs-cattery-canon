@@ -1,7 +1,8 @@
+import { NextPage } from "next";
 import Image from "next/image";
 import { dataVertical } from "src/data/carouselVerticalData";
 
-export const Test = () => {
+export const Test:NextPage = () => {
   return (
     <div className="flex overflow-y-hidden flex-col items-center">
       {dataVertical.map((item) => {
