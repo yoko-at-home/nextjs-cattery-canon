@@ -1525,7 +1525,7 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autoprefixer@^10.4.0:
+autoprefixer@10.4.0:
   version "10.4.0"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.0.tgz#c3577eb32a1079a440ec253e404eaf1eb21388c8"
   integrity sha512-7FdJ1ONtwzV1G43GDD0kpVMn/qbiNqyOPMFTX5nRffI+7vgWoFEc6DcXOxHJxrWNDXrZh18eDsZjvZGUljSRGA==
@@ -1977,7 +1977,7 @@ cjs-module-lexer@^1.0.0:
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
 
-classcat@^5.0.3:
+classcat@5.0.3:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/classcat/-/classcat-5.0.3.tgz#38eaa0ec6eb1b10faf101bbcef2afb319c23c17b"
   integrity sha512-6dK2ke4VEJZOFx2ZfdDAl5OhEL8lvkl6EHF92IfRePfHxQTqir5NlcNVUv+2idjDqCX2NDc8m8YSAI5NI975ZQ==
@@ -2322,7 +2322,7 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.9.tgz#6410af31b26bd0520933d02cbc64fce9ce3fbf0b"
   integrity sha512-rpw6JPxK6Rfg1zLOYCSwle2GFOOsnjmDYDaBwEcwoOg4qlsIVCN789VkBZDJAGi4T07gI4YSutR43t9Zz4Lzuw==
 
-cypress@^9.2.0:
+cypress@9.2.0:
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/cypress/-/cypress-9.2.0.tgz#727c20b4662167890db81d5f6ba615231835b17d"
   integrity sha512-Jn26Tprhfzh/a66Sdj9SoaYlnNX6Mjfmj5PHu2a7l3YHXhrgmavM368wjCmgrxC6KHTOv9SpMQGhAJn+upDViA==
@@ -4966,7 +4966,7 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next@^12.0.7:
+next@12.0.7:
   version "12.0.7"
   resolved "https://registry.yarnpkg.com/next/-/next-12.0.7.tgz#33ebf229b81b06e583ab5ae7613cffe1ca2103fc"
   integrity sha512-sKO8GJJYfuk9c+q+zHSNumvff+wP7ufmOlwT6BuzwiYfFJ61VTTkfTcDLSJ+95ErQJiC54uS4Yg5JEE8H6jXRA==
@@ -5595,6 +5595,15 @@ postcss@8.2.15:
     nanoid "^3.1.23"
     source-map "^0.6.1"
 
+postcss@8.4.5:
+  version "8.4.5"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.5.tgz#bae665764dfd4c6fcc24dc0fdf7e7aa00cc77f95"
+  integrity sha512-jBDboWM8qpaqwkMwItqTQTiFikhs/67OYVvblFFTM7MrZjt6yMKd6r2kgXizEbTTljacm4NldIlZnhbjr84QYg==
+  dependencies:
+    nanoid "^3.1.30"
+    picocolors "^1.0.0"
+    source-map-js "^1.0.1"
+
 postcss@^6.0.9:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
@@ -5620,15 +5629,6 @@ postcss@^8.1.6, postcss@^8.2.1, postcss@^8.3.0:
     nanoid "^3.1.30"
     picocolors "^1.0.0"
     source-map-js "^0.6.2"
-
-postcss@^8.4.5:
-  version "8.4.5"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.5.tgz#bae665764dfd4c6fcc24dc0fdf7e7aa00cc77f95"
-  integrity sha512-jBDboWM8qpaqwkMwItqTQTiFikhs/67OYVvblFFTM7MrZjt6yMKd6r2kgXizEbTTljacm4NldIlZnhbjr84QYg==
-  dependencies:
-    nanoid "^3.1.30"
-    picocolors "^1.0.0"
-    source-map-js "^1.0.1"
 
 prelude-ls@^1.2.1:
   version "1.2.1"
@@ -5847,7 +5847,7 @@ react-faq-component@1.3.1:
   resolved "https://registry.yarnpkg.com/react-faq-component/-/react-faq-component-1.3.1.tgz#3dad142b7dddc971f66684ee7155e743c6307a86"
   integrity sha512-5JkmFu+WqeyXaf2fuYIoP5snP81S3EWreNdraWLtwiGiN5TpinjpOt59OgPZTDOfXfAjOfNPaVWYateh7IFI7g==
 
-react-hooks-use-modal@^2.1.0:
+react-hooks-use-modal@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-hooks-use-modal/-/react-hooks-use-modal-2.1.0.tgz#ec0a0f545fa421c12cbe724ece5425f34535b088"
   integrity sha512-3/W8QigIUYfGtQcPIxxALxZDi/1Ic91qAft0QTEO88ZRO8WgvE3CjsXsoEBvRE8HXBYZtUDf2dTCoQs6ZdCBPQ==
