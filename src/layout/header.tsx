@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import type { VFC } from "react";
-import { HeaderTitle } from "src/components/HeaderTitle";
+import { HeaderTitle, HeaderTitleMobile } from "src/components/HeaderTitle";
 import { NavBarMobile } from "src/components/navbar";
 
 type Props = {
@@ -12,6 +12,7 @@ type Props = {
 };
 
 export const Header: VFC<Props> = (props) => {
+
   const themeImage = {
     home: "/static/images/header/four-kittens.webp",
     about: "/static/images/header/era.webp",
@@ -34,8 +35,8 @@ export const Header: VFC<Props> = (props) => {
   };
 
   return (
-    <>
-      <header>
+    <header>
+      <div>
         {/* PC */}
         <div className="hidden relative h-full sm:block nm-flat-gray-100-xl">
           <img
@@ -49,7 +50,7 @@ export const Header: VFC<Props> = (props) => {
           <HeaderTitle />
         </div>
         {/* mobile */}
-        <div className="relative h-screen sm:hidden nm-flat-gray-100-xl">
+        <div className="relative h-screen nm-flat-gray-100-xl sm:hidden">
           <Image
             layout="fill"
             className="object-cover object-center relative pointer-events-none"
@@ -57,11 +58,11 @@ export const Header: VFC<Props> = (props) => {
             alt={"Canon's mainecoons"}
             loading="eager"
           />
-          <HeaderTitle />
+            <HeaderTitleMobile  />
         </div>
         {/* mobile */}
         {props.theme !== "articles" && <NavBarMobile type="main" />}
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
