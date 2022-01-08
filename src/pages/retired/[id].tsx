@@ -18,7 +18,6 @@ const retiredId: VFC<retiredPageProps > = (props) => {
   const imgUrl = props.retired.imgSrc.url;
   const imgUrlwidth = props.retired.imgSrc.width * 0.8;
   const imgUrlheight = props.retired.imgSrc.height * 0.8;
-  console.log(props);
 
   return (
     <LayoutBlog>
