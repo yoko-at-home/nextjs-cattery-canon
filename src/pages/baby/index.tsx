@@ -8,13 +8,11 @@ const description = "かわいい赤ちゃんが誕生しました ...こちら�
 const Baby = () => {
   return (
     <div className="bg-[#50c4cc] relative">
-      <Layout theme="home">
+      <Layout theme="available">
         <PageSEO title={`赤ちゃん - ${siteMetadata.author}`} description={description} />
 
         <PageTitle type="large">
-          <span className="text-white">
-            {description}
-          </span>
+          <span className="text-white">{description}</span>
         </PageTitle>
         <div className="orb"></div>
         <style jsx>
