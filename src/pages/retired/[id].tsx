@@ -3,19 +3,22 @@
 // pages/retired/[id].js
 import Image from "next/image";
 import Link from "next/link";
+import { VFC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
+import { retiredPageProps  } from "src/type";
 
-export default function retiredId(props) {
+const retiredId: VFC<retiredPageProps > = (props) => {
   const publishedAt = props.retired.publishedAt;
   const revisedAt = props.retired.revisedAt;
   const imgUrl = props.retired.imgSrc.url;
   const imgUrlwidth = props.retired.imgSrc.width * 0.8;
   const imgUrlheight = props.retired.imgSrc.height * 0.8;
+  console.log(props);
 
   return (
     <LayoutBlog>
@@ -42,12 +45,12 @@ export default function retiredId(props) {
         <div className="flex flex-col mt-3 mb-10 text-right">
           {publishedAt === revisedAt ? (
             <div>
-              Published: <Date className="mb-3 text-sm text-gray-600" dateString={props.retired.publishedAt} />
+              Published: <Date dateString={props.retired.publishedAt} />
             </div>
           ) : (
             <>
               <div>
-                Published at: <Date className="mb-3 text-sm text-gray-600" dateString={props.retired.publishedAt} />
+                Published at: <Date dateString={props.retired.publishedAt} />
               </div>
             </>
           )}
@@ -66,20 +69,21 @@ export default function retiredId(props) {
       </main>
     </LayoutBlog>
   );
-}
+};
+export default retiredId;
 
 // 静的生成のためのパスを指定します
 export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: "retired" });
 
-  const paths = data.contents.map((content) => {
+  const paths = data.contents.map((content: any) => {
     return `/retired/${content.id}`;
   });
   return { paths, fallback: false };
 };
 
 // データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async (context) => {
+export const getStaticProps = async (context:any) => {
   const id = context.params.id;
   const data = await client.get({ endpoint: "retired", contentId: id });
 
