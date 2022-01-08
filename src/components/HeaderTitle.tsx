@@ -14,7 +14,7 @@ export const HeaderTitle = () => {
               color: "#71745b",
               // background: "linearGradient(75deg;rgba(2, 9, 66, 1) 4 % rgba(6, 85, 92, 1) 76%)",
             }}
-            className="font-bold whitespace-nowrap bg-clip-text bg-opacity-40 backdrop-filter backdrop-blur-lg py-2 pr-4 text-5xl md:mt-12 md:mb-20"
+            className="font-bold whitespace-nowrap bg-opacity-40 backdrop-filter backdrop-blur-lg py-2 pr-4 text-6xl md:mt-12 md:mb-20"
           >
             {siteMetadata.headerTitle}
           </div>

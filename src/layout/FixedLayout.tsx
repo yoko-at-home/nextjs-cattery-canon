@@ -2,6 +2,7 @@
 import { useRouter } from "next/router";
 import type { ReactNode, VFC } from "react";
 import { Test } from "src/components/Carousel/test";
+import { CarouselVertical } from "src/components/Carousel/vertical";
 import { NavBarDesktop } from "src/components/navbar";
 import { Footer } from "src/layout/footer";
 import { Header } from "src/layout/header";
@@ -56,7 +57,7 @@ export const LayoutBlog: VFC<Props> = (props) => {
         <Footer />
       </div>
       <div className="hidden xl:block xl:mr-3 xl:w-2/6">
-        <Test />
+        <CarouselVertical />
       </div>
     </div>
   );
