@@ -3,15 +3,17 @@ import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 
+const description = "かわいい赤ちゃんが誕生しました ...こちらでお知らせできるまでしばらくお待ちください";
+
 const Baby = () => {
   return (
     <div className="bg-[#50c4cc] relative">
       <Layout theme="home">
-        <PageSEO title={`赤ちゃん - ${siteMetadata.author}`} description={siteMetadata.description} />
+        <PageSEO title={`赤ちゃん - ${siteMetadata.author}`} description={description} />
 
         <PageTitle type="large">
           <span className="text-white">
-            かわいい赤ちゃんが誕生しました ...こちらでお知らせできるまでしばらくお待ちください
+            {description}
           </span>
         </PageTitle>
         <div className="orb"></div>
