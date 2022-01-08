@@ -3,8 +3,6 @@
 import "keen-slider/keen-slider.min.css";
 
 import { useKeenSlider } from "keen-slider/react";
-import Image from "next/image";
-import { siteMetadata } from "src/data/siteMetadata";
 
 export const CarouselHorizontal = () => {
   const [sliderRef] = useKeenSlider<HTMLDivElement>(
