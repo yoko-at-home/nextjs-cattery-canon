@@ -15,8 +15,6 @@ type Props = {
 };
 
 export const Card: NextPage<Props> = (props) => {
-  console.log(props);
-
   return (
     <div className="p-3">
       <div className="p-1 nm-concave-gray-100-lg rounded" style={{ maxWidth: "544px" }}>
