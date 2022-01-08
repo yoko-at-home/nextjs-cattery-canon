@@ -62,7 +62,7 @@ const Links: NextPage = () => {
       <PageTitle type="large">リンク集 - Canon のおすすめサイト</PageTitle>
       <div className="divide-y divide-gray-200 ">
         <div className="container pb-12">
-          <div className="p-5 mx-auto max-w-screen-xl text-white dark:bg-gray-800">
+          <div className="p-5 mx-auto max-w-screen-xl text-white">
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {links.map((link) => {
                 return (
@@ -74,12 +74,12 @@ const Links: NextPage = () => {
                     key={link.url}
                   >
                     <div
-                      className="flex relative justify-start items-end w-full h-96 text-left dark:bg-gray-500 bg-center bg-cover rounded"
+                      className="flex relative justify-start items-end w-full h-96 text-left  bg-center bg-cover rounded"
                       style={{
                         backgroundImage: link.backgroundImg,
                       }}
                     >
-                      <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 bg-gradient-to-b dark:via-transparent rounded"></div>
+                      <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 bg-gradient-to-b rounded"></div>
                       <div className="flex absolute top-0 right-0 left-0 justify-between items-center mx-5 mt-3">
                         {link.title}
                         <div className="flex flex-col justify-start text-center">
@@ -98,7 +98,7 @@ const Links: NextPage = () => {
       </div>
       <PageTitle type="large">Photographers</PageTitle>
       <div className="container pb-12" id="photographers">
-        <div className="p-5 mx-auto max-w-screen-xl text-white dark:bg-gray-800">
+        <div className="p-5 mx-auto max-w-screen-xl text-white">
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {phtographers.map((phtographer) => {
               return (
@@ -110,12 +110,12 @@ const Links: NextPage = () => {
                   key={phtographer.url}
                 >
                   <div
-                    className="flex relative justify-start items-end w-full h-52 text-left dark:bg-gray-500 bg-center bg-cover rounded"
+                    className="flex relative justify-start items-end w-full h-52 text-left bg-center bg-cover rounded"
                     style={{
                       backgroundImage: phtographer.backgroundImg,
                     }}
                   >
-                    <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 bg-gradient-to-b dark:via-transparent rounded"></div>
+                    <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 bg-gradient-to-b rounded"></div>
                     <div className="flex absolute top-0 right-0 left-0 justify-between items-center mx-5 mt-3">
                       {phtographer.name}
                       <div className="flex flex-col justify-start text-center">
