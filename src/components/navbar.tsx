@@ -11,6 +11,7 @@ const items = [
   { href: "/about", label: "About" },
   { href: "/mycat/boys", label: "My Boys" },
   { href: "/mycat/girls", label: "My Girls" },
+  { href: "/baby", label: "Babies" },
   { href: "/available", label: "Available" },
   { href: "/retired", label: "Retired" },
   { href: "/contact", label: "Contact" },

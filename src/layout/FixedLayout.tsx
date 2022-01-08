@@ -1,4 +1,5 @@
 /* eslint-disable tailwindcss/no-custom-classname */
+import { useRouter } from "next/router";
 import type { ReactNode, VFC } from "react";
 import { Test } from "src/components/Carousel/test";
 import { NavBarDesktop } from "src/components/navbar";
@@ -13,9 +14,17 @@ type Props = {
 };
 
 export const Layout: VFC<Props> = (props) => {
+  const router = useRouter();
+
   return (
     <div className="flex overflow-scroll justify-start w-screen" style={{ maxHeight: "150vh" }}>
-      <div className="hidden m-5 w-1/6 min-h-full rounded-full md:block xl:w-1/6 nm-inset-yellow-800">
+      <div
+        className={
+          router.pathname === "/baby"
+            ? "hidden m-5 w-1/6 min-h-full rounded-full md:block xl:w-1/6 nm-inset-pink-500"
+            : "hidden m-5 w-1/6 min-h-full rounded-full md:block xl:w-1/6 nm-inset-yellow-800"
+        }
+      >
         <NavBarDesktop />
       </div>
       <div className="w-full md:mr-5 lg:w-5/6 xl:w-3/6">

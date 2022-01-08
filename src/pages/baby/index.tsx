@@ -1,4 +1,3 @@
-import React from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
@@ -6,12 +5,14 @@ import { Layout } from "src/layout";
 
 const Baby = () => {
   return (
-    <div className="bg-[#35a4ac] relative">
+    <div className="bg-[#50c4cc] relative">
       <Layout theme="home">
         <PageSEO title={`赤ちゃん - ${siteMetadata.author}`} description={siteMetadata.description} />
 
         <PageTitle type="large">
-          <span className="text-white">かわいい赤ちゃんが誕生しました ...こちらでお知らせできるまでしばらくお待ちください</span>
+          <span className="text-white">
+            かわいい赤ちゃんが誕生しました ...こちらでお知らせできるまでしばらくお待ちください
+          </span>
         </PageTitle>
         <div className="orb"></div>
         <style jsx>
@@ -40,4 +41,5 @@ const Baby = () => {
   );
 };
 
+// eslint-disable-next-line import/no-default-export
 export default Baby;
