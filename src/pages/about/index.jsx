@@ -4,10 +4,13 @@ import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
 
+const description =
+  "神話、伝説，伝承が、メインクーンにはあります。面白いものもあればファンタジーの世界へのものもあり、また単に、もっともらしいものもあります";
+
 const About = (props) => {
   return (
     <Layout theme="about">
-      <PageSEO title={`メインクーンについて- ${siteMetadata.author}`} description={siteMetadata.description} />
+      <PageSEO title={`メインクーンについて- ${siteMetadata.author}`} description={description} />
 
       <div className="divide-y divide-gray-200">
         <div className="pt-6 pb-8 space-y-2 md:mt-8 md:space-y-5">
