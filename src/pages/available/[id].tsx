@@ -5,14 +5,16 @@
 // pages/news/[id].js
 import Image from "next/image";
 import Link from "next/link";
+import { VFC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
+import { availablePageProps } from "src/type/types";
 
-export default function BlogId(props) {
+const BlogId:VFC<availablePageProps>=(props)=> {
   const publishedAt = props.available.publishedAt;
   const revisedAt = props.available.revisedAt;
   const imgUrl = props.available.imgSrc.url;
@@ -44,12 +46,12 @@ export default function BlogId(props) {
         <div className="flex flex-col mt-3 mb-10 text-right text-gray-600">
           {publishedAt === revisedAt ? (
             <div>
-              Published: <Date className="mb-3 text-sm text-gray-500" dateString={props.available.publishedAt} />
+              Published: <Date dateString={props.available.publishedAt} />
             </div>
           ) : (
             <>
               <div>
-                Published at: <Date className="mb-3 text-sm text-gray-600" dateString={props.available.publishedAt} />
+                Published at: <Date dateString={props.available.publishedAt} />
               </div>
             </>
           )}
@@ -71,18 +73,20 @@ export default function BlogId(props) {
   );
 }
 
+export default BlogId;
+
 // 静的生成のためのパスを指定します
 export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: "available" });
 
-  const paths = data.contents.map((content) => {
+  const paths = data.contents.map((content:any) => {
     return `/available/${content.id}`;
   });
   return { paths, fallback: false };
 };
 
 // データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async (context) => {
+export const getStaticProps = async (context:any) => {
   const id = context.params.id;
   const data = await client.get({ endpoint: "available", contentId: id });
 

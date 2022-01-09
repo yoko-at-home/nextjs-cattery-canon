@@ -1,13 +1,15 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import Image from "next/image";
 import Link from "next/link";
+import { VFC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
+import { availableProps } from "src/type/types";
 
-const Available = (props) => {
+const Available:VFC<availableProps> = (props) => {
   return (
     <Layout theme="available">
       <PageSEO title={`譲渡可能な子達- ${siteMetadata.author}`} description={siteMetadata.description} />
@@ -41,34 +43,10 @@ const Available = (props) => {
             );
           })}
         </ul>
-        {/* <Pagination totalCount={props.totalCount} /> */}
       </div>
     </Layout>
   );
 };
-// export const getStaticProps = async () => {
-//   const key = {
-//     // eslint-disable-next-line @typescript-eslint/naming-convention
-//     headers: { "X-API-KEY": process.env.NEXT_PUBLIC_API_KEY },
-//   };
-//   const data = await fetch(
-//     `${process.env.NEXT_PUBLIC_API_URL}/available?offset=0&limit=5`,
-//     key
-//   )
-//     .then((res) => {
-//       return res.json();
-//     })
-//     .catch(() => {
-//       return null;
-//     });
-
-//   return {
-//     props: {
-//       available: data?.contents,
-//       totalCount: data?.totalCount,
-//     },
-//   };
-// };
 
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "available" });
