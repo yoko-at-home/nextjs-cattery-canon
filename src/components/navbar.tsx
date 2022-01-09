@@ -30,13 +30,11 @@ export const NavBarDesktop: VFC = () => {
     <nav className="hidden flex-col justify-start px-2 mt-20 text-center sm:flex">
       {items.map(({ href, label }) => {
         return (
-          <>
-            <Link key={href} href={href}>
-              <a className="py-2 mb-3 font-medium text-gray-300 hover:text-green-600 whitespace-nowrap sm:px-4 lg:text-3xl">
-                {label}
-              </a>
-            </Link>
-          </>
+          <Link key={href} href={href}>
+            <a className="py-2 mb-3 font-medium text-gray-300 hover:text-green-600 whitespace-nowrap sm:px-4 lg:text-3xl">
+              {label}
+            </a>
+          </Link>
         );
       })}
       <a
