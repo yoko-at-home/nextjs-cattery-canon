@@ -11,7 +11,7 @@ const description =
 
 const About:VFC<About> = (props) => {
   return (
-    <Layout theme="about">
+    <Layout theme="about" photographer="Yoshiko Yamashita">
       <PageSEO title={`メインクーンについて- ${siteMetadata.author}`} description={description} />
 
       <div className="divide-y divide-gray-200">

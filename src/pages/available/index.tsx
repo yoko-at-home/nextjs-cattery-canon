@@ -11,7 +11,7 @@ import { availableProps } from "src/type/types";
 
 const Available:VFC<availableProps> = (props) => {
   return (
-    <Layout theme="available">
+    <Layout theme="available" photographer="Yoshiko Yamashita">
       <PageSEO title={`譲渡可能な子達- ${siteMetadata.author}`} description={siteMetadata.description} />
       <PageTitle type="large">譲渡可能な子達</PageTitle>
       <div className="mt-10">

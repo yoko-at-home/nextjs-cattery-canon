@@ -17,7 +17,7 @@ import { retiredProps } from "src/type";
 const Retired:VFC<retiredProps> = (props) => {
 
   return (
-    <Layout theme="retired">
+    <Layout theme="retired" photographer="Yoshiko Yamashita">
       <PageSEO title={`引退した子達 - ${siteMetadata.author}`} description={siteMetadata.description} />
 
       <PageTitle type="large">引退した子達</PageTitle>
