@@ -74,7 +74,7 @@ const Links: NextPage = () => {
                     key={link.url}
                   >
                     <div
-                      className="flex relative justify-start items-end w-full h-96 text-left  bg-center bg-cover rounded"
+                      className="flex relative justify-start items-end w-full h-96 text-left bg-center bg-cover rounded"
                       style={{
                         backgroundImage: link.backgroundImg,
                       }}

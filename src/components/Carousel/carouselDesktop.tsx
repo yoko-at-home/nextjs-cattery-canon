@@ -45,75 +45,65 @@ export const CarouselDesktop = () => {
     <div className="hidden md:block">
       <div ref={sliderRef} className="keen-slider">
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/header/four-kittens.webp')",
           }}
-        >
-        </div>
+        ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/header/era.webp')",
           }}
-        >
-        </div>
+        ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/0_top/03_in-a-field.webp')",
           }}
-        >
-        </div>
+        ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/header/five-kids.webp')",
           }}
-        >
-        </div>
+        ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/header/tetsu_maincoon-on-white-background.webp')",
           }}
-        >
-        </div>
+        ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/header/brown-baby-02.webp')",
           }}
-        >
-        </div>
+        ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/header/red-kitten.webp')",
           }}
-        >
-        </div>
+        ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/header/brown-baby-02.webp')",
           }}
-        >
-        </div>
+        ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/0_top/09_red-plate.webp')",
           }}
-        >
-        </div>
+        ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/memory/fushigi.webp')",
           }}
-        >
-        </div>
+        ></div>
       </div>
       <style jsx>{`
         [class^="number-slide"],

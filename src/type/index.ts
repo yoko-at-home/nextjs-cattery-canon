@@ -1,1 +1,1 @@
-export type { retiredProps, retiredPageProps } from "./types";
+export type { retiredPageProps, retiredProps } from "./types";

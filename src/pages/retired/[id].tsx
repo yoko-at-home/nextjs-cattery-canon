@@ -1,18 +1,17 @@
 /* eslint-disable import/no-default-export */
 /* eslint-disable @next/next/no-img-element */
-// pages/retired/[id].js
 import Image from "next/image";
 import Link from "next/link";
-import { VFC } from "react";
+import type { VFC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
-import { retiredPageProps  } from "src/type";
+import type { retiredPageProps } from "src/type";
 
-const retiredId: VFC<retiredPageProps > = (props) => {
+const retiredId: VFC<retiredPageProps> = (props) => {
   const publishedAt = props.retired.publishedAt;
   const revisedAt = props.retired.revisedAt;
   const imgUrl = props.retired.imgSrc.url;
@@ -82,7 +81,7 @@ export const getStaticPaths = async () => {
 };
 
 // データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async (context:any) => {
+export const getStaticProps = async (context: any) => {
   const id = context.params.id;
   const data = await client.get({ endpoint: "retired", contentId: id });
 

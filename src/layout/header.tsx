@@ -7,12 +7,11 @@ import { NavBarMobile } from "src/components/navbar";
 
 type Props = {
   className?: string;
-  type?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "fushigi"|"baby";
-  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "gallery"|"baby";
+  type?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "fushigi" | "baby";
+  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "gallery" | "baby";
 };
 
 export const Header: VFC<Props> = (props) => {
-
   const themeImage = {
     home: "/static/images/header/four-kittens.webp",
     about: "/static/images/header/era.webp",
@@ -52,7 +51,7 @@ export const Header: VFC<Props> = (props) => {
           <HeaderTitle />
         </div>
         {/* mobile */}
-        <div className="relative h-screen nm-flat-gray-100-xl sm:hidden">
+        <div className="relative h-screen sm:hidden nm-flat-gray-100-xl">
           <Image
             layout="fill"
             className="object-cover object-center relative pointer-events-none"

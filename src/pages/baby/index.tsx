@@ -3,11 +3,12 @@ import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 
-const description = "クリスマスイブのイブにかわいい赤ちゃんが誕生しました ...こちらでお知らせできるまでしばらくお待ちください";
+const description =
+  "クリスマスイブのイブにかわいい赤ちゃんが誕生しました ...こちらでお知らせできるまでしばらくお待ちください";
 
 const Baby = () => {
   return (
-    <div className="bg-[#50c4cc] relative">
+    <div className="relative bg-[#50c4cc]">
       <Layout theme="baby" photographer="Canon">
         <PageSEO title={`赤ちゃん - ${siteMetadata.author}`} description={description} />
 

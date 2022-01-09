@@ -6,16 +6,15 @@
 /* eslint-disable import/no-default-export */
 import Image from "next/image";
 import Link from "next/link";
-import { VFC } from "react";
+import type { VFC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
-import { retiredProps } from "src/type";
+import type { retiredProps } from "src/type";
 
-const Retired:VFC<retiredProps> = (props) => {
-
+const Retired: VFC<retiredProps> = (props) => {
   return (
     <Layout theme="retired" photographer="Yoshiko Yamashita">
       <PageSEO title={`引退した子達 - ${siteMetadata.author}`} description={siteMetadata.description} />

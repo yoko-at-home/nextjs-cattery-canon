@@ -1,13 +1,13 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-import { existsGaId, pageview } from "../lib/gtag";
+import { isExistsGaId, pageview } from "../lib/gtag";
 
 export const usePageView = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (!existsGaId) {
+    if (!isExistsGaId) {
       return;
     }
 

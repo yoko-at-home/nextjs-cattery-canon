@@ -17,8 +17,8 @@ type Props = {
 export const Card: NextPage<Props> = (props) => {
   return (
     <div className="p-3">
-      <div className="p-1 nm-concave-gray-100-lg rounded" style={{ maxWidth: "544px" }}>
-        <div className="flex overflow-scroll flex-col border-2 border-gray-50 nm-concave-gray-300-lg rounded">
+      <div className="p-1 rounded nm-concave-gray-100-lg" style={{ maxWidth: "544px" }}>
+        <div className="flex overflow-scroll flex-col rounded border-2 border-gray-50 nm-concave-gray-300-lg">
           <Image
             alt={props.title}
             src={props.imgSrc}

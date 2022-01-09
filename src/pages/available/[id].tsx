@@ -5,16 +5,16 @@
 // pages/news/[id].js
 import Image from "next/image";
 import Link from "next/link";
-import { VFC } from "react";
+import type { VFC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
-import { availablePageProps } from "src/type/types";
+import type { availablePageProps } from "src/type/types";
 
-const BlogId:VFC<availablePageProps>=(props)=> {
+const BlogId: VFC<availablePageProps> = (props) => {
   const publishedAt = props.available.publishedAt;
   const revisedAt = props.available.revisedAt;
   const imgUrl = props.available.imgSrc.url;
@@ -71,7 +71,7 @@ const BlogId:VFC<availablePageProps>=(props)=> {
       </main>
     </LayoutBlog>
   );
-}
+};
 
 export default BlogId;
 
@@ -79,14 +79,14 @@ export default BlogId;
 export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: "available" });
 
-  const paths = data.contents.map((content:any) => {
+  const paths = data.contents.map((content: any) => {
     return `/available/${content.id}`;
   });
   return { paths, fallback: false };
 };
 
 // データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async (context:any) => {
+export const getStaticProps = async (context: any) => {
   const id = context.params.id;
   const data = await client.get({ endpoint: "available", contentId: id });
 

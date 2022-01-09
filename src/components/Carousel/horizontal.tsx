@@ -43,63 +43,63 @@ export const CarouselHorizontal = () => {
 
   return (
     <>
-      <div ref={sliderRef} className="keen-slider  h-screen">
+      <div ref={sliderRef} className="h-screen keen-slider">
         <div
-          className="keen-slider__slide number-slide bg-top bg-cover"
+          className="bg-top bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/02_horizontal/lento.jpg')",
           }}
         ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/02_horizontal/mother&daughter.webp')",
           }}
         ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/02_horizontal/red-plate.webp')",
           }}
         ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/02_horizontal/rizumu.webp')",
           }}
         ></div>
         <div
-          className="keen-slider__slide number-slide bg-top bg-cover"
+          className="bg-top bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/0_top/06_mainecoon.webp')",
           }}
         ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/0_top/07_painting-green.webp')",
           }}
         ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/02_horizontal/yamashita-baby-on-piano.png')",
           }}
         ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/02_horizontal/mainecoon-girls.webp')",
           }}
         ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/02_horizontal/hanako.webp')",
           }}
         ></div>
         <div
-          className="keen-slider__slide number-slide bg-center bg-cover"
+          className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
             backgroundImage: "url('/static/images/02_horizontal/yamashita-three-brothers.png')",
           }}
