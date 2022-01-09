@@ -12,7 +12,7 @@ const MyDocument = () => {
         <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" />
         <link rel="manifest" href="/static/favicons/site.webmanifest" />
         <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="msapplication-TileColor" content="#8b6608" />
         <meta name="theme-color" content="#f7ecd2" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -28,17 +28,6 @@ const MyDocument = () => {
         <Main />
         <div id="root"></div>
         <NextScript />
-        {/* <noscript
-          dangerouslySetInnerHTML={{
-            __html: `
-            <iframe
-              src="https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}"
-              height="0"
-              width="0"
-              style="display:none;visibility:hidden"
-            />`,
-          }}
-        /> */}
       </body>
     </Html>
   );
