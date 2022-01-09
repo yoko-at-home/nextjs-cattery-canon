@@ -9,7 +9,7 @@ import { Header } from "src/layout/header";
 
 type Props = {
   className?: string;
-  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "gallery";
+  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "gallery"|"baby";
   children: ReactNode;
   photographer?: "tetsu" | "yamashita";
 };

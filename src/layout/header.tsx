@@ -7,8 +7,8 @@ import { NavBarMobile } from "src/components/navbar";
 
 type Props = {
   className?: string;
-  type?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "fushigi";
-  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "gallery";
+  type?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "fushigi"|"baby";
+  theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "gallery"|"baby";
 };
 
 export const Header: VFC<Props> = (props) => {
@@ -22,6 +22,7 @@ export const Header: VFC<Props> = (props) => {
     available: "/static/images/header/red-kitten.webp",
     articles: "/static/images/header/three-kids.webp",
     gallery: "/static/images/memory/fushigi.webp",
+    baby: "/static/images/header/2022-baby.webp",
   };
   const themeImageMobile = {
     home: "/static/images/header/mobile/yamashita-brown.webp",
@@ -32,6 +33,7 @@ export const Header: VFC<Props> = (props) => {
     available: "/static/images/header/mobile/yamashita-red.webp",
     articles: "/static/images/header/mobile/three-kids.webp",
     gallery: "/static/images/header/mobile/fushigi.webp",
+    baby: "/static/images/header/mobile/2022-baby.webp",
   };
 
   return (
