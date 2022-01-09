@@ -70,3 +70,14 @@ export type availablePageProps = {
     body: HTMLAnchorElement;
   };
 };
+
+export type About = {
+  data: {
+    createdAt: Date;
+    updatedAt: Date;
+    publishedAt: Date;
+    revisedAt: Date;
+    title: string;
+    body: HTMLAnchorElement;
+  };
+};
