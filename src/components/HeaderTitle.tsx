@@ -34,9 +34,9 @@ export const HeaderTitleMobile = () => {
           <CustomLink href="/home" aria-label="Cattery Canon">
             <div
               style={{
-                border: "double 5px #468314",
+                border: "double 5px #636363",
                 textShadow: "1px 2px 2px#b3dfec",
-                color: "#92bd6f",
+                color: "#71745b",
                 // background: "linearGradient(75deg;rgba(2, 9, 66, 1) 4 % rgba(6, 85, 92, 1) 76%)",
               }}
             >
