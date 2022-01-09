@@ -1,14 +1,15 @@
+import { VFC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
+import { About } from "src/type/types";
 
 const description =
   "神話、伝説，伝承が、メインクーンにはあります。面白いものもあればファンタジーの世界へのものもあり、また単に、もっともらしいものもあります";
 
-const About = (props) => {
-  console.log(props);
+const About:VFC<About> = (props) => {
   return (
     <Layout theme="about">
       <PageSEO title={`メインクーンについて- ${siteMetadata.author}`} description={description} />
