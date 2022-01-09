@@ -40,7 +40,7 @@ export const Header: VFC<Props> = (props) => {
     <header>
       <div>
         {/* PC */}
-        <div className="hidden relative h-full sm:block nm-flat-gray-100-xl">
+        <div className="hidden relative h-full sm:block nm-flat-zinc-50-xl">
           <img
             width="100%"
             height="100%"
@@ -60,7 +60,7 @@ export const Header: VFC<Props> = (props) => {
             alt={"Canon's mainecoons"}
             loading="eager"
           />
-            <HeaderTitleMobile  />
+          <HeaderTitleMobile />
         </div>
         {/* mobile */}
         {props.theme !== "articles" && <NavBarMobile type="main" />}

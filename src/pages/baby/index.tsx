@@ -8,7 +8,7 @@ const description = "クリスマスイブのイブにかわいい赤ちゃん�
 const Baby = () => {
   return (
     <div className="bg-[#50c4cc] relative">
-      <Layout theme="baby">
+      <Layout theme="baby" photographer="Canon">
         <PageSEO title={`赤ちゃん - ${siteMetadata.author}`} description={description} />
 
         <PageTitle type="medium">
