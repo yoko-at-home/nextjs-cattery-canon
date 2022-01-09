@@ -17,7 +17,7 @@ export const Header: VFC<Props> = (props) => {
     home: "/static/images/header/four-kittens.webp",
     about: "/static/images/header/era.webp",
     boys: "/static/images/header/five-kids.webp",
-    girls: "/static/images/header/tetsu_maincoon-on-white-background.webp",
+    girls: "/static/images/header/tetsu-TICA_QGC_POPOKILANI_ISHTAR_OF_CANON.webp",
     retired: "/static/images/header/brown-baby-02.webp",
     available: "/static/images/header/red-kitten.webp",
     articles: "/static/images/header/three-kids.webp",
