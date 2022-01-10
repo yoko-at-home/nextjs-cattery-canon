@@ -1,3 +1,4 @@
+import type { NextPage } from "next";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
@@ -6,7 +7,7 @@ import { Layout } from "src/layout";
 const description =
   "クリスマスイブのイブにかわいい赤ちゃんが誕生しました ...こちらでお知らせできるまでしばらくお待ちください";
 
-const Baby = () => {
+const Baby:NextPage = () => {
   return (
     <div className="relative bg-[#50c4cc]">
       <Layout theme="baby" photographer="Canon">
