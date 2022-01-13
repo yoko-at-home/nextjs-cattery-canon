@@ -18,7 +18,7 @@ export const Card: NextPage<Props> = (props) => {
   return (
     <div className="p-3">
       <div className="p-1 rounded nm-concave-gray-100-lg" style={{ maxWidth: "544px" }}>
-        <div className="flex overflow-scroll flex-col rounded border-2 border-gray-50 nm-concave-gray-300-lg">
+        <div className="flex flex-col rounded border-2 border-gray-50 nm-concave-gray-300-lg">
           <Image
             alt={props.title}
             src={props.imgSrc}
@@ -38,8 +38,8 @@ export const Card: NextPage<Props> = (props) => {
 };
 export const CardModal: NextPage<Props> = (props) => {
   return (
-    <div className="overflow-x-scroll p-4 h-4/5" style={{ maxWidth: "800px" }}>
-      <div className="flex overflow-scroll flex-col p-3 rounded-md border-2 border-gray-200 border-opacity-60 md:flex-row nm-inset-gray-100-sm">
+    <div className="p-4 h-4/5" style={{ maxWidth: "800px" }}>
+      <div className="flex flex-col p-3 rounded-md border-2 border-gray-200 border-opacity-60 md:flex-row nm-inset-gray-100-sm">
         <Image
           alt={props.title}
           src={props.imgSrc}
