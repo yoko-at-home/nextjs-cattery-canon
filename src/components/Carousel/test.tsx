@@ -20,9 +20,9 @@ export const Test: NextPage = () => {
                 textShadow: "1px 1px 4px #ffffff",
                 color: "#71745b",
               }}
-              className="absolute bottom-[13%] left-[20%] py-3 px-5 font-black backdrop-filter backdrop-blur-lg transform -rotate-45"
+              className="absolute rounded-full bottom-[20%] left-[25%] font-black backdrop-filter backdrop-blur-sm"
             >
-              <div className="transform rotate-45 text-2xl">{item.title}</div>
+              <div className="transform -rotate-45">{item.title}</div>
             </div>
           </div>
         );
