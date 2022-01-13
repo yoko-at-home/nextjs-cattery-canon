@@ -18,7 +18,7 @@ export const Layout: VFC<Props> = (props) => {
   const router = useRouter();
 
   return (
-    <div className="flex overflow-scroll justify-start w-screen" style={{ maxHeight: "150vh" }}>
+    <div className="flex overflow-y-scroll justify-start w-screen" style={{ maxHeight: "150vh" }}>
       <div
         className={
           router.pathname === "/baby"
