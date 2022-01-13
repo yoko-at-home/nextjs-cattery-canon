@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 import { dataVertical } from "src/data/carouselVerticalData";
 
 export const Test: NextPage = () => {
@@ -14,14 +13,6 @@ export const Test: NextPage = () => {
               background: `top / cover no-repeat url(${item.src})`,
             }}
           >
-            {/* <Image
-              src={item.src}
-              alt={item.title}
-              width="400px"
-              height="400px"
-              layout="intrinsic"
-              className="opacity-0"
-            /> */}
             <div style={{ width: "400px", height: "450px" }} />
             <div
               style={{
