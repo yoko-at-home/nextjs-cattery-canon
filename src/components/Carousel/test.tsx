@@ -26,12 +26,12 @@ export const Test: NextPage = () => {
             <div
               style={{
                 border: "solid 1px rgba(98,98,98,.6)",
-                textShadow: "3px 3px 5px #ffffff",
+                textShadow: "1px 1px 4px #ffffff",
                 color: "#71745b",
               }}
               className="absolute bottom-8 left-8 py-3 px-5 font-semibold backdrop-filter backdrop-blur-lg transform -rotate-45"
             >
-              <div className="transform rotate-45">{item.title}</div>
+              <div className="transform rotate-45 text-2xl">{item.title}</div>
             </div>
           </div>
         );
