@@ -1,7 +1,7 @@
 export const dataVertical = [
   {
     id: "1",
-    title: "🐈 Cattery 🐈",
+    title: "Cattery",
     url: {
       background: 'center/cover no-repeat url("/static/images/0_top/mainecoon-girls.webp")',
     },
@@ -17,7 +17,7 @@ export const dataVertical = [
   // },
   {
     id: "3",
-    title: "💕 Canon 💕",
+    title: "Canon",
     url: {
       background: 'top/cover no-repeat url("/static/images/0_top/baby-mainecoon.webp")',
     },
@@ -25,7 +25,7 @@ export const dataVertical = [
   },
   {
     id: "4",
-    title: "☘️",
+    title: "Maine coon",
     url: {
       background: 'top/cover no-repeat url("/static/images/0_top/mainecoon.webp")',
     },
@@ -49,7 +49,7 @@ export const dataVertical = [
   // },
   {
     id: "7",
-    title: "✨ Freyja ✨",
+    title: "Freyja",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/Freyja.webp")',
     },
@@ -57,7 +57,7 @@ export const dataVertical = [
   },
   {
     id: "8",
-    title: "✨ Gura",
+    title: "Gura",
     url: {
       background: 'bottom/cover no-repeat url("/static/images/memory/gura.webp")',
     },
@@ -65,7 +65,7 @@ export const dataVertical = [
   },
   {
     id: "9",
-    title: "✨ Hanako",
+    title: "Hanako",
     url: {
       background: 'left/cover no-repeat url("/static/images/memory/hanako.webp")',
     },
@@ -73,7 +73,7 @@ export const dataVertical = [
   },
   {
     id: "10",
-    title: "✨ Hime",
+    title: "Hime",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/hime.webp")',
     },
@@ -81,7 +81,7 @@ export const dataVertical = [
   },
   {
     id: "11",
-    title: "🚀 Kenta 🚀",
+    title: "Kenta",
     url: {
       background: 'left/cover no-repeat url("/static/images/memory/kenta.webp")',
     },
@@ -89,7 +89,7 @@ export const dataVertical = [
   },
   {
     id: "12",
-    title: "✨ Lata",
+    title: "Lata",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/lala.webp")',
     },
@@ -97,7 +97,7 @@ export const dataVertical = [
   },
   {
     id: "13",
-    title: "✨ Miyabi",
+    title: "Miyabi",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/miyabi.webp")',
     },
@@ -105,7 +105,7 @@ export const dataVertical = [
   },
   {
     id: "14",
-    title: "✨ Myu",
+    title: "Myu",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/myu.webp")',
     },
@@ -113,7 +113,7 @@ export const dataVertical = [
   },
   {
     id: "15",
-    title: "✨ Naushika",
+    title: "Naushika",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/naushika.webp")',
     },
@@ -121,7 +121,7 @@ export const dataVertical = [
   },
   {
     id: "16",
-    title: "✨ Rizumu",
+    title: "Rizumu",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/rizumu.webp")',
     },
@@ -129,7 +129,7 @@ export const dataVertical = [
   },
   {
     id: "17",
-    title: "✨ Yume",
+    title: "Yume",
     url: {
       background: 'center/cover no-repeat url("/static/images/memory/yume.webp")',
     },
