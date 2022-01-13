@@ -58,7 +58,7 @@ export const CardModal: NextPage<Props> = (props) => {
           <p className="text-xs leading-loose text-gray-500 sm:mt-10 sm:text-sm md:text-lg">
             💙 SIRE: {props.father}
             <br />
-            ❤️ DAM: {props.mother}
+            💖 DAM: {props.mother}
           </p>
           {!props.photographer ? null : <p className="mt-2 text-sm text-gray-400">{props.photographer}</p>}
           {!props.blogurl ? null : (
