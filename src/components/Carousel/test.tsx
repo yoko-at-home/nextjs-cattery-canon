@@ -7,8 +7,22 @@ export const Test: NextPage = () => {
     <div className="flex overflow-y-hidden flex-col items-center">
       {dataVertical.map((item) => {
         return (
-          <div className="relative" key={item.id}>
-            <Image src={item.src} alt={item.title} width="350px" height="400px" layout="intrinsic" />
+          <div
+            className="relative nm-concave-gray-100-lg mb-1"
+            key={item.id}
+            style={{
+              background: `top / cover no-repeat url(${item.src})`,
+            }}
+          >
+            {/* <Image
+              src={item.src}
+              alt={item.title}
+              width="400px"
+              height="400px"
+              layout="intrinsic"
+              className="opacity-0"
+            /> */}
+            <div style={{ width: "400px", height: "450px" }} />
             <div
               style={{
                 border: "solid 1px rgba(98,98,98,.6)",
