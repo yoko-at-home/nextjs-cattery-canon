@@ -17,7 +17,7 @@ export const dataHorizontal = [
   },
   {
     id: "3",
-    title: "❤️",
+    title: "💖",
     url: {
       background: 'top/contain no-repeat url("/static/images/0_top/baby-mainecoon.webp")',
     },
@@ -25,7 +25,7 @@ export const dataHorizontal = [
   },
   {
     id: "4",
-    title: "♠︎",
+    title: "☘️",
     url: {
       background: 'top/contain no-repeat url("/static/images/0_top/mainecoon.webp")',
     },
@@ -41,7 +41,7 @@ export const dataHorizontal = [
   },
   {
     id: "6",
-    title: "♠︎",
+    title: "☘️",
     url: {
       background: 'top/contain no-repeat url("/static/images/0_top/mainecoon-baby.webp")',
     },

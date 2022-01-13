@@ -25,7 +25,7 @@ export const dataVertical = [
   },
   {
     id: "4",
-    title: "♠︎",
+    title: "☘️",
     url: {
       background: 'top/cover no-repeat url("/static/images/0_top/mainecoon.webp")',
     },
