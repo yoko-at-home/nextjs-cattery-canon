@@ -16,13 +16,13 @@ export const Test: NextPage = () => {
             <div style={{ width: "400px", height: "450px" }} />
             <div
               style={{
-                border: "solid 1px rgba(98,98,98,.6)",
-                textShadow: "1px 1px 4px #ffffff",
-                color: "#71745b",
+                border: "border-double 1px #626262",
+                textShadow: "1px 1px 4px #584c4c",
+                // color: "",
               }}
-              className="absolute rounded-full bottom-[20%] left-[25%] font-black backdrop-filter backdrop-blur-sm"
+              className="absolute rounded-full bottom-[10%] left-[25%] font-black backdrop-filter backdrop-blur-sm border border-dotted border-[#626262] transform -rotate-45 "
             >
-              <div className="transform -rotate-45">{item.title}</div>
+              <div className="text-xl text-[#c4d548]">{item.title}</div>
             </div>
           </div>
         );
