@@ -28,7 +28,7 @@ export const Layout: VFC<Props> = (props) => {
       >
         <NavBarDesktop />
       </div>
-      <div className="w-full md:mr-5 lg:w-5/6 xl:w-3/6">
+      <div className="w-full md:mr-5 lg:w-5/6 xl:w-4/6">
         <div>{!props.theme ? null : <Header theme={props.theme || "home"} />}</div>
         <p className="pr-5 text-right text-stone-700">
           Photo: {props.theme === "home" ? "Yoshiko Yamashita" : props.photographer}
@@ -36,7 +36,7 @@ export const Layout: VFC<Props> = (props) => {
         <main className="px-2 mx-auto sm:px-3 md:px-5 md:w-full">{props.children}</main>
         <Footer />
       </div>
-      <div className="hidden overflow-y-scroll max-h-[300vh] xl:block xl:mr-3 xl:w-2/6">
+      <div className="hidden xl:block xl:w-1/6 overflow-y-scroll rounded-full">
         <Test />
       </div>
     </div>
