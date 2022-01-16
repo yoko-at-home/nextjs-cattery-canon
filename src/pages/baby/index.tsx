@@ -19,7 +19,7 @@ const Baby: NextPage = () => {
           <div className="orb" />
           <div className="flex flex-col justify-evenly sm:flex-row items-center">
             <div className="orb" />
-            <div className="orb2 flex m-6 justify-items-end h-96 w-80 rounded-full overflow-hidden border-double border-4 border-pink-200">
+            <div className="orb2 flex m-6 justify-items-end h-96 w-80 rounded-full overflow-hidden">
               <div className="orb2">
                 <video
                   autoPlay
