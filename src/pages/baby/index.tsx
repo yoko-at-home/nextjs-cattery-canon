@@ -21,7 +21,12 @@ const Baby: NextPage = () => {
             <div className="orb" />
             <div className="orb2 flex m-6 justify-items-end h-96 w-80 rounded-full overflow-hidden border-double border-4 border-pink-200">
               <div className="orb2">
-                <video autoPlay muted loop src="/static/gif/2022-babies.mov" />
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  src="https://user-images.githubusercontent.com/61738591/149651398-7686c95c-45c7-4acd-b7c3-e319950dd95d.MOV"
+                />
               </div>
             </div>
             <div className="orb" />
