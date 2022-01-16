@@ -16,7 +16,7 @@ const Baby: NextPage = () => {
           <span className="text-white">{description}</span>
         </PageTitle>
         <div className="flex flex-col items-center">
-          <div className="orb" />
+          <div className="orb hidden sm:block" />
           <div className="flex flex-col justify-evenly sm:flex-row items-center">
             <div className="orb" />
             <div className="orb2 flex m-6 justify-items-end h-96 w-80 rounded-full overflow-hidden">
@@ -31,7 +31,7 @@ const Baby: NextPage = () => {
             </div>
             <div className="orb" />
           </div>
-          <div className="orb" />
+          <div className="orb orb hidden sm:block" />
         </div>
         <style jsx>
           {`
