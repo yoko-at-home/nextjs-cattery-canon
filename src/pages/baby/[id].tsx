@@ -52,6 +52,11 @@ const BabyId: VFC<babyPageProps> = (props) => {
             __html: `${props.content.body}`,
           }}
         />
+        <div className="mt-16 sm:mt24 font-bold text-xl sm:text-xl text-[#8ac405] whitespace-nowrap sm:whitespace-normal">
+          {props.content.status
+            ? `ページをご覧いただきありがとうございます。${props.content.name} に素敵な家族が見つかりました✨`
+            : null}
+        </div>
         <div className="inline-block right-10 p-3 mt-5 text-gray-300 bg-gradient-to-r from-gray-400 to-gray-500 rounded opacity-80 sm:px-4 md:right-20 lg:right-40">
           <Link href={`/baby`}>
             <a className="">baby Top</a>

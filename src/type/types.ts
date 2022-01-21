@@ -24,6 +24,7 @@ export type babyProps = {
       sire: string;
       dam: string;
       birthday: Date;
+      status: boolean;
     }
   ];
 };
@@ -37,6 +38,7 @@ export type babyPageProps = {
     sire: string;
     dam: string;
     birthday: Date;
+    status: boolean;
   };
 };
 
