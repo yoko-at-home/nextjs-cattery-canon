@@ -1,74 +1,23 @@
-export type retiredProps = {
-  retired: [
-    {
-      id: string;
-      createdAt: Date;
-      updatedAt: Date;
-      publishedAt: Date;
-      revisedAt: Date;
-      title: string;
-      description: string;
-      imgSrc: {
-        height: number;
-        url: string;
-        width: number;
-      };
-      body: HTMLAnchorElement;
-    }
-  ];
-};
-export type retiredPageProps = {
-  retired: {
-    id: string;
-    createdAt: Date;
-    updatedAt: Date;
-    publishedAt: Date;
-    revisedAt: Date;
-    title: string;
-    description: string;
-    imgSrc: {
-      height: number;
-      url: string;
-      width: number;
-    };
-    body: HTMLAnchorElement;
+type Common = {
+  id: string;
+  createdAt: Date;
+  updatedAt: Date;
+  publishedAt: Date;
+  revisedAt: Date;
+  title: string;
+  description: string;
+  imgSrc: {
+    height: number;
+    url: string;
+    width: number;
   };
+  body: HTMLAnchorElement;
 };
-export type availableProps = {
-  available: [
-    {
-      id: string;
-      createdAt: Date;
-      updatedAt: Date;
-      publishedAt: Date;
-      revisedAt: Date;
-      title: string;
-      description: string;
-      imgSrc: {
-        height: number;
-        url: string;
-        width: number;
-      };
-      body: HTMLAnchorElement;
-    }
-  ];
+export type commonProps = {
+  content: [Common];
 };
-export type availablePageProps = {
-  available: {
-    id: string;
-    createdAt: Date;
-    updatedAt: Date;
-    publishedAt: Date;
-    revisedAt: Date;
-    title: string;
-    description: string;
-    imgSrc: {
-      height: number;
-      url: string;
-      width: number;
-    };
-    body: HTMLAnchorElement;
-  };
+export type commonPageProps = {
+  content: Common;
 };
 
 export type About = {

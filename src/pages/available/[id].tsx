@@ -12,19 +12,19 @@ import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
-import type { availablePageProps } from "src/type/types";
+import type { commonPageProps } from "src/type/types";
 
-const BlogId: VFC<availablePageProps> = (props) => {
-  const publishedAt = props.available.publishedAt;
-  const revisedAt = props.available.revisedAt;
-  const imgUrl = props.available.imgSrc.url;
-  const imgUrlwidth = props.available.imgSrc.width * 2;
-  const imgUrlheight = props.available.imgSrc.height * 2;
+const BlogId: VFC<commonPageProps> = (props) => {
+  const publishedAt = props.content.publishedAt;
+  const revisedAt = props.content.revisedAt;
+  const imgUrl = props.content.imgSrc.url;
+  const imgUrlwidth = props.content.imgSrc.width * 2;
+  const imgUrlheight = props.content.imgSrc.height * 2;
 
   return (
     <LayoutBlog>
       <PageSEO
-        title={`譲渡可能な子達- ${siteMetadata.author} | ${props.available.title}`}
+        title={`譲渡可能な子達- ${siteMetadata.author} | ${props.content.title}`}
         description={siteMetadata.description}
       />
       <div className="flex justify-center mx-auto rounded-lg nm-flat-gray-300-xl">
@@ -41,17 +41,17 @@ const BlogId: VFC<availablePageProps> = (props) => {
           type="large"
           className="py-12 mt-6 text-lg font-bold sm:text-xl md:text-3xl lg:text-4xl lg:text-center"
         >
-          {props.available.title}
+          {props.content.title}
         </PageTitle>
         <div className="flex flex-col mt-3 mb-10 text-right text-gray-600">
           {publishedAt === revisedAt ? (
             <div>
-              Published: <Date dateString={props.available.publishedAt} />
+              Published: <Date dateString={props.content.publishedAt} />
             </div>
           ) : (
             <>
               <div>
-                Published at: <Date dateString={props.available.publishedAt} />
+                Published at: <Date dateString={props.content.publishedAt} />
               </div>
             </>
           )}
@@ -60,7 +60,7 @@ const BlogId: VFC<availablePageProps> = (props) => {
           className="text-gray-600"
           dangerouslySetInnerHTML={{
             // eslint-disable-next-line @typescript-eslint/naming-convention
-            __html: `${props.available.body}`,
+            __html: `${props.content.body}`,
           }}
         />
         <div className="inline-block right-10 p-3 mt-5 text-gray-300 bg-gradient-to-r from-gray-400 to-gray-500 rounded opacity-80 sm:px-4 md:right-20 lg:right-40">
@@ -92,7 +92,7 @@ export const getStaticProps = async (context: any) => {
 
   return {
     props: {
-      available: data,
+      content: data,
     },
   };
 };

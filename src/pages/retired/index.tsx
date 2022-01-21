@@ -12,9 +12,9 @@ import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
-import type { retiredProps } from "src/type";
+import { commonProps } from "src/type/types";
 
-const Retired: VFC<retiredProps> = (props) => {
+const Retired: VFC<commonProps> = (props) => {
   return (
     <Layout theme="retired" photographer="Yoshiko Yamashita">
       <PageSEO title={`引退した子達 - ${siteMetadata.author}`} description={siteMetadata.description} />
@@ -25,27 +25,27 @@ const Retired: VFC<retiredProps> = (props) => {
       </div>
       <div className="mt-10">
         <ul>
-          {props.retired.map((retired) => {
+          {props.content.map((item) => {
             return (
-              <li key={retired.id} className="mb-8">
-                <div className="flex flex-row justify-between p-6 nm-inset-gray-50-lg">
-                  <Link href={`retired/${retired.id}`}>
+              <li key={item.id} className="mb-8">
+                <div className="flex flex-col sm:flex-row justify-between p-6 nm-inset-gray-50-lg">
+                  <Link href={`retired/${item.id}`}>
                     <a className="ml-1 lg:ml-10 lg:w-3/12">
                       <picture>
                         <Image
-                          src={retired.imgSrc?.url}
-                          alt={retired.title}
-                          width={retired.imgSrc?.width}
-                          height={retired.imgSrc?.height}
+                          src={item.imgSrc?.url}
+                          alt={item.title}
+                          width={item.imgSrc?.width}
+                          height={item.imgSrc?.height}
                         />
                       </picture>
                     </a>
                   </Link>
                   <div className="flex flex-col w-full text-gray-600">
-                    <Link href={`retired/${retired.id}`}>
-                      <a className="pl-3 font-bold">{retired.title}</a>
+                    <Link href={`retired/${item.id}`}>
+                      <a className="pl-3 font-bold text-2xl sm:text-3xl text-red-900 whitespace-nowrap">{item.title}</a>
                     </Link>
-                    <div className="pt-3 pl-3">{retired.description}</div>
+                    <div className="pt-3 pl-3">{item.description}</div>
                   </div>
                 </div>
               </li>
@@ -62,7 +62,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      retired: data.contents,
+      content: data.contents,
     },
   };
 };

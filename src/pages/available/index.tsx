@@ -7,36 +7,36 @@ import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
-import type { availableProps } from "src/type/types";
+import type { commonProps } from "src/type/types";
 
-const Available: VFC<availableProps> = (props) => {
+const Available: VFC<commonProps> = (props) => {
   return (
     <Layout theme="available" photographer="Yoshiko Yamashita">
       <PageSEO title={`譲渡可能な子達- ${siteMetadata.author}`} description={siteMetadata.description} />
       <PageTitle type="large">譲渡可能な子達</PageTitle>
       <div className="mt-10">
         <ul>
-          {props.available.map((available) => {
+          {props.content.map((item) => {
             return (
-              <li key={available.id} className="mb-8">
-                <div className="flex flex-row-reverse justify-between p-6 nm-inset-gray-50-lg">
-                  <Link href={`available/${available.id}`}>
+              <li key={item.id} className="mb-8">
+                <div className="flex flex-col sm:flex-row-reverse justify-between p-6 nm-inset-gray-50-lg">
+                  <Link href={`available/${item.id}`}>
                     <a className="ml-1 lg:ml-10 lg:w-3/12">
                       <picture>
                         <Image
-                          src={available.imgSrc?.url}
-                          alt={available.title}
-                          width={available.imgSrc?.width}
-                          height={available.imgSrc?.height}
+                          src={item.imgSrc?.url}
+                          alt={item.title}
+                          width={item.imgSrc?.width}
+                          height={item.imgSrc?.height}
                         />
                       </picture>
                     </a>
                   </Link>
                   <div className="flex flex-col w-full">
-                    <Link href={`available/${available.id}`}>
-                      <a className="font-bold">{available.title}</a>
+                    <Link href={`available/${item.id}`}>
+                      <a className="font-bold text-2xl sm:text-3xl text-red-900 whitespace-nowrap">{item.title}</a>
                     </Link>
-                    <div className="pt-3">{available.description}</div>
+                    <div className="pt-3">{item.description}</div>
                   </div>
                 </div>
               </li>
@@ -53,7 +53,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      available: data.contents,
+      content: data.contents,
     },
   };
 };
