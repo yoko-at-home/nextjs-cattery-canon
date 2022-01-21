@@ -82,6 +82,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
             className="z-50 w-16 rounded-full md:w-24"
             width="20px"
             height="20px"
+            loading="lazy"
           />
         </button>
         <div
