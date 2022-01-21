@@ -72,7 +72,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
       <div className="fixed right-5 bottom-28 z-50 px-2 pt-1 rounded xl:right-96 nm-inset-gray-500">
         <button
           type="button"
-          className="mr-1 ml-1 w-16 h-16 rounded"
+          className="mx-1 w-16 h-16 rounded"
           aria-label="Toggle Menu"
           onClick={handleOnToggleNav}
         >

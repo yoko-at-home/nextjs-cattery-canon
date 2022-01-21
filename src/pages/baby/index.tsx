@@ -6,7 +6,6 @@ import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
-import { client } from "src/lib/client";
 import { babyProps } from "src/type/types";
 
 const description = "クリスマスイブのイブにかわいい赤ちゃんが誕生しました";
