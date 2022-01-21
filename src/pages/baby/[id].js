@@ -23,7 +23,7 @@ const BabyId = (props) => {
   return (
     <LayoutBlog>
       <PageSEO
-        title={`Babies - ${siteMetadata.author} | ${props.content.title}`}
+        title={`Babies - ${siteMetadata.author} | ${props.content.name}`}
         description={siteMetadata.description}
       />
       <div className="flex justify-center mx-auto rounded-lg nm-flat-gray-300-xl">
@@ -84,7 +84,7 @@ export const getStaticPaths = async () => {
   const key = {
     headers: { "X-MICROCMS-API-KEY": process.env.API_KEY || "" },
   };
-
+  
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}baby`, key);
   const repos = await res.json();
 
