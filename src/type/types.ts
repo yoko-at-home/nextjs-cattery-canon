@@ -16,8 +16,28 @@ type Common = {
 export type commonProps = {
   content: [Common];
 };
+export type babyProps = {
+  content: [
+    Common & {
+      name: string;
+      sex: boolean;
+      sire: string;
+      dam: string;
+      birthday: Date;
+    }
+  ];
+};
 export type commonPageProps = {
   content: Common;
+};
+export type babyPageProps = {
+  content: Common & {
+    name: string;
+    sex: boolean;
+    sire: string;
+    dam: string;
+    birthday: Date;
+  };
 };
 
 export type About = {
