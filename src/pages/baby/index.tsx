@@ -1,4 +1,5 @@
-import type { NextPage } from "next";
+import axios from "axios";
+import type { GetStaticProps, NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { PageTitle } from "src/components/PageTitle";
@@ -148,8 +149,25 @@ const Baby: NextPage<babyProps> = (props) => {
 // eslint-disable-next-line import/no-default-export
 export default Baby;
 
-export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "baby" });
+export const getStaticProps: GetStaticProps<babyProps, never, { id: string; draftKey: string }> = async ({
+  preview,
+  previewData,
+}): Promise<{
+  props: babyProps;
+}> => {
+  const key = {
+    headers: { "X-MICROCMS-API-KEY": process.env.API_KEY || "" },
+  };
+
+  const res = await axios.get(process.env.NEXT_PUBLIC_API_URL + "baby/", key);
+  const data = await res.data;
+
+  // プレビュー時は draft のコンテンツを追加
+  if (preview) {
+    const draftUrl = process.env.NEXT_PUBLIC_API_URL + "baby/" + previewData?.id + `?draftKey=${previewData?.draftKey}`;
+    const draftRes = await axios.get(draftUrl, key);
+    data.unshift(await draftRes.data);
+  }
 
   return {
     props: {

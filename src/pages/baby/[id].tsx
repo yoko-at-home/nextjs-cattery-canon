@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import type { VFC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
@@ -8,8 +9,18 @@ import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
 import { babyPageProps } from "src/type/types";
+import ErrorPage from "next/error";
 
-const BabyId: VFC<babyPageProps> = (props) => {
+type Props = babyPageProps & {
+  preview: boolean;
+};
+
+const BabyId: VFC<Props> = (props) => {
+  const router = useRouter();
+
+  if (router.isFallback && !props.content?.id) {
+    return <ErrorPage statusCode={404} />;
+  }
   const imgUrl = props.content.imgSrc.url;
   const imgUrlwidth = props.content.imgSrc.width * 2;
   const imgUrlheight = props.content.imgSrc.height * 2;
@@ -30,6 +41,11 @@ const BabyId: VFC<babyPageProps> = (props) => {
         />
       </div>
       <main>
+        {props.preview && (
+          <div className="text-center mt-20 text-yellow-600 shadow-lg bg-yellow-50">
+            <Link href="/api/clear-preview">---プレビューモードです。タップして解除---</Link>
+          </div>
+        )}
         <PageTitle
           type="large"
           className="py-12 mt-6 text-lg font-bold sm:text-xl md:text-3xl lg:text-4xl lg:text-center"
