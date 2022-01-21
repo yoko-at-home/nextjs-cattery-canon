@@ -11,11 +11,11 @@ const MyDocument = () => {
         <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" />
         <link rel="manifest" href="/static/favicons/site.webmanifest" />
-        <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#8b6608" />
+        <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#cf980a" />
+        <meta name="msapplication-TileColor" content="#cf980a" />
         <meta name="theme-color" content="#f7ecd2" />
-        <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" /> */}
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
         <link
           rel="stylesheet"

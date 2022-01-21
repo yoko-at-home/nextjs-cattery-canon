@@ -1,3 +1,9 @@
+/** @type {import('next').NextConfig} */
+
+const withPWA = require("next-pwa");
+
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
   rewrites: async () => {
     return [{ source: "/", destination: "/root" }];
@@ -9,10 +15,16 @@ const nextConfig = {
   poweredByHeader: false,
 };
 
-module.exports = {
+module.exports = withPWA({
   nextConfig,
+  typescript: { ignoreDevErrors: true },
   images: {
-    formats: ["image/avif", "image/webp"],
-    domains: ["images.unsplash.com", "source.unsplash.com", "unsplash.com", "images.microcms-assets.io"],
+    domains: ["images.microcms-assets.io"],
   },
-};
+  pwa: {
+    dest: "public",
+    register: true,
+    disable: isProd ? false : true,
+    sw: "service-worker.js",
+  },
+});
