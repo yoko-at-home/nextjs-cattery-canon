@@ -82,7 +82,7 @@ export default BabyId;
 
 export const getStaticPaths = async () => {
   const key = {
-    headers: { "X-MICROCMS-API-KEY": process.env.API_KEY },
+    headers: { "X-MICROCMS-API-KEY": process.env.API_KEY || "" },
   };
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}baby`, key);
