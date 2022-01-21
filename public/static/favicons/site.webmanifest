@@ -95,7 +95,7 @@
       "src": "/static/favicons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose":"maskables"
+      "purpose":"maskable"
         }
   ],
   "prefer_related_applications": false
