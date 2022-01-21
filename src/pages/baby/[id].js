@@ -1,21 +1,16 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable import/no-default-export */
 import ErrorPage from "next/error";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import type { VFC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
-import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
-import type { babyPageProps } from "src/type/types";
 
-type Props = babyPageProps & {
-  preview: boolean;
-};
-
-const BabyId: VFC<Props> = (props) => {
+const BabyId = (props) => {
   const router = useRouter();
 
   if (router.isFallback && !props.content?.id) {
@@ -85,24 +80,38 @@ const BabyId: VFC<Props> = (props) => {
 
 export default BabyId;
 
-// 静的生成のためのパスを指定します
 export const getStaticPaths = async () => {
-  const data = await client.get({ endpoint: "baby" });
+  const key = {
+    headers: { "X-MICROCMS-API-KEY": process.env.API_KEY },
+  };
 
-  const paths = data.contents.map((content: any) => {
-    return `/baby/${content.id}`;
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}baby`, key);
+  const repos = await res.json();
+
+  const paths = repos.contents.map((repo) => {
+    return `/baby/${repo.id}`;
   });
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 };
 
-// データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async (context: any) => {
-  const id = context.params.id;
-  const data = await client.get({ endpoint: "baby", contentId: id });
+export const getStaticProps = async ({ params, preview = false, previewData }) => {
+  const id = params?.id;
+  const draftKey = previewData?.draftKey;
+  const key = {
+    headers: { "X-MICROCMS-API-KEY": process.env.API_KEY },
+  };
+
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}baby/${id}?${draftKey !== undefined ? `draftKey=${draftKey}` : ""}`,
+    key
+  );
+  const data = await res.json();
 
   return {
     props: {
-      content: data,
+      data: data,
+      preview,
     },
+    revalidate: 1,
   };
 };
