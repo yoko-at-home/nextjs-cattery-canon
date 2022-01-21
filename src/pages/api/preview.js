@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable import/no-default-export */
 import fetch from "node-fetch";
 
 export default async function preview(req, res) {
