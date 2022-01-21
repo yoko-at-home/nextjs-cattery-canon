@@ -52,7 +52,7 @@ export const NavBarDesktop: VFC = () => {
 export const NavBarMobile: VFC<Props> = (props) => {
   const buttonImage = {
     entrance: "/static/gif/animation_500_cat.gif",
-    main: "/static/favicons/android-chrome-192x192.png",
+    main: "/static/favicons/icon-192x192.png",
   };
   const [isNavShow, setIsNavShow] = useState(false);
 
