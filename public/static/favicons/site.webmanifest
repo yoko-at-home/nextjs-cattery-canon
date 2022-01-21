@@ -3,7 +3,7 @@
     "short_name": "Cattery Canon",
     "lang": "ja",
     "description": "Cattery Canon\u306f\u3001\u795e\u5948\u5ddd\u770c\u5ea7\u9593\u5e02\u306b\u3042\u308b\u3001\u30e1\u30a4\u30f3\u30af\u30fc\u30f3\u5c02\u9580\u306e\u5c0f\u3055\u306a\u30ad\u30e3\u30c6\u30ea\u30fc\uff08\u732b\u820e\uff09\u3067\u3059\u3002",
-    "start_url": "/",
+    "start_url": "https://www.canon-cat.com/",
     "background_color": "#eff1e4",
     "theme_color": "#8b6608",
     "dir": "ltr",
