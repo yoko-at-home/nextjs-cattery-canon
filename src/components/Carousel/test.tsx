@@ -7,7 +7,7 @@ export const Test: NextPage = () => {
       {dataVertical.map((item) => {
         return (
           <div
-            className="relative mb-1 nm-inset-yellow-800 rounded-full"
+            className="relative mb-1 rounded-full nm-inset-yellow-800"
             key={item.id}
             style={{
               background: `top / cover no-repeat url(${item.src})`,
@@ -20,7 +20,7 @@ export const Test: NextPage = () => {
                 textShadow: "1px 1px 4px #584c4c",
                 // color: "",
               }}
-              className="absolute rounded-full bottom-[10%] left-[25%] font-black backdrop-filter backdrop-blur-sm border border-dotted border-[#626262] transform -rotate-45 "
+              className="absolute bottom-[10%] left-[25%] font-black rounded-full border border-[#626262] border-dotted backdrop-blur-sm -rotate-45"
             >
               <div className="text-xl text-[#c4d548]">{item.title}</div>
             </div>

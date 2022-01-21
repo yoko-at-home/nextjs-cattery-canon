@@ -70,12 +70,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
   return (
     <>
       <div className="fixed right-5 bottom-28 z-50 px-2 pt-1 rounded xl:right-96 nm-inset-gray-500">
-        <button
-          type="button"
-          className="mx-1 w-16 h-16 rounded"
-          aria-label="Toggle Menu"
-          onClick={handleOnToggleNav}
-        >
+        <button type="button" className="mx-1 w-16 h-16 rounded" aria-label="Toggle Menu" onClick={handleOnToggleNav}>
           <img
             alt="navigation icon"
             src={buttonImage[props.type || "main"]}
@@ -93,7 +88,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
           <button
             type="button"
             aria-label="toggle modal"
-            className="fixed -top-7 w-full h-4/5 cursor-auto focus:outline-none"
+            className="fixed -top-7 w-full h-4/5 focus:outline-none cursor-auto"
             onClick={handleOnToggleNav}
           ></button>
           <nav className="py-10 text-center md:mt-40">

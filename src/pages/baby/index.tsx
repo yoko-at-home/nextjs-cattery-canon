@@ -6,13 +6,13 @@ import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
-import { babyProps } from "src/type/types";
+import type { babyProps } from "src/type/types";
 
 const description = "クリスマスイブのイブにかわいい赤ちゃんが誕生しました";
 
 const Baby: NextPage<babyProps> = (props) => {
   return (
-    <div className="relative bg-[#50c4cc] text-gray-600">
+    <div className="relative text-gray-600 bg-[#50c4cc]">
       <Layout theme="baby" photographer="Canon">
         <PageSEO title={`赤ちゃん - ${siteMetadata.author}`} description={description} />
 
@@ -20,10 +20,10 @@ const Baby: NextPage<babyProps> = (props) => {
           <span className="text-white">{description}</span>
         </PageTitle>
         <div className="flex flex-col items-center">
-          <div className="orb hidden sm:block" />
-          <div className="flex flex-col justify-evenly sm:flex-row items-center">
+          <div className="hidden sm:block orb" />
+          <div className="flex flex-col justify-evenly items-center sm:flex-row">
             <div className="orb" />
-            <div className="orb2 flex m-6 justify-items-end h-96 w-80 rounded-full overflow-hidden">
+            <div className="flex overflow-hidden justify-items-end m-6 w-80 h-96 rounded-full orb2">
               <div className="orb2">
                 <video
                   autoPlay
@@ -35,7 +35,7 @@ const Baby: NextPage<babyProps> = (props) => {
             </div>
             <div className="orb" />
           </div>
-          <div className="orb orb hidden sm:block" />
+          <div className="hidden sm:block orb" />
         </div>
 
         <div className="mt-10">
@@ -45,7 +45,7 @@ const Baby: NextPage<babyProps> = (props) => {
               return (
                 <li key={item.id} className="mb-8">
                   {item.sex === true ? (
-                    <div className="flex flex-col sm:flex-row-reverse justify-between p-6 nm-inset-gray-50-lg">
+                    <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
                       <Link href={`baby/${item.id}`}>
                         <a className="ml-1 lg:ml-10">
                           <picture>
@@ -58,14 +58,14 @@ const Baby: NextPage<babyProps> = (props) => {
                           </picture>
                         </a>
                       </Link>
-                      <div className="flex flex-col w-full justify-between">
+                      <div className="flex flex-col justify-between w-full">
                         <Link href={`baby/${item.id}`}>
-                          <a className="font-bold text-2xl sm:text-3xl text-[#8ac405] whitespace-nowrap sm:whitespace-normal">
+                          <a className="text-2xl font-bold text-[#8ac405] whitespace-nowrap sm:text-3xl sm:whitespace-normal">
                             {item.name}
                           </a>
                         </Link>
                         <div className="pt-3">{item.description}</div>
-                        <div className="font-bold text-xl sm:text-xl text-[#8ac405] whitespace-nowrap sm:whitespace-normal">
+                        <div className="text-xl font-bold text-[#8ac405] whitespace-nowrap sm:text-xl sm:whitespace-normal">
                           {item.status ? "素敵な家族が見つかりました✨" : null}
                         </div>
                       </div>
@@ -84,7 +84,7 @@ const Baby: NextPage<babyProps> = (props) => {
               return (
                 <li key={item.id} className="mb-8">
                   {item.sex === false ? (
-                    <div className="flex flex-col sm:flex-row-reverse justify-between p-6 nm-inset-gray-50-lg">
+                    <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
                       <Link href={`baby/${item.id}`}>
                         <a className="ml-1 lg:ml-10">
                           <picture>
@@ -97,14 +97,14 @@ const Baby: NextPage<babyProps> = (props) => {
                           </picture>
                         </a>
                       </Link>
-                      <div className="flex flex-col w-full justify-between">
+                      <div className="flex flex-col justify-between w-full">
                         <Link href={`baby/${item.id}`}>
-                          <a className="font-bold text-2xl sm:text-3xl text-[#8ac405] whitespace-nowrap sm:whitespace-normal">
+                          <a className="text-2xl font-bold text-[#8ac405] whitespace-nowrap sm:text-3xl sm:whitespace-normal">
                             {item.name}
                           </a>
                         </Link>
                         <div className="pt-3">{item.description}</div>
-                        <div className="font-bold text-xl sm:text-xl text-[#8ac405] whitespace-nowrap sm:whitespace-normal">
+                        <div className="text-xl font-bold text-[#8ac405] whitespace-nowrap sm:text-xl sm:whitespace-normal">
                           {item.status ? "素敵な家族が見つかりました✨" : null}
                         </div>
                       </div>

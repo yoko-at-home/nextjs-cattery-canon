@@ -1,3 +1,4 @@
+import ErrorPage from "next/error";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -8,8 +9,7 @@ import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
-import { babyPageProps } from "src/type/types";
-import ErrorPage from "next/error";
+import type { babyPageProps } from "src/type/types";
 
 type Props = babyPageProps & {
   preview: boolean;
@@ -42,7 +42,7 @@ const BabyId: VFC<Props> = (props) => {
       </div>
       <main>
         {props.preview && (
-          <div className="text-center mt-20 text-yellow-600 shadow-lg bg-yellow-50">
+          <div className="mt-20 text-center text-yellow-600 bg-yellow-50 shadow-lg">
             <Link href="/api/clear-preview">---プレビューモードです。タップして解除---</Link>
           </div>
         )}
@@ -68,7 +68,7 @@ const BabyId: VFC<Props> = (props) => {
             __html: `${props.content.body}`,
           }}
         />
-        <div className="mt-16 sm:mt24 font-bold text-xl sm:text-xl text-[#8ac405] whitespace-nowrap sm:whitespace-normal">
+        <div className="mt-16 text-xl font-bold text-[#8ac405] whitespace-nowrap sm:text-xl sm:whitespace-normal sm:mt24">
           {props.content.status
             ? `ページをご覧いただきありがとうございます。${props.content.name} に素敵な家族が見つかりました✨`
             : null}

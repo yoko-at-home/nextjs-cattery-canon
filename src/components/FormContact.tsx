@@ -105,7 +105,7 @@ export const FormContact = () => {
             <div className="py-3 px-4 text-right sm:px-6">
               <button
                 type="submit"
-                className="p-2 w-full font-medium text-gray-200 bg-gradient-to-r from-gray-400 focus:from-purple-700 to-gray-200 focus:to-yellow-400 rounded-md focus:ring-2 focus:ring-offset-2 shadow-md focus:outline-none nm-concave-gray-400"
+                className="p-2 w-full font-medium text-gray-200 bg-gradient-to-r from-gray-400 focus:from-purple-700 to-gray-200 focus:to-yellow-400 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-md nm-concave-gray-400"
               >
                 送信
               </button>

@@ -12,7 +12,7 @@ import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
-import { commonProps } from "src/type/types";
+import type { commonProps } from "src/type/types";
 
 const Retired: VFC<commonProps> = (props) => {
   return (
@@ -28,7 +28,7 @@ const Retired: VFC<commonProps> = (props) => {
           {props.content.map((item) => {
             return (
               <li key={item.id} className="mb-8">
-                <div className="flex flex-col sm:flex-row justify-between p-6 nm-inset-gray-50-lg">
+                <div className="flex flex-col justify-between p-6 sm:flex-row nm-inset-gray-50-lg">
                   <Link href={`retired/${item.id}`}>
                     <a className="ml-1 lg:ml-10 lg:w-3/12">
                       <picture>
@@ -43,7 +43,7 @@ const Retired: VFC<commonProps> = (props) => {
                   </Link>
                   <div className="flex flex-col w-full text-gray-600">
                     <Link href={`retired/${item.id}`}>
-                      <a className="pl-3 font-bold text-2xl sm:text-3xl text-red-900 whitespace-nowrap">{item.title}</a>
+                      <a className="pl-3 text-2xl font-bold text-red-900 whitespace-nowrap sm:text-3xl">{item.title}</a>
                     </Link>
                     <div className="pt-3 pl-3">{item.description}</div>
                   </div>

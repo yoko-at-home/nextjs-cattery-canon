@@ -9,7 +9,7 @@ import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
-import { commonPageProps } from "src/type/types";
+import type { commonPageProps } from "src/type/types";
 
 const retiredId: VFC<commonPageProps> = (props) => {
   const publishedAt = props.content.publishedAt;

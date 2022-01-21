@@ -79,8 +79,8 @@ const Links: NextPage = () => {
                         backgroundImage: link.backgroundImg,
                       }}
                     >
-                      <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 bg-gradient-to-b rounded"></div>
-                      <div className="flex absolute top-0 right-0 left-0 justify-between items-center mx-5 mt-3">
+                      <div className="absolute inset-0 bg-black bg-gradient-to-b rounded bg-opacity-40"></div>
+                      <div className="flex absolute inset-x-0 justify-between items-center mx-5 mt-3">
                         {link.title}
                         <div className="flex flex-col justify-start text-center">
                           <span className="text-3xl font-semibold tracking-wide leading-none"></span>
@@ -115,8 +115,8 @@ const Links: NextPage = () => {
                       backgroundImage: phtographer.backgroundImg,
                     }}
                   >
-                    <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 bg-gradient-to-b rounded"></div>
-                    <div className="flex absolute top-0 right-0 left-0 justify-between items-center mx-5 mt-3">
+                    <div className="absolute inset-0 bg-black bg-gradient-to-b rounded bg-opacity-40"></div>
+                    <div className="flex absolute inset-x-0 justify-between items-center mx-5 mt-3">
                       {phtographer.name}
                       <div className="flex flex-col justify-start text-center">
                         <span className="text-3xl font-semibold tracking-wide leading-none"></span>
