@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useState } from "react";
 import type { GetStaticProps, NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -42,35 +43,36 @@ const Baby: NextPage<babyProps> = (props) => {
           <PageTitle type="medium">♀ 女の子</PageTitle>
           <ul>
             {props.content.map((item) => {
+              const [block] = useState(
+                <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
+                  <Link href={`/baby/${item.id}`}>
+                    <a className="ml-1 lg:ml-10">
+                      <picture>
+                        <Image
+                          src={item.imgSrc?.url}
+                          alt={item.title}
+                          width={item.imgSrc?.width}
+                          height={item.imgSrc?.height}
+                        />
+                      </picture>
+                    </a>
+                  </Link>
+                  <div className="flex flex-col justify-between w-full">
+                    <Link href={`/baby/${item.id}`}>
+                      <a className="text-2xl font-bold text-[#8ac405] whitespace-nowrap sm:text-3xl sm:whitespace-normal">
+                        {item.name}
+                      </a>
+                    </Link>
+                    <div className="pt-3">{item.description}</div>
+                    <div className="text-xl font-bold text-[#8ac405] whitespace-nowrap sm:text-xl sm:whitespace-normal">
+                      {item.status ? "素敵な家族が見つかりました✨" : null}
+                    </div>
+                  </div>
+                </div>
+              );
               return (
                 <li key={item.id} className="mb-8">
-                  {item.sex === true ? (
-                    <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
-                      <Link href={`baby/${item.id}`}>
-                        <a className="ml-1 lg:ml-10">
-                          <picture>
-                            <Image
-                              src={item.imgSrc?.url}
-                              alt={item.title}
-                              width={item.imgSrc?.width}
-                              height={item.imgSrc?.height}
-                            />
-                          </picture>
-                        </a>
-                      </Link>
-                      <div className="flex flex-col justify-between w-full">
-                        <Link href={`baby/${item.id}`}>
-                          <a className="text-2xl font-bold text-[#8ac405] whitespace-nowrap sm:text-3xl sm:whitespace-normal">
-                            {item.name}
-                          </a>
-                        </Link>
-                        <div className="pt-3">{item.description}</div>
-                        <div className="text-xl font-bold text-[#8ac405] whitespace-nowrap sm:text-xl sm:whitespace-normal">
-                          {item.status ? "素敵な家族が見つかりました✨" : null}
-                        </div>
-                      </div>
-                    </div>
-                  ) : null}
+                  {item.girl === true ? block : null}
                 </li>
               );
             })}
@@ -81,35 +83,36 @@ const Baby: NextPage<babyProps> = (props) => {
 
           <ul>
             {props.content.map((item) => {
+              const [block] = useState(
+                <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
+                  <Link href={`/baby/${item.id}`}>
+                    <a className="ml-1 lg:ml-10">
+                      <picture>
+                        <Image
+                          src={item.imgSrc?.url}
+                          alt={item.title}
+                          width={item.imgSrc?.width}
+                          height={item.imgSrc?.height}
+                        />
+                      </picture>
+                    </a>
+                  </Link>
+                  <div className="flex flex-col justify-between w-full">
+                    <Link href={`/baby/${item.id}`}>
+                      <a className="text-2xl font-bold text-[#8ac405] whitespace-nowrap sm:text-3xl sm:whitespace-normal">
+                        {item.name}
+                      </a>
+                    </Link>
+                    <div className="pt-3">{item.description}</div>
+                    <div className="text-xl font-bold text-[#8ac405] whitespace-nowrap sm:text-xl sm:whitespace-normal">
+                      {item.status ? "素敵な家族が見つかりました✨" : null}
+                    </div>
+                  </div>
+                </div>
+              );
               return (
                 <li key={item.id} className="mb-8">
-                  {item.sex === false ? (
-                    <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
-                      <Link href={`baby/${item.id}`}>
-                        <a className="ml-1 lg:ml-10">
-                          <picture>
-                            <Image
-                              src={item.imgSrc?.url}
-                              alt={item.title}
-                              width={item.imgSrc?.width}
-                              height={item.imgSrc?.height}
-                            />
-                          </picture>
-                        </a>
-                      </Link>
-                      <div className="flex flex-col justify-between w-full">
-                        <Link href={`baby/${item.id}`}>
-                          <a className="text-2xl font-bold text-[#8ac405] whitespace-nowrap sm:text-3xl sm:whitespace-normal">
-                            {item.name}
-                          </a>
-                        </Link>
-                        <div className="pt-3">{item.description}</div>
-                        <div className="text-xl font-bold text-[#8ac405] whitespace-nowrap sm:text-xl sm:whitespace-normal">
-                          {item.status ? "素敵な家族が見つかりました✨" : null}
-                        </div>
-                      </div>
-                    </div>
-                  ) : null}
+                  {item.girl === false ? block : null}
                 </li>
               );
             })}

@@ -20,7 +20,7 @@ export type babyProps = {
   content: [
     Common & {
       name: string;
-      sex: boolean;
+      girl: boolean;
       sire: string;
       dam: string;
       birthday: Date;
@@ -34,7 +34,7 @@ export type commonPageProps = {
 export type babyPageProps = {
   content: Common & {
     name: string;
-    sex: boolean;
+    girl: boolean;
     sire: string;
     dam: string;
     birthday: Date;
