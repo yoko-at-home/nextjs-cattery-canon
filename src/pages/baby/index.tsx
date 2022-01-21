@@ -1,14 +1,18 @@
 import type { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
+import { client } from "src/lib/client";
+import { babyProps } from "src/type/types";
 
 const description = "クリスマスイブのイブにかわいい赤ちゃんが誕生しました";
 
-const Baby: NextPage = () => {
+const Baby: NextPage<babyProps> = (props) => {
   return (
-    <div className="relative bg-[#50c4cc]">
+    <div className="relative bg-[#50c4cc] text-gray-600">
       <Layout theme="baby" photographer="Canon">
         <PageSEO title={`赤ちゃん - ${siteMetadata.author}`} description={description} />
 
@@ -32,6 +36,78 @@ const Baby: NextPage = () => {
             <div className="orb" />
           </div>
           <div className="orb orb hidden sm:block" />
+        </div>
+
+        <div className="mt-10">
+          <PageTitle type="medium">♀ 女の子</PageTitle>
+          <ul>
+            {props.content.map((item) => {
+              return (
+                <li key={item.id} className="mb-8">
+                  {item.sex === true ? (
+                    <div className="flex flex-col sm:flex-row-reverse justify-between p-6 nm-inset-gray-50-lg">
+                      <Link href={`baby/${item.id}`}>
+                        <a className="ml-1 lg:ml-10">
+                          <picture>
+                            <Image
+                              src={item.imgSrc?.url}
+                              alt={item.title}
+                              width={item.imgSrc?.width}
+                              height={item.imgSrc?.height}
+                            />
+                          </picture>
+                        </a>
+                      </Link>
+                      <div className="flex flex-col w-full">
+                        <Link href={`baby/${item.id}`}>
+                          <a className="font-bold text-2xl sm:text-3xl text-[#8ac405] whitespace-nowrap sm:whitespace-normal">
+                            {item.name}
+                          </a>
+                        </Link>
+                        <div className="pt-3">{item.description}</div>
+                      </div>
+                    </div>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="mt-10">
+          <PageTitle type="medium">♂ 男の子</PageTitle>
+
+          <ul>
+            {props.content.map((item) => {
+              return (
+                <li key={item.id} className="mb-8">
+                  {item.sex === false ? (
+                    <div className="flex flex-col sm:flex-row-reverse justify-between p-6 nm-inset-gray-50-lg">
+                      <Link href={`baby/${item.id}`}>
+                        <a className="ml-1 lg:ml-10">
+                          <picture>
+                            <Image
+                              src={item.imgSrc?.url}
+                              alt={item.title}
+                              width={item.imgSrc?.width}
+                              height={item.imgSrc?.height}
+                            />
+                          </picture>
+                        </a>
+                      </Link>
+                      <div className="flex flex-col w-full">
+                        <Link href={`baby/${item.id}`}>
+                          <a className="font-bold text-2xl sm:text-3xl text-[#8ac405] whitespace-nowrap sm:whitespace-normal">
+                            {item.name}
+                          </a>
+                        </Link>
+                        <div className="pt-3">{item.description}</div>
+                      </div>
+                    </div>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
         </div>
         <style jsx>
           {`
@@ -65,3 +141,13 @@ const Baby: NextPage = () => {
 
 // eslint-disable-next-line import/no-default-export
 export default Baby;
+
+export const getStaticProps = async () => {
+  const data = await client.get({ endpoint: "baby" });
+
+  return {
+    props: {
+      content: data.contents,
+    },
+  };
+};
