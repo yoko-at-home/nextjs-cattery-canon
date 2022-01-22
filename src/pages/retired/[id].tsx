@@ -9,9 +9,9 @@ import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
-import type { commonPageProps } from "src/type/types";
+import type { CommonPageProps } from "src/type/types";
 
-const retiredId: VFC<commonPageProps> = (props) => {
+const retiredId: VFC<CommonPageProps> = (props) => {
   const publishedAt = props.content.publishedAt;
   const revisedAt = props.content.revisedAt;
   const imgUrl = props.content.imgSrc.url;

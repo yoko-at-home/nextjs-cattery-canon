@@ -13,10 +13,10 @@ type Common = {
   };
   body: HTMLAnchorElement;
 };
-export type commonProps = {
+export type CommonProps = {
   content: [Common];
 };
-export type babyProps = {
+export type BabyProps = {
   content: [
     Common & {
       name: string;
@@ -28,10 +28,10 @@ export type babyProps = {
     }
   ];
 };
-export type commonPageProps = {
+export type CommonPageProps = {
   content: Common;
 };
-export type babyPageProps = {
+export type BabyPageProps = {
   content: Common & {
     name: string;
     girl: boolean;

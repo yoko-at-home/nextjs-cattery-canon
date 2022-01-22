@@ -6,11 +6,11 @@ import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
-import type { babyProps } from "src/type/types";
+import type { BabyProps } from "src/type/types";
 
 const description = "クリスマスイブのイブにかわいい赤ちゃんが誕生しました";
 
-const Baby: NextPage<babyProps> = (props) => {
+const Baby: NextPage<BabyProps> = (props) => {
   return (
     <div className="relative text-gray-600 bg-[#50c4cc]">
       <Layout theme="baby" photographer="Canon">
@@ -146,11 +146,11 @@ const Baby: NextPage<babyProps> = (props) => {
 // eslint-disable-next-line import/no-default-export
 export default Baby;
 
-export const getStaticProps: GetStaticProps<babyProps, never, { id: string; draftKey: string }> = async ({
+export const getStaticProps: GetStaticProps<BabyProps, never, { id: string; draftKey: string }> = async ({
   preview,
   previewData,
 }): Promise<{
-  props: babyProps;
+  props: BabyProps;
 }> => {
   const key = {
     headers: { "X-MICROCMS-API-KEY": process.env.API_KEY || "" },

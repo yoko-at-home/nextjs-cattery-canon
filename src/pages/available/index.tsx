@@ -7,9 +7,9 @@ import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
-import type { commonProps } from "src/type/types";
+import type { CommonProps } from "src/type/types";
 
-const Available: VFC<commonProps> = (props) => {
+const Available: VFC<CommonProps> = (props) => {
   return (
     <Layout theme="available" photographer="Yoshiko Yamashita">
       <PageSEO title={`譲渡可能な子達- ${siteMetadata.author}`} description={siteMetadata.description} />

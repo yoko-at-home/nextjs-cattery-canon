@@ -12,9 +12,9 @@ import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
-import type { commonProps } from "src/type/types";
+import type { CommonProps } from "src/type/types";
 
-const Retired: VFC<commonProps> = (props) => {
+const Retired: VFC<CommonProps> = (props) => {
   return (
     <Layout theme="retired" photographer="Yoshiko Yamashita">
       <PageSEO title={`引退した子達 - ${siteMetadata.author}`} description={siteMetadata.description} />
