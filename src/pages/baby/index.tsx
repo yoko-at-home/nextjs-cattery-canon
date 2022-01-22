@@ -11,6 +11,9 @@ import type { BabyProps } from "src/type/types";
 const description = "クリスマスイブのイブにかわいい赤ちゃんが誕生しました";
 
 const Baby: NextPage<BabyProps> = (props) => {
+  const girls = props.content.filter((props) => props.girl === true);
+  const boys = props.content.filter((props) => props.girl === false);
+
   return (
     <div className="relative text-gray-600 bg-[#50c4cc]">
       <Layout theme="baby" photographer="Canon">
@@ -41,36 +44,34 @@ const Baby: NextPage<BabyProps> = (props) => {
         <div className="mt-10">
           <PageTitle type="medium">♀ 女の子</PageTitle>
           <ul>
-            {props.content.map((item) => {
+            {girls.map((item) => {
               return (
                 <li key={item.id} className="mb-8">
-                  {item.girl ? (
-                    <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
+                  <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
+                    <Link href={`/baby/${item.id}`}>
+                      <a className="ml-1 lg:ml-10">
+                        <picture>
+                          <Image
+                            src={item.imgSrc?.url}
+                            alt={item.title}
+                            width={item.imgSrc?.width}
+                            height={item.imgSrc?.height}
+                          />
+                        </picture>
+                      </a>
+                    </Link>
+                    <div className="flex flex-col justify-between w-full">
                       <Link href={`/baby/${item.id}`}>
-                        <a className="ml-1 lg:ml-10">
-                          <picture>
-                            <Image
-                              src={item.imgSrc?.url}
-                              alt={item.title}
-                              width={item.imgSrc?.width}
-                              height={item.imgSrc?.height}
-                            />
-                          </picture>
+                        <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl sm:whitespace-normal">
+                          {item.name}
                         </a>
                       </Link>
-                      <div className="flex flex-col justify-between w-full">
-                        <Link href={`/baby/${item.id}`}>
-                          <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl sm:whitespace-normal">
-                            {item.name}
-                          </a>
-                        </Link>
-                        <div className="pt-3">{item.description}</div>
-                        <div className="text-xl font-bold text-[#8ac405] sm:text-xl sm:whitespace-normal">
-                          {item.status ? "素敵な家族が見つかりました✨" : null}
-                        </div>
+                      <div className="pt-3">{item.description}</div>
+                      <div className="text-xl font-bold text-[#8ac405] sm:text-xl sm:whitespace-normal">
+                        {item.status ? "素敵な家族が見つかりました✨" : null}
                       </div>
                     </div>
-                  ) : null}
+                  </div>
                 </li>
               );
             })}
@@ -80,34 +81,32 @@ const Baby: NextPage<BabyProps> = (props) => {
           <PageTitle type="medium">♂ 男の子</PageTitle>
 
           <ul>
-            {props.content.map((item) => {
+            {boys.map((item) => {
               return (
                 <li key={item.id} className="mb-8">
-                  {!item.girl ? (
-                    <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
+                  <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
+                    <Link href={`/baby/${item.id}`}>
+                      <a className="ml-1 lg:ml-10">
+                        <picture>
+                          <Image
+                            src={item.imgSrc?.url}
+                            alt={item.title}
+                            width={item.imgSrc?.width}
+                            height={item.imgSrc?.height}
+                          />
+                        </picture>
+                      </a>
+                    </Link>
+                    <div className="flex flex-col justify-between w-full">
                       <Link href={`/baby/${item.id}`}>
-                        <a className="ml-1 lg:ml-10">
-                          <picture>
-                            <Image
-                              src={item.imgSrc?.url}
-                              alt={item.title}
-                              width={item.imgSrc?.width}
-                              height={item.imgSrc?.height}
-                            />
-                          </picture>
-                        </a>
+                        <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl">{item.name}</a>
                       </Link>
-                      <div className="flex flex-col justify-between w-full">
-                        <Link href={`/baby/${item.id}`}>
-                          <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl">{item.name}</a>
-                        </Link>
-                        <div className="pt-3">{item.description}</div>
-                        <div className="text-xl font-bold text-[#8ac405] sm:text-xl">
-                          {item.status ? "素敵な家族が見つかりました✨" : null}
-                        </div>
+                      <div className="pt-3">{item.description}</div>
+                      <div className="text-xl font-bold text-[#8ac405] sm:text-xl">
+                        {item.status ? "素敵な家族が見つかりました✨" : null}
                       </div>
                     </div>
-                  ) : null}
+                  </div>
                 </li>
               );
             })}
