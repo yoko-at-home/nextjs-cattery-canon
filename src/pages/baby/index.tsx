@@ -60,12 +60,12 @@ const Baby: NextPage<babyProps> = (props) => {
                       </Link>
                       <div className="flex flex-col justify-between w-full">
                         <Link href={`/baby/${item.id}`}>
-                          <a className="text-2xl font-bold text-[#8ac405] whitespace-nowrap sm:text-3xl sm:whitespace-normal">
+                          <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl sm:whitespace-normal">
                             {item.name}
                           </a>
                         </Link>
                         <div className="pt-3">{item.description}</div>
-                        <div className="text-xl font-bold text-[#8ac405] whitespace-nowrap sm:text-xl sm:whitespace-normal">
+                        <div className="text-xl font-bold text-[#8ac405] sm:text-xl sm:whitespace-normal">
                           {item.status ? "素敵な家族が見つかりました✨" : null}
                         </div>
                       </div>
@@ -99,12 +99,10 @@ const Baby: NextPage<babyProps> = (props) => {
                       </Link>
                       <div className="flex flex-col justify-between w-full">
                         <Link href={`/baby/${item.id}`}>
-                          <a className="text-2xl font-bold text-[#8ac405] whitespace-nowrap sm:text-3xl sm:whitespace-normal">
-                            {item.name}
-                          </a>
+                          <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl">{item.name}</a>
                         </Link>
                         <div className="pt-3">{item.description}</div>
-                        <div className="text-xl font-bold text-[#8ac405] whitespace-nowrap sm:text-xl sm:whitespace-normal">
+                        <div className="text-xl font-bold text-[#8ac405] sm:text-xl">
                           {item.status ? "素敵な家族が見つかりました✨" : null}
                         </div>
                       </div>
