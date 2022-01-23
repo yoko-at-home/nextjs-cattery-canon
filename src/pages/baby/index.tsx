@@ -8,11 +8,17 @@ import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import type { BabyProps } from "src/type/types";
 
-const description = "クリスマスイブのイブにかわいい赤ちゃんが誕生しました";
+const description = "クリスマスイブにかわいい赤ちゃんが誕生しました";
 
 const Baby: NextPage<BabyProps> = (props) => {
-  const girls = props.content.filter((props) => props.girl === true);
-  const boys = props.content.filter((props) => props.girl === false);
+  const girls = props.content.filter((props) => {
+    props.girl = true;
+    return props;
+  });
+  const boys = props.content.filter((props) => {
+    props.girl = false;
+    return props;
+  });
 
   return (
     <div className="relative text-gray-600 bg-[#50c4cc]">
