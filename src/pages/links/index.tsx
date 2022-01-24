@@ -1,5 +1,4 @@
 /* eslint-disable tailwindcss/no-custom-classname */
-/* eslint-disable tailwindcss/migration-from-tailwind-2 */
 import type { NextPage } from "next";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
@@ -81,7 +80,7 @@ const Links: NextPage = () => {
                         backgroundImage: link.backgroundImg,
                       }}
                     >
-                      <div className="absolute inset-0 bg-black bg-gradient-to-b rounded bg-opacity-40"></div>
+                      <div className="absolute inset-0 bg-black/40 bg-gradient-to-b rounded" />
                       <div className="flex absolute inset-y-4 inset-x-0 flex-col justify-between items-center mx-5 mt-3 text-lg">
                         {link.title}
                       </div>
@@ -113,7 +112,7 @@ const Links: NextPage = () => {
                       backgroundImage: phtographer.backgroundImg,
                     }}
                   >
-                    <div className="absolute inset-0 bg-black bg-gradient-to-b rounded bg-opacity-40"></div>
+                    <div className="absolute inset-0 bg-black/40 bg-gradient-to-b rounded" />
                     <div className="flex absolute inset-x-0 justify-between items-center mx-5 mt-3">
                       {phtographer.name}
                       <div className="flex flex-col justify-start text-center">

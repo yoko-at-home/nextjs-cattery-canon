@@ -6,7 +6,7 @@ export const HeaderTitle = () => {
   return (
     <h1 className="absolute -bottom-12 -left-3 p-5 sm:-bottom-5 sm:left-2 md:-bottom-20 animation">
       <CustomLink href="/home" aria-label="Cattery Canon">
-        <div className="flex justify-between mb-8 items-main">
+        <div className="flex justify-between mb-8">
           <div
             style={{
               border: "double 5px #636363",
@@ -14,7 +14,7 @@ export const HeaderTitle = () => {
               color: "#71745b",
               // background: "linearGradient(75deg;rgba(2, 9, 66, 1) 4 % rgba(6, 85, 92, 1) 76%)",
             }}
-            className="py-2 pr-4 text-6xl font-bold whitespace-nowrap backdrop-blur-lg md:mt-12 md:mb-20 bg-opacity-40"
+            className="py-2 pr-4 text-6xl font-bold whitespace-nowrap backdrop-blur-lg md:mt-12 md:mb-20"
           >
             {siteMetadata.headerTitle}
           </div>
@@ -40,7 +40,7 @@ export const HeaderTitleMobile = () => {
                 // background: "linearGradient(75deg;rgba(2, 9, 66, 1) 4 % rgba(6, 85, 92, 1) 76%)",
               }}
             >
-              <div className="p-3 text-5xl font-black whitespace-nowrap backdrop-blur-lg bg-opacity-40 animation">
+              <div className="p-3 text-5xl font-black whitespace-nowrap backdrop-blur-lg animation">
                 {siteMetadata.headerTitle}
               </div>
             </div>
@@ -57,7 +57,7 @@ export const HeaderTitleMobile = () => {
                 // background: "linearGradient(75deg;rgba(2, 9, 66, 1) 4 % rgba(6, 85, 92, 1) 76%)",
               }}
             >
-              <div className="p-3 text-5xl font-black whitespace-nowrap backdrop-blur-lg bg-opacity-40 animation">
+              <div className="p-3 text-5xl font-black whitespace-nowrap backdrop-blur-lg animation">
                 {siteMetadata.headerTitle}
               </div>
             </div>
