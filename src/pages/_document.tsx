@@ -1,6 +1,3 @@
-/* eslint-disable @next/next/no-page-custom-font */
-/* eslint-disable import/no-default-export */
-/* eslint-disable @typescript-eslint/naming-convention */
 import { Head, Html, Main, NextScript } from "next/document";
 
 const MyDocument = () => {
@@ -14,8 +11,6 @@ const MyDocument = () => {
         <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#cf980a" />
         <meta name="msapplication-TileColor" content="#cf980a" />
         <meta name="theme-color" content="#f7ecd2" />
-        {/* <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" /> */}
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
         <link
           rel="stylesheet"

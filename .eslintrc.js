@@ -71,7 +71,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["src/pages/**/*.tsx", "src/pages/api/**/*.ts"],
+      files: ["src/pages/**/*.tsx", "src/pages/**/*.jsx", "src/pages/**/*.js", "src/pages/api/**/*.ts"],
       rules: {
         "import/no-default-export": "off",
         "@typescript-eslint/naming-convention": [

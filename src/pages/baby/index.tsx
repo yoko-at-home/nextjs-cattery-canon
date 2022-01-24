@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import axios from "axios";
 import type { GetStaticProps, NextPage } from "next";
 import Image from "next/image";
@@ -148,7 +149,6 @@ const Baby: NextPage<BabyProps> = (props) => {
   );
 };
 
-// eslint-disable-next-line import/no-default-export
 export default Baby;
 
 export const getStaticProps: GetStaticProps<BabyProps, never, { id: string; draftKey: string }> = async ({

@@ -1,8 +1,4 @@
-/* eslint-disable import/no-default-export */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-// pages/news/[id].js
+/* eslint-disable tailwindcss/no-custom-classname */
 import Image from "next/image";
 import Link from "next/link";
 import type { VFC } from "react";

@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/naming-convention */
-/* eslint-disable import/no-default-export */
+/* eslint-disable tailwindcss/no-custom-classname */
 import ErrorPage from "next/error";
 import Image from "next/image";
 import Link from "next/link";

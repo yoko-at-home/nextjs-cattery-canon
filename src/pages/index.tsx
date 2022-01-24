@@ -1,4 +1,3 @@
-/* eslint-disable import/no-default-export */
 import { PageSEO } from "src/components/SEO";
 import { TopPage } from "src/components/TopPage";
 

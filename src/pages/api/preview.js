@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
-/* eslint-disable import/no-default-export */
 import fetch from "node-fetch";
 
 export default async function preview(req, res) {
@@ -8,6 +6,7 @@ export default async function preview(req, res) {
   }
   const content = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}baby/${req.query.slug}?fields=id&draftKey=${req.query.draftKey}`,
+    // eslint-disable-next-line @typescript-eslint/naming-convention
     { headers: { "X-MICROCMS-API-KEY": process.env.API_KEY || "" } }
   )
     .then((res) => {
@@ -25,6 +24,6 @@ export default async function preview(req, res) {
     slug: content.id,
     draftKey: req.query.draftKey,
   });
-  res.writeHead(307, { Location: `/baby/${content.id}` });
+  res.writeHead(307, { location: `/baby/${content.id}` });
   res.end("Preview mode enabled");
 }

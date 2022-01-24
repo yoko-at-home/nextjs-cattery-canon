@@ -1,9 +1,4 @@
 /* eslint-disable tailwindcss/no-custom-classname */
-/* eslint-disable react/jsx-key */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react-hooks/rules-of-hooks */
-/* eslint-disable react/jsx-handler-names */
-/* eslint-disable import/no-default-export */
 import Image from "next/image";
 import Link from "next/link";
 import type { VFC } from "react";

@@ -1,5 +1,3 @@
-/* eslint-disable import/no-default-export */
-/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { PageTitle } from "src/components/PageTitle";
@@ -18,9 +16,6 @@ const Success: NextPage = () => {
       </div>
       <div className="container p-3 text-lg">
         <div className="mt-10 whitespace-pre-line break-words">{router.query.text}</div>
-        {/* <div className="flex justify-center">
-          <img alt="Thanks!" src={"/static/gif/74797-thank-you-with-confetti.gif"} className="w-20 md:w-56" />
-        </div> */}
       </div>
     </Layout>
   );

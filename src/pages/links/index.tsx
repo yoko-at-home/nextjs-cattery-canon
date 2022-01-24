@@ -1,3 +1,5 @@
+/* eslint-disable tailwindcss/no-custom-classname */
+/* eslint-disable tailwindcss/migration-from-tailwind-2 */
 import type { NextPage } from "next";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
