@@ -1,7 +1,7 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: { project: "./tsconfig.json" },
-  settings: { tailwindcss: { groupByResponsive: true } },
+  settings: { tailwindcss: { groupByResponsive: true, whitelist: [] } },
   env: { es2021: true, browser: true, node: true },
   plugins: ["simple-import-sort", "tailwindcss", "import-access", "cypress"],
   extends: [
@@ -61,6 +61,13 @@ module.exports = {
       "error",
       { components: ["Link"], specialLink: ["hrefLeft", "hrefRight"], aspects: ["invalidHref", "preferButton"] },
     ],
+    // tailwind
+    "tailwindcss/classnames-order": "warn",
+    "tailwindcss/enforces-shorthand": "warn",
+    "tailwindcss/migration-from-tailwind-2": "warn",
+    "tailwindcss/no-arbitrary-value": "off",
+    "tailwindcss/no-custom-classname": "warn",
+    "tailwindcss/no-contradicting-classname": "error",
   },
   overrides: [
     {
@@ -73,6 +80,7 @@ module.exports = {
           { selector: ["classProperty", "typeProperty", "method"], format: ["camelCase"] },
           { selector: "variable", types: ["boolean"], format: ["PascalCase"], prefix: ["is", "has", "should"] },
         ],
+        "tailwindcss/classnames-order": "error",
       },
     },
     {
