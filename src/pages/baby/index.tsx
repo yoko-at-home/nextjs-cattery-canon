@@ -1,8 +1,8 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import axios from "axios";
 import type { GetStaticProps, NextPage } from "next";
-import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+// import Link from "next/link";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
@@ -11,14 +11,15 @@ import type { BabyProps } from "src/type/types";
 
 const description = "クリスマスイブにかわいい赤ちゃんが誕生しました";
 
-const Baby: NextPage<BabyProps> = (props) => {
-  const girls = props.content.filter((props) => {
-    return props.girl === true;
-  });
+const Baby: NextPage<BabyProps> = () => {
+// const Baby: NextPage<BabyProps> = (props) => {
+  // const girls = props.content.filter((props) => {
+  //   return props.girl === true;
+  // });
 
-  const boys = props.content.filter((props) => {
-    return props.girl === false;
-  });
+  // const boys = props.content.filter((props) => {
+  //   return props.girl === false;
+  // });
 
   return (
     <div className="relative text-gray-600 bg-[#50c4cc]">
@@ -47,7 +48,7 @@ const Baby: NextPage<BabyProps> = (props) => {
           <div className="hidden sm:block orb" />
         </div>
 
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <PageTitle type="medium">♀ 女の子</PageTitle>
           <ul>
             {girls.map((girl) => {
@@ -117,7 +118,7 @@ const Baby: NextPage<BabyProps> = (props) => {
               );
             })}
           </ul>
-        </div>
+        </div> */}
         <style jsx>
           {`
             .orb {
