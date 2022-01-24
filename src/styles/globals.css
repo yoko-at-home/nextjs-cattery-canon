@@ -24,7 +24,6 @@
   }
 }
 
-
 @layer base {
   focus {
     @apply border-gray-200;

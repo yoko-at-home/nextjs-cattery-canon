@@ -12,7 +12,7 @@ import type { BabyProps } from "src/type/types";
 const description = "クリスマスイブにかわいい赤ちゃんが誕生しました";
 
 const Baby: NextPage<BabyProps> = () => {
-// const Baby: NextPage<BabyProps> = (props) => {
+  // const Baby: NextPage<BabyProps> = (props) => {
   // const girls = props.content.filter((props) => {
   //   return props.girl === true;
   // });
