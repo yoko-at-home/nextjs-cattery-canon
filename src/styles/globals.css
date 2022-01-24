@@ -23,3 +23,10 @@
     transform: translatey(0);
   }
 }
+
+
+@layer base {
+  focus {
+    @apply border-gray-200;
+  }
+}
