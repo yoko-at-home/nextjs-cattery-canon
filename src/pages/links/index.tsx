@@ -82,12 +82,8 @@ const Links: NextPage = () => {
                       }}
                     >
                       <div className="absolute inset-0 bg-black bg-gradient-to-b rounded bg-opacity-40"></div>
-                      <div className="flex absolute inset-x-0 justify-between items-center mx-5 mt-3">
+                      <div className="flex absolute inset-y-4 inset-x-0 flex-col justify-between items-center mx-5 mt-3 text-lg">
                         {link.title}
-                        <div className="flex flex-col justify-start text-center">
-                          <span className="text-3xl font-semibold tracking-wide leading-none"></span>
-                          <span className="leading-none uppercase"></span>
-                        </div>
                       </div>
                       <h2 className="z-10 p-5">{link.description}</h2>
                     </div>
