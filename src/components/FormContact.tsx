@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable @typescript-eslint/naming-convention */
 import { useRouter } from "next/router";
 import { siteMetadata } from "src/data/siteMetadata";
