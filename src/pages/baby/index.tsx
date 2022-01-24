@@ -50,31 +50,31 @@ const Baby: NextPage<BabyProps> = (props) => {
         <div className="mt-10">
           <PageTitle type="medium">♀ 女の子</PageTitle>
           <ul>
-            {girls.map((item) => {
+            {girls.map((girl) => {
               return (
-                <li key={item.id} className="mb-8">
+                <li key={girl.id} className="mb-8">
                   <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
-                    <Link href={`/baby/${item.id}`}>
+                    <Link href={`/baby/${girl.id}`}>
                       <a className="ml-1 lg:ml-10">
                         <picture>
                           <Image
-                            src={item.imgSrc?.url}
-                            alt={item.title}
-                            width={item.imgSrc?.width}
-                            height={item.imgSrc?.height}
+                            src={girl.imgSrc?.url}
+                            alt={girl.title}
+                            width={girl.imgSrc?.width}
+                            height={girl.imgSrc?.height}
                           />
                         </picture>
                       </a>
                     </Link>
                     <div className="flex flex-col justify-between w-full">
-                      <Link href={`/baby/${item.id}`}>
+                      <Link href={`/baby/${girl.id}`}>
                         <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl sm:whitespace-normal">
-                          {item.name}
+                          {girl.name}
                         </a>
                       </Link>
-                      <div className="pt-3">{item.description}</div>
+                      <div className="pt-3">{girl.description}</div>
                       <div className="text-xl font-bold text-[#8ac405] sm:text-xl sm:whitespace-normal">
-                        {item.status ? "素敵な家族が見つかりました✨" : null}
+                        {girl.status ? "素敵な家族が見つかりました✨" : null}
                       </div>
                     </div>
                   </div>
@@ -87,29 +87,29 @@ const Baby: NextPage<BabyProps> = (props) => {
           <PageTitle type="medium">♂ 男の子</PageTitle>
 
           <ul>
-            {boys.map((item) => {
+            {boys.map((boy) => {
               return (
-                <li key={item.id} className="mb-8">
+                <li key={boy.id} className="mb-8">
                   <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
-                    <Link href={`/baby/${item.id}`}>
+                    <Link href={`/baby/${boy.id}`}>
                       <a className="ml-1 lg:ml-10">
                         <picture>
                           <Image
-                            src={item.imgSrc?.url}
-                            alt={item.title}
-                            width={item.imgSrc?.width}
-                            height={item.imgSrc?.height}
+                            src={boy.imgSrc?.url}
+                            alt={boy.title}
+                            width={boy.imgSrc?.width}
+                            height={boy.imgSrc?.height}
                           />
                         </picture>
                       </a>
                     </Link>
                     <div className="flex flex-col justify-between w-full">
-                      <Link href={`/baby/${item.id}`}>
-                        <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl">{item.name}</a>
+                      <Link href={`/baby/${boy.id}`}>
+                        <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl">{boy.name}</a>
                       </Link>
-                      <div className="pt-3">{item.description}</div>
+                      <div className="pt-3">{boy.description}</div>
                       <div className="text-xl font-bold text-[#8ac405] sm:text-xl">
-                        {item.status ? "素敵な家族が見つかりました✨" : null}
+                        {boy.status ? "素敵な家族が見つかりました✨" : null}
                       </div>
                     </div>
                   </div>
