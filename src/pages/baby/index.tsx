@@ -161,7 +161,7 @@ export const getStaticProps: GetStaticProps<BabyProps, never, { id: string; draf
     headers: { "X-MICROCMS-API-KEY": process.env.API_KEY || "" },
   };
 
-  const res = await axios.get(process.env.NEXT_PUBLIC_API_URL + "baby/", key);
+  const res = await axios.get(process.env.NEXT_PUBLIC_API_URL + "baby/?limit=9999", key);
   const data = await res.data;
 
   // プレビュー時は draft のコンテンツを追加
