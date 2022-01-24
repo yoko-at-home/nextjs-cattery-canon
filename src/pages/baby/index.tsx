@@ -1,5 +1,6 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import axios from "axios";
+import { filter } from "jest.config";
 import type { GetStaticProps, NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,12 +14,11 @@ const description = "クリスマスイブにかわいい赤ちゃんが誕生�
 
 const Baby: NextPage<BabyProps> = (props) => {
   const girls = props.content.filter((props) => {
-    props.girl = true;
-    return props;
+    return props.girl === true;
   });
+
   const boys = props.content.filter((props) => {
-    props.girl = false;
-    return props;
+    return props.girl === false;
   });
 
   return (
