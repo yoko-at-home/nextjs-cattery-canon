@@ -1,6 +1,5 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import axios from "axios";
-import { filter } from "jest.config";
 import type { GetStaticProps, NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
