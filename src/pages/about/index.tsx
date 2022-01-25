@@ -12,8 +12,13 @@ const description =
 const About: VFC<About> = (props) => {
   return (
     <Layout theme="about" photographer="Yoshiko Yamashita">
-      <PageSEO title={`メインクーンについて- ${siteMetadata.author}`} description={description} />
-
+      <PageSEO
+        title={`メインクーンについて - ${siteMetadata.title}`}
+        description={description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
+      />
       <div className="divide-y divide-gray-200">
         <div className="pt-6 pb-8 space-y-2 md:mt-8 md:space-y-5">
           <PageTitle type="x-large">{props.data.title}</PageTitle>

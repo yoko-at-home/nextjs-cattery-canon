@@ -12,7 +12,13 @@ import type { CommonProps } from "src/type/types";
 const Available: VFC<CommonProps> = (props) => {
   return (
     <Layout theme="available" photographer="Yoshiko Yamashita">
-      <PageSEO title={`譲渡可能な子達- ${siteMetadata.author}`} description={siteMetadata.description} />
+      <PageSEO
+        title={`譲渡可能な子達 - ${siteMetadata.title}`}
+        description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
+      />{" "}
       <PageTitle type="large">譲渡可能な子達</PageTitle>
       <div className="mt-10">
         <ul>

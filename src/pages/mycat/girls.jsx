@@ -30,7 +30,13 @@ const MyGirls = () => {
   return (
     <div className="bg-purple-100">
       <Layout theme="girls" photographer="Yamazaki Tstsu">
-        <PageSEO title={`Girls - ${siteMetadata.author}`} description={siteMetadata.description1} />
+        <PageSEO
+          title={`Girls - ${siteMetadata.title}`}
+          description={siteMetadata.description}
+          ogType="website"
+          ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+          siteUrl={siteMetadata.siteUrl}
+        />{" "}
         <PageTitle type="large">Girls - {siteMetadata.title} の女の子たち</PageTitle>
         <div className="divide-y divide-gray-200 ">
           <div className="container py-12">

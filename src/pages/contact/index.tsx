@@ -8,8 +8,13 @@ import { Layout } from "src/layout";
 const Contact: NextPage = () => {
   return (
     <Layout theme="home">
-      <PageSEO title={`お問い合わせ - ${siteMetadata.author}`} description={siteMetadata.description} />
-
+      <PageSEO
+        title={`お問い合わせ - ${siteMetadata.title}`}
+        description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
+      />{" "}
       <PageTitle type="large">Contact -お気軽にお問い合わせください</PageTitle>
       <div className="divide-y divide-gray-200 ">
         <div className="container py-8">

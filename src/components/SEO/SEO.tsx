@@ -1,50 +1,50 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import type { VFC } from "react";
 
 import { siteMetadata } from "../../data/siteMetadata";
 
-export const CommonSEO = (props) => {
+type Props = {
+  title: string;
+  description: string;
+  ogType: string;
+  ogImage: string;
+  siteUrl: string;
+};
+
+// eslint-disable-next-line react/destructuring-assignment
+const CommonSEO: VFC<Props> = ({ description, ogImage, ogType, title }) => {
   const router = useRouter();
   return (
     <Head>
-      <title>{props.title}</title>
-      <link rel="icon" href="/favicon.ico" />
+      <title>{title}</title>
+      <link rel="icon" href="/static/favicons/favicon.ico" />
       <meta name="robots" content="follow, index" />
-      <meta name="description" content={props.description} />
+      <meta name="description" content={description} />
       <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
-      <meta property="og:type" content={props.ogType} />
+      <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content={siteMetadata.title} />
-      <meta property="og:description" content={props.description} />
-      <meta property="og:title" content={props.title} />
-      {props.ogImage.constructor.name === "Array" ? (
-        props.ogImage.map(({ url }) => {
-          return <meta property="og:image" content={url} key={url} />;
-        })
-      ) : (
-        <meta property="og:image" content={props.ogImage} key={props.ogImage} />
-      )}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content={siteMetadata.twitter} />
-      <meta name="twitter:title" content={props.title} />
-      <meta name="twitter:description" content={props.description} />
-      <meta name="twitter:image" content={props.twImage} />
+      <meta property="og:description" content={description} />
+      <meta property="og:title" content={title} />
+      <meta property="og:image" content={ogImage} key={ogImage} />
     </Head>
   );
 };
 
-export const PageSEO = (props) => {
-  const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner;
-  const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner;
+// eslint-disable-next-line react/destructuring-assignment
+export const PageSEO: VFC<Props> = ({ description, title }) => {
+  const ogSiteLogo = siteMetadata.siteUrl + siteMetadata.siteLogo;
+
   return (
     <>
       <CommonSEO
-        title={props.title}
-        description={props.description}
+        title={title}
+        description={description}
         ogType="website"
-        ogImage={ogImageUrl}
-        twImage={twImageUrl}
+        siteUrl={siteMetadata.siteUrl}
+        ogImage={ogSiteLogo}
       />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/static/favicons/favicon.ico" />
     </>
   );
 };

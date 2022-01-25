@@ -23,8 +23,13 @@ const config = {
 const FAQ = () => {
   return (
     <Layout theme="home">
-      <PageSEO title={`FAQ - ${siteMetadata.author}`} description={siteMetadata.description} />
-
+      <PageSEO
+        title={`FAQ - ${siteMetadata.title}`}
+        description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
+      />
       <PageTitle type="large">よくある質問にお答えします。</PageTitle>
       <div className="container">
         <div className="text-gray-500">

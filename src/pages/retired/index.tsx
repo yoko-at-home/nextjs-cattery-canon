@@ -12,8 +12,13 @@ import type { CommonProps } from "src/type/types";
 const Retired: VFC<CommonProps> = (props) => {
   return (
     <Layout theme="retired" photographer="Yoshiko Yamashita">
-      <PageSEO title={`引退した子達 - ${siteMetadata.author}`} description={siteMetadata.description} />
-
+      <PageSEO
+        title={`引退した子達 - ${siteMetadata.title}`}
+        description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
+      />
       <PageTitle type="large">引退した子達</PageTitle>
       <div className="pt-6 pb-8 space-y-2 md:space-y-5">
         <p className="text-lg leading-7 text-gray-500 ">引退した子達です。</p>

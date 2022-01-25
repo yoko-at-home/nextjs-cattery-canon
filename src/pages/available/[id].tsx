@@ -20,8 +20,11 @@ const BlogId: VFC<CommonPageProps> = (props) => {
   return (
     <LayoutBlog>
       <PageSEO
-        title={`譲渡可能な子達- ${siteMetadata.author} | ${props.content.title}`}
+        title={`譲渡可能な子達 - ${siteMetadata.title}`}
         description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
       />
       <div className="flex justify-center mx-auto rounded-lg nm-flat-gray-300-xl">
         <Image

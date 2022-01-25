@@ -58,8 +58,13 @@ const phtographers = [
 const Links: NextPage = () => {
   return (
     <Layout theme="home">
-      <PageSEO title={`リンク集 - ${siteMetadata.author}`} description={siteMetadata.description} />
-
+      <PageSEO
+        title={`リンク集 - ${siteMetadata.title}`}
+        description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
+      />
       <PageTitle type="large">リンク集 - Canon のおすすめサイト</PageTitle>
       <div className="divide-y divide-gray-200 ">
         <div className="container pb-12">

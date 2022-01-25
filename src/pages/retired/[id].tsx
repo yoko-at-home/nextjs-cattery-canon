@@ -20,8 +20,11 @@ const retiredId: VFC<CommonPageProps> = (props) => {
   return (
     <LayoutBlog>
       <PageSEO
-        title={`引退した子達- ${siteMetadata.author} | ${props.content.title}`}
+        title={`引退した子達 - ${siteMetadata.title}`}
         description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
       />
       <div className="flex justify-center mx-auto rounded-lg nm-inset-gray-200-sm">
         <Image

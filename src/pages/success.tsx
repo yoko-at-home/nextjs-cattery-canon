@@ -9,7 +9,13 @@ const Success: NextPage = () => {
   const router = useRouter();
   return (
     <Layout theme="retired">
-      <PageSEO title={`Success- ${siteMetadata.author}`} description={siteMetadata.description} />
+      <PageSEO
+        title={`Success - ${siteMetadata.title}`}
+        description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
+      />{" "}
       <PageTitle type="large">{router.query.subject}</PageTitle>
       <div className="flex justify-center">
         <iframe src="https://embed.lottiefiles.com/animation/83039"></iframe>

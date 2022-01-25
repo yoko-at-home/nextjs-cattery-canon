@@ -33,8 +33,13 @@ const Baby: NextPage<BabyProps> = (props) => {
   return (
     <div className="relative text-gray-600 bg-[#50c4cc]">
       <Layout theme="baby" photographer="Canon">
-        <PageSEO title={`赤ちゃん - ${siteMetadata.author}`} description={description} />
-
+        <PageSEO
+          title={`赤ちゃん - ${siteMetadata.title}`}
+          description="クリスマスイブにかわいい赤ちゃんが誕生しました"
+          ogType="website"
+          ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+          siteUrl={siteMetadata.siteUrl}
+        />
         <PageTitle type="medium">
           <span className="text-white">{description}</span>
         </PageTitle>
@@ -106,7 +111,7 @@ const Baby: NextPage<BabyProps> = (props) => {
                       </div>
                     </div>
                   </div>
-                  <Star/>
+                  <Star />
                 </li>
               );
             })}

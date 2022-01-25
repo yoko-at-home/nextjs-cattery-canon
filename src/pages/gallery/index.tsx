@@ -9,7 +9,13 @@ import { Layout } from "src/layout";
 const Gallery: NextPage = () => {
   return (
     <Layout theme="gallery" photographer="Yoshiko Yamashita">
-      <PageSEO title={`ギャラリー - ${siteMetadata.author}`} description={siteMetadata.description} />
+      <PageSEO
+        title={`ギャラリー - ${siteMetadata.title}`}
+        description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
+      />{" "}
       <PageTitle type="large">Gallery</PageTitle>
       <PageTitle type="medium">{siteMetadata.title} の世界</PageTitle>
       <CarouselHorizontal />

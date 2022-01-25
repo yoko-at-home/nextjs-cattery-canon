@@ -11,10 +11,9 @@ export const siteMetadata = {
   socialBanner: "/static/images/twitter-card.png",
   ogImage: "/static/images/twitter-card.png",
   email: "canoncat523@gmail.com",
-  github: "https://github.com/yoko-at-home",
-  twitter: "https://twitter.com/Twitter/yokoiwasaki6",
+  twitter: "https://twitter.com",
   facebook: "https://facebook.com",
-  youtube: "https://www.youtube.com/channel/UC_9IZegV5JXw66b0S7fd6-Q",
-  linkedin: "https://www.linkedin.com",
+  // youtube: "https://www.youtube.com/channel/UC_9IZegV5JXw66b0S7fd6-Q",
+  // linkedin: "https://www.linkedin.com",
   locale: "ja-JP",
 };

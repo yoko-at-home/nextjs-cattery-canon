@@ -22,8 +22,11 @@ const BabyId = (props) => {
   return (
     <LayoutBlog>
       <PageSEO
-        title={`Babies - ${siteMetadata.author} | ${props.content.name}`}
+        title={`Babies - ${siteMetadata.title}`}
         description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
       />
       <div className="flex justify-center mx-auto rounded-lg nm-flat-gray-300-xl">
         <Image
