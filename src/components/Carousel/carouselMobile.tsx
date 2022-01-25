@@ -83,7 +83,7 @@ export const CarouselMobile = () => {
         <div
           className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
-            backgroundImage: "url('/static/images/0_top/07_painting-green.webp')",
+            backgroundImage: "url('/static/images/0_top/07_painting-green-mob.webp')",
           }}
         ></div>
         <div
