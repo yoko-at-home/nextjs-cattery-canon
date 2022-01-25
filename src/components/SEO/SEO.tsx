@@ -33,7 +33,7 @@ const CommonSEO: VFC<Props> = ({ description, ogImage, ogType, title }) => {
 
 // eslint-disable-next-line react/destructuring-assignment
 export const PageSEO: VFC<Props> = ({ description, title }) => {
-  const ogSiteLogo = siteMetadata.siteUrl + siteMetadata.siteLogo;
+  const ogSiteLogo = siteMetadata.siteUrl + siteMetadata.ogImage;
 
   return (
     <>
