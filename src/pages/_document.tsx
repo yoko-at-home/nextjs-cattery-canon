@@ -14,7 +14,6 @@ const MyDocument = () => {
         <meta name="google-site-verification" content="b8bHgMnOcmFYxe-Nz8dhHx0AKW5h8BgWvAWKWreYUbQ" />
         <meta name="msapplication-TileColor" content="#cf980a" />
         <meta name="theme-color" content="#f7ecd2" />
-        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={siteMetadata.ogImage} />
         <meta name="twitter:title" content={siteMetadata.description} />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />

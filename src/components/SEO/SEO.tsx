@@ -23,6 +23,7 @@ const CommonSEO: VFC<Props> = ({ description, ogImage, ogType, title }) => {
       <meta name="description" content={description} />
       <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
       <meta property="og:type" content={ogType} />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta property="og:site_name" content={siteMetadata.title} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
