@@ -1,8 +1,8 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import axios from "axios";
 import type { GetStaticProps, NextPage } from "next";
-// import Image from "next/image";
-// import Link from "next/link";
+import Image from "next/image";
+import Link from "next/link";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
@@ -10,16 +10,25 @@ import { Layout } from "src/layout";
 import type { BabyProps } from "src/type/types";
 
 const description = "クリスマスイブにかわいい赤ちゃんが誕生しました";
+const description2 = "✨✨✨";
 
-const Baby: NextPage<BabyProps> = () => {
-  // const Baby: NextPage<BabyProps> = (props) => {
-  // const girls = props.content.filter((props) => {
-  //   return props.girl === true;
-  // });
+const Star = () => {
+  return (
+    <div className="pt-5 text-2xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-100 to-green-200 leading-loosee tracking-loose">
+      {description2}
+    </div>
+  );
+};
 
-  // const boys = props.content.filter((props) => {
-  //   return props.girl === false;
-  // });
+// const Baby: NextPage<BabyProps> = () => {
+const Baby: NextPage<BabyProps> = (props) => {
+  const girls = props.content.filter((props) => {
+    return props.girl === true;
+  });
+
+  const boys = props.content.filter((props) => {
+    return props.girl === false;
+  });
 
   return (
     <div className="relative text-gray-600 bg-[#50c4cc]">
@@ -29,31 +38,13 @@ const Baby: NextPage<BabyProps> = () => {
         <PageTitle type="medium">
           <span className="text-white">{description}</span>
         </PageTitle>
-        <div className="flex flex-col items-center">
-          <div className="hidden sm:block orb" />
-          <div className="flex flex-col justify-evenly items-center sm:flex-row">
-            <div className="orb" />
-            <div className="flex overflow-hidden justify-items-end m-6 w-80 h-96 rounded-full orb2">
-              <div className="orb2">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  src="https://user-images.githubusercontent.com/61738591/149651398-7686c95c-45c7-4acd-b7c3-e319950dd95d.MOV"
-                />
-              </div>
-            </div>
-            <div className="orb" />
-          </div>
-          <div className="hidden sm:block orb" />
-        </div>
 
-        {/* <div className="mt-10">
+        <div className="mt-10">
           <PageTitle type="medium">♀ 女の子</PageTitle>
           <ul>
             {girls.map((girl) => {
               return (
-                <li key={girl.id} className="mb-8">
+                <li key={girl.id} className="mb-8 orb-girl">
                   <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
                     <Link href={`/baby/${girl.id}`}>
                       <a className="ml-1 lg:ml-10">
@@ -84,9 +75,10 @@ const Baby: NextPage<BabyProps> = () => {
             })}
           </ul>
         </div>
+        <Star />
+
         <div className="mt-10">
           <PageTitle type="medium">♂ 男の子</PageTitle>
-
           <ul>
             {boys.map((boy) => {
               return (
@@ -114,11 +106,31 @@ const Baby: NextPage<BabyProps> = () => {
                       </div>
                     </div>
                   </div>
+                  <Star/>
                 </li>
               );
             })}
           </ul>
-        </div> */}
+        </div>
+
+        <div className="flex flex-col items-center mt-20">
+          <div className="hidden sm:block orb" />
+          <div className="flex flex-col justify-evenly items-center sm:flex-row">
+            <div className="orb" />
+            <div className="flex overflow-hidden justify-items-end m-6 w-80 h-96 rounded-full orb2">
+              <div className="orb2">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  src="https://user-images.githubusercontent.com/61738591/149651398-7686c95c-45c7-4acd-b7c3-e319950dd95d.MOV"
+                />
+              </div>
+            </div>
+            <div className="orb" />
+          </div>
+          <div className="hidden sm:block orb" />
+        </div>
         <style jsx>
           {`
             .orb {
@@ -139,6 +151,11 @@ const Baby: NextPage<BabyProps> = () => {
             .orb2 {
               box-shadow: inset 0 0 150px #fff, inset 20px 0 160px violet, inset -20px 0 160px #0ff,
                 inset 20px 0 250px violet, inset -20px 0 250px #0ff, 0 0 50px #fff, -10px 0 160px violet,
+                10px 0 60px #0ff;
+            }
+            .orb-girl {
+              box-shadow: inset 0 0 150px #fff, inset 20px 0 80px pink, inset -10px 0 80px #0ff,
+                inset 20px 0 250px pink, inset -20px 0 250px #0ff, 0 0 50px #fff, -10px 0 80px pink,
                 10px 0 60px #0ff;
             }
             }
