@@ -37,7 +37,7 @@ const Baby: NextPage<BabyProps> = (props) => {
           title={`赤ちゃん - ${siteMetadata.title}`}
           description="クリスマスイブにかわいい赤ちゃんが誕生しました"
           ogType="website"
-          ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+          ogImage="https://www.canon-cat.com/static/images/twitter-card-baby.jpg"
           siteUrl={siteMetadata.siteUrl}
         />
         <PageTitle type="medium">
