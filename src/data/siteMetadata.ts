@@ -9,6 +9,7 @@ export const siteMetadata = {
   siteLogo: "/static/favicons/apple-touch-icon.png",
   image: "/static/favicons/apple-touch-icon.png",
   socialBanner: "/static/images/twitter-card.png",
+  ogImage: "/static/images/twitter-card.png",
   email: "canoncat523@gmail.com",
   github: "https://github.com/yoko-at-home",
   twitter: "https://twitter.com/Twitter/yokoiwasaki6",
