@@ -51,7 +51,7 @@ export const NavBarDesktop: VFC = () => {
 
 export const NavBarMobile: VFC<Props> = (props) => {
   const buttonImage = {
-    entrance: "/static/gif/animation_500_cat.gif",
+    entrance: "/static/favicons/icon-512x512.svg",
     main: "/static/favicons/icon-512x512.svg",
   };
   const [isNavShow, setIsNavShow] = useState(false);
