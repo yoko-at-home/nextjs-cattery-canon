@@ -83,7 +83,7 @@ export const CarouselHorizontal = () => {
         <div
           className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
-            backgroundImage: "url('/static/images/02_horizontal/yamashita-baby-on-piano.png')",
+            backgroundImage: "url('/static/images/02_horizontal/yamashita-baby-on-piano.webp')",
           }}
         ></div>
         <div
@@ -101,7 +101,7 @@ export const CarouselHorizontal = () => {
         <div
           className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
-            backgroundImage: "url('/static/images/02_horizontal/yamashita-three-brothers.png')",
+            backgroundImage: "url('/static/images/02_horizontal/yamashita-three-brothers.webp')",
           }}
         ></div>
       </div>
