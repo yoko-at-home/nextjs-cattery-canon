@@ -3,9 +3,10 @@ export const tileDataMemory = [
     id: "7",
     title: "Fushigi",
     url: {
-      background: 'center/cover no-repeat url("/static/images/memory/fushigi.webp")',
+      background:
+        'center/cover no-repeat url("https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/1106513d75cf4f7bb1482e5368355158/yamashita-three-brothers.webp?w=300")',
     },
-    src: "/static/images/memory/fushigi.webp",
+    src: "https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/1106513d75cf4f7bb1482e5368355158/yamashita-three-brothers.webp?w=300",
   },
   {
     id: "8",

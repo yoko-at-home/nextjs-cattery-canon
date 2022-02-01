@@ -59,7 +59,8 @@ export const CarouselHorizontal = () => {
         <div
           className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
-            backgroundImage: "url('/static/images/02_horizontal/red-plate.webp')",
+            backgroundImage:
+              "url('https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/be7d0ad4b6864a7aa5377d538f04c624/09_red-plate.webp?w=300')",
           }}
         ></div>
         <div
@@ -71,13 +72,15 @@ export const CarouselHorizontal = () => {
         <div
           className="bg-top bg-cover keen-slider__slide number-slide"
           style={{
-            backgroundImage: "url('/static/images/0_top/06_mainecoon.webp')",
+            backgroundImage:
+              "url('https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/1162f7c933b04f2ead1b1ed0c0693eff/06_mainecoon.webp?w=300')",
           }}
         ></div>
         <div
           className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
-            backgroundImage: "url('/static/images/0_top/07_painting-green.webp')",
+            backgroundImage:
+              "url('https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/023047e2b27f48a389395d54e81cc159/07_painting-green.webp?w=300')",
           }}
         ></div>
         <div
@@ -89,19 +92,22 @@ export const CarouselHorizontal = () => {
         <div
           className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
-            backgroundImage: "url('/static/images/02_horizontal/mainecoon-girls.webp')",
+            backgroundImage:
+              "url('https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/9ce3d6c192694fbcbfb92efe91306529/01_mainecoon-girls.webp?w=300')",
           }}
         ></div>
         <div
           className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
-            backgroundImage: "url('/static/images/02_horizontal/hanako.webp')",
+            backgroundImage:
+              "url('https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/b2f45372b0ac4958a935af3a63e62850/gura.webp?w=300')",
           }}
         ></div>
         <div
           className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
-            backgroundImage: "url('/static/images/02_horizontal/yamashita-three-brothers.webp')",
+            backgroundImage:
+              "url('https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/1106513d75cf4f7bb1482e5368355158/yamashita-three-brothers.webp?w=300')",
           }}
         ></div>
       </div>

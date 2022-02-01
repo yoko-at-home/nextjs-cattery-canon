@@ -11,9 +11,10 @@ export const dataHorizontal = [
     id: "2",
     title: "Canon's collection",
     url: {
-      background: 'center/contain no-repeat url("/static/images/0_top/painting-green.webp")',
+      background:
+        'center/contain no-repeat url("https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/023047e2b27f48a389395d54e81cc159/07_painting-green.webp?w=300")',
     },
-    src: "/static/images/0_top/painting-green.webp",
+    src: "https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/023047e2b27f48a389395d54e81cc159/07_painting-green.webp?w=300",
   },
   {
     id: "3",
@@ -35,9 +36,10 @@ export const dataHorizontal = [
     id: "5",
     title: "Cattery Canon",
     url: {
-      background: 'center/contain no-repeat url("/static/images/tallpaint/painting.webp")',
+      background:
+        'center/contain no-repeat url("https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/023047e2b27f48a389395d54e81cc159/07_painting-green.webp?w=300")',
     },
-    src: "/static/images/tallpaint/painting.webp",
+    src: "https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/023047e2b27f48a389395d54e81cc159/07_painting-green.webp?w=300",
   },
   {
     id: "6",

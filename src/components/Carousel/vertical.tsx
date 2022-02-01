@@ -96,7 +96,8 @@ export const CarouselVertical = () => {
         <div
           className="bg-center bg-cover keen-slider__slide number-slide"
           style={{
-            backgroundImage: "url('/static/images/02_horizontal/hanako.webp')",
+            backgroundImage:
+              "url('https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/b2f45372b0ac4958a935af3a63e62850/gura.webp?w=300')",
           }}
         ></div>
         <div
