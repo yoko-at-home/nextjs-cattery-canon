@@ -27,24 +27,28 @@ type Props = {
 
 export const NavBarDesktop: VFC = () => {
   return (
-    <nav className="hidden flex-col justify-start px-2 mt-16 text-center sm:flex">
-      {items.map(({ href, label }) => {
-        return (
-          <Link key={href} href={href}>
-            <a className="py-1 mb-2 font-medium text-gray-300 hover:text-green-600 whitespace-nowrap sm:px-4 lg:text-3xl">
-              {label}
-            </a>
-          </Link>
-        );
-      })}
-      <a
-        href="http://catterycanoncat.blog.fc2.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="py-3 mb-5 text-2xl font-medium text-gray-300 hover:text-green-600 whitespace-nowrap sm:px-4 lg:text-3xl"
-      >
-        Blog
-      </a>
+    <nav className="hidden flex-col justify-around min-h-screen text-center sm:flex">
+      <div className="flex flex-col mt-6 sm:mt-12">
+        {items.map(({ href, label }) => {
+          return (
+            <Link key={href} href={href}>
+              <a className="mb-2 text-2xl font-medium text-gray-200 hover:text-green-600 whitespace-nowrap lg:text-3xl">
+                {label}
+              </a>
+            </Link>
+          );
+        })}
+      </div>
+      <div className="mb-12">
+        <a
+          href="http://catterycanoncat.blog.fc2.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pt-5 text-2xl font-medium text-purple-50 hover:text-green-500 whitespace-nowrap animate-pulse lg:text-3xl"
+        >
+          Blog
+        </a>
+      </div>
     </nav>
   );
 };
