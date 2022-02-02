@@ -27,11 +27,11 @@ type Props = {
 
 export const NavBarDesktop: VFC = () => {
   return (
-    <nav className="hidden flex-col justify-start px-2 mt-20 text-center sm:flex">
+    <nav className="hidden flex-col justify-start px-2 mt-16 text-center sm:flex">
       {items.map(({ href, label }) => {
         return (
           <Link key={href} href={href}>
-            <a className="py-2 mb-3 font-medium text-gray-300 hover:text-green-600 whitespace-nowrap sm:px-4 lg:text-3xl">
+            <a className="py-1 mb-2 font-medium text-gray-300 hover:text-green-600 whitespace-nowrap sm:px-4 lg:text-3xl">
               {label}
             </a>
           </Link>
@@ -91,7 +91,7 @@ export const NavBarMobile: VFC<Props> = (props) => {
             className="fixed -top-7 w-full h-4/5 focus:outline-none cursor-auto"
             onClick={handleOnToggleNav}
           ></button>
-          <nav className="py-10 text-center md:mt-40">
+          <nav className="py-8 text-center md:mt-40">
             {items.map(({ href, label }) => {
               return (
                 <CustomLink
