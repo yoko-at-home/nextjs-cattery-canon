@@ -22,8 +22,8 @@ export const Layout: VFC<Props> = (props) => {
       <div
         className={
           router.pathname === "/baby"
-            ? "hidden m-5 w-1/6 sticky top-2 max-h-screen rounded-full md:block xl:w-1/6 nm-inset-pink-500"
-            : "hidden m-5 w-1/6 sticky top-2 max-h-screen rounded-full md:block xl:w-1/6 nm-inset-yellow-800"
+            ? "hidden m-5 w-1/6 sticky top-2 overflow-y-auto max-h-screen rounded-full md:block xl:w-1/6 nm-inset-pink-500"
+            : "hidden m-5 w-1/6 sticky top-2 overflow-y-auto max-h-screen rounded-full md:block xl:w-1/6 nm-inset-yellow-800"
         }
       >
         <NavBarDesktop />
