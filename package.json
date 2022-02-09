@@ -49,7 +49,7 @@
     "tailwindcss-neumorphism": "0.1.0"
   },
   "devDependencies": {
-    "@sendgrid/mail": "7.6.0",
+    "@sendgrid/mail": "7.6.1",
     "@testing-library/cypress": "8.0.2",
     "@testing-library/jest-dom": "5.16.2",
     "@testing-library/react": "12.1.2",
