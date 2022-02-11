@@ -20,7 +20,6 @@ const Star = () => {
   );
 };
 
-// const Baby: NextPage<BabyProps> = () => {
 const Baby: NextPage<BabyProps> = (props) => {
   const girls = props.content.filter((props) => {
     return props.girl === true;
