@@ -52,6 +52,7 @@ const BlogId: VFC<CommonPageProps> = (props) => {
               <div>
                 Published at: <Date dateString={props.content.publishedAt} />
               </div>
+              <div className="mt-3 text-lg text-left sm:mt-8 sm:text-2xl">{props.content.description}</div>
             </>
           )}
         </div>
