@@ -1,7 +1,7 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import Image from "next/image";
 import Link from "next/link";
-import type { VFC } from "react";
+import type { FC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
@@ -10,7 +10,7 @@ import { client } from "src/lib/client";
 import { Date } from "src/lib/date";
 import type { CommonPageProps } from "src/type/types";
 
-const BlogId: VFC<CommonPageProps> = (props) => {
+const BlogId: FC<CommonPageProps> = (props) => {
   const publishedAt = props.content.publishedAt;
   const revisedAt = props.content.revisedAt;
   const imgUrl = props.content.imgSrc.url;

@@ -1,12 +1,12 @@
 /* eslint-disable tailwindcss/no-custom-classname */
-import type { VFC } from "react";
+import type { FC } from "react";
 import { CustomLink } from "src/components/CustomLink";
 import { Logo } from "src/components/Logo";
 import { NavBarMobile } from "src/components/navbar";
 
 import { siteMetadata } from "../data/siteMetadata";
 
-export const Footer: VFC = () => {
+export const Footer: FC = () => {
   return (
     <footer>
       <div className="flex flex-col justify-center items-center mt-16">

@@ -1,7 +1,7 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import Image from "next/image";
 import Link from "next/link";
-import type { VFC } from "react";
+import type { FC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
@@ -9,7 +9,7 @@ import { Layout } from "src/layout";
 import { client } from "src/lib/client";
 import type { CommonProps } from "src/type/types";
 
-const Available: VFC<CommonProps> = (props) => {
+const Available: FC<CommonProps> = (props) => {
   return (
     <Layout theme="available" photographer="Yoshiko Yamashita">
       <PageSEO

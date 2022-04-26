@@ -1,7 +1,7 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import type { VFC } from "react";
+import type { FC } from "react";
 import { HeaderTitle, HeaderTitleMobile } from "src/components/HeaderTitle";
 import { NavBarMobile } from "src/components/navbar";
 
@@ -11,7 +11,7 @@ type Props = {
   theme?: "home" | "boys" | "girls" | "retired" | "available" | "articles" | "about" | "gallery" | "baby";
 };
 
-export const Header: VFC<Props> = (props) => {
+export const Header: FC<Props> = (props) => {
   const themeImage = {
     home: "/static/images/header/four-kittens.webp",
     about: "/static/images/header/era.webp",

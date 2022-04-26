@@ -1,5 +1,5 @@
 import cc from "classcat";
-import type { ReactNode, VFC } from "react";
+import type { FC, ReactNode } from "react";
 
 type Props = {
   className?: string;
@@ -7,7 +7,7 @@ type Props = {
   type?: "x-large" | "large" | "medium" | "small";
 };
 
-export const PageTitle: VFC<Props> = (props) => {
+export const PageTitle: FC<Props> = (props) => {
   // const textSize = {
   //   large: "",
   //   medium: "",

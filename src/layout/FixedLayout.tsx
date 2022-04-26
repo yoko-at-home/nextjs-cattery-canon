@@ -1,6 +1,6 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import { useRouter } from "next/router";
-import type { ReactNode, VFC } from "react";
+import type { FC, ReactNode } from "react";
 import { Test } from "src/components/Carousel/test";
 import { CarouselVertical } from "src/components/Carousel/vertical";
 import { NavBarDesktop } from "src/components/navbar";
@@ -14,7 +14,7 @@ type Props = {
   photographer?: "Yoshiko Yamashita" | string;
 };
 
-export const Layout: VFC<Props> = (props) => {
+export const Layout: FC<Props> = (props) => {
   const router = useRouter();
 
   return (
@@ -42,7 +42,7 @@ export const Layout: VFC<Props> = (props) => {
     </div>
   );
 };
-export const LayoutBlog: VFC<Props> = (props) => {
+export const LayoutBlog: FC<Props> = (props) => {
   return (
     <div className="flex justify-start w-screen">
       <div className="hidden m-5 w-1/6 min-h-full rounded-full md:block xl:w-1/6 nm-inset-yellow-800">

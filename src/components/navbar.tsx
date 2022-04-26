@@ -1,7 +1,7 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import type { VFC } from "react";
+import type { FC } from "react";
 import { useState } from "react";
 import { CustomLink } from "src/components/CustomLink";
 
@@ -25,7 +25,7 @@ type Props = {
   type?: "entrance" | "main";
 };
 
-export const NavBarDesktop: VFC = () => {
+export const NavBarDesktop: FC = () => {
   return (
     <nav className="hidden flex-col justify-around min-h-screen text-center sm:flex">
       <div className="flex flex-col mt-6 sm:mt-12">
@@ -53,7 +53,7 @@ export const NavBarDesktop: VFC = () => {
   );
 };
 
-export const NavBarMobile: VFC<Props> = (props) => {
+export const NavBarMobile: FC<Props> = (props) => {
   const buttonImage = {
     entrance: "/static/favicons/icon-512x512.svg",
     main: "/static/favicons/icon-512x512.svg",

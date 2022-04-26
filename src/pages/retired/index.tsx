@@ -1,7 +1,7 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import Image from "next/image";
 import Link from "next/link";
-import type { VFC } from "react";
+import type { FC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
@@ -9,7 +9,7 @@ import { Layout } from "src/layout";
 import { client } from "src/lib/client";
 import type { CommonProps } from "src/type/types";
 
-const Retired: VFC<CommonProps> = (props) => {
+const Retired: FC<CommonProps> = (props) => {
   return (
     <Layout theme="retired" photographer="Yoshiko Yamashita">
       <PageSEO
