@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/naming-convention */
 import cc from "classcat";
 import type { FC, ReactNode } from "react";
 
@@ -8,12 +9,6 @@ type Props = {
 };
 
 export const PageTitle: FC<Props> = (props) => {
-  // const textSize = {
-  //   large: "",
-  //   medium: "",
-  //   small: "",
-  // };
-
   return (
     <h1
       className={cc([
