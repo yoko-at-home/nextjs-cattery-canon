@@ -66,9 +66,11 @@ const BabyId = (props) => {
           }}
         />
         <div className="mt-16 text-xl font-bold text-[#8ac405] whitespace-nowrap sm:text-xl sm:whitespace-normal sm:mt24">
-          {props.content.status
-            ? `ページをご覧いただきありがとうございます。${props.content.name} に素敵な家族が見つかりました✨`
-            : null}
+          {props.content.status ? `ページをご覧いただきありがとうございます。` : null}
+          <br />
+          {props.content.status ? `${props.content.name} に` : null}
+          <br />
+          {props.content.status ? `素敵な家族が見つかりました✨` : null}
         </div>
         <div className="inline-block right-10 p-3 mt-5 text-gray-300 bg-gradient-to-r from-gray-400 to-gray-500 rounded opacity-80 sm:px-4 md:right-20 lg:right-40">
           <Link href={`/baby`}>
