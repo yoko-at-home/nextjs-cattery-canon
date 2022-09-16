@@ -24,7 +24,7 @@ export const mainecoonDataBoy = [
 export const mainecoonDataGirl = [
   {
     title: "TICA RW QGC POPOKILANI ANGIE OF CANON",
-    description1: `08/22/2018`,
+    description1: `08/22/2018（2022年10月引退予定）`,
     description2: `BROWN CLASSIC TABBY`,
     father: `TICA CH POPOKILANI ALFRED`,
     mother: `OD GRC POPOKILANI SATSUMA`,
@@ -44,7 +44,7 @@ export const mainecoonDataGirl = [
   },
   {
     title: "CANON LILIYA",
-    description1: `03/21/2018`,
+    description1: `03/21/2018（2022年10月引退予定）`,
     description2: `BROWN CLASSIC TABBY`,
     father: `TICA CH CFA CHCANON FUSHIGI`,
     mother: `TICA SGCA POPOKILANI MOIRA OF CANON`,
@@ -62,16 +62,16 @@ export const mainecoonDataGirl = [
     photographer: "",
     blogurl: "",
   },
-  {
-    title: "TICA QGC POPOKILANI ISHTAR OF CANON",
-    description1: `01/24/2019`,
-    description2: `BLUE CLASSIC TABBY`,
-    father: `TICA SGC SHONANCATS JACOB OF POPOKILANI`,
-    mother: `TICA RW SGC POPOKILANI LUCY`,
-    imgSrc: "/static/images/girls/ISHTAR.webp",
-    photographer: "",
-    blogurl: "",
-  },
+  // {
+  //   title: "TICA QGC POPOKILANI ISHTAR OF CANON",
+  //   description1: `01/24/2019`,
+  //   description2: `BLUE CLASSIC TABBY`,
+  //   father: `TICA SGC SHONANCATS JACOB OF POPOKILANI`,
+  //   mother: `TICA RW SGC POPOKILANI LUCY`,
+  //   imgSrc: "/static/images/girls/ISHTAR.webp",
+  //   photographer: "",
+  //   blogurl: "",
+  // },
   {
     title: "MARVELCATS LALA OF CANON",
     description1: `11/07/2019`,
