@@ -40,7 +40,7 @@ export const Footer: FC = () => {
           </a>
         </div>
         <div className="my-8 text-sm text-gray-500 bg-clip-text bg-gradient-to-r from-green-600 to-blue-700">
-          <CustomLink href="https://yoko-2021.vercel.app/">Powered by yoko</CustomLink>
+          <CustomLink href="https://yoko-portfolio.vercel.app/about/">Powered by yoko</CustomLink>
         </div>
         <NavBarMobile />
       </div>
