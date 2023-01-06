@@ -24,7 +24,7 @@ const MyDocument = () => {
           crossOrigin="anonymous"
         /> */}
       </Head>
-      <body className="bg-white text-black antialiased">
+      <body className="antialiased text-black bg-white">
         <Main />
         <div id="root"></div>
         <NextScript />
