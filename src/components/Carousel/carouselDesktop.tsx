@@ -45,63 +45,63 @@ export const CarouselDesktop = () => {
     <div className="hidden md:block">
       <div ref={sliderRef} className="keen-slider">
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/header/four-kittens.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/header/era.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage:
               "url('https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/f1b410dc3bdd4711861d9151eb912953/03_in-a-field.webp?w=300')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/header/five-kids.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/header/tetsu_maincoon-on-white-background.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/header/brown-baby-02.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/header/red-kitten.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/header/brown-baby-02.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage:
               "url('https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/be7d0ad4b6864a7aa5377d538f04c624/09_red-plate.webp?w=300')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage:
               "url('https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/1106513d75cf4f7bb1482e5368355158/yamashita-three-brothers.webp?w=300')",

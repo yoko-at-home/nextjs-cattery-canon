@@ -14,7 +14,7 @@ const description2 = "✨✨✨";
 
 const Star = () => {
   return (
-    <div className="pt-5 text-2xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-100 to-green-200 leading-loosee tracking-loose">
+    <div className="leading-loosee tracking-loose bg-gradient-to-r from-purple-100 to-green-200 bg-clip-text pt-5 text-center text-2xl font-extrabold text-transparent">
       {description2}
     </div>
   );
@@ -30,7 +30,7 @@ const Baby: NextPage<BabyProps> = (props) => {
   });
 
   return (
-    <div className="relative text-gray-600 bg-[#50c4cc]">
+    <div className="relative bg-[#50c4cc] text-gray-600">
       <Layout theme="baby" photographer="Canon">
         <PageSEO
           title={`赤ちゃん - ${siteMetadata.title}`}
@@ -48,9 +48,9 @@ const Baby: NextPage<BabyProps> = (props) => {
           <ul>
             {girls.map((girl) => {
               return (
-                <li key={girl.id} className="mb-8 orb-girl">
-                  <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
-                    <Link href={`/baby/${girl.id}`}>
+                <li key={girl.id} className="orb-girl mb-8">
+                  <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row-reverse">
+                    <Link href={`/baby/${girl.id}`} legacyBehavior>
                       <a className="ml-1 lg:ml-10">
                         <picture>
                           <Image
@@ -62,14 +62,14 @@ const Baby: NextPage<BabyProps> = (props) => {
                         </picture>
                       </a>
                     </Link>
-                    <div className="flex flex-col justify-between w-full">
-                      <Link href={`/baby/${girl.id}`}>
-                        <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl sm:whitespace-normal">
+                    <div className="flex w-full flex-col justify-between">
+                      <Link href={`/baby/${girl.id}`} legacyBehavior>
+                        <a className="text-2xl font-bold text-[#8ac405] sm:whitespace-normal sm:text-3xl">
                           {girl.name}
                         </a>
                       </Link>
                       <div className="pt-3">{girl.description}</div>
-                      <div className="text-xl font-bold text-[#8ac405] sm:text-xl sm:whitespace-normal">
+                      <div className="text-xl font-bold text-[#8ac405] sm:whitespace-normal sm:text-xl">
                         {girl.status ? "素敵な家族が見つかりました✨" : null}
                       </div>
                     </div>
@@ -87,8 +87,8 @@ const Baby: NextPage<BabyProps> = (props) => {
             {boys.map((boy) => {
               return (
                 <li key={boy.id} className="mb-8">
-                  <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
-                    <Link href={`/baby/${boy.id}`}>
+                  <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row-reverse">
+                    <Link href={`/baby/${boy.id}`} legacyBehavior>
                       <a className="ml-1 lg:ml-10">
                         <picture>
                           <Image
@@ -100,8 +100,8 @@ const Baby: NextPage<BabyProps> = (props) => {
                         </picture>
                       </a>
                     </Link>
-                    <div className="flex flex-col justify-between w-full">
-                      <Link href={`/baby/${boy.id}`}>
+                    <div className="flex w-full flex-col justify-between">
+                      <Link href={`/baby/${boy.id}`} legacyBehavior>
                         <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl">{boy.name}</a>
                       </Link>
                       <div className="pt-3">{boy.description}</div>
@@ -117,11 +117,11 @@ const Baby: NextPage<BabyProps> = (props) => {
           </ul>
         </div>
 
-        <div className="flex flex-col items-center mt-20">
-          <div className="hidden sm:block orb" />
-          <div className="flex flex-col justify-evenly items-center sm:flex-row">
+        <div className="mt-20 flex flex-col items-center">
+          <div className="orb hidden sm:block" />
+          <div className="flex flex-col items-center justify-evenly sm:flex-row">
             <div className="orb" />
-            <div className="flex overflow-hidden justify-items-end m-6 w-80 h-96 rounded-full orb2">
+            <div className="orb2 m-6 flex h-96 w-80 justify-items-end overflow-hidden rounded-full">
               <div className="orb2">
                 <video
                   autoPlay
@@ -133,7 +133,7 @@ const Baby: NextPage<BabyProps> = (props) => {
             </div>
             <div className="orb" />
           </div>
-          <div className="hidden sm:block orb" />
+          <div className="orb hidden sm:block" />
         </div>
         <style jsx>
           {`

@@ -20,7 +20,7 @@ export const GalleryHexagon = () => {
   return (
     <>
       <article title="lab">
-        <div className="hidden justify-center mb-8 md:flex">
+        <div className="mb-8 hidden justify-center md:flex">
           <Logo />
         </div>
         <ul className="">

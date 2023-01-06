@@ -26,7 +26,7 @@ const BlogId: FC<CommonPageProps> = (props) => {
         ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
         siteUrl={siteMetadata.siteUrl}
       />
-      <div className="flex justify-center mx-auto rounded-lg nm-flat-gray-300-xl">
+      <div className="mx-auto flex justify-center rounded-lg nm-flat-gray-300-xl">
         <Image
           alt={"Canon's mainecoons"}
           src={imgUrl}
@@ -38,11 +38,11 @@ const BlogId: FC<CommonPageProps> = (props) => {
       <main>
         <PageTitle
           type="large"
-          className="py-12 mt-6 text-lg font-bold sm:text-xl md:text-3xl lg:text-4xl lg:text-center"
+          className="mt-6 py-12 text-lg font-bold sm:text-xl md:text-3xl lg:text-center lg:text-4xl"
         >
           {props.content.title}
         </PageTitle>
-        <div className="flex flex-col mt-3 mb-10 text-right text-gray-600">
+        <div className="mt-3 mb-10 flex flex-col text-right text-gray-600">
           {publishedAt === revisedAt ? (
             <div>
               Published: <Date dateString={props.content.publishedAt} />
@@ -52,7 +52,7 @@ const BlogId: FC<CommonPageProps> = (props) => {
               <div>
                 Published at: <Date dateString={props.content.publishedAt} />
               </div>
-              <div className="mt-3 text-lg text-left sm:mt-8 sm:text-2xl">{props.content.description}</div>
+              <div className="mt-3 text-left text-lg sm:mt-8 sm:text-2xl">{props.content.description}</div>
             </>
           )}
         </div>
@@ -63,9 +63,9 @@ const BlogId: FC<CommonPageProps> = (props) => {
             __html: `${props.content.body}`,
           }}
         />
-        <div className="inline-block right-10 p-3 mt-5 text-gray-300 bg-gradient-to-r from-gray-400 to-gray-500 rounded opacity-80 sm:px-4 md:right-20 lg:right-40">
-          <Link href={`/available`}>
-            <a className="">Available Top</a>
+        <div className="right-10 mt-5 inline-block rounded bg-gradient-to-r from-gray-400 to-gray-500 p-3 text-gray-300 opacity-80 sm:px-4 md:right-20 lg:right-40">
+          <Link href={`/available`} className="">
+            Available Top
           </Link>
         </div>
       </main>

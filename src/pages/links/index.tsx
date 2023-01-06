@@ -68,7 +68,7 @@ const Links: NextPage = () => {
       <PageTitle type="large">リンク集 - Canon のおすすめサイト</PageTitle>
       <div className="divide-y divide-gray-200 ">
         <div className="container pb-12">
-          <div className="p-5 mx-auto max-w-screen-xl text-white">
+          <div className="mx-auto max-w-screen-xl p-5 text-white">
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {links.map((link) => {
                 return (
@@ -76,17 +76,17 @@ const Links: NextPage = () => {
                     href={link.url}
                     target="_blank"
                     rel=" noopener noreferrer"
-                    className="py-2 px-3 font-semibold tracking-wider uppercase hover:cursor-pointer"
+                    className="py-2 px-3 font-semibold uppercase tracking-wider hover:cursor-pointer"
                     key={link.url}
                   >
                     <div
-                      className="flex relative justify-start items-end w-full h-96 text-left bg-center bg-cover rounded"
+                      className="relative flex h-96 w-full items-end justify-start rounded bg-cover bg-center text-left"
                       style={{
                         backgroundImage: link.backgroundImg,
                       }}
                     >
-                      <div className="absolute inset-0 bg-black/40 bg-gradient-to-b rounded" />
-                      <div className="flex absolute inset-y-4 inset-x-0 flex-col justify-between items-center mx-5 mt-3 text-lg">
+                      <div className="absolute inset-0 rounded bg-black/40 bg-gradient-to-b" />
+                      <div className="absolute inset-y-4 inset-x-0 mx-5 mt-3 flex flex-col items-center justify-between text-lg">
                         {link.title}
                       </div>
                       <h2 className="z-10 p-5">{link.description}</h2>
@@ -100,7 +100,7 @@ const Links: NextPage = () => {
       </div>
       <PageTitle type="large">Photographers</PageTitle>
       <div className="container pb-12" id="photographers">
-        <div className="p-5 mx-auto max-w-screen-xl text-white">
+        <div className="mx-auto max-w-screen-xl p-5 text-white">
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {phtographers.map((phtographer) => {
               return (
@@ -108,17 +108,17 @@ const Links: NextPage = () => {
                   href={phtographer.url}
                   target="_blank"
                   rel=" noopener noreferrer"
-                  className="py-2 px-3 font-semibold tracking-wider uppercase hover:cursor-pointer"
+                  className="py-2 px-3 font-semibold uppercase tracking-wider hover:cursor-pointer"
                   key={phtographer.url}
                 >
                   <div
-                    className="flex relative justify-start items-end w-full h-52 text-left bg-center bg-cover rounded"
+                    className="relative flex h-52 w-full items-end justify-start rounded bg-cover bg-center text-left"
                     style={{
                       backgroundImage: phtographer.backgroundImg,
                     }}
                   >
-                    <div className="absolute inset-0 bg-black/40 bg-gradient-to-b rounded" />
-                    <div className="flex absolute inset-x-0 justify-between items-center p-3 my-2 mx-5 bg-black/20">
+                    <div className="absolute inset-0 rounded bg-black/40 bg-gradient-to-b" />
+                    <div className="absolute inset-x-0 my-2 mx-5 flex items-center justify-between bg-black/20 p-3">
                       {phtographer.name}
                       <br />
                       {phtographer.description}

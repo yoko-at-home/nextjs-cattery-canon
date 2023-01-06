@@ -3,7 +3,7 @@ import { dataVertical } from "src/data/carouselVerticalData";
 
 export const Test: NextPage = () => {
   return (
-    <div className="flex overflow-y-hidden flex-col items-center">
+    <div className="flex flex-col items-center overflow-y-hidden">
       {dataVertical.map((item) => {
         return (
           <div
@@ -20,7 +20,7 @@ export const Test: NextPage = () => {
                 textShadow: "1px 1px 4px #584c4c",
                 // color: "",
               }}
-              className="absolute bottom-[10%] left-[25%] font-black rounded-full border border-[#626262] border-dotted backdrop-blur-sm -rotate-45"
+              className="absolute bottom-[10%] left-[25%] -rotate-45 rounded-full border border-dotted border-[#626262] font-black backdrop-blur-sm"
             >
               <div className="text-xl text-[#c4d548]">{item.title}</div>
             </div>
