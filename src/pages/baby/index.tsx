@@ -9,12 +9,11 @@ import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import type { BabyProps } from "src/type/types";
 
-const description = "クリスマスイブにかわいい赤ちゃんが誕生しました";
 const description2 = "✨✨✨";
 
 const Star = () => {
   return (
-    <div className="leading-loosee tracking-loose bg-gradient-to-r from-purple-100 to-green-200 bg-clip-text pt-5 text-center text-2xl font-extrabold text-transparent">
+    <div className="pt-5 text-2xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-100 to-green-200 leading-loosee tracking-loose">
       {description2}
     </div>
   );
@@ -30,26 +29,25 @@ const Baby: NextPage<BabyProps> = (props) => {
   });
 
   return (
-    <div className="relative bg-[#50c4cc] text-gray-600">
+    <div className="relative text-gray-600 bg-[#50c4cc]">
       <Layout theme="baby" photographer="Canon">
         <PageSEO
           title={`赤ちゃん - ${siteMetadata.title}`}
-          description="クリスマスイブにかわいい赤ちゃんが誕生しました"
+          description="babies"
           ogType="website"
           ogImage="https://www.canon-cat.com/static/images/twitter-card-baby.jpg"
           siteUrl={siteMetadata.siteUrl}
         />
         <PageTitle type="medium">
-          <span className="text-white">{description}</span>
+          <span className="text-white">譲渡可能な子猫についてはお問い合わせください</span>
         </PageTitle>
-
         <div className="mt-10">
-          <PageTitle type="medium">♀ 女の子</PageTitle>
+          {/* <PageTitle type="medium">♀ 女の子</PageTitle> */}
           <ul>
             {girls.map((girl) => {
               return (
-                <li key={girl.id} className="orb-girl mb-8">
-                  <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row-reverse">
+                <li key={girl.id} className="mb-8 orb-girl">
+                  <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
                     <Link href={`/baby/${girl.id}`} legacyBehavior>
                       <a className="ml-1 lg:ml-10">
                         <picture>
@@ -62,14 +60,14 @@ const Baby: NextPage<BabyProps> = (props) => {
                         </picture>
                       </a>
                     </Link>
-                    <div className="flex w-full flex-col justify-between">
+                    <div className="flex flex-col justify-between w-full">
                       <Link href={`/baby/${girl.id}`} legacyBehavior>
-                        <a className="text-2xl font-bold text-[#8ac405] sm:whitespace-normal sm:text-3xl">
+                        <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl sm:whitespace-normal">
                           {girl.name}
                         </a>
                       </Link>
                       <div className="pt-3">{girl.description}</div>
-                      <div className="text-xl font-bold text-[#8ac405] sm:whitespace-normal sm:text-xl">
+                      <div className="text-xl font-bold text-[#8ac405] sm:text-xl sm:whitespace-normal">
                         {girl.status ? "素敵な家族が見つかりました✨" : null}
                       </div>
                     </div>
@@ -80,14 +78,13 @@ const Baby: NextPage<BabyProps> = (props) => {
           </ul>
         </div>
         <Star />
-
         <div className="mt-10">
-          <PageTitle type="medium">♂ 男の子</PageTitle>
+          {/* <PageTitle type="medium">♂ 男の子</PageTitle> */}
           <ul>
             {boys.map((boy) => {
               return (
                 <li key={boy.id} className="mb-8">
-                  <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row-reverse">
+                  <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
                     <Link href={`/baby/${boy.id}`} legacyBehavior>
                       <a className="ml-1 lg:ml-10">
                         <picture>
@@ -100,7 +97,7 @@ const Baby: NextPage<BabyProps> = (props) => {
                         </picture>
                       </a>
                     </Link>
-                    <div className="flex w-full flex-col justify-between">
+                    <div className="flex flex-col justify-between w-full">
                       <Link href={`/baby/${boy.id}`} legacyBehavior>
                         <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl">{boy.name}</a>
                       </Link>
@@ -116,12 +113,11 @@ const Baby: NextPage<BabyProps> = (props) => {
             })}
           </ul>
         </div>
-
-        <div className="mt-20 flex flex-col items-center">
-          <div className="orb hidden sm:block" />
-          <div className="flex flex-col items-center justify-evenly sm:flex-row">
+        <div className="flex flex-col items-center mt-20">
+          <div className="hidden sm:block orb" />
+          <div className="flex flex-col justify-evenly items-center sm:flex-row">
             <div className="orb" />
-            <div className="orb2 m-6 flex h-96 w-80 justify-items-end overflow-hidden rounded-full">
+            <div className="flex overflow-hidden justify-items-end m-6 w-80 h-96 rounded-full orb2">
               <div className="orb2">
                 <video
                   autoPlay
@@ -133,7 +129,8 @@ const Baby: NextPage<BabyProps> = (props) => {
             </div>
             <div className="orb" />
           </div>
-          <div className="orb hidden sm:block" />
+          <div className="hidden sm:block orb" />
+          <Star />
         </div>
         <style jsx>
           {`
