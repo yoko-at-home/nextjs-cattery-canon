@@ -73,8 +73,8 @@ const BabyId = (props) => {
           {props.content.status ? `素敵な家族が見つかりました✨` : null}
         </div>
         <div className="right-10 mt-5 inline-block rounded bg-gradient-to-r from-gray-400 to-gray-500 p-3 text-gray-300 opacity-80 sm:px-4 md:right-20 lg:right-40">
-          <Link href={`/baby`}>
-            <a className="">baby Top</a>
+          <Link href={`/baby`} className="">
+            baby Top
           </Link>
         </div>
       </main>

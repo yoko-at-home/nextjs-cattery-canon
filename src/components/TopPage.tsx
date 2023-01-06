@@ -28,10 +28,12 @@ export const TopPage = () => {
           {siteMetadata.title} is a tiny Maine Coon breeder in Zama City, Kanagawa Prefecure. I am a member of Cat
           Fanciers Association (CFA) and The International Cat Association (TICA). The headquarters are in USA.
         </div>
-        <Link href="/home">
-          <a className="animation leading-looses inline-block rounded bg-yellow-400/80 bg-gradient-to-tl from-pink-800/80 p-4 text-2xl nm-inset-yellow-700-xs hover:bg-green-700/80 hover:text-yellow-600/80 md:text-4xl">
+        <Link
+          href="/home"
+          className="animation leading-looses inline-block rounded bg-yellow-400/80 bg-gradient-to-tl from-pink-800/80 p-4 text-2xl nm-inset-yellow-700-xs hover:bg-green-700/80 hover:text-yellow-600/80 md:text-4xl">
+          
             Enter
-          </a>
+          
         </Link>
         <div className="animation p-6" style={{ textShadow: "0px 5px 5px rgba(0, 0, 0, 0.9)" }}>
           {siteMetadata.title}{" "}

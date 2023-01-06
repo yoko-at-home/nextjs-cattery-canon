@@ -62,8 +62,8 @@ const retiredId: FC<CommonPageProps> = (props) => {
           }}
         />
         <div className="right-10 mt-5 inline-block rounded bg-gradient-to-r from-gray-400 to-gray-500 p-3 text-gray-300 opacity-80 sm:px-4 md:right-20 lg:right-40">
-          <Link href={`/retired`}>
-            <a className="">Retired Top</a>
+          <Link href={`/retired`} className="">
+            Retired Top
           </Link>
         </div>
       </main>

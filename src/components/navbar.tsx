@@ -31,11 +31,14 @@ export const NavBarDesktop: FC = () => {
       <div className="mt-6 flex flex-col sm:mt-12">
         {items.map(({ href, label }) => {
           return (
-            <Link key={href} href={href}>
-              <a className="mb-2 whitespace-nowrap text-2xl font-medium text-gray-200 hover:text-green-600 lg:text-3xl">
-                {label}
-              </a>
-            </Link>
+            (<Link
+              key={href}
+              href={href}
+              className="mb-2 whitespace-nowrap text-2xl font-medium text-gray-200 hover:text-green-600 lg:text-3xl">
+
+              {label}
+
+            </Link>)
           );
         })}
       </div>

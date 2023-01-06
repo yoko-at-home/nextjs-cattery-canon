@@ -34,8 +34,8 @@ const FAQ = () => {
       <div className="container">
         <div className="text-gray-500">
           お問い合わせはいつでも受け付けております。
-          <Link href="/contact">
-            <a className="text-blue-400 hover:text-green-600">お問い合わせフォーム</a>
+          <Link href="/contact" className="text-blue-400 hover:text-green-600">
+            お問い合わせフォーム
           </Link>
           をご利用ください。
         </div>

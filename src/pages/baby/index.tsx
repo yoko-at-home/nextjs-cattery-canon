@@ -50,7 +50,7 @@ const Baby: NextPage<BabyProps> = (props) => {
               return (
                 <li key={girl.id} className="orb-girl mb-8">
                   <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row-reverse">
-                    <Link href={`/baby/${girl.id}`}>
+                    <Link href={`/baby/${girl.id}`} legacyBehavior>
                       <a className="ml-1 lg:ml-10">
                         <picture>
                           <Image
@@ -63,7 +63,7 @@ const Baby: NextPage<BabyProps> = (props) => {
                       </a>
                     </Link>
                     <div className="flex w-full flex-col justify-between">
-                      <Link href={`/baby/${girl.id}`}>
+                      <Link href={`/baby/${girl.id}`} legacyBehavior>
                         <a className="text-2xl font-bold text-[#8ac405] sm:whitespace-normal sm:text-3xl">
                           {girl.name}
                         </a>
@@ -88,7 +88,7 @@ const Baby: NextPage<BabyProps> = (props) => {
               return (
                 <li key={boy.id} className="mb-8">
                   <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row-reverse">
-                    <Link href={`/baby/${boy.id}`}>
+                    <Link href={`/baby/${boy.id}`} legacyBehavior>
                       <a className="ml-1 lg:ml-10">
                         <picture>
                           <Image
@@ -101,7 +101,7 @@ const Baby: NextPage<BabyProps> = (props) => {
                       </a>
                     </Link>
                     <div className="flex w-full flex-col justify-between">
-                      <Link href={`/baby/${boy.id}`}>
+                      <Link href={`/baby/${boy.id}`} legacyBehavior>
                         <a className="text-2xl font-bold text-[#8ac405] sm:text-3xl">{boy.name}</a>
                       </Link>
                       <div className="pt-3">{boy.description}</div>

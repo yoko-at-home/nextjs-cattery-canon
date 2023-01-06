@@ -29,21 +29,23 @@ const Retired: FC<CommonProps> = (props) => {
             return (
               <li key={item.id} className="mb-8">
                 <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row">
-                  <Link href={`retired/${item.id}`}>
-                    <a className="ml-1 lg:ml-10 lg:w-3/12">
-                      <picture>
-                        <Image
-                          src={item.imgSrc?.url}
-                          alt={item.title}
-                          width={item.imgSrc?.width}
-                          height={item.imgSrc?.height}
-                        />
-                      </picture>
-                    </a>
+                  <Link href={`retired/${item.id}`} className="ml-1 lg:ml-10 lg:w-3/12">
+
+                    <picture>
+                      <Image
+                        src={item.imgSrc?.url}
+                        alt={item.title}
+                        width={item.imgSrc?.width}
+                        height={item.imgSrc?.height}
+                      />
+                    </picture>
+
                   </Link>
                   <div className="flex w-full flex-col text-gray-600">
-                    <Link href={`retired/${item.id}`}>
-                      <a className="whitespace-nowrap pl-3 text-2xl font-bold text-red-900 sm:text-3xl">{item.title}</a>
+                    <Link
+                      href={`retired/${item.id}`}
+                      className="whitespace-nowrap pl-3 text-2xl font-bold text-red-900 sm:text-3xl">
+                      {item.title}
                     </Link>
                     <div className="pt-3 pl-3">{item.description}</div>
                   </div>

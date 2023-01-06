@@ -62,15 +62,15 @@ export const CardModal: NextPage<Props> = (props) => {
           </p>
           {!props.photographer ? null : <p className="mt-2 text-sm text-gray-400">{props.photographer}</p>}
           {!props.blogurl ? null : (
-            <Link href={props.blogurl}>
-              <a target="_blank" rel="noopener noreferrer">
-                <div className="text-center sm:mt-3">
-                  <span className="text-lg text-yellow-800 hover:text-green-900 bg-gray-300 rounded animate-pulse">
-                    ✨この子の写真をもっと見る✨
-                  </span>
-                </div>
-              </a>
-            </Link>
+            (<Link href={props.blogurl} target="_blank" rel="noopener noreferrer">
+
+              <div className="text-center sm:mt-3">
+                <span className="text-lg text-yellow-800 hover:text-green-900 bg-gray-300 rounded animate-pulse">
+                  ✨この子の写真をもっと見る✨
+                </span>
+              </div>
+
+            </Link>)
           )}
         </div>
       </div>
