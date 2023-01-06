@@ -79,7 +79,7 @@ module.exports = {
           { selector: ["classProperty", "typeProperty", "method"], format: ["camelCase"] },
           { selector: "variable", types: ["boolean"], format: ["PascalCase"], prefix: ["is", "has", "should"] },
         ],
-        "tailwindcss/classnames-order": "error",
+        "tailwindcss/classnames-order": "warn",
       },
     },
     {

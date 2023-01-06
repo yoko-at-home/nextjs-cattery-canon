@@ -39,11 +39,11 @@ export const Header: FC<Props> = (props) => {
     <header>
       <div>
         {/* PC */}
-        <div className="relative hidden h-full nm-flat-zinc-50-xl sm:block">
+        <div className="hidden relative h-full sm:block nm-flat-zinc-50-xl">
           <img
             width="100%"
             height="100%"
-            className="pointer-events-none relative object-cover object-center"
+            className="object-cover object-center relative pointer-events-none"
             src={themeImage[props.theme || "home"]}
             alt={"Canon's mainecoons"}
             loading="eager"
@@ -51,10 +51,10 @@ export const Header: FC<Props> = (props) => {
           <HeaderTitle />
         </div>
         {/* mobile */}
-        <div className="relative h-screen nm-flat-gray-100-xl sm:hidden">
+        <div className="relative h-screen sm:hidden nm-flat-gray-100-xl">
           <Image
             layout="fill"
-            className="pointer-events-none relative object-cover object-center"
+            className="object-cover object-center relative pointer-events-none"
             src={themeImageMobile[props.theme || "home"]}
             alt={"Canon's mainecoons"}
             loading="eager"
@@ -62,7 +62,7 @@ export const Header: FC<Props> = (props) => {
           <HeaderTitleMobile />
         </div>
         {/* mobile */}
-        {props.theme !== "articles" && <NavBarMobile type="main" />}
+        <NavBarMobile />
       </div>
     </header>
   );

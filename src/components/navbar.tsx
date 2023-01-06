@@ -27,18 +27,17 @@ type Props = {
 
 export const NavBarDesktop: FC = () => {
   return (
-    <nav className="hidden min-h-screen flex-col justify-around text-center sm:flex">
-      <div className="mt-6 flex flex-col sm:mt-12">
+    <nav className="hidden flex-col justify-around min-h-screen text-center sm:flex">
+      <div className="flex flex-col mt-6 sm:mt-12">
         {items.map(({ href, label }) => {
           return (
-            (<Link
+            <Link
               key={href}
               href={href}
-              className="mb-2 whitespace-nowrap text-2xl font-medium text-gray-200 hover:text-green-600 lg:text-3xl">
-
+              className="mb-2 text-2xl font-medium text-gray-200 hover:text-green-600 whitespace-nowrap lg:text-3xl"
+            >
               {label}
-
-            </Link>)
+            </Link>
           );
         })}
       </div>
@@ -47,7 +46,7 @@ export const NavBarDesktop: FC = () => {
           href="http://catterycanoncat.blog.fc2.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="animate-pulse whitespace-nowrap pt-5 text-2xl font-medium text-purple-50 hover:text-green-500 lg:text-3xl"
+          className="pt-5 text-2xl font-medium text-purple-50 hover:text-green-500 whitespace-nowrap animate-pulse lg:text-3xl"
         >
           Blog
         </a>
@@ -56,31 +55,19 @@ export const NavBarDesktop: FC = () => {
   );
 };
 
-export const NavBarMobile: FC<Props> = (props) => {
-  const buttonImage = {
-    entrance: "/static/favicons/icon-512x512.svg",
-    main: "/static/favicons/icon-512x512.svg",
+export const NavBarMobile: FC<Props> = () => {
+  const handleNavBarOpen = () => {
+    return setIsNavbarOpen(!isNavbarOpen);
   };
-  const [isNavShow, setIsNavShow] = useState(false);
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
-  const handleOnToggleNav = () => {
-    setIsNavShow((status) => {
-      if (status) {
-        document.body.style.overflow = "auto";
-      } else {
-        // Prevent scrolling
-        document.body.style.overflow = "hidden";
-      }
-      return !status;
-    });
-  };
   return (
     <>
-      <div className="fixed right-5 bottom-28 z-50 rounded px-2 pt-1 nm-inset-gray-500 xl:right-96">
-        <button type="button" className="mx-1 h-16 w-16 rounded" aria-label="Toggle Menu" onClick={handleOnToggleNav}>
+      <div className="fixed right-5 bottom-28 z-50 px-2 pt-1 rounded xl:right-96 nm-inset-gray-500">
+        <button type="button" className="mx-1 w-16 h-16 rounded" aria-label="Toggle Menu" onClick={handleNavBarOpen}>
           <img
             alt="navigation icon"
-            src={buttonImage[props.type || "main"]}
+            src="/static/favicons/icon-512x512.svg"
             className="z-50 w-16 rounded-full md:w-24"
             width="20px"
             height="20px"
@@ -88,24 +75,24 @@ export const NavBarMobile: FC<Props> = (props) => {
           />
         </button>
         <div
-          className={`fixed top-0 right-0 z-10 h-full w-full overflow-auto bg-purple-50 duration-300 ease-in-out${
-            isNavShow ? "translate-x-0" : "translate-x-full"
+          className={`fixed top-0 right-0 z-10 h-full w-full overflow-auto bg-purple-50 duration-300 ease-in-out ${
+            isNavbarOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <button
             type="button"
             aria-label="toggle modal"
-            className="fixed -top-7 h-4/5 w-full cursor-auto focus:outline-none"
-            onClick={handleOnToggleNav}
+            className="fixed -top-7 w-full h-4/5 focus:outline-none cursor-auto"
+            onClick={handleNavBarOpen}
           ></button>
-          <nav className="py-8 text-center md:mt-40">
+          <nav className="z-0 py-8 text-center md:mt-40">
             {items.map(({ href, label }) => {
               return (
                 <CustomLink
                   key={href}
                   href={href}
-                  onClick={handleOnToggleNav}
-                  className="mx-auto flex flex-col bg-gradient-to-r from-gray-400 to-gray-500 p-2 text-right text-2xl font-medium tracking-widest text-gray-300 opacity-90 hover:text-gray-100 sm:p-3 sm:tracking-widest"
+                  onClick={handleNavBarOpen}
+                  className="flex flex-col p-2 mx-auto text-2xl font-medium tracking-widest text-right text-gray-300 hover:text-gray-100 bg-gradient-to-r from-gray-400 to-gray-500 opacity-90 sm:p-3 sm:tracking-widest"
                 >
                   {label}
                 </CustomLink>

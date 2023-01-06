@@ -12,12 +12,7 @@ export const LayoutCarousel: FC<Props> = (props) => {
       <CarouselDesktop />
       <CarouselMobile />
       <main className="absolute top-20 md:top-40">{props.children}</main>
-      <div className="hidden sm:block">
-        <NavBarMobile type="entrance" />
-      </div>
-      <div className="sm:hidden">
-        <NavBarMobile type="main" />
-      </div>
+      <NavBarMobile />
     </div>
   );
 };
