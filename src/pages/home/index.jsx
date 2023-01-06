@@ -7,14 +7,18 @@ import { client } from "src/lib/client";
 const Home = (props) => {
   return (
     <Layout theme="home">
-      <PageSEO title={`ご挨拶 - ${siteMetadata.author}`} description={siteMetadata.description} />
-
+      <PageSEO
+        title={`ご挨拶 - ${siteMetadata.title}`}
+        description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
+      />
       <div className="divide-y divide-gray-200">
         <div className="pt-6 pb-8 space-y-2 md:mt-8 md:space-y-5">
           <PageTitle type="x-large">{props.data.title}</PageTitle>
-          {/* <p className="text-lg leading-7 text-gray-500 mt-52">{siteMetadata.description}</p> */}
           <div
-            className="py-5 px-5 text-lg text-green-900 md:py-10 lg:py-16"
+            className="p-5 text-lg text-green-900 md:py-10 lg:py-16 animation"
             dangerouslySetInnerHTML={{
               // eslint-disable-next-line @typescript-eslint/naming-convention
               __html: `${props.data.body}`,
@@ -38,5 +42,4 @@ export const getStaticProps = async () => {
   };
 };
 
-// eslint-disable-next-line import/no-default-export
 export default Home;

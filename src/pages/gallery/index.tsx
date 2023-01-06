@@ -3,22 +3,25 @@ import { CarouselHorizontal } from "src/components/Carousel";
 import { GalleryHexagon } from "src/components/GalleryHexagon";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
-// import { Tile } from "src/components/Tile";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 
 const Gallery: NextPage = () => {
   return (
-    <Layout theme="fushigi">
-      <PageSEO title={`ギャラリー - ${siteMetadata.author}`} description={siteMetadata.description} />
+    <Layout theme="gallery" photographer="Yoshiko Yamashita">
+      <PageSEO
+        title={`ギャラリー - ${siteMetadata.title}`}
+        description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
+      />{" "}
       <PageTitle type="large">Gallery</PageTitle>
       <PageTitle type="medium">{siteMetadata.title} の世界</PageTitle>
       <CarouselHorizontal />
       <div className="hidden justify-center mx-0 mb-16 sm:flex">
         <GalleryHexagon />
       </div>
-      {/* <PageTitle type="large">Memory </PageTitle>
-      <Tile /> */}
     </Layout>
   );
 };

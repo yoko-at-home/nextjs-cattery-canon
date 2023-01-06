@@ -1,14 +1,102 @@
 {
     "name": "Cattery Canon",
     "short_name": "Cattery Canon",
+    "lang": "ja",
+    "description": "Cattery Canon\u306f\u3001\u795e\u5948\u5ddd\u770c\u5ea7\u9593\u5e02\u306b\u3042\u308b\u3001\u30e1\u30a4\u30f3\u30af\u30fc\u30f3\u5c02\u9580\u306e\u5c0f\u3055\u306a\u30ad\u30e3\u30c6\u30ea\u30fc\uff08\u732b\u820e\uff09\u3067\u3059\u3002",
+    "start_url": "https://www.canon-cat.com/",
+    "background_color": "#eff1e4",
+    "theme_color": "#8b6608",
+    "dir": "ltr",
+    "display": "standalone",
+    "scope": "/",
+    "orientation": "any",
     "icons": [
+    {
+      "src": "/static/favicons/android-icon-192x192-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/favicons/apple-icon-180x180-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/static/favicons/apple-icon-152x152-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/static/favicons/apple-icon-144x144-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/static/favicons/apple-icon-120x120-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "/static/favicons/apple-icon-114x114-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "114x114"
+    },
+    {
+      "src": "/static/favicons/favicon-96x96-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/static/favicons/apple-icon-76x76-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "/static/favicons/apple-icon-72x72-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/static/favicons/apple-icon-60x60-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "/static/favicons/apple-icon-57x57-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "/static/favicons/favicon-32x32-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/static/favicons/favicon-16x16-seochecker-manifest-1521.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/static/favicons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+        },
         {
-            "src": "/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
+      "src": "/static/favicons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+        },
+        {
+      "src": "/static/favicons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+        },
+        {
+      "src": "/static/favicons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose":"maskable"
         }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+  ],
+  "prefer_related_applications": false
 }

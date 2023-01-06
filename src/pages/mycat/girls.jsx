@@ -1,6 +1,5 @@
 /* eslint-disable tailwindcss/no-custom-classname */
-/* eslint-disable react/jsx-handler-names */
-/* eslint-disable import/no-default-export */
+
 import { useCallback, useState } from "react";
 import { useModal } from "react-hooks-use-modal";
 import { Card } from "src/components/Card";
@@ -30,8 +29,14 @@ const MyGirls = () => {
 
   return (
     <div className="bg-purple-100">
-      <Layout theme="girls" photographer="tetsu">
-        <PageSEO title={`Girls - ${siteMetadata.author}`} description={siteMetadata.description1} />
+      <Layout theme="girls" photographer="Yamazaki Tstsu">
+        <PageSEO
+          title={`Girls - ${siteMetadata.title}`}
+          description={siteMetadata.description}
+          ogType="website"
+          ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+          siteUrl={siteMetadata.siteUrl}
+        />{" "}
         <PageTitle type="large">Girls - {siteMetadata.title} の女の子たち</PageTitle>
         <div className="divide-y divide-gray-200 ">
           <div className="container py-12">
@@ -39,6 +44,7 @@ const MyGirls = () => {
               {mainecoonDataGirl.map((d) => {
                 return (
                   <button
+                    // eslint-disable-next-line react/jsx-handler-names
                     onClick={() => {
                       return handleOnClick(d);
                     }}
@@ -47,10 +53,18 @@ const MyGirls = () => {
                     father={d.father}
                     mother={d.mother}
                     key={d.title}
-                    // href={d.href}
+                    photographer={d.photographer}
+                    blogurl={d.blogurl}
                     className="md:w-1/2"
                   >
-                    <Card key={d.href} title={d.title} description={d.description1} imgSrc={d.imgSrc} />
+                    <Card
+                      key={d.title}
+                      title={d.title}
+                      description={d.description1}
+                      imgSrc={d.imgSrc}
+                      photographer={d.photographer}
+                      blogurl={d.blogurl}
+                    />
                   </button>
                 );
               })}
@@ -67,11 +81,13 @@ const MyGirls = () => {
                     father={selectedItem?.father}
                     mother={selectedItem?.mother}
                     imgSrc={selectedItem?.imgSrc}
-                    // href={selectedItem?.href}
+                    photographer={selectedItem?.photographer}
+                    blogurl={selectedItem?.blogurl}
                   />
                 </p>
                 <div className="flex justify-end mt-8">
                   <button
+                    // eslint-disable-next-line react/jsx-handler-names
                     onClick={close}
                     className="p-1 mb-3 font-medium text-center text-gray-300 hover:text-gray-100 bg-gradient-to-r from-gray-400 focus:from-purple-600 to-gray-500 focus:to-yellow-600 rounded opacity-80 sm:px-4 lg:py-2 lg:mr-3"
                   >
@@ -87,4 +103,5 @@ const MyGirls = () => {
   );
 };
 
+// eslint-disable-next-line import/no-default-export
 export default MyGirls;

@@ -7,17 +7,18 @@ export const dataVertical = [
     },
     src: "/static/images/0_top/mainecoon-girls.webp",
   },
-  // {
-  //   id: "2",
-  //   title: "Canon",
-  //   url: {
-  //     background: 'center/cover no-repeat url("/static/images/0_top/painting-green.webp")',
-  //   },
-  //   src: "/static/images/0_top/painting-green.webp",
-  // },
+  {
+    id: "2",
+    title: "Canon",
+    url: {
+      background:
+        'center/cover no-repeat url("https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/023047e2b27f48a389395d54e81cc159/07_painting-green.webp?w=300")',
+    },
+    src: "https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/023047e2b27f48a389395d54e81cc159/07_painting-green.webp?w=300",
+  },
   {
     id: "3",
-    title: "🤍",
+    title: "Canon",
     url: {
       background: 'top/cover no-repeat url("/static/images/0_top/baby-mainecoon.webp")',
     },
@@ -25,7 +26,7 @@ export const dataVertical = [
   },
   {
     id: "4",
-    title: "♠︎",
+    title: "Maine coon",
     url: {
       background: 'top/cover no-repeat url("/static/images/0_top/mainecoon.webp")',
     },

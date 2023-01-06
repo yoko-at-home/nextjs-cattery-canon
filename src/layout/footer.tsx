@@ -1,12 +1,12 @@
 /* eslint-disable tailwindcss/no-custom-classname */
-import type { VFC } from "react";
+import type { FC } from "react";
 import { CustomLink } from "src/components/CustomLink";
 import { Logo } from "src/components/Logo";
 import { NavBarMobile } from "src/components/navbar";
 
 import { siteMetadata } from "../data/siteMetadata";
 
-export const Footer: VFC = () => {
+export const Footer: FC = () => {
   return (
     <footer>
       <div className="flex flex-col justify-center items-center mt-16">
@@ -40,7 +40,7 @@ export const Footer: VFC = () => {
           </a>
         </div>
         <div className="my-8 text-sm text-gray-500 bg-clip-text bg-gradient-to-r from-green-600 to-blue-700">
-          <CustomLink href="https://yoko-2021.vercel.app/">Powered by yoko</CustomLink>
+          <CustomLink href="https://yoko-portfolio.vercel.app/about/">Powered by yoko</CustomLink>
         </div>
         <NavBarMobile />
       </div>

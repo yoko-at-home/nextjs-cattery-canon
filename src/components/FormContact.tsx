@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable @typescript-eslint/naming-convention */
 import { useRouter } from "next/router";
 import { siteMetadata } from "src/data/siteMetadata";
@@ -48,7 +49,7 @@ export const FormContact = () => {
                 id="fullname"
                 name="fullname"
                 type="text"
-                className="block mt-1 w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 shadow-sm sm:text-sm nm-inset-gray-50-lg"
+                className="block mt-1 w-full rounded-md border-gray-300 focus:border-gray-200 focus:ring-gray-200 shadow-sm sm:text-sm nm-inset-gray-50-lg"
                 placeholder="お名前"
                 autoComplete="name"
                 required
@@ -61,7 +62,7 @@ export const FormContact = () => {
                 id="labo"
                 name="labo"
                 type="tel"
-                className="block mt-1 w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 shadow-sm sm:text-sm nm-inset-gray-50-lg"
+                className="block mt-1 w-full rounded-md border-gray-300 focus:border-gray-200 focus:ring-gray-200 shadow-sm sm:text-sm nm-inset-gray-50-lg"
                 placeholder=""
                 required
               />
@@ -72,7 +73,7 @@ export const FormContact = () => {
                 id="email"
                 name="email"
                 type="email"
-                className="block mt-1 w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 shadow-sm sm:text-sm nm-inset-gray-50-lg"
+                className="block mt-1 w-full rounded-md border-gray-300 focus:border-gray-200 focus:ring-gray-200 shadow-sm sm:text-sm nm-inset-gray-50-lg"
                 placeholder="送信可能な形式：name@example.com"
                 autoComplete="email"
                 required
@@ -83,7 +84,7 @@ export const FormContact = () => {
               <textarea
                 id="message"
                 name="message"
-                className="block mt-1 w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 shadow-sm sm:text-sm nm-inset-gray-50-lg"
+                className="block mt-1 w-full rounded-md border-gray-300 focus:border-gray-200 focus:ring-gray-200 shadow-sm sm:text-sm nm-inset-gray-50-lg"
                 rows={3}
                 required
                 minLength={20}
@@ -99,13 +100,13 @@ export const FormContact = () => {
                     onChange={handleOnChange}
                     checked={isCheckboxState}
                   />
-                  <span className="ml-2 text-gray-500">メールの購読を希望 </span>
+                  <span className="ml-2 text-gray-200">メールの購読を希望 </span>
                 </label>
               </div> */}
             <div className="py-3 px-4 text-right sm:px-6">
               <button
                 type="submit"
-                className="p-2 w-full font-medium text-gray-200 bg-gradient-to-r from-gray-400 focus:from-purple-700 to-gray-500 focus:to-yellow-400 rounded-md focus:ring-2 focus:ring-offset-2 shadow-md focus:outline-none nm-concave-gray-400"
+                className="p-2 w-full font-medium text-gray-200 bg-gradient-to-r from-gray-400 focus:from-purple-700 to-gray-200 focus:to-yellow-400 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-md nm-concave-gray-400"
               >
                 送信
               </button>
