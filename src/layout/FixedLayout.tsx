@@ -18,7 +18,7 @@ export const Layout: FC<Props> = (props) => {
   const router = useRouter();
 
   return (
-    <div className="flex justify-start w-screen">
+    <div className="flex w-screen justify-start">
       <div
         className={
           router.pathname === "/baby"
@@ -33,10 +33,10 @@ export const Layout: FC<Props> = (props) => {
         <p className="pr-5 text-right text-stone-700">
           Photo: {props.theme === "home" ? "Yoshiko Yamashita" : props.photographer}
         </p>
-        <main className="px-2 mx-auto sm:px-3 md:px-5 md:w-full">{props.children}</main>
+        <main className="mx-auto px-2 sm:px-3 md:w-full md:px-5">{props.children}</main>
         <Footer />
       </div>
-      <div className="hidden overflow-y-scroll max-h-[210vh] rounded-full xl:block xl:w-1/6">
+      <div className="hidden max-h-[210vh] overflow-y-scroll rounded-full xl:block xl:w-1/6">
         <Test />
       </div>
     </div>
@@ -44,8 +44,8 @@ export const Layout: FC<Props> = (props) => {
 };
 export const LayoutBlog: FC<Props> = (props) => {
   return (
-    <div className="flex justify-start w-screen">
-      <div className="hidden m-5 w-1/6 min-h-full rounded-full md:block xl:w-1/6 nm-inset-yellow-800">
+    <div className="flex w-screen justify-start">
+      <div className="m-5 hidden min-h-full w-1/6 rounded-full nm-inset-yellow-800 md:block xl:w-1/6">
         <NavBarDesktop />
       </div>
       <div className="w-full md:mr-5 lg:w-5/6">
@@ -53,10 +53,10 @@ export const LayoutBlog: FC<Props> = (props) => {
         {/* <p className="pr-5 text-right text-gray-600">
           {props.photographer !== "tetsu" ? "Photo: Yoshiko Yamashita" : "Photo: Tstsu"}
         </p> */}
-        <main className="px-5 mx-auto md:w-full">{props.children}</main>
+        <main className="mx-auto px-5 md:w-full">{props.children}</main>
         <Footer />
       </div>
-      <div className="hidden xl:block xl:mr-3 xl:w-2/6">
+      <div className="hidden xl:mr-3 xl:block xl:w-2/6">
         <CarouselVertical />
       </div>
     </div>

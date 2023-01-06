@@ -30,7 +30,6 @@ const Retired: FC<CommonProps> = (props) => {
               <li key={item.id} className="mb-8">
                 <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row">
                   <Link href={`retired/${item.id}`} className="ml-1 lg:ml-10 lg:w-3/12">
-
                     <picture>
                       <Image
                         src={item.imgSrc?.url}
@@ -39,12 +38,12 @@ const Retired: FC<CommonProps> = (props) => {
                         height={item.imgSrc?.height}
                       />
                     </picture>
-
                   </Link>
                   <div className="flex w-full flex-col text-gray-600">
                     <Link
                       href={`retired/${item.id}`}
-                      className="whitespace-nowrap pl-3 text-2xl font-bold text-red-900 sm:text-3xl">
+                      className="whitespace-nowrap pl-3 text-2xl font-bold text-red-900 sm:text-3xl"
+                    >
                       {item.title}
                     </Link>
                     <div className="pt-3 pl-3">{item.description}</div>

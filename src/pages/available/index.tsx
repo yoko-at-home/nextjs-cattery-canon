@@ -27,7 +27,6 @@ const Available: FC<CommonProps> = (props) => {
               <li key={item.id} className="mb-8">
                 <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row-reverse">
                   <Link href={`available/${item.id}`} className="ml-1 lg:ml-10 lg:w-3/12">
-
                     <picture>
                       <Image
                         src={item.imgSrc?.url}
@@ -36,12 +35,12 @@ const Available: FC<CommonProps> = (props) => {
                         height={item.imgSrc?.height}
                       />
                     </picture>
-
                   </Link>
                   <div className="flex w-full flex-col">
                     <Link
                       href={`available/${item.id}`}
-                      className="whitespace-nowrap text-2xl font-bold text-red-900 sm:text-3xl">
+                      className="whitespace-nowrap text-2xl font-bold text-red-900 sm:text-3xl"
+                    >
                       {item.title}
                     </Link>
                     <div className="pt-3">{item.description}</div>
