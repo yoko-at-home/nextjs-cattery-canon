@@ -25,22 +25,24 @@ const Available: FC<CommonProps> = (props) => {
           {props.content.map((item) => {
             return (
               <li key={item.id} className="mb-8">
-                <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
-                  <Link href={`available/${item.id}`}>
-                    <a className="ml-1 lg:ml-10 lg:w-3/12">
-                      <picture>
-                        <Image
-                          src={item.imgSrc?.url}
-                          alt={item.title}
-                          width={item.imgSrc?.width}
-                          height={item.imgSrc?.height}
-                        />
-                      </picture>
-                    </a>
+                <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row-reverse">
+                  <Link href={`available/${item.id}`} className="ml-1 lg:ml-10 lg:w-3/12">
+
+                    <picture>
+                      <Image
+                        src={item.imgSrc?.url}
+                        alt={item.title}
+                        width={item.imgSrc?.width}
+                        height={item.imgSrc?.height}
+                      />
+                    </picture>
+
                   </Link>
-                  <div className="flex flex-col w-full">
-                    <Link href={`available/${item.id}`}>
-                      <a className="text-2xl font-bold text-red-900 whitespace-nowrap sm:text-3xl">{item.title}</a>
+                  <div className="flex w-full flex-col">
+                    <Link
+                      href={`available/${item.id}`}
+                      className="whitespace-nowrap text-2xl font-bold text-red-900 sm:text-3xl">
+                      {item.title}
                     </Link>
                     <div className="pt-3">{item.description}</div>
                   </div>

@@ -19,7 +19,7 @@ const Gallery: NextPage = () => {
       <PageTitle type="large">Gallery</PageTitle>
       <PageTitle type="medium">{siteMetadata.title} の世界</PageTitle>
       <CarouselHorizontal />
-      <div className="hidden justify-center mx-0 mb-16 sm:flex">
+      <div className="mx-0 mb-16 hidden justify-center sm:flex">
         <GalleryHexagon />
       </div>
     </Layout>

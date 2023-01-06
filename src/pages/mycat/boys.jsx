@@ -40,7 +40,7 @@ const MyBoys = () => {
         <PageTitle type="large">Boys- {siteMetadata.title} の男の子たち</PageTitle>
         <div className="divide-y divide-gray-200 ">
           <div className="container py-12">
-            <div className="flex flex-wrap m-4">
+            <div className="m-4 flex flex-wrap">
               {mainecoonDataBoy.map((d) => {
                 return (
                   <button
@@ -71,7 +71,7 @@ const MyBoys = () => {
             </div>
 
             <Modal>
-              <div className="py-10 px-2 text-gray-500 bg-white rounded sm:px-4 md:px-10 nm-concave-gray-100-sm">
+              <div className="rounded bg-white py-10 px-2 text-gray-500 nm-concave-gray-100-sm sm:px-4 md:px-10">
                 <h1 className="mt-5">Boys - {siteMetadata.title} の男の子たち</h1>
                 <p>
                   <CardModal
@@ -85,11 +85,11 @@ const MyBoys = () => {
                     blogurl={selectedItem?.blogurl}
                   />
                 </p>
-                <div className="flex justify-end mt-8">
+                <div className="mt-8 flex justify-end">
                   <button
                     // eslint-disable-next-line react/jsx-handler-names
                     onClick={close}
-                    className="p-1 mb-3 font-medium text-center text-gray-300 hover:text-gray-100 bg-gradient-to-r from-gray-400 focus:from-purple-600 to-gray-500 focus:to-yellow-600 rounded opacity-80 sm:px-4 lg:py-2 lg:mr-3"
+                    className="mb-3 rounded bg-gradient-to-r from-gray-400 to-gray-500 p-1 text-center font-medium text-gray-300 opacity-80 hover:text-gray-100 focus:from-purple-600 focus:to-yellow-600 sm:px-4 lg:mr-3 lg:py-2"
                   >
                     閉じる
                   </button>

@@ -3,11 +3,10 @@ module.exports = {
   parserOptions: { project: "./tsconfig.json" },
   settings: { tailwindcss: { groupByResponsive: true, whitelist: [] } },
   env: { es2021: true, browser: true, node: true },
-  plugins: ["simple-import-sort", "tailwindcss", "import-access", "cypress"],
+  plugins: ["simple-import-sort", "tailwindcss", "import-access"],
   extends: [
     "plugin:@typescript-eslint/recommended",
     "plugin:tailwindcss/recommended",
-    "plugin:cypress/recommended",
     "next/core-web-vitals",
     "prettier",
   ],

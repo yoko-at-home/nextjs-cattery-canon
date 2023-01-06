@@ -4,7 +4,7 @@ import { siteMetadata } from "../data/siteMetadata";
 export const Logo = () => {
   return (
     <div className="m-16">
-      <div className="border balloonoya">
+      <div className="balloonoya border">
         {siteMetadata.title}
         <span className="balloon">🐈にゃお🐈</span>
       </div>

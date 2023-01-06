@@ -44,70 +44,70 @@ export const CarouselVertical = () => {
 
   return (
     <>
-      <div ref={sliderRef} className="h-screen keen-slider">
+      <div ref={sliderRef} className="keen-slider h-screen">
         <div
-          className="bg-top bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-top"
           style={{
             backgroundImage: "url('/static/images/memory/gura.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/memory/hanako.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/memory/hime.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/memory/kenta.webp')",
           }}
         ></div>
         <div
-          className="bg-top bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-top"
           style={{
             backgroundImage: "url('/static/images/memory/lala.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/memory/miyabi.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/memory/myu.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/memory/naushika.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage:
               "url('https://images.microcms-assets.io/assets/ee5fc17313364d27a28133048e13257f/b2f45372b0ac4958a935af3a63e62850/gura.webp?w=300')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/memory/rizumu.webp')",
           }}
         ></div>
         <div
-          className="bg-center bg-cover keen-slider__slide number-slide"
+          className="keen-slider__slide number-slide bg-cover bg-center"
           style={{
             backgroundImage: "url('/static/images/memory/yume.webp')",
           }}

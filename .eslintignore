@@ -2,7 +2,6 @@
 **/out/*
 **/.next/*
 /.eslintrc.js
-/cypress
 
 # PWA files
 **/public/sw.js
