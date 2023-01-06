@@ -39,7 +39,7 @@ export const Card: NextPage<Props> = (props) => {
 export const CardModal: NextPage<Props> = (props) => {
   return (
     <div className="p-4 h-4/5" style={{ maxWidth: "800px" }}>
-      <div className="flex flex-col p-3 rounded-md border-2 border-gray-200 md:flex-row border-opacity-60 nm-inset-gray-100-sm">
+      <div className="flex flex-col p-3 rounded-md border-2 border-gray-200 border-opacity-60 md:flex-row nm-inset-gray-100-sm">
         <Image
           alt={props.title}
           src={props.imgSrc}

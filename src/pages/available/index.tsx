@@ -25,7 +25,7 @@ const Available: FC<CommonProps> = (props) => {
           {props.content.map((item) => {
             return (
               <li key={item.id} className="mb-8">
-                <div className="flex flex-col justify-between p-6 sm:flex-row-reverse nm-inset-gray-50-lg">
+                <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row-reverse">
                   <Link href={`available/${item.id}`}>
                     <a className="ml-1 lg:ml-10 lg:w-3/12">
                       <picture>
@@ -38,9 +38,9 @@ const Available: FC<CommonProps> = (props) => {
                       </picture>
                     </a>
                   </Link>
-                  <div className="flex flex-col w-full">
+                  <div className="flex w-full flex-col">
                     <Link href={`available/${item.id}`}>
-                      <a className="text-2xl font-bold text-red-900 whitespace-nowrap sm:text-3xl">{item.title}</a>
+                      <a className="whitespace-nowrap text-2xl font-bold text-red-900 sm:text-3xl">{item.title}</a>
                     </Link>
                     <div className="pt-3">{item.description}</div>
                   </div>

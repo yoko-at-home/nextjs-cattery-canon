@@ -42,7 +42,7 @@ const FAQ = () => {
         <div className="py-12">
           <Faq data={faqData} styles={styles} config={config} />
         </div>
-        <div className="py-12 mt-5">
+        <div className="mt-5 py-12">
           <Faq data={faqData2} styles={styles} config={config} />
         </div>
       </div>

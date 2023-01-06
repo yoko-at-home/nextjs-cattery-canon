@@ -20,7 +20,7 @@ const Retired: FC<CommonProps> = (props) => {
         siteUrl={siteMetadata.siteUrl}
       />
       <PageTitle type="large">引退した子達</PageTitle>
-      <div className="pt-6 pb-8 space-y-2 md:space-y-5">
+      <div className="space-y-2 pt-6 pb-8 md:space-y-5">
         <p className="text-lg leading-7 text-gray-500 ">引退した子達です。</p>
       </div>
       <div className="mt-10">
@@ -28,7 +28,7 @@ const Retired: FC<CommonProps> = (props) => {
           {props.content.map((item) => {
             return (
               <li key={item.id} className="mb-8">
-                <div className="flex flex-col justify-between p-6 sm:flex-row nm-inset-gray-50-lg">
+                <div className="flex flex-col justify-between p-6 nm-inset-gray-50-lg sm:flex-row">
                   <Link href={`retired/${item.id}`}>
                     <a className="ml-1 lg:ml-10 lg:w-3/12">
                       <picture>
@@ -41,9 +41,9 @@ const Retired: FC<CommonProps> = (props) => {
                       </picture>
                     </a>
                   </Link>
-                  <div className="flex flex-col w-full text-gray-600">
+                  <div className="flex w-full flex-col text-gray-600">
                     <Link href={`retired/${item.id}`}>
-                      <a className="pl-3 text-2xl font-bold text-red-900 whitespace-nowrap sm:text-3xl">{item.title}</a>
+                      <a className="whitespace-nowrap pl-3 text-2xl font-bold text-red-900 sm:text-3xl">{item.title}</a>
                     </Link>
                     <div className="pt-3 pl-3">{item.description}</div>
                   </div>
