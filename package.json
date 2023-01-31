@@ -54,7 +54,7 @@
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-import-access": "1.0.1",
     "eslint-plugin-simple-import-sort": "10.0.0",
-    "eslint-plugin-tailwindcss": "3.8.2",
+    "eslint-plugin-tailwindcss": "3.8.3",
     "husky": "8.0.3",
     "identity-obj-proxy": "3.0.0",
     "keen-slider": "6.8.5",
