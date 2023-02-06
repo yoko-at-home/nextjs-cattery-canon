@@ -98,6 +98,16 @@ export const NavBarMobile: FC<Props> = () => {
                 </CustomLink>
               );
             })}
+            <div className="mb-12">
+              <a
+                href="http://catterycanoncat.blog.fc2.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-auto flex flex-col bg-gradient-to-r from-gray-400 to-gray-500 p-2 text-right text-2xl font-medium tracking-widest text-green-200 opacity-90 hover:text-gray-100 sm:p-3 sm:tracking-widest"
+              >
+                Blog (external)
+              </a>
+            </div>
           </nav>
         </div>
       </div>
