@@ -123,6 +123,7 @@ const Baby: NextPage<BabyProps> = (props) => {
                   autoPlay
                   muted
                   loop
+                  playsInline
                   src="https://user-images.githubusercontent.com/61738591/149651398-7686c95c-45c7-4acd-b7c3-e319950dd95d.MOV"
                 />
               </div>
