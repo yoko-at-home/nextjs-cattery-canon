@@ -4,6 +4,7 @@ import Link from "next/link";
 
 type Props = {
   title: string;
+  title2?: string;
   description: string;
   description1: string;
   description2: string;
@@ -28,6 +29,7 @@ export const Card: NextPage<Props> = (props) => {
           />
           <div className="nm-flat-white-100 bg-white p-4 text-gray-500">
             <h2 className="z-50 mb-3 text-2xl font-bold leading-8 tracking-tight">{props.title}</h2>
+            <h2 className="z-50 mb-3 text-2xl font-bold leading-8 tracking-tight">{props.title2}</h2>
             <p className="mb-3">Date of Birth: {props.description}</p>
             <p className="mb-3 h-3">{props.description2}</p>
           </div>
@@ -43,7 +45,7 @@ export const CardModal: NextPage<Props> = (props) => {
         <Image
           alt={props.title}
           src={props.imgSrc}
-          className="object-cover object-center nm-concave-gray-100-xl md:h-36 lg:h-48"
+          className="object-cover object-top nm-concave-gray-100-xl md:h-36 lg:h-48"
           width={272}
           height={300}
         />
@@ -51,7 +53,10 @@ export const CardModal: NextPage<Props> = (props) => {
           <h2 className="z-50 text-lg font-bold leading-8 tracking-tight text-yellow-900 sm:mt-3 sm:text-2xl">
             {props.title}
           </h2>
-          <p className="prose text-sm font-bold leading-loose text-green-900 sm:mt-10 sm:mb-3 sm:text-lg">
+          <h2 className="z-50 text-lg font-bold leading-8 tracking-tight text-yellow-900 sm:mt-3 sm:text-2xl">
+            {props.title2}
+          </h2>
+          <p className="prose text-sm font-bold leading-loose text-green-900 sm:mb-3 sm:mt-10 sm:text-lg">
             {props.description2}
           </p>
           <p className="prose text-sm text-gray-500 sm:mb-3">Date of Birth: {props.description1}</p>

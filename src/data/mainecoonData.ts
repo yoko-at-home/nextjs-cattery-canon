@@ -1,6 +1,7 @@
 export const mainecoonDataBoy = [
   {
-    title: "CFA GC CHATILE LENTO OF CANON",
+    title: "TICA RWSGC CHATILE LENTO OF CANON",
+    title2: "CFA GC CHATILE LENTO OF CANON",
     description1: `07/27/2020`,
     description2: `BROWN CLASSIC TABBY `,
     father: `CHATILE MARCO`,
@@ -16,6 +17,16 @@ export const mainecoonDataBoy = [
     father: `CFA CH SILVER AQUA LION GENERAL`,
     mother: `TICA TGC POPOKILANI MIEL OF CANON`,
     imgSrc: "/static/images/boys/valse.webp",
+    photographer: "",
+    blogurl: "",
+  },
+  {
+    title: "MARVELCATS SIMBA OF CANON",
+    description1: `07/29/2022`,
+    description2: `WHITE SOLID`,
+    father: `MYFAVORITE BRILLIANT OF MARVEL CATS`,
+    mother: `CH MARVEL CATS KONAGIN`,
+    imgSrc: "/static/images/boys/white-solid.jpg",
     photographer: "",
     blogurl: "",
   },

@@ -60,6 +60,7 @@ const MyBoys = () => {
                     <Card
                       key={d.title}
                       title={d.title}
+                      title2={d.title2}
                       description={d.description1}
                       imgSrc={d.imgSrc}
                       photographer={d.photographer}
@@ -71,11 +72,12 @@ const MyBoys = () => {
             </div>
 
             <Modal>
-              <div className="rounded bg-white py-10 px-2 text-gray-500 nm-concave-gray-100-sm sm:px-4 md:px-10">
+              <div className="rounded bg-white px-2 py-10 text-gray-500 nm-concave-gray-100-sm sm:px-4 md:px-10">
                 <h1 className="mt-5">Boys - {siteMetadata.title} の男の子たち</h1>
                 <p>
                   <CardModal
                     title={selectedItem?.title}
+                    title2={selectedItem?.title2}
                     description1={selectedItem?.description1}
                     description2={selectedItem?.description2}
                     father={selectedItem?.father}
