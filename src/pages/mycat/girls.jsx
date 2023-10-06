@@ -18,13 +18,13 @@ const MyGirls = () => {
 
   const handleOnClick = useCallback(
     (d) => {
-      const result = mainecoonDataGirl.find(({ title }) => {
-        return title === d.title;
+      const result = mainecoonDataGirl.find(({ name }) => {
+        return name === d.name;
       });
       setSelectedItem(result);
       open();
     },
-    [open]
+    [open],
   );
 
   return (
@@ -48,19 +48,19 @@ const MyGirls = () => {
                     onClick={() => {
                       return handleOnClick(d);
                     }}
-                    description={d.description1}
-                    description2={d.description2}
-                    father={d.father}
-                    mother={d.mother}
-                    key={d.title}
+                    birth={d.birth}
+                    kind={d.kind}
+                    sire={d.sire}
+                    dam={d.dam}
+                    key={d.name}
                     photographer={d.photographer}
                     blogurl={d.blogurl}
                     className="md:w-1/2"
                   >
                     <Card
                       key={d.title}
-                      title={d.title}
-                      description={d.description1}
+                      name={d.name}
+                      birth={d.birth}
                       imgSrc={d.imgSrc}
                       photographer={d.photographer}
                       blogurl={d.blogurl}
@@ -71,15 +71,15 @@ const MyGirls = () => {
             </div>
 
             <Modal>
-              <div className="rounded bg-white py-10 px-2 text-gray-500 nm-concave-gray-100-sm sm:px-4 md:px-10">
+              <div className="rounded bg-white px-2 py-10 text-gray-500 nm-concave-gray-100-sm sm:px-4 md:px-10">
                 <h1 className="mt-5">Girls - {siteMetadata.title} の女の子たち</h1>
                 <p>
                   <CardModal
                     title={selectedItem?.title}
-                    description1={selectedItem?.description1}
-                    description2={selectedItem?.description2}
-                    father={selectedItem?.father}
-                    mother={selectedItem?.mother}
+                    birth={selectedItem?.birth}
+                    kind={selectedItem?.kind}
+                    sire={selectedItem?.sire}
+                    dam={selectedItem?.dam}
                     imgSrc={selectedItem?.imgSrc}
                     photographer={selectedItem?.photographer}
                     blogurl={selectedItem?.blogurl}

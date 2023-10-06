@@ -9,12 +9,12 @@ import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import type { BabyProps } from "src/type/types";
 
-const description2 = "✨✨✨";
+const kind = "✨✨✨";
 
 const Star = () => {
   return (
     <div className="leading-loosee tracking-loose bg-gradient-to-r from-purple-100 to-green-200 bg-clip-text pt-5 text-center text-2xl font-extrabold text-transparent">
-      {description2}
+      {kind}
     </div>
   );
 };

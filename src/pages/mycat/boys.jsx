@@ -18,13 +18,13 @@ const MyBoys = () => {
 
   const handleOnClick = useCallback(
     (d) => {
-      const result = mainecoonDataBoy.find(({ title }) => {
-        return title === d.title;
+      const result = mainecoonDataBoy.find(({ name }) => {
+        return name === d.name;
       });
       setSelectedItem(result);
       open();
     },
-    [open]
+    [open],
   );
 
   return (
@@ -32,7 +32,7 @@ const MyBoys = () => {
       <Layout theme="boys" photographer="Yoshiko Yamashita">
         <PageSEO
           title={`Boys - ${siteMetadata.title}`}
-          description={siteMetadata.description}
+          birth={siteMetadata.birth}
           ogType="website"
           ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
           siteUrl={siteMetadata.siteUrl}
@@ -48,20 +48,20 @@ const MyBoys = () => {
                     onClick={() => {
                       return handleOnClick(d);
                     }}
-                    description={d.description1}
-                    description2={d.description2}
-                    father={d.father}
-                    mother={d.mother}
+                    birth={d.birth}
+                    kind={d.kind}
+                    sire={d.sire}
+                    dam={d.dam}
                     key={d.title}
                     photographer={d.photographer}
                     blogurl={d.blogurl}
                     className="md:w-1/2"
                   >
                     <Card
-                      key={d.title}
-                      title={d.title}
-                      title2={d.title2}
-                      description={d.description1}
+                      key={d.name}
+                      name={d.name}
+                      name1={d.name1}
+                      birth={d.birth}
                       imgSrc={d.imgSrc}
                       photographer={d.photographer}
                       blogurl={d.blogurl}
@@ -76,12 +76,12 @@ const MyBoys = () => {
                 <h1 className="mt-5">Boys - {siteMetadata.title} の男の子たち</h1>
                 <p>
                   <CardModal
-                    title={selectedItem?.title}
-                    title2={selectedItem?.title2}
-                    description1={selectedItem?.description1}
-                    description2={selectedItem?.description2}
-                    father={selectedItem?.father}
-                    mother={selectedItem?.mother}
+                    name={selectedItem?.name}
+                    name1={selectedItem?.name1}
+                    birth={selectedItem?.birth}
+                    kind={selectedItem?.kind}
+                    sire={selectedItem?.sire}
+                    dam={selectedItem?.dam}
                     imgSrc={selectedItem?.imgSrc}
                     photographer={selectedItem?.photographer}
                     blogurl={selectedItem?.blogurl}
