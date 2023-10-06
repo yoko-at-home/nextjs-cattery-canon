@@ -3,7 +3,7 @@
 import { useCallback, useState } from "react";
 import { useModal } from "react-hooks-use-modal";
 import { Card } from "src/components/Card";
-import { CardModal } from "src/components/Card";
+import { CardModal } from "src/components/CardModal";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { mainecoonDataBoy } from "src/data/mainecoonData";
