@@ -54,10 +54,10 @@ export const CardModal: React.FC<MyCatProps> = (props) => {
           </p>
           {!props.photographer ? null : <p className="mt-2 text-sm text-gray-400">{props.photographer}</p>}
           {!props.blogurl ? null : (
-            <Link href={props.imgSrc} target="_blank" rel="noopener noreferrer">
+            <Link href={props.blogurl} target="_blank" rel="noopener noreferrer">
               <div className="text-center sm:mt-3">
                 <span className="animate-pulse rounded bg-gray-300 text-lg text-yellow-800 hover:text-green-900">
-                  ✨この子の写真をもっと見る✨
+                  ✨もっと見る（ブログへ）✨
                 </span>
               </div>
             </Link>
