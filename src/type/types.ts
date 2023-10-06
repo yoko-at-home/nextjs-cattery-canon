@@ -52,3 +52,15 @@ export type About = {
     body: HTMLAnchorElement;
   };
 };
+
+export type MyCatProps = {
+  name: string;
+  name1?: string;
+  birth: string;
+  kind: string;
+  sire: string;
+  dam: string;
+  imgSrc: string;
+  photographer: string;
+  blogurl?: string;
+};

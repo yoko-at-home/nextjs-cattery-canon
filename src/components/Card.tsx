@@ -1,20 +1,8 @@
-import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import type { MyCatProps } from "src/type/types";
 
-type Props = {
-  name: string;
-  name1?: string;
-  birth: string;
-  kind: string;
-  sire: string;
-  dam: string;
-  imgSrc: string;
-  photographer: string;
-  blogurl?: string;
-};
-
-export const Card: NextPage<Props> = (props) => {
+export const Card: React.FC<MyCatProps> = (props) => {
   return (
     <div className="p-3">
       <div className="rounded p-1 nm-concave-gray-100-lg" style={{ maxWidth: "544px" }}>
@@ -37,7 +25,7 @@ export const Card: NextPage<Props> = (props) => {
     </div>
   );
 };
-export const CardModal: NextPage<Props> = (props) => {
+export const CardModal: React.FC<MyCatProps> = (props) => {
   return (
     <div className="h-4/5 p-4" style={{ maxWidth: "800px" }}>
       <div className="flex flex-col rounded-md border-2 border-gray-200 border-opacity-60 p-3 nm-inset-gray-100-sm md:flex-row">
@@ -66,7 +54,7 @@ export const CardModal: NextPage<Props> = (props) => {
           </p>
           {!props.photographer ? null : <p className="mt-2 text-sm text-gray-400">{props.photographer}</p>}
           {!props.blogurl ? null : (
-            <Link href={props.blogurl} target="_blank" rel="noopener noreferrer">
+            <Link href={props.imgSrc} target="_blank" rel="noopener noreferrer">
               <div className="text-center sm:mt-3">
                 <span className="animate-pulse rounded bg-gray-300 text-lg text-yellow-800 hover:text-green-900">
                   ✨この子の写真をもっと見る✨
