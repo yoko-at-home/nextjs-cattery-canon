@@ -61,6 +61,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       content: data.contents,
+      queries: { limit: 999 },
     },
   };
 };

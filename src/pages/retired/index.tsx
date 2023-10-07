@@ -20,7 +20,7 @@ const Retired: FC<CommonProps> = (props) => {
         siteUrl={siteMetadata.siteUrl}
       />
       <PageTitle type="large">引退した子達</PageTitle>
-      <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+      <div className="space-y-2 pb-8 pt-6 md:space-y-5">
         <p className="text-lg leading-7 text-gray-500 ">引退した子達です。</p>
       </div>
       <div className="mt-10">
@@ -46,7 +46,7 @@ const Retired: FC<CommonProps> = (props) => {
                     >
                       {item.title}
                     </Link>
-                    <div className="pt-3 pl-3">{item.description}</div>
+                    <div className="pl-3 pt-3">{item.description}</div>
                   </div>
                 </div>
               </li>
@@ -64,6 +64,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       content: data.contents,
+      queries: { limit: 999 },
     },
   };
 };
