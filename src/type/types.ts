@@ -1,11 +1,20 @@
+import type { MicroCMSContentId, MicroCMSDate, MicroCMSListResponse } from "microcms-js-sdk";
+import type { ParsedUrlQuery } from "querystring";
+
+export type BlogProps = MyCatProps & {
+  maincoonData: MicroCMSListResponse<MyCatProps>;
+};
+
+export type PropsPath = MyCatProps & MicroCMSContentId & MicroCMSDate & ParsedUrlQuery;
+
 type Common = {
   id: string;
   createdAt: Date;
   updatedAt: Date;
   publishedAt: Date;
   revisedAt: Date;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   imgSrc: {
     height: number;
     url: string;
@@ -25,7 +34,7 @@ export type BabyProps = {
       dam: string;
       birthday: Date;
       status: boolean;
-    }
+    },
   ];
 };
 export type CommonPageProps = {
@@ -53,14 +62,12 @@ export type About = {
   };
 };
 
-export type MyCatProps = {
+export type MyCatProps = Common & {
   name: string;
   name1?: string;
-  birth: string;
-  kind: string;
+  sex: boolean;
   sire: string;
   dam: string;
-  imgSrc: string;
-  photographer: string;
-  blogurl?: string;
+  birth: Date;
+  kind: string;
 };

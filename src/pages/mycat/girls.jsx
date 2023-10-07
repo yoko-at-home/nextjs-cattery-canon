@@ -3,7 +3,7 @@
 import { useCallback, useState } from "react";
 import { useModal } from "react-hooks-use-modal";
 import { Card } from "src/components/Card";
-import { CardModal } from "src/components/Card";
+import { CardModal } from "src/components/CardModal";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { mainecoonDataGirl } from "src/data/mainecoonData";
@@ -58,10 +58,10 @@ const MyGirls = () => {
                     className="md:w-1/2"
                   >
                     <Card
-                      key={d.title}
+                      key={d.name}
                       name={d.name}
                       birth={d.birth}
-                      imgSrc={d.imgSrc}
+                      image={d.image?.url}
                       photographer={d.photographer}
                       blogurl={d.blogurl}
                     />
@@ -75,12 +75,12 @@ const MyGirls = () => {
                 <h1 className="mt-5">Girls - {siteMetadata.title} の女の子たち</h1>
                 <p>
                   <CardModal
-                    title={selectedItem?.title}
+                    name={selectedItem?.name}
                     birth={selectedItem?.birth}
                     kind={selectedItem?.kind}
                     sire={selectedItem?.sire}
                     dam={selectedItem?.dam}
-                    imgSrc={selectedItem?.imgSrc}
+                    imgSrc={selectedItem?.imgSrc.url}
                     photographer={selectedItem?.photographer}
                     blogurl={selectedItem?.blogurl}
                   />

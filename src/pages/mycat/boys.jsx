@@ -62,7 +62,7 @@ const MyBoys = () => {
                       name={d.name}
                       name1={d.name1}
                       birth={d.birth}
-                      imgSrc={d.imgSrc}
+                      image={d.image?.url}
                       photographer={d.photographer}
                       blogurl={d.blogurl}
                     />
@@ -82,7 +82,7 @@ const MyBoys = () => {
                     kind={selectedItem?.kind}
                     sire={selectedItem?.sire}
                     dam={selectedItem?.dam}
-                    imgSrc={selectedItem?.imgSrc}
+                    imgSrc={selectedItem?.imgSrc.url}
                     photographer={selectedItem?.photographer}
                     blogurl={selectedItem?.blogurl}
                   />
