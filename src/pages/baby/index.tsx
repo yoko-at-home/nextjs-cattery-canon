@@ -3,6 +3,7 @@ import axios from "axios";
 import type { GetStaticProps, NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { IFrameComponent } from "src/components/IFrameComponent";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
@@ -133,6 +134,7 @@ const Baby: NextPage<BabyProps> = (props) => {
           <div className="orb hidden sm:block" />
           <Star />
         </div>
+        <IFrameComponent />
         <style jsx>
           {`
             .orb {
