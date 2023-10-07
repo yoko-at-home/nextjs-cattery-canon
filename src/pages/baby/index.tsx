@@ -3,7 +3,6 @@ import axios from "axios";
 import type { GetStaticProps, NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { IFrameComponent } from "src/components/IFrameComponent";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
@@ -40,8 +39,13 @@ const Baby: NextPage<BabyProps> = (props) => {
           siteUrl={siteMetadata.siteUrl}
         />
         <PageTitle type="medium">
-          <span className="text-white">譲渡可能な子猫についてはお問い合わせください</span>
+          <div className="text-white">譲渡可能な子猫についてはお問い合わせください</div>
         </PageTitle>
+        <div className="text-center text-lg font-bold text-red-500">
+          <Link href="http://catterycanoncat.blog.fc2.com/" target="_blank">
+            ブログにて最新情報をお届けしています
+          </Link>
+        </div>
         <div className="mt-10">
           {/* <PageTitle type="medium">♀ 女の子</PageTitle> */}
           <ul>
@@ -134,7 +138,11 @@ const Baby: NextPage<BabyProps> = (props) => {
           <div className="orb hidden sm:block" />
           <Star />
         </div>
-        <IFrameComponent />
+        <div className="mt-20 text-center text-lg font-bold text-red-500">
+          <Link href="http://catterycanoncat.blog.fc2.com/" target="_blank">
+            ブログにて最新情報をお届けしています
+          </Link>
+        </div>
         <style jsx>
           {`
             .orb {
