@@ -7,7 +7,6 @@ import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
-import { Date } from "src/lib/date";
 
 const BabyId = (props) => {
   const router = useRouter();
@@ -51,10 +50,8 @@ const BabyId = (props) => {
           {props.content.name}
           <span className="ml-10 text-5xl">{props.content.sire ? "♀" : "♀"}</span>
         </PageTitle>
-        <div className="mt-3 mb-10 flex flex-col text-gray-600">
-          <div>
-            誕生日: <Date dateString={props.content.birthday} />
-          </div>
+        <div className="mb-10 mt-3 flex flex-col text-gray-600">
+          <div>誕生日: {dayjs(props.content.birthday).format("YYYY年MM月DD日")}</div>
           <div>Sire: {props.content.sire}</div>
           <div>Dam: {props.content.dam}</div>
         </div>

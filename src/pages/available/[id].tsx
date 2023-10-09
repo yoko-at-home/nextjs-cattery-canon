@@ -1,4 +1,5 @@
 /* eslint-disable tailwindcss/no-custom-classname */
+import dayjs from "dayjs";
 import Image from "next/image";
 import Link from "next/link";
 import type { FC } from "react";
@@ -7,7 +8,6 @@ import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
 import { client } from "src/lib/client";
-import { Date } from "src/lib/date";
 import type { CommonPageProps } from "src/type/types";
 
 const BlogId: FC<CommonPageProps> = (props) => {
@@ -42,16 +42,12 @@ const BlogId: FC<CommonPageProps> = (props) => {
         >
           {props.content.title}
         </PageTitle>
-        <div className="mt-3 mb-10 flex flex-col text-right text-gray-600">
+        <div className="mb-10 mt-3 flex flex-col text-right text-gray-600">
           {publishedAt === revisedAt ? (
-            <div>
-              Published: <Date dateString={props.content.publishedAt} />
-            </div>
+            <div>Published: {dayjs(props.content.publishedAt).format("YYYY.MM.DD")}</div>
           ) : (
             <>
-              <div>
-                Published at: <Date dateString={props.content.publishedAt} />
-              </div>
+              <div>Published at: {dayjs(props.content.publishedAt).format("YYYY.MM.DD")}</div>
               <div className="mt-3 text-left text-lg sm:mt-8 sm:text-2xl">{props.content.description}</div>
             </>
           )}
