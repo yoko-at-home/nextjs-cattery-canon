@@ -58,7 +58,7 @@ const MyCatId = (props) => {
         </PageTitle>
         <div className="mb-10 mt-3 flex flex-col text-gray-600">
           <div>
-            Birth:
+            Date of Birth:
             {dayjs(props.content.birthday).format(" YYYY.MM.DD")}
           </div>
           <div>Sire: {props.content.sire}</div>
