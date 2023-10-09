@@ -49,13 +49,13 @@ const MyCatId = (props) => {
           </div>
         )}
         <div className="flex flex-col items-center">
-          <h1 className="mt-6 bg-gradient-to-r from-yellow-600 to-green-900 bg-clip-text text-lg font-extrabold text-transparent md:text-4xl">
+          <h1 className="mt-6 bg-gradient-to-r from-yellow-600 to-green-900 bg-clip-text text-2xl font-extrabold text-transparent md:text-4xl">
             <span className="mr-10 text-lg lg:text-3xl">{props.content.sire ? "♀" : "♀"}</span>
             {props.content.name}
             <span className="ml-10 text-lg lg:text-3xl">{props.content.sire ? "♀" : "♀"}</span>
           </h1>
           {props.content.name1 === undefined ? null : (
-            <h2 className="mb-6 bg-gradient-to-r from-yellow-600 to-green-900 bg-clip-text text-lg font-extrabold text-transparent md:text-4xl">
+            <h2 className="mb-6 bg-gradient-to-r from-yellow-600 to-green-900 bg-clip-text text-2xl font-extrabold text-transparent md:text-4xl">
               {props.content.name1}
             </h2>
           )}
