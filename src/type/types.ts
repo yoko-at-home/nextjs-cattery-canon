@@ -37,6 +37,8 @@ export type BabyProps = {
     },
   ];
 };
+
+
 export type CommonPageProps = {
   content: Common;
 };
@@ -62,12 +64,24 @@ export type About = {
   };
 };
 
-export type MyCatProps = Common & {
-  name: string;
-  name1?: string;
-  sex: boolean;
-  sire: string;
-  dam: string;
-  birth: Date;
-  kind: string;
+export type MyCatProps = Common &
+  {
+    id: string;
+    name: string;
+    name1?: string;
+    kind: string;
+    birth: string;
+    sire: string;
+    dam: string;
+    sex: boolean;
+    body: HTMLAnchorElement;
+    imgSrc: {
+      height: number;
+      url: string;
+      width: number;
+    };
+  }[];
+
+export type MyCatPageProps = {
+  content: MyCatProps;
 };

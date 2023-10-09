@@ -1,109 +1,80 @@
 /* eslint-disable tailwindcss/no-custom-classname */
-
-import { useCallback, useState } from "react";
-import { useModal } from "react-hooks-use-modal";
-import { Card } from "src/components/Card";
-import { CardModal } from "src/components/CardModal";
+import dayjs from "dayjs";
+import Image from "next/image";
+import Link from "next/link";
+import type { FC } from "react";
 import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
-import { mainecoonDataBoy } from "src/data/mainecoonData";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
+import { client } from "src/lib/client";
+import type { MyCatPageProps } from "src/type/types";
 
-const MyBoys = () => {
-  const [Modal, open, close] = useModal("root", {
-    preventScroll: true,
+const MyGirls: FC<MyCatPageProps> = (props) => {
+  const boys = props.content.filter((props) => {
+    return props.sex === false;
   });
-  const [selectedItem, setSelectedItem] = useState();
-
-  const handleOnClick = useCallback(
-    (d) => {
-      const result = mainecoonDataBoy.find(({ name }) => {
-        return name === d.name;
-      });
-      setSelectedItem(result);
-      open();
-    },
-    [open],
-  );
-
   return (
-    <div style={{ backgroundColor: "#e4f8d7" }}>
-      <Layout theme="boys" photographer="Yoshiko Yamashita">
-        <PageSEO
-          title={`Boys - ${siteMetadata.title}`}
-          birth={siteMetadata.birth}
-          ogType="website"
-          ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
-          siteUrl={siteMetadata.siteUrl}
-        />{" "}
-        <PageTitle type="large">Boys- {siteMetadata.title} の男の子たち</PageTitle>
-        <div className="divide-y divide-gray-200 ">
-          <div className="container py-12">
-            <div className="m-4 flex flex-wrap">
-              {mainecoonDataBoy.map((d) => {
-                return (
-                  <button
-                    // eslint-disable-next-line react/jsx-handler-names
-                    onClick={() => {
-                      return handleOnClick(d);
-                    }}
-                    birth={d.birth}
-                    kind={d.kind}
-                    sire={d.sire}
-                    dam={d.dam}
-                    key={d.title}
-                    photographer={d.photographer}
-                    blogurl={d.blogurl}
-                    className="md:w-1/2"
-                  >
-                    <Card
-                      key={d.name}
-                      name={d.name}
-                      name1={d.name1}
-                      birth={d.birth}
-                      image={d.image?.url}
-                      photographer={d.photographer}
-                      blogurl={d.blogurl}
-                    />
-                  </button>
-                );
-              })}
-            </div>
-
-            <Modal>
-              <div className="rounded bg-white px-2 py-10 text-gray-500 nm-concave-gray-100-sm sm:px-4 md:px-10">
-                <h1 className="mt-5">Boys - {siteMetadata.title} の男の子たち</h1>
-                <p>
-                  <CardModal
-                    name={selectedItem?.name}
-                    name1={selectedItem?.name1}
-                    birth={selectedItem?.birth}
-                    kind={selectedItem?.kind}
-                    sire={selectedItem?.sire}
-                    dam={selectedItem?.dam}
-                    imgSrc={selectedItem?.imgSrc.url}
-                    photographer={selectedItem?.photographer}
-                    blogurl={selectedItem?.blogurl}
-                  />
-                </p>
-                <div className="mt-8 flex justify-end">
-                  <button
-                    // eslint-disable-next-line react/jsx-handler-names
-                    onClick={close}
-                    className="mb-3 rounded bg-gradient-to-r from-gray-400 to-gray-500 p-1 text-center font-medium text-gray-300 opacity-80 hover:text-gray-100 focus:from-purple-600 focus:to-yellow-600 sm:px-4 lg:mr-3 lg:py-2"
-                  >
-                    閉じる
-                  </button>
-                </div>
-              </div>
-            </Modal>
-          </div>
+    <Layout theme="boys" photographer="Yoshiko Yamashita">
+      <PageSEO
+        title={`Boys - ${siteMetadata.title}`}
+        description={siteMetadata.description}
+        ogType="website"
+        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+        siteUrl={siteMetadata.siteUrl}
+      />
+      <PageTitle type="large">Boys - {siteMetadata.title} の男の子たち</PageTitle>
+      <div className="divide-y divide-gray-200 ">
+        <div className="container py-12">
+          <ul className=" container m-4 flex flex-wrap py-12">
+            {boys.map((item) => {
+              return (
+                <li key={item.id} className="p-3">
+                  <div className="flex flex-col rounded border-2 border-gray-50 nm-concave-gray-300-lg">
+                    <div className="rounded p-1 nm-concave-gray-100-lg" style={{ maxWidth: "350px" }}>
+                      <div className="flex flex-col rounded border-2 border-gray-50 nm-concave-gray-300-lg">
+                        <Link href={`/mycat/${item.id}`}>
+                          <Image
+                            src={item.imgSrc?.url}
+                            alt={item.name || "image of canon's maincoon cat"}
+                            className="object-cover object-center md:h-60 lg:h-80"
+                            width={item.imgSrc.width * 1.5}
+                            height={item.imgSrc.height * 1.5}
+                          />
+                        </Link>
+                        <div className="flex w-full flex-col text-gray-600">
+                          <Link href={`/mycat/${item.id}`}>
+                            <div className="nm-flat-white-100 bg-white p-4 text-gray-500">
+                              <h2 className="z-50 mb-3 text-2xl font-bold leading-8 tracking-tight">{item.name}</h2>
+                              <h2 className="z-50 mb-3 text-2xl font-bold leading-8 tracking-tight">{item.name1}</h2>
+                              <p className="mb-3">Date of Birth:{dayjs(item.birth).format("YYYY.MM.DD")}</p>
+                              <p className="mb-3 h-3">{item.kind}</p>
+                            </div>
+                          </Link>
+                          {/* <div className="pl-3 pt-3">{item.description}</div> */}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-      </Layout>
-    </div>
+      </div>
+    </Layout>
   );
 };
 
-// eslint-disable-next-line import/no-default-export
-export default MyBoys;
+export const getStaticProps = async () => {
+  const data = await client.get({ endpoint: "mycat" });
+
+  return {
+    props: {
+      content: data.contents,
+      queries: { limit: 999 },
+    },
+  };
+};
+
+export default MyGirls;
