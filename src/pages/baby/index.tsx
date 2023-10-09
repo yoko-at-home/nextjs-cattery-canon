@@ -13,7 +13,7 @@ const kind = "✨✨✨";
 
 const Star = () => {
   return (
-    <div className="leading-loosee tracking-loose bg-gradient-to-r from-purple-100 to-green-200 bg-clip-text pt-5 text-center text-2xl font-extrabold text-transparent">
+    <div className="tracking-loose bg-gradient-to-r from-purple-100 to-green-200 bg-clip-text pt-5 text-center text-2xl font-extrabold leading-loose text-transparent">
       {kind}
     </div>
   );
@@ -58,7 +58,7 @@ const Baby: NextPage<BabyProps> = (props) => {
                         <picture>
                           <Image
                             src={girl.imgSrc?.url}
-                            alt={girl.title}
+                            alt={girl.title === undefined ? "canon cat" : girl.title}
                             width={girl.imgSrc?.width}
                             height={girl.imgSrc?.height}
                           />
@@ -95,7 +95,7 @@ const Baby: NextPage<BabyProps> = (props) => {
                         <picture>
                           <Image
                             src={boy.imgSrc?.url}
-                            alt={boy.title}
+                            alt={boy.title === undefined ? "canon cat" : boy.title}
                             width={boy.imgSrc?.width}
                             height={boy.imgSrc?.height}
                           />

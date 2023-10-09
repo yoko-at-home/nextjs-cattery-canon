@@ -33,7 +33,7 @@ const Retired: FC<CommonProps> = (props) => {
                     <picture>
                       <Image
                         src={item.imgSrc?.url}
-                        alt={item.title}
+                        alt={item.title === undefined ? "canon cat" : item.title}
                         width={item.imgSrc?.width}
                         height={item.imgSrc?.height}
                       />

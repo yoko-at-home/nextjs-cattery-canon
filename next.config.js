@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   images: {
-    domains: ["images.microcms-assets.io"],
+    domains: ["images.microcms-assets.io", "localhost"],
   },
 };
 
