@@ -15,7 +15,7 @@ const MyGirls: FC<MyCatPageProps> = (props) => {
     return props.sex === false;
   });
   return (
-    <div style={{ backgroundColor: "#e4f8d7" }}>
+    <div className="bg-green-100">
       <Layout theme="boys" photographer="Yoshiko Yamashita">
         <PageSEO
           title={`Boys - ${siteMetadata.title}`}
