@@ -50,9 +50,9 @@ const MyCatId = (props) => {
         )}
         <div className="flex flex-col items-center">
           <h1 className="mt-6 bg-gradient-to-r from-yellow-600 to-green-900 bg-clip-text text-2xl font-extrabold text-transparent md:text-4xl">
-            <span className="mr-10 text-lg lg:text-3xl">{props.content.sire ? "♀" : "♀"}</span>
+            <span className="mr-5 text-lg lg:text-3xl">{props.content.sire ? "♀" : "♀"}</span>
             {props.content.name}
-            <span className="ml-10 text-lg lg:text-3xl">{props.content.sire ? "♀" : "♀"}</span>
+            <span className="ml-5 text-lg lg:text-3xl">{props.content.sire ? "♀" : "♀"}</span>
           </h1>
           {props.content.name1 === undefined ? null : (
             <h2 className="mb-6 bg-gradient-to-r from-yellow-600 to-green-900 bg-clip-text text-2xl font-extrabold text-transparent md:text-4xl">
