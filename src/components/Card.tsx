@@ -1,8 +1,25 @@
 import dayjs from "dayjs";
 import Image from "next/image";
-import type { MyCatProps } from "src/type/types";
+// import type { MyCatProps } from "src/type/types";
 
-export const Card: React.FC<MyCatProps> = (props) => {
+export type CardProps = {
+  id: string;
+  name: string;
+  name1?: string;
+  kind: string;
+  birth: string;
+  sire: string;
+  dam: string;
+  sex: boolean;
+  body: HTMLAnchorElement;
+  imgSrc: {
+    height: number;
+    url: string;
+    width: number;
+  };
+};
+
+export const Card: React.FC<CardProps> = (props) => {
   return (
     <li className="list-none p-3" key={props.id}>
       <div className="rounded p-1 nm-concave-gray-100-lg" style={{ maxWidth: "544px" }}>
