@@ -4,7 +4,6 @@ import ErrorPage from "next/error";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { PageTitle } from "src/components/PageTitle";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
@@ -48,14 +47,18 @@ const MyCatId = (props) => {
             <Link href="/api/clear-preview">---プレビューモードです。タップして解除---</Link>
           </div>
         )}
-        <PageTitle
-          type="large"
-          className="mt-6 py-12 text-lg font-bold sm:text-xl md:text-3xl lg:text-center lg:text-4xl"
-        >
-          <span className="mr-10 text-5xl">{props.content.sire ? "♀" : "♀"}</span>
-          {props.content.name}
-          <span className="ml-10 text-5xl">{props.content.sire ? "♀" : "♀"}</span>
-        </PageTitle>
+        <div className="flex flex-col items-center">
+          <h1 className="mt-6 bg-gradient-to-r from-yellow-600 to-green-900 bg-clip-text text-4xl font-extrabold leading-loose text-transparent">
+            <span className="mr-10 text-5xl">{props.content.sire ? "♀" : "♀"}</span>
+            {props.content.name}
+            <span className="ml-10 text-5xl">{props.content.sire ? "♀" : "♀"}</span>
+          </h1>
+          {props.content.name1 === undefined ? null : (
+            <h2 className="mb-6 bg-gradient-to-r from-yellow-600 to-green-900 bg-clip-text text-4xl font-extrabold text-transparent">
+              {props.content.name1}
+            </h2>
+          )}
+        </div>
         <div className="mb-10 mt-3 flex flex-col text-gray-600">
           <div>
             Date of Birth:
