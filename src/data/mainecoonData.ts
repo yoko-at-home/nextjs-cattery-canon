@@ -1,7 +1,7 @@
 export const mainecoonDataBoy = [
   {
-    name: "TICA RWSGC CHATILE LENTO OF CANON",
-    name1: "CFA GC CHATILE LENTO OF CANON",
+    name: "TICA RW SGC / CFA GC",
+    name1: " CHATILE LENTO OF CANON",
     birth: `07/27/2020`,
     kind: `BROWN CLASSIC TABBY `,
     sire: `CHATILE MARCO`,
