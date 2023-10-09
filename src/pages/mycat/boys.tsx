@@ -15,54 +15,56 @@ const MyGirls: FC<MyCatPageProps> = (props) => {
     return props.sex === false;
   });
   return (
-    <Layout theme="boys" photographer="Yoshiko Yamashita">
-      <PageSEO
-        title={`Boys - ${siteMetadata.title}`}
-        description={siteMetadata.description}
-        ogType="website"
-        ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
-        siteUrl={siteMetadata.siteUrl}
-      />
-      <PageTitle type="large">Boys - {siteMetadata.title} の男の子たち</PageTitle>
-      <div className="divide-y divide-gray-200 ">
-        <div className="container py-12">
-          <ul className=" container m-4 flex flex-wrap py-12">
-            {boys.map((item) => {
-              return (
-                <li key={item.id} className="p-3">
-                  <div className="flex flex-col rounded border-2 border-gray-50 nm-concave-gray-300-lg">
-                    <div className="rounded p-1 nm-concave-gray-100-lg" style={{ maxWidth: "350px" }}>
-                      <div className="flex flex-col rounded border-2 border-gray-50 nm-concave-gray-300-lg">
-                        <Link href={`/mycat/${item.id}`}>
-                          <Image
-                            src={item.imgSrc?.url}
-                            alt={item.name || "image of canon's maincoon cat"}
-                            className="object-cover object-center md:h-60 lg:h-80"
-                            width={item.imgSrc.width * 1.5}
-                            height={item.imgSrc.height * 1.5}
-                          />
-                        </Link>
-                        <div className="flex w-full flex-col text-gray-600">
+    <div style={{ backgroundColor: "#e4f8d7" }}>
+      <Layout theme="boys" photographer="Yoshiko Yamashita">
+        <PageSEO
+          title={`Boys - ${siteMetadata.title}`}
+          description={siteMetadata.description}
+          ogType="website"
+          ogImage={siteMetadata.siteUrl + siteMetadata.ogImage}
+          siteUrl={siteMetadata.siteUrl}
+        />
+        <PageTitle type="large">Boys - {siteMetadata.title} の男の子たち</PageTitle>
+        <div className="divide-y divide-gray-200 ">
+          <div className="container py-12">
+            <ul className=" container m-4 flex flex-wrap py-12">
+              {boys.map((item) => {
+                return (
+                  <li key={item.id} className="p-3">
+                    <div className="flex flex-col rounded border-2 border-gray-50 nm-concave-gray-300-lg">
+                      <div className="rounded p-1 nm-concave-gray-100-lg" style={{ maxWidth: "350px" }}>
+                        <div className="flex flex-col rounded border-2 border-gray-50 nm-concave-gray-300-lg">
                           <Link href={`/mycat/${item.id}`}>
-                            <div className="nm-flat-white-100 bg-white p-4 text-gray-500">
-                              <h2 className="z-50 mb-3 text-2xl font-bold leading-8 tracking-tight">{item.name}</h2>
-                              <h2 className="z-50 mb-3 text-2xl font-bold leading-8 tracking-tight">{item.name1}</h2>
-                              <p className="mb-3">Date of Birth:{dayjs(item.birth).format("YYYY.MM.DD")}</p>
-                              <p className="mb-3 h-3">{item.kind}</p>
-                            </div>
+                            <Image
+                              src={item.imgSrc?.url}
+                              alt={item.name || "image of canon's maincoon cat"}
+                              className="object-cover object-center md:h-60 lg:h-80"
+                              width={item.imgSrc.width * 1.5}
+                              height={item.imgSrc.height * 1.5}
+                            />
                           </Link>
-                          {/* <div className="pl-3 pt-3">{item.description}</div> */}
+                          <div className="flex w-full flex-col text-gray-600">
+                            <Link href={`/mycat/${item.id}`}>
+                              <div className="nm-flat-white-100 bg-white p-4 text-gray-500">
+                                <h2 className="z-50 mb-3 text-2xl font-bold leading-8 tracking-tight">{item.name}</h2>
+                                <h2 className="z-50 mb-3 text-2xl font-bold leading-8 tracking-tight">{item.name1}</h2>
+                                <p className="mb-3">Date of Birth:{dayjs(item.birth).format("YYYY.MM.DD")}</p>
+                                <p className="mb-3 h-3">{item.kind}</p>
+                              </div>
+                            </Link>
+                            {/* <div className="pl-3 pt-3">{item.description}</div> */}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </div>
   );
 };
 
