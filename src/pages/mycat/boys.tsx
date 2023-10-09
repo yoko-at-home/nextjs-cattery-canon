@@ -14,6 +14,7 @@ const MyGirls: FC<MyCatPageProps> = (props) => {
   const boys = props.content.filter((props) => {
     return props.sex === false;
   });
+  const reversedBoys = [...boys].reverse();
   return (
     <div className="bg-green-100">
       <Layout theme="boys" photographer="Yoshiko Yamashita">
@@ -28,7 +29,7 @@ const MyGirls: FC<MyCatPageProps> = (props) => {
         <div className="divide-y divide-gray-200 ">
           <div className="container py-12">
             <ul className=" container m-4 flex flex-wrap py-12">
-              {boys.map((item) => {
+              {reversedBoys.map((item) => {
                 return (
                   <li key={item.id} className="p-3">
                     <div className="flex flex-col rounded border-2 border-gray-50 nm-concave-gray-300-lg">
