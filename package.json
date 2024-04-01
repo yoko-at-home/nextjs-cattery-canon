@@ -43,7 +43,7 @@
     "tailwindcss-neumorphism": "0.1.0"
   },
   "devDependencies": {
-    "@sendgrid/mail": "8.1.1",
+    "@sendgrid/mail": "8.1.2",
     "@types/node": "20.12.2",
     "@types/react": "^18.0.26",
     "@typescript-eslint/eslint-plugin": "7.4.0",
