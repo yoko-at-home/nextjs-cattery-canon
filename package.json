@@ -32,7 +32,7 @@
   "dependencies": {
     "@tailwindcss/forms": "0.5.8",
     "@tailwindcss/line-clamp": "0.4.4",
-    "@tailwindcss/typography": "0.5.14",
+    "@tailwindcss/typography": "0.5.15",
     "axios": "1.7.5",
     "date-fns": "3.6.0",
     "dayjs": "^1.11.10",
