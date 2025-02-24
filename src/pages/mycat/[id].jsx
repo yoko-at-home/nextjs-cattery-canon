@@ -7,6 +7,8 @@ import { useRouter } from "next/router";
 import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { LayoutBlog } from "src/layout";
+import parse from "html-react-parser";
+
 
 
 const MyCatId = (props) => {
@@ -68,15 +70,7 @@ const MyCatId = (props) => {
           <div>Sire: {props.content.sire}</div>
           <div>Dam: {props.content.dam}</div>
         </div>
-        {props.content.body === undefined ? null : (
-          <div
-            className="text-gray-600"
-            dangerouslySetInnerHTML={{
-              // eslint-disable-next-line @typescript-eslint/naming-convention
-              __html: `${props.content.body}`,
-            }}
-          />
-        )}
+        {props.content.body === undefined ? null : <div className="text-gray-600">{parse(props.content.body)}</div>}
 
         <button
           type="button"

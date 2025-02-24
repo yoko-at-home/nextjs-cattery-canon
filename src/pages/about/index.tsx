@@ -4,12 +4,12 @@ import { PageSEO } from "src/components/SEO";
 import { siteMetadata } from "src/data/siteMetadata";
 import { Layout } from "src/layout";
 import { client } from "src/lib/client";
-import { About } from "src/type/types";
-
+import type { About } from "src/type/types";
+import parse from "html-react-parser";
 const description =
   "神話、伝説，伝承が、メインクーンにはあります。面白いものもあればファンタジーの世界へのものもあり、また単に、もっともらしいものもあります";
 
-const About: FC<About> = (props) => {
+const AboutPage: FC<About> = (props) => {
   return (
     <Layout theme="about" photographer="Yoshiko Yamashita">
       <PageSEO
@@ -22,13 +22,7 @@ const About: FC<About> = (props) => {
       <div className="divide-y divide-gray-200">
         <div className="space-y-2 pt-6 pb-8 md:mt-8 md:space-y-5">
           <PageTitle type="x-large">{props.data.title}</PageTitle>
-          <div
-            className="pt-10 text-lg text-green-900 md:pt-20"
-            dangerouslySetInnerHTML={{
-              // eslint-disable-next-line @typescript-eslint/naming-convention
-              __html: `${props.data.body}`,
-            }}
-          />
+          <div className="pt-10 text-lg text-green-900 md:pt-20">{parse(props.data.body)}</div>
         </div>
       </div>
     </Layout>
@@ -36,15 +30,9 @@ const About: FC<About> = (props) => {
 };
 
 export const getStaticProps = async () => {
-  const data = await client.get({
-    endpoint: "about",
-  });
+  const data = await client.get({ endpoint: "about" });
 
-  return {
-    props: {
-      data,
-    },
-  };
+  return { props: { data } };
 };
 
-export default About;
+export default AboutPage;
