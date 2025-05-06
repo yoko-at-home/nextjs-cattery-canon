@@ -59,7 +59,7 @@
     "husky": "^9.1.7",
     "identity-obj-proxy": "3.0.0",
     "keen-slider": "6.8.6",
-    "lint-staged": "15.5.1",
+    "lint-staged": "15.5.2",
     "npm-run-all2": "7.0.2",
     "postcss": "^8.4.31",
     "prettier": "3.5.3",
