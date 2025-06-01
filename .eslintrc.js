@@ -1,7 +1,13 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: { project: "./tsconfig.json" },
-  settings: { tailwindcss: { groupByResponsive: true, whitelist: [] } },
+  settings: {
+    tailwindcss: {
+      config: "./tailwind.config.js",
+      groupByResponsive: true,
+      whitelist: [],
+    },
+  },
   env: { es2021: true, browser: true, node: true },
   plugins: ["simple-import-sort", "tailwindcss", "import-access"],
   extends: [
