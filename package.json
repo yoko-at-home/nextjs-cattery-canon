@@ -35,10 +35,11 @@
     "axios": "1.9.0",
     "dayjs": "^1.11.10",
     "html-react-parser": "^5.2.2",
-    "microcms-js-sdk": "2.7.0",
+    "microcms-js-sdk": "^3.2.0",
     "next": "15.3.3",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "tailwindcss-neumorphism": "^0.1.0"
   },
   "devDependencies": {
     "@sendgrid/mail": "8.1.5",
