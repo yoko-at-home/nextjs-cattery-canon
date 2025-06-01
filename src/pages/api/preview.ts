@@ -1,18 +1,18 @@
-import fetch from "node-fetch";
+import type { NextApiRequest, NextApiResponse } from "next";
 
-export default async function preview(req, res) {
+export default async function preview(req: NextApiRequest, res: NextApiResponse) {
   if (!req.query.slug) {
     return res.status(404).end();
   }
   const content = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}baby/${req.query.slug}?fields=id&draftKey=${req.query.draftKey}`,
     // eslint-disable-next-line @typescript-eslint/naming-convention
-    { headers: { "X-MICROCMS-API-KEY": process.env.API_KEY || "" } }
+    { headers: { "X-MICROCMS-API-KEY": process.env.API_KEY || "" } },
   )
-    .then((res) => {
+    .then((res: Response) => {
       return res.json();
     })
-    .catch((error) => {
+    .catch((error: Error) => {
       return alert(error);
     });
 
