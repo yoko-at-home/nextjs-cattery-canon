@@ -6,6 +6,7 @@ module.exports = {
       config: require.resolve("./tailwind.config.js"),
       groupByResponsive: true,
       whitelist: [],
+      removeDuplicates: true,
     },
   },
   env: { es2021: true, browser: true, node: true },
