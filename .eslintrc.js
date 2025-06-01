@@ -3,7 +3,7 @@ module.exports = {
   parserOptions: { project: "./tsconfig.json" },
   settings: {
     tailwindcss: {
-      config: "./tailwind.config.js",
+      config: require.resolve("./tailwind.config.js"),
       groupByResponsive: true,
       whitelist: [],
     },
