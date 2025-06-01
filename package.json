@@ -33,14 +33,12 @@
     "@tailwindcss/line-clamp": "0.4.4",
     "@tailwindcss/typography": "0.5.16",
     "axios": "1.9.0",
-    "date-fns": "4.1.0",
     "dayjs": "^1.11.10",
     "html-react-parser": "^5.2.2",
     "microcms-js-sdk": "2.7.0",
     "next": "15.3.3",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "tailwindcss-neumorphism": "0.1.0"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@sendgrid/mail": "8.1.5",
@@ -57,7 +55,6 @@
     "eslint-plugin-simple-import-sort": "12.1.1",
     "eslint-plugin-tailwindcss": "3.18.0",
     "husky": "^9.1.7",
-    "identity-obj-proxy": "3.0.0",
     "keen-slider": "6.8.6",
     "lint-staged": "15.5.2",
     "npm-run-all2": "7.0.2",
