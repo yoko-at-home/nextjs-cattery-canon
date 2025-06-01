@@ -1,29 +1,38 @@
-/* eslint-disable tailwindcss/no-custom-classname */
-/* eslint-disable @typescript-eslint/naming-convention */
 import { useRouter } from "next/router";
 import { siteMetadata } from "src/data/siteMetadata";
+import type { FormEvent } from "react";
+
+interface FormElements extends HTMLFormControlsCollection {
+  fullname: HTMLInputElement;
+  labo: HTMLInputElement;
+  email: HTMLInputElement;
+  message: HTMLTextAreaElement;
+}
+
+interface ContactForm extends HTMLFormElement {
+  readonly elements: FormElements;
+}
 
 export const FormContact = () => {
   const router = useRouter();
 
-  const handleRegisterUser = async (event: any) => {
+  const handleRegisterUser = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const form = event.currentTarget;
     const res = await fetch("/api/send", {
       body: JSON.stringify({
         subject: "お問い合わせありがとうございます",
         to: siteMetadata.email,
-        text:
-          "以下の内容でお問い合わせを受け付けました。\n折り返しご連絡させていただきます。\n\n" +
-          "お名前: " +
-          event.target.fullname.value +
-          " 様\n" +
-          "電話番号: " +
-          event.target.labo.value +
-          "\nメールアドレス: " +
-          event.target.email.value +
-          "\n\nお問い合わせ内容:\n" +
-          event.target.message.value,
-        email: event.target.email.value,
+        text: `以下の内容でお問い合わせを受け付けました。
+折り返しご連絡させていただきます。
+
+お名前: ${form.fullname.value} 様
+電話番号: ${form.labo.value}
+メールアドレス: ${form.email.value}
+
+お問い合わせ内容:
+${form.message.value}`,
+        email: form.email.value,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -88,7 +97,7 @@ export const FormContact = () => {
                 rows={3}
                 required
                 minLength={20}
-              ></textarea>
+              />
             </div>
             {/* <div className="flex my-6">
                 <label className="flex items-center">

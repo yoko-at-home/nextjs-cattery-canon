@@ -1,5 +1,3 @@
-/* eslint-disable tailwindcss/no-custom-classname */
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import type { FC } from "react";
 import { useState } from "react";
@@ -84,7 +82,7 @@ export const NavBarMobile: FC<Props> = () => {
             aria-label="toggle modal"
             className="fixed -top-7 h-4/5 w-full cursor-auto focus:outline-none"
             onClick={handleNavBarOpen}
-          ></button>
+          />
           <nav className="z-0 py-8 text-center md:mt-40">
             {items.map(({ href, label }) => {
               return (
