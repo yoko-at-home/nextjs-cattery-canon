@@ -40,15 +40,15 @@
     "html-react-parser": "^5.2.2",
     "microcms-js-sdk": "^3.2.0",
     "next": "15.3.3",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "tailwindcss-neumorphism": "^0.1.0"
   },
   "devDependencies": {
     "@sendgrid/mail": "8.1.5",
     "@tailwindcss/postcss7-compat": "^2.2.17",
     "@types/node": "22.15.29",
-    "@types/react": "^18.2.0",
+    "@types/react": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "8.33.1",
     "@typescript-eslint/parser": "8.33.1",
     "autoprefixer": "^10.0.0",
