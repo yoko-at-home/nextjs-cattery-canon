@@ -1,6 +1,10 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
-  parserOptions: { project: "./tsconfig.json" },
+  parserOptions: {
+    project: "./tsconfig.json",
+    ecmaVersion: 2021,
+    sourceType: "module",
+  },
   settings: {
     tailwindcss: {
       callees: ["cn", "cva"],
@@ -10,7 +14,11 @@ module.exports = {
       tags: ["tw", "apply", "layer"],
     },
   },
-  env: { es2021: true, browser: true, node: true },
+  env: {
+    es2021: true,
+    browser: true,
+    node: true,
+  },
   plugins: ["simple-import-sort", "tailwindcss", "import-access"],
   extends: [
     "plugin:@typescript-eslint/recommended",
