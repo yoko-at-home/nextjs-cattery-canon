@@ -5,6 +5,7 @@ module.exports = {
     tailwindcss: {
       callees: ["cn", "cva"],
       config: "./tailwind.config.js",
+      cssFiles: ["**/*.css", "**/*.scss", "**/*.sass", "!**/node_modules/**", "!**/dist/**"],
     },
   },
   env: { es2021: true, browser: true, node: true },
@@ -13,7 +14,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:tailwindcss/recommended",
     "next/core-web-vitals",
-    "prettier",
+    "plugin:prettier/recommended",
   ],
   rules: {
     "no-console": ["error", { allow: ["warn", "info", "error"] }],
