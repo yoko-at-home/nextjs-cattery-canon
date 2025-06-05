@@ -1,5 +1,4 @@
 module.exports = {
-  parser: "@typescript-eslint/parser",
   parserOptions: {
     project: "./tsconfig.json",
     ecmaVersion: 2021,
@@ -19,11 +18,11 @@ module.exports = {
     browser: true,
     node: true,
   },
-  plugins: ["simple-import-sort", "tailwindcss", "import-access"],
+  plugins: ["@typescript-eslint", "simple-import-sort", "tailwindcss"],
   extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:tailwindcss/recommended",
     "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
   ],
   rules: {
@@ -76,13 +75,12 @@ module.exports = {
       "error",
       { components: ["Link"], specialLink: ["hrefLeft", "hrefRight"], aspects: ["invalidHref", "preferButton"] },
     ],
-    // tailwind
-    "tailwindcss/classnames-order": "warn",
-    "tailwindcss/enforces-negative-arbitrary-values": "warn",
-    "tailwindcss/enforces-shorthand": "warn",
-    "tailwindcss/migration-from-tailwind-2": "warn",
+    "tailwindcss/classnames-order": "error",
+    "tailwindcss/enforces-negative-arbitrary-values": "error",
+    "tailwindcss/enforces-shorthand": "error",
+    "tailwindcss/migration-from-tailwind-2": "error",
     "tailwindcss/no-arbitrary-value": "off",
-    "tailwindcss/no-custom-classname": "warn",
+    "tailwindcss/no-custom-classname": "error",
     "tailwindcss/no-contradicting-classname": "error",
   },
   overrides: [
