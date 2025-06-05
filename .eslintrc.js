@@ -3,9 +3,8 @@ module.exports = {
   parserOptions: { project: "./tsconfig.json" },
   settings: {
     tailwindcss: {
-      groupByResponsive: true,
-      whitelist: [],
-      removeDuplicates: true,
+      callees: ["cn", "cva"],
+      config: "./tailwind.config.js",
     },
   },
   env: { es2021: true, browser: true, node: true },
@@ -68,6 +67,7 @@ module.exports = {
     ],
     // tailwind
     "tailwindcss/classnames-order": "warn",
+    "tailwindcss/enforces-negative-arbitrary-values": "warn",
     "tailwindcss/enforces-shorthand": "warn",
     "tailwindcss/migration-from-tailwind-2": "warn",
     "tailwindcss/no-arbitrary-value": "off",
