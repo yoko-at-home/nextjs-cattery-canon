@@ -1,6 +1,7 @@
 module.exports = {
   plugins: {
-    "tailwindcss/nesting": {},
+    "postcss-import": {},
+    "postcss-nesting": {},
     "@tailwindcss/postcss": {
       config: "./tailwind.config.js",
     },

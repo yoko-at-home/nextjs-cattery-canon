@@ -6,6 +6,8 @@ module.exports = {
       callees: ["cn", "cva"],
       config: "./tailwind.config.js",
       cssFiles: ["**/*.css", "**/*.scss", "**/*.sass", "!**/node_modules/**", "!**/dist/**"],
+      classRegex: "^cva\\(([^)]*)\\)",
+      tags: ["tw", "apply", "layer"],
     },
   },
   env: { es2021: true, browser: true, node: true },
